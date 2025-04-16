@@ -1,4 +1,3 @@
-import Navbar from '@/components/Navbar';
 import BannerSlider from '@/components/BannerSlider';
 import { Metadata } from 'next';
 import OurKiosksSection from '@/components/OurKiosksSection';
