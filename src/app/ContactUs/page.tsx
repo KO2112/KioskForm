@@ -87,7 +87,7 @@ const ContactPage = () => {
         <div 
           className="absolute inset-0 opacity-20" 
           style={{
-            backgroundImage: 'url(/kiosk1.jpg)', // Replace with an actual image
+            backgroundImage: 'url(/kiosk2.jpg)', // Replace with an actual image
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
