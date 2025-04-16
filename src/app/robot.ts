@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://yourwebsite.co.uk/sitemap.xml',
+    sitemap: 'https://kioskform.co.uk/sitemap.xml',
   };
 }

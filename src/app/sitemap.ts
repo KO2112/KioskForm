@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.yourkioskdomain.co.uk';
+  const baseUrl = 'https://kioskform.co.uk';
   
   return [
     {
@@ -11,47 +11,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/products`,
+      url: `${baseUrl}/kiosks`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/solutions`,
+      url: `${baseUrl}/products/small-kiosk`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
-      priority: 0.8,
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/case-studies`,
+      url: `${baseUrl}/products/large-kiosk`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/AboutUs`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.6,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/ContactUs`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.6,
-    },
-    // Add more URLs for your kiosk types and product pages
-    {
-      url: `${baseUrl}/products/interactive-kiosk`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/products/digital-kiosk`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
     },
   ];
 }
