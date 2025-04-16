@@ -29,7 +29,7 @@ export async function sendContactEmail({
     
     const data = await resend.emails.send({
       from: 'Contact Form <onboarding@resend.dev>', // You can change this to your verified domain later
-      to: ['kemal182182@gmail.com'], // Replace with your actual email
+      to: ['kioskform@gmail.com'], // Replace with your actual email
       subject: `New contact form submission: ${subject}`,
       text: `
         Name: ${name}

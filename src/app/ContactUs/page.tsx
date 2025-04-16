@@ -87,7 +87,7 @@ const ContactPage = () => {
         <div 
           className="absolute inset-0 opacity-20" 
           style={{
-            backgroundImage: 'url(/kiosk-pattern.jpg)', // Replace with an actual image
+            backgroundImage: 'url(/kiosk1.jpg)', // Replace with an actual image
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
@@ -116,7 +116,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Our Location</h3>
-                    <p className="text-gray-600">123 Business Park, Industry Road<br />London, SE1 1AA</p>
+                    <p className="text-gray-600">Unit 7D, 66 Friday Street, Leicester, Leicestershire, LE13BW, United Kingdom</p>
                   </div>
                 </div>
                 
@@ -126,8 +126,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+44 (0)20 1234 5678</p>
-                    <p className="text-sm text-gray-500">Monday to Friday, 9am - 5pm</p>
+                    <p className="text-gray-600">+44 (0)7419208820</p>
+                    <p className="text-sm text-gray-500">Monday to Saturday, 9am - 7pm</p>
                   </div>
                 </div>
                 
@@ -137,7 +137,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Email</h3>
-                    <p className="text-gray-600">info@modularkiosks.com</p>
+                    <p className="text-gray-600">kioskform@gmail.com</p>
                     <p className="text-sm text-gray-500">We aim to respond within 24 hours</p>
                   </div>
                 </div>
@@ -365,7 +365,7 @@ const ContactPage = () => {
             <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-md p-6 text-white">
               <h3 className="text-xl font-bold mb-3">Need a Quick Quote?</h3>
               <p className="text-blue-100 mb-4">
-                If you're in a hurry, call us directly at <strong>+44 (0)20 1234 5678</strong> for immediate assistance.
+                If you're in a hurry, call us directly at <strong>+44 7419208820</strong> for immediate assistance.
               </p>
               <button
                 className="bg-white text-blue-700 font-medium px-4 py-2 rounded-md hover:bg-blue-50 transition-colors inline-flex items-center"
@@ -391,8 +391,8 @@ const ContactPage = () => {
               {/* This is a placeholder for the map. In a real application, you would use Google Maps or another map service */}
               <div className="text-center">
                 <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-2" />
-                <p className="font-medium text-gray-700">123 Business Park, Industry Road, London</p>
-                <p className="text-sm text-gray-500">Map loading... (This is a placeholder)</p>
+                <p className="font-medium text-gray-700">Unit 7D, 66 Friday Street, Leicester, Leicestershire, LE13BW, United Kingdom</p>
+                <p className="text-sm text-gray-500">Map loading... </p>
               </div>
             </div>
           </div>
