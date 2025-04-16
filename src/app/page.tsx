@@ -6,15 +6,15 @@ import SEOEnhancedSection from '@/components/SEOEnhanced';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Modular Kiosk Solutions | Premium UK Kiosk Manufacturer',
+  title: 'Modular Kiosks | Retail, Food & Security Kiosks',
   description: 'Leading UK manufacturer of enterprise-grade modular kiosks and interactive touch screen solutions. Bespoke designs and premium quality for modern businesses.',
   keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, touch screen kiosk, digital signage kiosk, custom kiosk design',
   openGraph: {
-    title: 'Modular Kiosk Solutions | Premium UK Kiosk Manufacturer',
+    title: 'Modular Kiosks | Retail, Food & Security Kiosks',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: [
       {
-        url: '/kiosk.jpg',
+        url: '/kiosk2.jpg',
         width: 1200,
         height: 630,
         alt: 'Modular Kiosk Solutions',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modular Kiosk Solutions | Premium UK Kiosk Manufacturer',
+    title: 'Modular Kiosks | Retail, Food & Security Kiosks',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: ['kiosk.jpg'],
   },
