@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://kioskform.co.uk'),
   title: {
-    default: 'Modular Kiosk Solutions | UK Kiosk Manufacturer',
+    default: 'Modular Kiosks | Retail, Food & Security Solutions',
     template: '%s | Modular Kiosk Solutions'
   },
   description: 'Leading UK manufacturer of modular kiosks and custom kiosk solutions. Interactive and digital kiosks for any business need.',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     url: 'https://kioskform.co.uk',
-    title: 'Modular Kiosk Solutions | Leading UK Kiosk Manufacturer',
+    title: 'Modular Kiosks | Retail, Food & Security Solutions',
     description: 'Discover our range of modular kiosks designed and manufactured in the UK. Customizable, versatile, and built to last.',
     siteName: 'Modular Kiosk Solutions',
     images: [
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modular Kiosk Solutions | Leading UK Kiosk Manufacturer',
+    title: 'Modular Kiosks | Retail, Food & Security Solutions',
     description: 'Discover our range of modular kiosks designed and manufactured in the UK. Customizable, versatile, and built to last.',
     images: ['/images/twitter-image.jpg'],
     creator: '@yourtwitterhandle',
