@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import './globals.css';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -78,6 +79,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+       
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-85BK7QZ6R7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-85BK7QZ6R7');
+          `}
+        </Script>
+      </head>
       <body className={inter.className}>
         <Navbar />
         <main>
