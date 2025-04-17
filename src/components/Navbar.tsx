@@ -22,6 +22,12 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Effect to close mobile menu on pathname change
+  useEffect(() => {
+    // Close the mobile menu when navigating to a new page
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
   // Determine navbar styling based on page and scroll
   const navbarBg = scrolled 
     ? 'bg-white shadow-lg py-2' 
@@ -43,14 +49,11 @@ const Navbar = () => {
               <Building className={`w-8 h-8 ${logoColor}`} />
               <span className={`text-2xl font-bold ${logoColor}`}>KioskForm</span>
             </Link>
-            
-            
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
             <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Home</Link>
             <Link href="/kiosks" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
-            
             <Link href="/AboutUs" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>About</Link>
             <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center">
               <Phone className="w-4 h-5 mr-1" />
@@ -62,7 +65,7 @@ const Navbar = () => {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className={`inline-flex items-center justify-center p-2 rounded-md ${textColor} ${hoverBg}`}
-              aria-expanded="false"
+              aria-expanded={mobileMenuOpen}
             >
               <span className="sr-only">Open main menu</span>
               {mobileMenuOpen ? (
@@ -86,12 +89,11 @@ const Navbar = () => {
               <Building className="w-4 h-4 mr-2" />
               Kiosks
             </Link>
-            
-            <Link href="/about" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+            <Link href="/AboutUs" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
               <Info className="w-4 h-4 mr-2" />
               About
             </Link>
-            <Link href="/contact" className="flex items-center px-3 py-2 bg-blue-600 text-white rounded-md">
+            <Link href="/ContactUs" className="flex items-center px-3 py-2 bg-blue-600 text-white rounded-md">
               <Phone className="w-4 h-4 mr-2" />
               Contact Us
             </Link>
