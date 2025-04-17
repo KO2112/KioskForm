@@ -11,7 +11,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.yourkioskdomain.co.uk'),
+  metadataBase: new URL('https://kioskform.co.uk'),
   title: {
     default: 'Modular Kiosk Solutions | UK Kiosk Manufacturer',
     template: '%s | Modular Kiosk Solutions'
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://www.yourkioskdomain.co.uk',
+    url: 'https://kioskform.co.uk',
     title: 'Modular Kiosk Solutions | Leading UK Kiosk Manufacturer',
     description: 'Discover our range of modular kiosks designed and manufactured in the UK. Customizable, versatile, and built to last.',
     siteName: 'Modular Kiosk Solutions',

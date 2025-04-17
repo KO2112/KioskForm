@@ -377,26 +377,7 @@ const ContactPage = () => {
           </div>
         </div>
         
-        {/* Map Section */}
-        <div className="mt-12 bg-white rounded-lg shadow-md overflow-hidden">
-          <div className="p-6">
-            <h2 className="text-xl font-bold text-gray-900 mb-4">Our Location</h2>
-            <p className="text-gray-600 mb-4">
-              Visit our showroom to see our modular kiosks in person.
-            </p>
-          </div>
-          <div className="h-96 w-full bg-gray-200 relative">
-            {/* Replace this with an actual map component */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-              {/* This is a placeholder for the map. In a real application, you would use Google Maps or another map service */}
-              <div className="text-center">
-                <MapPin className="h-12 w-12 text-blue-600 mx-auto mb-2" />
-                <p className="font-medium text-gray-700">Unit 7D, 66 Friday Street, Leicester, Leicestershire, LE13BW, United Kingdom</p>
-                <p className="text-sm text-gray-500">Map loading... </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         
         {/* FAQ Section */}
         <div className="mt-12">
