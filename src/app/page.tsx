@@ -39,90 +39,99 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  // Products Schema
-  const productsSchema = {
+  const combinedSchema = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "Product",
-        "position": 1,
-        "name": "Small Modular Kiosk",
-        "description": "Brand new, strong and durable booth perfect for tickets, security, or coffee units.",
-        "image": "https://kioskform.co.uk/kiosk2.jpg",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "GBP",
-          "availability": "https://schema.org/InStock"
+        "@type": "WebPage",
+        "@id": "https://kioskform.co.uk/",
+        "url": "https://kioskform.co.uk/",
+        "name": "Modular Kiosk Solutions | UK Portable Buildings",
+        "isPartOf": {
+          "@id": "https://kioskform.co.uk/#website"
         },
-        "brand": {
-          "@type": "Brand",
-          "name": "KioskForm"
-        }
-      },
-      {
-        "@type": "Product",
-        "position": 2,
-        "name": "Large Modular Kiosk",
-        "description": "Spacious durable kiosk for gatehouses, offices, or catering units.",
-        "image": "https://kioskform.co.uk/kiosk.jpg",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "GBP",
-          "availability": "https://schema.org/InStock"
+        "datePublished": "2022-10-15T00:00:00+00:00", // Or your actual launch date
+        "dateModified": "2025-04-18T00:00:00+00:00", // Today's date
+        "description": "Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
+        "breadcrumb": {
+          "@id": "https://kioskform.co.uk/#breadcrumb"
         },
-        "brand": {
-          "@type": "Brand",
-          "name": "KioskForm"
-        }
-      }
-    ]
-  };
-
-  // Carousel/Banner Schema
-  const carouselSchema = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://kioskform.co.uk/kiosks",
-        "name": "Modular Portable Buildings",
-        "description": "Premium quality kiosks and modular buildings designed for versatility and durability"
+        "inLanguage": "en-GB",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": ["https://kioskform.co.uk/"]
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "url": "https://kioskform.co.uk/kiosks",
-        "name": "Interactive Kiosk Solutions",
-        "description": "Modular Kiosks - Tailored for Food, Retail, and Security Applications"
+        "@type": "BreadcrumbList",
+        "@id": "https://kioskform.co.uk/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "url": "https://kioskform.co.uk/ContactUs",
-        "name": "Customizable Designs",
-        "description": "Tailored modular buildings to meet your exact requirements and brand identity"
+        "@type": "WebSite",
+        "@id": "https://kioskform.co.uk/#website",
+        "url": "https://kioskform.co.uk/",
+        "name": "KioskForm",
+        "description": "Premium modular kiosks and portable buildings",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://kioskform.co.uk/?s={search_term_string}"
+          },
+          "query-input": {
+            "@type": "PropertyValueSpecification",
+            "valueRequired": true,
+            "valueName": "search_term_string"
+          }
+        },
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://kioskform.co.uk/#organization",
+        "name": "KioskForm",
+        "url": "https://kioskform.co.uk",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://kioskform.co.uk/#logo",
+          "url": "https://kioskform.co.uk/logo.png", 
+          "contentUrl": "https://kioskform.co.uk/logo.png", 
+          "caption": "KioskForm",
+          "inLanguage": "en-GB",
+          "width": "665",
+          "height": "112"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "07419208820",
+            "contactType": "sales"
+          }
+        ],
+        "description": "Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.",
+        "sameAs": [
+          // Add your social media URLs if applicable
+        ],
+        "email": "kioskform@gmail.com"
       }
     ]
   };
 
   return (
     <>
-      {/* Product Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productsSchema)
-        }}
-      />
-      
-      {/* Carousel Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(carouselSchema)
+          __html: JSON.stringify(combinedSchema)
         }}
       />
       
