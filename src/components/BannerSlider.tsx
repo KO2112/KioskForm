@@ -20,7 +20,7 @@ const BannerSlider = () => {
     {
       title: "Interactive Kiosk Solutions",
       subtitle: "Engage Your Customers",
-      description: "Touchscreen technology to enhance customer experience and streamline operations",
+      description: "Modular Kiosks - Tailored for Food, Retail, and Security Applications",
       image: "/kiosk4.jpg",
       buttonText: "View Solutions",
       buttonLink: "/kiosks"
@@ -28,7 +28,7 @@ const BannerSlider = () => {
     {
       title: "Customizable Designs",
       subtitle: "Built To Your Specifications",
-      description: "Tailored modular buildings to meet your exact requirements and brand identity",
+      description: "Engineered for Excellence – Modular Kiosks & Buildings for Food, Retail, and Security. Durable, Adaptable, Ready for Anything.",
       image: "/kiosk3.jpg",
       buttonText: "Request Quote",
       buttonLink: "/ContactUs"

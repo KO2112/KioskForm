@@ -4,6 +4,7 @@ import OurKiosksSection from '@/components/OurKiosksSection';
 import AboutUsSection from '@/components/AboutUs';
 import SEOEnhancedSection from '@/components/SEOEnhanced';
 import Footer from '@/components/Footer';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Modular Kiosk Solutions | UK Portable Buildings',
@@ -38,15 +39,100 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  // Products Schema
+  const productsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "Small Modular Kiosk",
+        "description": "Brand new, strong and durable booth perfect for tickets, security, or coffee units.",
+        "image": "https://kioskform.co.uk/kiosk2.jpg",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "KioskForm"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "Large Modular Kiosk",
+        "description": "Spacious durable kiosk for gatehouses, offices, or catering units.",
+        "image": "https://kioskform.co.uk/kiosk.jpg",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "GBP",
+          "availability": "https://schema.org/InStock"
+        },
+        "brand": {
+          "@type": "Brand",
+          "name": "KioskForm"
+        }
+      }
+    ]
+  };
+
+  // Carousel/Banner Schema
+  const carouselSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://kioskform.co.uk/kiosks",
+        "name": "Modular Portable Buildings",
+        "description": "Premium quality kiosks and modular buildings designed for versatility and durability"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "url": "https://kioskform.co.uk/kiosks",
+        "name": "Interactive Kiosk Solutions",
+        "description": "Modular Kiosks - Tailored for Food, Retail, and Security Applications"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "url": "https://kioskform.co.uk/ContactUs",
+        "name": "Customizable Designs",
+        "description": "Tailored modular buildings to meet your exact requirements and brand identity"
+      }
+    ]
+  };
+
   return (
-    <main>
+    <>
+      {/* Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productsSchema)
+        }}
+      />
       
-      <BannerSlider />
-      <OurKiosksSection/>
-      <AboutUsSection/>
-      <SEOEnhancedSection/>
-      <Footer/>
+      {/* Carousel Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(carouselSchema)
+        }}
+      />
       
-    </main>
+      <main>
+        <BannerSlider />
+        <OurKiosksSection/>
+        <AboutUsSection/>
+        <SEOEnhancedSection/>
+        <Footer/>
+      </main>
+    </>
   );
 }
