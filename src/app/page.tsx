@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: 'Modular Kiosk Solutions | UK Portable Buildings',
   description: 'Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
   keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, digital signage kiosk, custom kiosk design',
+  alternates: {
+    canonical: 'https://kioskform.co.uk',
+    languages: {
+      'en-GB': 'https://kioskform.co.uk',
+    },
+  },
   openGraph: {
     title: 'Modular Kiosk Solutions | UK Portable Buildings',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
