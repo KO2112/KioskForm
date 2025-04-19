@@ -166,9 +166,9 @@ const SEOEnhancedSection = () => {
 
           {/* NEW SEO-Rich Section 9 */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h4 className="text-2xl font-bold text-gray-900 mb-4">
               Sustainable Practices in Modular Building Manufacturing
-            </h2>
+            </h4>
             <div className="prose max-w-none text-gray-700">
               <p>
                 Environmental responsibility forms a cornerstone of our approach to modular building manufacturing. Our production processes
@@ -189,9 +189,9 @@ const SEOEnhancedSection = () => {
 
           {/* NEW SEO-Rich Section 10 */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h5 className="text-2xl font-bold text-gray-900 mb-4">
               The Future of Modular Construction in the United Kingdom
-            </h2>
+            </h5>
             <div className="prose max-w-none text-gray-700">
               <p>
                 The modular building industry is experiencing unprecedented growth across the UK as businesses and organizations recognize the

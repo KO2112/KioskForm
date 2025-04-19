@@ -27,9 +27,9 @@ const OurProductsSection = () => {
     <section id="our-products" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Simple Section Header */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
-          Our Products
-        </h2>
+        <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
+          Our Kiosk Products
+        </h3>
 
         {/* Products Grid */}
         <div className="grid md:grid-cols-2 gap-6">

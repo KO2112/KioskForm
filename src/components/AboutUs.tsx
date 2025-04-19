@@ -4,9 +4,9 @@ const AboutUsSection = () => {
   return (
     <section id="about-us" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-blue-600 mb-8 text-center">
+        <h3 className="text-3xl font-bold text-blue-600 mb-8 text-center">
           About Us
-        </h2>
+        </h3>
         
         <div className="space-y-6 text-gray-700">
           <p className="text-lg">
