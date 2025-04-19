@@ -87,6 +87,136 @@ const SEOEnhancedSection = () => {
               </p>
             </div>
           </div>
+
+          {/* NEW SEO-Rich Section 6 */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              The Evolution of Modular Kiosks in Modern Commerce
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                The landscape of commercial spaces has been transformed by the rise of modular kiosks across the UK. These versatile
+                structures have evolved from simple vendor stalls into sophisticated, multi-functional spaces that serve as the backbone
+                of many retail and service operations. As specialists in modular kiosk design and manufacturing, we've witnessed firsthand
+                how these structures have revolutionized business operations, offering unprecedented flexibility and cost-efficiency
+                compared to traditional brick-and-mortar establishments.
+              </p>
+              <p>
+                Modern modular kiosks feature advanced materials and engineering techniques that enhance their durability and aesthetic
+                appeal. The innovative combination of galvanized steel frameworks, composite panels, and precision manufacturing has
+                elevated the quality of today's modular structures far beyond their predecessors. These advancements allow our modular
+                kiosks to seamlessly blend into high-end retail environments, transportation hubs, and corporate campuses while maintaining
+                the practical advantages of modular construction.
+              </p>
+            </div>
+          </div>
+
+          {/* NEW SEO-Rich Section 7 */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Economic Benefits of Portable Buildings for UK Businesses
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                The financial advantages of choosing portable buildings over conventional construction have made modular solutions increasingly
+                attractive to cost-conscious businesses throughout the UK. Our portable buildings offer significant reductions in both upfront
+                investment and long-term operational costs. The streamlined manufacturing process and shorter installation timeframes translate
+                into immediate savings, while the energy-efficient design and superior insulation properties of our modular structures contribute
+                to reduced utility expenses over their operational lifespan.
+              </p>
+              <p>
+                Beyond direct cost savings, our modular kiosks and portable buildings provide businesses with exceptional financial flexibility.
+                The ability to relocate, repurpose, or expand these structures in response to changing market conditions represents a strategic
+                advantage that fixed constructions simply cannot match. This adaptability allows businesses to optimize their spatial resources
+                without the financial burden of renovation or new construction, making our modular building solutions a prudent investment for
+                forward-thinking companies across various industries.
+              </p>
+            </div>
+          </div>
+
+          {/* NEW SEO-Rich Section 8 */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Industry-Specific Modular Kiosk Applications
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                The retail sector has embraced modular kiosks as efficient solutions for pop-up stores, seasonal merchandise displays, and
+                specialized product showcases. Our retail-focused portable buildings feature customizable display systems, integrated lighting
+                solutions, and secure storage components that optimize the customer experience while maximizing sales potential. The ability to
+                quickly deploy these modular retail environments allows businesses to test new markets, participate in temporary events, and
+                create distinctive brand experiences without substantial property investments.
+              </p>
+              <p>
+                In the food and beverage industry, our specialized modular kiosks have become essential for operations ranging from coffee shops
+                to gourmet street food vendors. These purpose-built portable buildings incorporate commercial-grade food preparation surfaces,
+                specialized ventilation systems, and utility connections that meet stringent health and safety regulations. The modular nature
+                of these food service kiosks enables operators to establish presence in high-traffic locations such as shopping centres,
+                transportation terminals, and entertainment venues, capturing valuable customer flow with minimal setup requirements.
+              </p>
+              <p>
+                Security operations benefit significantly from our purpose-designed modular security kiosks and portable guard houses. These
+                specialized structures feature reinforced construction, enhanced visibility through strategic window placement, and integrated
+                technology interfaces for surveillance equipment. Our security-focused modular buildings provide essential protection for
+                personnel while establishing a visible security presence at construction sites, industrial facilities, residential developments,
+                and public events throughout the UK.
+              </p>
+            </div>
+          </div>
+
+          {/* NEW SEO-Rich Section 9 */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Sustainable Practices in Modular Building Manufacturing
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                Environmental responsibility forms a cornerstone of our approach to modular building manufacturing. Our production processes
+                are designed to minimize waste through precise material calculations and efficient fabrication techniques. The controlled
+                factory environment allows for optimal resource management and significantly reduces the environmental impact compared to
+                traditional on-site construction methods. This commitment to sustainable manufacturing practices positions our modular building
+                company at the forefront of eco-conscious construction solutions in the UK market.
+              </p>
+              <p>
+                The portable buildings we produce incorporate numerous environmentally beneficial features that contribute to reduced carbon
+                footprints for our clients. Advanced insulation materials and energy-efficient design principles ensure excellent thermal
+                performance, minimizing heating and cooling requirements throughout the year. Optional solar panel integration, rainwater
+                harvesting systems, and LED lighting packages further enhance the sustainability credentials of our modular kiosks and portable
+                buildings, aligning with the growing environmental awareness among consumers and regulatory requirements across various industries.
+              </p>
+            </div>
+          </div>
+
+          {/* NEW SEO-Rich Section 10 */}
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              The Future of Modular Construction in the United Kingdom
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                The modular building industry is experiencing unprecedented growth across the UK as businesses and organizations recognize the
+                inherent advantages of prefabricated construction solutions. As a forward-thinking modular building company, we continue to invest
+                in research and development to anticipate emerging trends and incorporate innovative technologies into our portable buildings.
+                Advanced digital design tools, automated manufacturing processes, and new composite materials are shaping the next generation of
+                modular kiosks that will define commercial and public spaces throughout the United Kingdom.
+              </p>
+              <p>
+                Smart technology integration represents a significant frontier in the evolution of modular kiosks and portable buildings. Our
+                development team is pioneering solutions that incorporate automated climate control systems, touchless operation features, and
+                IoT connectivity into our modular structures. These intelligent capabilities enhance user experience while providing valuable
+                operational data for businesses. As these technologies become increasingly sophisticated, our modular building solutions will
+                continue to offer unparalleled convenience, efficiency, and adaptability for diverse applications across all sectors of the UK economy.
+              </p>
+              <p>
+                The growing emphasis on circular economy principles is influencing our approach to modular building design and manufacturing.
+                By prioritizing durability, adaptability, and component recyclability, we're creating portable buildings that represent sustainable
+                long-term investments for our clients. The inherent flexibility of our modular kiosks allows for refurbishment, repurposing, and
+                material recovery at end-of-life stages, aligning with emerging regulatory frameworks and environmental best practices. This
+                forward-thinking approach ensures our position as a leading modular building manufacturer committed to responsible innovation in
+                the built environment.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
