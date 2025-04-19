@@ -332,7 +332,7 @@ const LargeKioskPage = () => {
                     Our team is ready to assist you with any inquiries regarding our modular kiosks.
                   </p>
                   <Link 
-                    href="/contact" 
+                    href="/ContactUs" 
                     className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
                   >
                     Contact Us
