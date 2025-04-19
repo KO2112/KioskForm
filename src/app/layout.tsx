@@ -77,62 +77,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // Organization Schema
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "KioskForm",
-    "url": "https://kioskform.co.uk",
-    "logo": "https://kioskform.co.uk/logo.jpg", // Replace with actual logo URL
-    "description": "Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.",
-    "email": "kioskform@gmail.com",
-    "telephone": "07419208820",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "UK"
-    }
-  };
-
-  // Website Schema
-  const websiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://kioskform.co.uk",
-    "name": "Modular Kiosk Solutions | UK Portable Buildings",
-    "description": "Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://kioskform.co.uk/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  };
-
-  // Local Business Schema
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "KioskForm",
-    "@id": "https://kioskform.co.uk",
-    "url": "https://kioskform.co.uk",
-    "telephone": "07419208820",
-    "email": "kioskform@gmail.com",
-    "description": "Premium modular kiosks and portable buildings manufacturer in the UK. Custom solutions for businesses.",
-    "priceRange": "££",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "UK"
-    },
-    "image": "https://kioskform.co.uk/kiosk2.jpg", // Replace with actual image URL
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "17:00"
-      }
-    ]
-  };
-
   return (
     <html lang="en">
       <head>
@@ -148,30 +92,6 @@ export default function RootLayout({
             gtag('config', 'G-85BK7QZ6R7');
           `}
         </Script>
-        
-        {/* Organization Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema)
-          }}
-        />
-        
-        {/* Website Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(websiteSchema)
-          }}
-        />
-        
-        {/* Local Business Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema)
-          }}
-        />
       </head>
       <body className={inter.className}>
         <Navbar />

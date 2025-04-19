@@ -39,6 +39,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  
   const combinedSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -50,8 +51,8 @@ export default function Home() {
         "isPartOf": {
           "@id": "https://kioskform.co.uk/#website"
         },
-        "datePublished": "2022-10-15T00:00:00+00:00", // Or your actual launch date
-        "dateModified": "2025-04-18T00:00:00+00:00", // Today's date
+        "datePublished": "2022-10-15T00:00:00+00:00",
+        "dateModified": "2025-04-19T00:00:00+00:00",
         "description": "Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
         "breadcrumb": {
           "@id": "https://kioskform.co.uk/#breadcrumb"
@@ -103,8 +104,8 @@ export default function Home() {
         "logo": {
           "@type": "ImageObject",
           "@id": "https://kioskform.co.uk/#logo",
-          "url": "https://kioskform.co.uk/logo.png", 
-          "contentUrl": "https://kioskform.co.uk/logo.png", 
+          "url": "https://kioskform.co.uk/logo.png",
+          "contentUrl": "https://kioskform.co.uk/logo.png",
           "caption": "KioskForm",
           "inLanguage": "en-GB",
           "width": "665",
@@ -118,10 +119,20 @@ export default function Home() {
           }
         ],
         "description": "Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.",
-        "sameAs": [
-          // Add your social media URLs if applicable
-        ],
-        "email": "kioskform@gmail.com"
+        "email": "kioskform@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "UK"
+        },
+        "priceRange": "££",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "17:00"
+          }
+        ]
       }
     ]
   };
