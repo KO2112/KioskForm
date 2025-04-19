@@ -164,6 +164,22 @@ const SEOEnhancedSection = () => {
             </div>
           </div>
 
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+             Portable Modular Kiosk Cabins & Security Huts: Flexibility and Security
+             </h3>
+               <div className="prose max-w-none text-gray-700">
+             <p>
+             Portable modular kiosks and security huts are changing the way businesses approach temporary and permanent space solutions. 
+             These flexible, cost-effective structures can be used for a variety of purposes, from retail kiosks to on-site security booths. 
+             With customizable designs, durable materials, and the ability to relocate, they offer a modern alternative to traditional buildings. 
+             Our modular cabins are built with the latest construction techniques, ensuring quick setup and long-lasting performance. 
+             Whether you're looking for a kiosk to serve customers or a secure hut for your security team, our solutions provide unmatched versatility and security.
+            </p>
+           </div>
+          </div>
+
+
           {/* NEW SEO-Rich Section 9 */}
           <div>
             <h4 className="text-2xl font-bold text-gray-900 mb-4">

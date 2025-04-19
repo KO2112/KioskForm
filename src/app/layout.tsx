@@ -67,9 +67,7 @@ export const metadata: Metadata = {
     images: ['/images/twitter-image.jpg'],
     creator: '@yourtwitterhandle',
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+  
 };
 
 export default function RootLayout({
