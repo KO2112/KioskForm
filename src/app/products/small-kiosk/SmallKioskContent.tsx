@@ -182,7 +182,7 @@ const SmallKioskPage = () => {
             {/* Delivery Info */}
             <div className="flex items-center text-sm text-gray-600 mb-6">
               <Truck className="h-5 w-5 text-gray-500 mr-2" />
-              <span>Free UK mainland delivery | Usually dispatched within 7-10 working days</span>
+              <span>Free UK mainland delivery | Usually delivered within 3-4 working days</span>
             </div>
             
             {/* USPs */}
