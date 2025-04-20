@@ -22,21 +22,24 @@ const SEOEnhancedSection = () => {
           </div>
 
 
-          {/* SEO-Rich Section 2 */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Excellence in Modular Building Solutions
-            </h2>
-            <div className="prose max-w-none text-gray-700">
-              <p>
-                As one of the distinguished modular building companies UK, we take pride in delivering exceptional 
-                quality and innovative designs across our range of modular kiosks and portable buildings. Our European-manufactured 
-                units combine durability with aesthetic appeal, setting new standards in the modular construction industry. 
-                Each modular kiosk we produce undergoes rigorous quality checks to ensure it meets the highest standards of 
-                craftsmanship and functionality that our clients expect from a leading modular building manufacturer.
-              </p>
-            </div>
-          </div>
+          {/* SEO-Rich Section 2 - Updated for better readability */}
+<div>
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+    Excellence in Modular Building Solutions
+  </h2>
+  <div className="prose max-w-none text-gray-700">
+    <p>
+      As one of the distinguished modular building companies in the UK, we deliver exceptional 
+      quality and innovative designs across our kiosks range. Our European-manufactured 
+      units combine durability with aesthetic appeal.
+    </p>
+    <p>
+      We set new standards in the modular construction industry. Each modular kiosk undergoes 
+      rigorous quality checks to ensure it meets the highest standards of craftsmanship and 
+      functionality.
+    </p>
+  </div>
+</div>
 
           
 
@@ -58,22 +61,24 @@ const SEOEnhancedSection = () => {
             </div>
           </div>
 
-          {/* SEO-Rich Section 4 */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Customization Options for Your Modular Building Needs
-            </h2>
-            <div className="prose max-w-none text-gray-700">
-              <p>
-                We understand that every business has unique requirements, which is why customization is at the core of our service 
-                offering. As a flexible modular building manufacturer, we collaborate closely with clients to design kiosks that 
-                reflect their brand identity and functional needs. From size adjustments to specialized electrical installations, 
-                our modular kiosks can be tailored to meet specific operational requirements. This commitment to customization 
-                has established us as one of the most accommodating modular building companies UK businesses turn to for bespoke 
-                spatial solutions.
-              </p>
-            </div>
-          </div>
+          {/* SEO-Rich Section 4 - Updated to include "kiosks range" and "bespoke design" */}
+<div>
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">
+    Customization Options for Your Modular Building Needs
+  </h2>
+  <div className="prose max-w-none text-gray-700">
+    <p>
+      We understand that every business has unique requirements. That's why we offer a comprehensive 
+      kiosks range with bespoke design options at the core of our service.
+    </p>
+    <p>
+      As a flexible modular building manufacturer, we work closely with clients to create 
+      kiosks that reflect their brand identity and functional needs. From size adjustments to 
+      specialized electrical installations, our bespoke design process ensures your modular 
+      kiosk meets specific operational requirements.
+    </p>
+  </div>
+</div>
 
           {/* SEO-Rich Section 5 */}
           <div>
@@ -182,36 +187,31 @@ const SEOEnhancedSection = () => {
            </div>
           </div>
 
-          {/* NEW SEO-Rich Section 10 */}
+          {/* New section specifically about kiosks range */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              The Future of Modular Construction in the United Kingdom
-            </h2>
-            <div className="prose max-w-none text-gray-700">
-              <p>
-                The modular building industry is experiencing unprecedented growth across the UK as businesses and organizations recognize the
-                inherent advantages of prefabricated construction solutions. As a forward-thinking modular building company, we continue to invest
-                in research and development to anticipate emerging trends and incorporate innovative technologies into our portable buildings.
-                Advanced digital design tools, automated manufacturing processes, and new composite materials are shaping the next generation of
-                modular kiosks that will define commercial and public spaces throughout the United Kingdom.
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+               Explore Our Comprehensive Kiosks Range
+             </h2>
+           <div className="prose max-w-none text-gray-700">
+            <p>
+                Our extensive kiosks range includes options for every business need. From compact 
+              security huts to spacious retail units, we offer versatile solutions for all industries.
               </p>
-              <p>
-                Smart technology integration represents a significant frontier in the evolution of modular kiosks and portable buildings. Our
-                development team is pioneering solutions that incorporate automated climate control systems, touchless operation features, and
-                IoT connectivity into our modular structures. These intelligent capabilities enhance user experience while providing valuable
-                operational data for businesses. As these technologies become increasingly sophisticated, our modular building solutions will
-                continue to offer unparalleled convenience, efficiency, and adaptability for diverse applications across all sectors of the UK economy.
-              </p>
-              <p>
-                The growing emphasis on circular economy principles is influencing our approach to modular building design and manufacturing.
-                By prioritizing durability, adaptability, and component recyclability, we're creating portable buildings that represent sustainable
-                long-term investments for our clients. The inherent flexibility of our modular kiosks allows for refurbishment, repurposing, and
-                material recovery at end-of-life stages, aligning with emerging regulatory frameworks and environmental best practices. This
-                forward-thinking approach ensures our position as a leading modular building manufacturer committed to responsible innovation in
-                the built environment.
-              </p>
+            <p>
+             Each product in our kiosks range features:
+            </p>
+             <ul className="list-disc pl-5 space-y-2">
+           <li>High-quality steel sandwich panel construction</li>
+             <li>Superior weatherproofing for year-round use</li>
+            <li>Customizable dimensions and layouts</li>
+          <li>Optional premium features and finishes</li>
+         </ul>
+          <p>
+          Whether you need a standard unit or a completely bespoke design, our kiosks range 
+           provides the perfect foundation for your project.
+          </p>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </section>
