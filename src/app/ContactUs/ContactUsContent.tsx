@@ -377,8 +377,6 @@ const ContactPage = () => {
           </div>
         </div>
         
-        
-        
         {/* FAQ Section */}
         <div className="mt-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
@@ -409,6 +407,29 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+        {/* Additional Contact Information Section */}
+      <div className="mt-12">
+       <h2 className="text-2xl font-bold text-gray-900 mb-6">How We Can Help You For UK Kiosks</h2>
+        <div className="bg-white rounded-lg shadow-md p-6">
+         <div className="prose max-w-none">
+            <p className="text-gray-600">
+               Our dedicated team of kiosk specialists is ready to assist you with any inquiries about our modular kiosk solutions. Whether you need information about specifications, customization options, pricing, or delivery timeframes, we're here to provide comprehensive support throughout your journey.
+          </p>
+         <p className="text-gray-600 mt-4">
+        We pride ourselves on our responsive customer service and technical expertise. When you reach out to us, you'll be connected with knowledgeable professionals who understand the unique challenges and requirements of various industries, from retail and hospitality to healthcare and transportation.
+          </p>
+         <p className="text-gray-600 mt-4">
+        Our consultative approach means we take the time to understand your specific needs before recommending solutions. We believe in building long-term relationships with our clients, offering ongoing support and maintenance services long after your kiosk installation is complete.
+         </p>
+        <p className="text-gray-600 mt-4">
+        For urgent matters, we recommend calling our direct line during business hours. For detailed inquiries or project specifications, the contact form on this page will help us gather the information needed to provide you with the most accurate and helpful response.
+          </p>
+          <p className="text-gray-600 mt-4">
+        We look forward to hearing from you and discussing how our modular kiosk solutions can help achieve your business objectives, enhance customer experiences, and maximize your operational efficiency.
+       </p>
+     </div>
+  </div>
+</div>
       </div>
     </div>
   );
