@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Premium Modular Kiosks | Ticket Booths & Security Cabins',
-  description: 'EU manufactured portable kiosks for ticket booths, security cabins, and commercial applications. Weather-resistant, fully insulated with electrical installation and easy transportation.',
+  description: 'EU manufactured portable kiosks for ticket booths, security cabins, and commercial applications. Weather-resistant, fully insulated with electrical installation.',
   keywords: ['modular kiosk', 'ticket booth', 'security cabin', 'portable building', 'gatehouse', 'catering unit', 'information point'],
   alternates: {
     canonical: 'https://kioskform.co.uk/kiosks',

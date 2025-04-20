@@ -5,7 +5,24 @@ const SEOEnhancedSection = () => {
     <section className="py-12 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-8">
+
           {/* SEO-Rich Section 1 */}
+          <div>
+           <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            What Is a Modular / Portable Kiosk?
+          </h2>
+            <div className="prose max-w-none text-gray-700">
+             <p>
+                A modular or portable kiosk is a prefabricated, self-contained unit designed for flexible deployment across various environments.
+                These kiosks can be quickly installed and relocated, making them ideal for temporary or semi-permanent use.
+                Common applications include security kiosks on construction sites, ticket booths at events or parking areas, and catering units in hospitals or outdoor venues.
+                Their versatility and ease of setup make them a smart choice for industries needing adaptable, functional spaces without the hassle of permanent construction.
+             </p>
+           </div>
+          </div>
+
+
+          {/* SEO-Rich Section 2 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Excellence in Modular Building Solutions
@@ -21,22 +38,8 @@ const SEOEnhancedSection = () => {
             </div>
           </div>
 
-          {/* SEO-Rich Section 2 */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Versatile Applications for Modern Modular Kiosks
-            </h2>
-            <div className="prose max-w-none text-gray-700">
-              <p>
-                Our modular kiosks serve diverse purposes across multiple industries. From security kiosks providing 
-                surveillance at construction sites to ticket booths at entertainment venues, each unit is designed with 
-                specific functionality in mind. As a premier portable building manufacturer, we understand that versatility 
-                is key, which is why our modular buildings can be easily adapted for use as information points, security 
-                cabins, coffee shops, or retail outlets. This adaptability makes our modular kiosks the preferred choice for 
-                businesses seeking flexible spatial solutions.
-              </p>
-            </div>
-          </div>
+          
+
 
           {/* SEO-Rich Section 3 */}
           <div>

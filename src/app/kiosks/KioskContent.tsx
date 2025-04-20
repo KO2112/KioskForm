@@ -134,7 +134,7 @@ const KiosksPage = () => {
                 </div>
                 
                 {/* Key Features */}
-                <h3 className="font-bold text-gray-900 mb-2 text-sm">KEY FEATURES</h3>
+                <span className="font-bold text-gray-900 mb-2 text-sm">KEY FEATURES</span>
                 <ul className="space-y-2 mb-5">
                   {kiosk.features.slice(0, 4).map((feature, i) => (
                     <li key={i} className="flex items-start text-sm">
@@ -145,7 +145,7 @@ const KiosksPage = () => {
                 </ul>
                 
                 {/* Applications Tags */}
-                <h3 className="font-bold text-gray-900 mb-2 text-sm">APPLICATIONS</h3>
+                <span className="font-bold text-gray-900 mb-2 text-sm">APPLICATIONS</span>
                 <div className="flex flex-wrap gap-2">
                   {kiosk.applications.slice(0, 5).map((app, i) => (
                     <span key={i} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full">
