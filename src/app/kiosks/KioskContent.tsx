@@ -233,6 +233,59 @@ const KiosksPage = () => {
           </div>
         </div>
       </div>
+      {/* Product Information Section - Add this before the SEO Footer Content */}
+<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-white rounded-lg shadow-sm border border-gray-100 mt-8 mb-8">
+  <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Modular Kiosk Solutions</h2>
+  
+  <div className="mb-6">
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">What Makes Our Kiosks Different?</h3>
+    <p className="text-gray-700 mb-4">
+      Our modular kiosks represent the latest in portable building technology, manufactured to the highest European standards. Each unit combines durability with versatility, providing businesses with flexible space solutions that can be deployed quickly and efficiently. Unlike traditional construction, our modular approach allows for rapid installation without compromising on quality or functionality.
+    </p>
+    <p className="text-gray-700">
+      Every kiosk is engineered with premium materials that ensure longevity even in challenging environments. The steel sandwich panel construction offers superior insulation properties, maintaining comfortable internal temperatures while minimizing energy consumption. This sustainable approach makes our kiosks both environmentally responsible and economically efficient for businesses of all sizes.
+    </p>
+  </div>
+
+  <div className="mb-6">
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">Versatile Applications Across Industries</h3>
+    
+    <h4 className="text-lg font-medium text-gray-800 mb-2">Security Solutions</h4>
+    <p className="text-gray-700 mb-4">
+      For security professionals, our kiosks provide weatherproof, secure environments perfect for site monitoring and access control. The strategic window placement offers excellent visibility while maintaining security. Each unit can be equipped with additional security features to meet specific site requirements.
+    </p>
+    
+    <h4 className="text-lg font-medium text-gray-800 mb-2">Retail & Hospitality</h4>
+    <p className="text-gray-700 mb-4">
+      From ticket booths to coffee kiosks, our modular units create inviting customer service points with minimal setup time. The customizable exterior allows businesses to create brand-consistent experiences, while the durable construction ensures reliability even in high-traffic locations. Food service applications benefit from the easy-clean surfaces and robust electrical installations.
+    </p>
+    
+    <h4 className="text-lg font-medium text-gray-800 mb-2">Event Management</h4>
+    <p className="text-gray-700">
+      Event organizers appreciate the portability and rapid deployment of our kiosks for temporary installations. Whether managing large festivals or corporate functions, these units provide professional-grade information points, ticketing solutions, and security stations that can be repositioned as needed throughout the event lifecycle.
+    </p>
+  </div>
+
+  <div className="mb-6">
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">Installation & Maintenance</h3>
+    <p className="text-gray-700 mb-4">
+      Each modular kiosk arrives ready for immediate use with minimal site preparation required. The integrated forklift pockets allow for straightforward positioning, while pre-installed electrical systems eliminate the need for specialized contractors. This plug-and-play approach significantly reduces deployment costs compared to traditional building methods.
+    </p>
+    <p className="text-gray-700">
+      Our kiosks are designed for minimal maintenance with weather-resistant exteriors that require only routine cleaning. The robust construction ensures excellent longevity even in challenging environments, providing businesses with reliable service for years to come. All units include comprehensive documentation for any maintenance requirements that may arise.
+    </p>
+  </div>
+
+  <div>
+    <h3 className="text-xl font-semibold text-gray-800 mb-3">Customization Options</h3>
+    <p className="text-gray-700 mb-4">
+      While our standard models meet most business requirements, we understand that some applications demand specialized features. Our design team can adapt any unit to accommodate specific operational needs, from additional service windows to specialized security features. Custom branding options ensure your kiosk becomes a seamless extension of your business identity.
+    </p>
+    <p className="text-gray-700">
+      The modular nature of our construction allows for future expansion or reconfiguration as your business evolves. This adaptability represents a future-proof investment that can grow alongside your operations, offering remarkable value compared to fixed structures or less durable temporary solutions.
+    </p>
+  </div>
+</div>
 
       {/* SEO Footer Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-t border-gray-200 mt-6">
