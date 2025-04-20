@@ -9,51 +9,79 @@ const AboutUsSection = () => {
         </h3>
         
         <div className="space-y-6 text-gray-700">
-          <p className="text-lg">
-            We specialise in the supply of secure and easy-to-install kiosks and modern portable buildings manufactured in the EU with superior quality standards.
+          <p className="text-lg leading-relaxed">
+            We supply secure, easy-to-install kiosks and portable buildings made in the EU to the highest quality standards.
           </p>
           
-          <p>
-            Our kiosks and portable buildings are extremely versatile and are suitable for a wide range of applications, including shops, security cabins, ticket & information kiosks, gate houses, offices, welfare units, catering buildings, coffee shops and more.
-          </p>
+          <div className="mb-4">
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Our Versatile Kiosks Range</h4>
+            <p className="leading-relaxed">
+              Our kiosks range serves many different needs:
+            </p>
+            <ul className="list-disc pl-5 mt-2 space-y-1">
+              <li>Retail shops and pop-up stores</li>
+              <li>Security cabins and gate houses</li>
+              <li>Ticket and information kiosks</li>
+              <li>Office spaces and welfare units</li>
+              <li>Catering buildings and coffee shops</li>
+            </ul>
+          </div>
           
-          <p>
-            All our buildings can be tailor-made in terms of size, layout and branding to suit our clients' individual requirements. With over 10 years of experience, we've perfected our manufacturing processes to ensure durability and functionality.
-          </p>
+          <div className="mb-4">
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Bespoke Design Solutions</h4>
+            <p className="leading-relaxed">
+              All our buildings offer bespoke design options. We tailor size, layout, and branding to match your exact needs.
+            </p>
+            <p className="leading-relaxed mt-2">
+              With over 10 years of experience, we've perfected our manufacturing to ensure lasting quality and functionality.
+            </p>
+          </div>
           
-          <p>
-            At our company, we pride ourselves as front-runners among modular building companies in the UK, setting the standard in the modular construction industry. Our offerings are about providing space and creating environments that inspire and fulfil specific functional needs.
-          </p>
+          <div className="mb-4">
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Industry Leadership</h4>
+            <p className="leading-relaxed">
+              We lead among UK modular building companies, setting industry standards. Our buildings don't just provide space – they create environments that inspire and fulfill specific needs.
+            </p>
+          </div>
           
-          <p>
-            As a leading modular building company, we specialise in various modular solutions, ranging from compact yet versatile ticket kiosks to expansive, fully-equipped portable offices. Our expertise in this field and our commitment to European quality and innovation place us at the forefront of modular building companies in the UK.
-          </p>
+          <div className="mb-4">
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Comprehensive Solutions</h4>
+            <p className="leading-relaxed">
+              Our kiosks range includes everything from compact ticket booths to fully-equipped portable offices. European quality and innovation place us at the forefront of the UK market.
+            </p>
+          </div>
           
-          <p>
-            Our journey began with a simple vision: to revolutionise the modular building sector by combining practicality with state-of-the-art design. Today, as a prominent modular building manufacturer, we continue to push the boundaries of what's possible in modular construction. Each project is a testament to our expertise, whether it's a custom-designed kiosk that captures the essence of a brand or a modular building that embodies efficiency and style.
-          </p>
+          <div>
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">Our Vision</h4>
+            <p className="leading-relaxed">
+              We started with a simple goal: revolutionize modular building by combining practicality with modern design.
+            </p>
+            <p className="leading-relaxed mt-2">
+              Today, as a leading manufacturer, we continue pushing boundaries. Every project showcases our expertise – whether it's a bespoke design kiosk capturing your brand essence or a modular building combining efficiency with style.
+            </p>
+          </div>
         </div>
         
-        {/* Simple Features */}
+        {/* Feature Highlights */}
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div className="p-4">
-            <div className="font-bold text-blue-600 text-xl mb-1">EU Quality</div>
-            <p className="text-gray-600 text-sm">European manufacturing standards</p>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="font-bold text-blue-600 text-xl mb-2">EU Quality</div>
+            <p className="text-gray-600">European manufacturing excellence</p>
           </div>
           
-          <div className="p-4">
-            <div className="font-bold text-blue-600 text-xl mb-1">10+ Years</div>
-            <p className="text-gray-600 text-sm">Industry experience</p>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="font-bold text-blue-600 text-xl mb-2">10+ Years</div>
+            <p className="text-gray-600">Industry expertise</p>
           </div>
           
-          <div className="p-4">
-            <div className="font-bold text-blue-600 text-xl mb-1">Customizable</div>
-            <p className="text-gray-600 text-sm">Tailor-made solutions</p>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="font-bold text-blue-600 text-xl mb-2">Bespoke Design</div>
+            <p className="text-gray-600">Custom-made solutions</p>
           </div>
           
-          <div className="p-4">
-            <div className="font-bold text-blue-600 text-xl mb-1">Versatile</div>
-            <p className="text-gray-600 text-sm">Multiple applications</p>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <div className="font-bold text-blue-600 text-xl mb-2">Complete Range</div>
+            <p className="text-gray-600">Kiosks for every need</p>
           </div>
         </div>
       </div>
