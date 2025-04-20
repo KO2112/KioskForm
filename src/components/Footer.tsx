@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Information */}
             <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Modular Building Solutions</h3>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Building Solutions</h4>
               <p className="text-gray-700 mb-4">
                 Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.
                 As a leading modular building company UK, we provide customizable solutions for diverse applications.
@@ -36,94 +36,78 @@ const Footer = () => {
             
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h3>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h4>
               <ul className="space-y-3">
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/AboutUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      About KioskForm
-                    </Link>
-                  </h4>
+                  <Link href="/AboutUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    About KioskForm
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Our Kiosk Products
-                    </Link>
-                  </h4>
+                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Our Kiosk Products
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/ContactUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Services
-                    </Link>
-                  </h4>
+                  <Link href="/ContactUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Services
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/ContactUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Contact Us
-                    </Link>
-                  </h4>
+                  <Link href="/ContactUs" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>
             
             {/* Solutions */}
             <div>
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Modular Solutions</h3>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Solutions</h4>
               <ul className="space-y-3">
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Security Kiosks
-                    </Link>
-                  </h4>
+                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Security Kiosks
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Ticket Booths
-                    </Link>
-                  </h4>
+                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Ticket Booths
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Portable Offices
-                    </Link>
-                  </h4>
+                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Portable Offices
+                  </Link>
                 </li>
                 <li>
-                  <h4 className="inline text-base font-medium">
-                    <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
-                      <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                      Custom Modular Buildings
-                    </Link>
-                  </h4>
+                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Custom Modular Buildings
+                  </Link>
                 </li>
               </ul>
             </div>

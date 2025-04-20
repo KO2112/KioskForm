@@ -112,9 +112,9 @@ const BannerSlider = () => {
       {/* Content - separate from background slides for reliable rendering */}
       <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-20">
         <div className="max-w-2xl">
-          <h2 className="text-5xl font-bold text-white mb-2 tracking-tight transition-opacity duration-500">
+          <h3 className="text-5xl font-bold text-white mb-2 tracking-tight transition-opacity duration-500">
             {currentSlideData.title}
-          </h2>
+          </h3>
           <p className="text-2xl font-semibold text-blue-300 mb-4 transition-opacity duration-500">
             {currentSlideData.subtitle}
           </p>

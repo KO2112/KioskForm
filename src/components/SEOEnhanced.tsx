@@ -165,9 +165,9 @@ const SEOEnhancedSection = () => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
              Portable Modular Kiosk Cabins & Security Huts: Flexibility and Security
-             </h3>
+             </h2>
                <div className="prose max-w-none text-gray-700">
              <p>
              Portable modular kiosks and security huts are changing the way businesses approach temporary and permanent space solutions. 
@@ -179,35 +179,11 @@ const SEOEnhancedSection = () => {
            </div>
           </div>
 
-
-          {/* NEW SEO-Rich Section 9 */}
-          <div>
-            <h4 className="text-2xl font-bold text-gray-900 mb-4">
-              Sustainable Practices in Modular Building Manufacturing
-            </h4>
-            <div className="prose max-w-none text-gray-700">
-              <p>
-                Environmental responsibility forms a cornerstone of our approach to modular building manufacturing. Our production processes
-                are designed to minimize waste through precise material calculations and efficient fabrication techniques. The controlled
-                factory environment allows for optimal resource management and significantly reduces the environmental impact compared to
-                traditional on-site construction methods. This commitment to sustainable manufacturing practices positions our modular building
-                company at the forefront of eco-conscious construction solutions in the UK market.
-              </p>
-              <p>
-                The portable buildings we produce incorporate numerous environmentally beneficial features that contribute to reduced carbon
-                footprints for our clients. Advanced insulation materials and energy-efficient design principles ensure excellent thermal
-                performance, minimizing heating and cooling requirements throughout the year. Optional solar panel integration, rainwater
-                harvesting systems, and LED lighting packages further enhance the sustainability credentials of our modular kiosks and portable
-                buildings, aligning with the growing environmental awareness among consumers and regulatory requirements across various industries.
-              </p>
-            </div>
-          </div>
-
           {/* NEW SEO-Rich Section 10 */}
           <div>
-            <h5 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
               The Future of Modular Construction in the United Kingdom
-            </h5>
+            </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
                 The modular building industry is experiencing unprecedented growth across the UK as businesses and organizations recognize the
