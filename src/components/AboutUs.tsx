@@ -14,7 +14,9 @@ const AboutUsSection = () => {
           </p>
           
           <div className="mb-4">
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Our Versatile Kiosks Range</h4>
+            <p className="text-xl font-semibold text-gray-800 mb-2">
+              Our Versatile Kiosks Range
+            </p>
             <p className="leading-relaxed">
               Our kiosks range serves many different needs:
             </p>
@@ -28,7 +30,9 @@ const AboutUsSection = () => {
           </div>
           
           <div className="mb-4">
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Bespoke Design Solutions</h4>
+            <p className="text-xl font-semibold text-gray-800 mb-2">
+              Bespoke Design Solutions
+            </p>
             <p className="leading-relaxed">
               All our buildings offer bespoke design options. We tailor size, layout, and branding to match your exact needs.
             </p>
@@ -38,21 +42,27 @@ const AboutUsSection = () => {
           </div>
           
           <div className="mb-4">
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Industry Leadership</h4>
+            <p className="text-xl font-semibold text-gray-800 mb-2">
+              Industry Leadership
+            </p>
             <p className="leading-relaxed">
               We lead among UK modular building companies, setting industry standards. Our buildings don't just provide space – they create environments that inspire and fulfill specific needs.
             </p>
           </div>
           
           <div className="mb-4">
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Comprehensive Solutions</h4>
+            <p className="text-xl font-semibold text-gray-800 mb-2">
+              Comprehensive Solutions
+            </p>
             <p className="leading-relaxed">
               Our kiosks range includes everything from compact ticket booths to fully-equipped portable offices. European quality and innovation place us at the forefront of the UK market.
             </p>
           </div>
           
           <div>
-            <h4 className="text-xl font-semibold text-gray-800 mb-2">Our Vision</h4>
+            <p className="text-xl font-semibold text-gray-800 mb-2">
+              Our Vision
+            </p>
             <p className="leading-relaxed">
               We started with a simple goal: revolutionize modular building by combining practicality with modern design.
             </p>
