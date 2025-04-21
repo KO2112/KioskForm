@@ -12,7 +12,7 @@ const BannerSlider = () => {
     {
       title: "Modular Portable Buildings",
       subtitle: "Custom Solutions For Your Business",
-      description: "Premium quality kiosks and modular buildings designed for versatility and durability",
+      description: "Modular kiosks built for food, retail, and security — tailored to your needs.",
       image: "/kiosk5.jpg",
       buttonText: "Explore Products",
       buttonLink: "/kiosks"
@@ -20,7 +20,7 @@ const BannerSlider = () => {
     {
       title: "Interactive Kiosk Solutions",
       subtitle: "Engage Your Customers",
-      description: "Modular Kiosks - Tailored for Food, Retail, and Security Applications",
+      description: "High-quality modular kiosks and buildings built to be versatile, durable, and easy to install.",
       image: "/kiosk4.jpg",
       buttonText: "View Solutions",
       buttonLink: "/kiosks"
@@ -28,7 +28,7 @@ const BannerSlider = () => {
     {
       title: "Customizable Designs",
       subtitle: "Built To Your Specifications",
-      description: "Engineered for Excellence – Modular Kiosks & Buildings for Food, Retail, and Security. Durable, Adaptable, Ready for Anything.",
+      description: "Engineered modular kiosks and buildings for food, retail, and security. Strong, flexible, and ready for any use.",
       image: "/kiosk3.jpg",
       buttonText: "Request Quote",
       buttonLink: "/ContactUs"
