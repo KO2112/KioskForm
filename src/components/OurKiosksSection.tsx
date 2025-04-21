@@ -10,7 +10,7 @@ const OurProductsSection = () => {
       title: 'Small Modular Kiosk',
       dimensions: '143×143 cm',
       description: 'Brand new, strong and durable booth perfect for tickets, security, or coffee units.',
-      image: '/kiosk2.jpg', // Replace with your actual image path
+      image: '/kiosk2.jpg', 
       specs: 'Dimensions: 1.43m × 1.43m × 2.10m (H), Weight: 350 kg approx.'
     },
     {
@@ -18,7 +18,7 @@ const OurProductsSection = () => {
       title: 'Large Modular Kiosk',
       dimensions: '218×143 cm',
       description: 'Spacious durable kiosk for gatehouses, offices, or catering units.',
-      image: '/kiosk.jpg', // Replace with your actual image path
+      image: '/kiosk.jpg', 
       specs: 'Dimensions: 2.18m × 1.43m × 2.10m (H), Weight: 400 kg approx.'
     }
   ];
@@ -26,16 +26,16 @@ const OurProductsSection = () => {
   return (
     <section id="our-products" className="py-12 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Simple Section Header */}
+        
         <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center">
           Our Kiosk Products
         </h3>
 
-        {/* Products Grid */}
+       
         <div className="grid md:grid-cols-2 gap-6">
           {products.map(product => (
             <div key={product.id} className="bg-gray-50 rounded-lg overflow-hidden shadow-md">
-              {/* Product Image */}
+             
               <div 
                 className="h-96 sm:h-128 w-full relative bg-blue-100"
                 style={{
@@ -45,7 +45,7 @@ const OurProductsSection = () => {
                 }}
               ></div>
               
-              {/* Product Info */}
+              
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900">{product.title}</h3>
                 <p className="text-blue-600 font-medium text-sm mb-2">{product.dimensions}</p>
@@ -64,7 +64,7 @@ const OurProductsSection = () => {
           ))}
         </div>
 
-        {/* Simple Call to Action */}
+        
         <div className="mt-8 text-center">
           <Link 
             href="/ContactUs"

@@ -7,7 +7,7 @@ const BannerSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   
-  // Slide content data
+  
   const slides = [
     {
       title: "Modular Portable Buildings",
@@ -37,7 +37,7 @@ const BannerSlider = () => {
   
   const totalSlides = slides.length;
 
-  // Use useCallback to memoize the changeSlide function
+  
   const changeSlide = useCallback((newIndex: number) => {
     if (isAnimating) return;
     
@@ -46,20 +46,20 @@ const BannerSlider = () => {
     
     
     
-    // Reset the animation flag
+    
     setTimeout(() => {
       setIsAnimating(false);
       
     }, 500);
   }, [isAnimating]);
 
-  // Use a separate useEffect for automatic sliding
+  
   useEffect(() => {
     const interval = setInterval(() => {
       const nextIndex = (currentSlide + 1) % totalSlides;
       
       changeSlide(nextIndex);
-    }, 6000);
+    }, 9000);
     
     return () => clearInterval(interval);
   }, [currentSlide, totalSlides, changeSlide]);
@@ -81,7 +81,7 @@ const BannerSlider = () => {
     changeSlide(prevIndex);
   };
 
-  // Get current slide data with safety check
+  
   const currentSlideData = slides[currentSlide] || slides[0];
 
  
@@ -89,10 +89,10 @@ const BannerSlider = () => {
 
   return (
     <div className="relative h-screen overflow-hidden">
-      {/* Static H1 tag for SEO */}
+      
       <h1 className="sr-only">Modular Portable Kiosk</h1>
       
-      {/* All slides in DOM, but only one visible */}
+      
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -109,7 +109,7 @@ const BannerSlider = () => {
         </div>
       ))}
       
-      {/* Content - separate from background slides for reliable rendering */}
+      
       <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-20">
         <div className="max-w-2xl">
           <h3 className="text-5xl font-bold text-white mb-2 tracking-tight transition-opacity duration-500">
@@ -139,7 +139,7 @@ const BannerSlider = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
+      
       <div className="absolute inset-y-0 left-0 flex items-center z-30">
         <button 
           onClick={prevSlide}
@@ -163,7 +163,7 @@ const BannerSlider = () => {
         </button>
       </div>
 
-      {/* Slide Indicators - with clear visual indicator */}
+      
       <div className="absolute bottom-10 left-0 right-0 z-30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-3">

@@ -10,7 +10,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
   
-  // Check if we're on the homepage or not
+  
   const isHomePage = pathname === '/';
 
   useEffect(() => {
@@ -22,20 +22,20 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Effect to close mobile menu on pathname change
+  
   useEffect(() => {
-    // Close the mobile menu when navigating to a new page
+    
     setMobileMenuOpen(false);
   }, [pathname]);
 
-  // Determine navbar styling based on page and scroll
+  
   const navbarBg = scrolled 
     ? 'bg-white shadow-lg py-2' 
     : isHomePage 
       ? 'bg-transparent py-4' 
-      : 'bg-white py-4 shadow-md'; // Non-home pages get white bg by default
+      : 'bg-white py-4 shadow-md'; 
 
-  // Text color based on whether navbar is transparent
+  
   const textColor = (scrolled || !isHomePage) ? 'text-gray-700' : 'text-white';
   const logoColor = (scrolled || !isHomePage) ? 'text-blue-700' : 'text-white';
   const hoverBg = (scrolled || !isHomePage) ? 'hover:bg-gray-100' : 'hover:bg-white/10';

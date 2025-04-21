@@ -34,7 +34,7 @@ const Footer = () => {
               </div>
             </div>
             
-            {/* Quick Links */}
+           
             <div>
               <h4 className="text-lg font-bold text-gray-900 mb-4">Quick Links</h4>
               <ul className="space-y-3">
@@ -73,7 +73,7 @@ const Footer = () => {
               </ul>
             </div>
             
-            {/* Solutions */}
+            
             <div>
               <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Solutions</h4>
               <ul className="space-y-3">
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
       </div>
       
-      {/* Bottom Section with darker background */}
+      
       <div className="bg-gray-800 py-6 w-full">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
