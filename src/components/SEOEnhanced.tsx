@@ -4,286 +4,226 @@ const SEOEnhancedSection = () => {
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-10">
+        <div className="space-y-8">
 
-          {/* Section 1 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              What Is a Modular / Portable Kiosk?
+              What Is a Modular or Portable Kiosk?
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-2">
-                A modular kiosk is a prefabricated, self-contained unit designed for flexible use across many settings.
-              </p>
-              <p className="mb-2">
-                These units offer quick installation and easy relocation, making them perfect for temporary needs.
-              </p>
-              
-              <p className="font-medium mb-2">Common Uses Include:</p>
-              <ul className="list-disc pl-5 space-y-1 mb-3">
-                <li>Security booths at construction sites</li>
-                <li>Ticket stands at events and venues</li>
-                <li>Catering units in hospitals and schools</li>
-                <li>Information points in public spaces</li>
-              </ul>
-              
               <p>
-                Their flexibility makes them ideal for businesses that need adaptable spaces without permanent construction.
+                A modular or portable kiosk is a pre-built, self-contained structure that’s easy to transport and set up.
+              </p>
+              <p>
+                Designed for flexibility, these units are perfect for short-term, semi-permanent, or mobile use.
+              </p>
+              <p>
+                You’ll see them used as ticket booths at events, food outlets at hospitals, or site offices on construction projects.
+              </p>
+              <p>
+                Their simplicity, speed of deployment, and versatility make them an ideal solution for businesses needing flexible space—without the cost or delay of permanent construction.
               </p>
             </div>
           </div>
 
-          {/* Section 2 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Excellence in Modular Building Solutions
+              Leading Modular Building Solutions
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                We're proud to be among the top modular building companies in the UK. Our kiosks offer exceptional quality and innovative designs.
-              </p>
-              
-              <div className="bg-blue-50 p-4 rounded-md mb-4">
-                <p className="font-medium text-blue-800 mb-2">Quality You Can Trust</p>
-                <p>
-                  Our European-manufactured units blend durability with attractive design. Each kiosk passes strict quality checks before delivery.
-                </p>
-              </div>
-              
               <p>
-                From compact security huts to spacious retail units, we have options for all industries and needs.
+                As one of the UK’s top modular building suppliers, we deliver innovative kiosk solutions tailored to your business goals.
+              </p>
+              <p>
+                Our range features European-built units that combine long-lasting materials with modern design.
+              </p>
+              <p>
+                Whether you need a compact security cabin or a spacious retail unit, we offer a full spectrum of high-quality, ready-to-use options.
               </p>
             </div>
           </div>
 
-          {/* Section 3 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Superior Quality from a Trusted UK Supplier
+              Built for Reliability. Trusted Across the UK.
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-2">
-                When you choose us, you partner with one of the most reliable modular building companies in the UK.
-              </p>
-              
-              <p className="mb-2">
-                Our decade of experience has refined our manufacturing. Each kiosk performs exceptionally in all weather conditions.
-              </p>
-              
-              <div className="border-l-4 border-blue-500 pl-4 my-4">
-                <p>
-                  We use steel sandwich panels that provide excellent insulation and durability. This makes our buildings suitable year-round.
-                </p>
-              </div>
-              
               <p>
-                As a dedicated UK supplier, we constantly invest in advanced techniques to improve our products' quality and sustainability.
+                When you work with us, you're partnering with a modular construction expert backed by over a decade of experience.
+              </p>
+              <p>
+                Every kiosk is crafted using steel sandwich panels for exceptional insulation, strength, and weather resistance.
+              </p>
+              <p>
+                Designed for year-round performance, our buildings are built to thrive in any environment.
+              </p>
+              <p>
+                We continuously invest in advanced techniques to ensure our products remain durable, sustainable, and future-proof.
               </p>
             </div>
           </div>
 
-          {/* Section 4 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Bespoke Design Options for Your Business
+              Fully Customisable to Your Business
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                We know every business has unique needs. That's why we offer a complete kiosks range with custom options.
-              </p>
-              
-              <ul className="list-disc pl-5 space-y-2 mb-3">
-                <li>Work closely with you to create kiosks that match your brand</li>
-                <li>Adjust size, layout, and features to meet exact requirements</li>
-                <li>Ensure your kiosk works perfectly for your specific business needs</li>
-              </ul>
-              
               <p>
-                Our bespoke design process ensures your modular building fulfills all your operational requirements.
+                No two businesses are the same—which is why we offer full customisation on every unit we build.
+              </p>
+              <p>
+                From layout and size to finishes and branding, we’ll work with you to design a kiosk that fits your exact needs.
+              </p>
+              <p>
+                Our bespoke service ensures you get a purpose-built solution that enhances your operations and reflects your identity.
               </p>
             </div>
           </div>
 
-          {/* Section 5 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Innovation in Portable Buildings
+              Pioneering Innovation in Portable Construction
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-2">
-                Innovation drives everything we do as a forward-thinking manufacturer.
-              </p>
-              
-              <div className="bg-gray-100 p-4 rounded-md mb-3">
-                <p className="mb-2">
-                  Our kiosks feature the latest advances in construction technology:
-                </p>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Energy-efficient insulation</li>
-                  <li>Eco-friendly materials</li>
-                  <li>Advanced weatherproofing</li>
-                  <li>Durable but lightweight frameworks</li>
-                </ul>
-              </div>
-              
               <p>
-                This approach has made us a leader among UK modular building companies for practical, sustainable construction solutions.
+                Innovation drives everything we do. We don’t just follow trends—we set them.
+              </p>
+              <p>
+                From eco-conscious materials to energy-efficient insulation, our kiosks are built with the latest in construction technology.
+              </p>
+              <p>
+                Our R&D team constantly explores smarter, greener solutions to keep our range ahead of the curve.
+              </p>
+              <p>
+                The result? Cutting-edge modular buildings that lead the UK market in both function and form.
               </p>
             </div>
           </div>
 
-          {/* Section 6 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Modern Kiosks in Today's Market
+              Modern Kiosks for Today’s Businesses
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                Modular kiosks have transformed commercial spaces across the UK. They've evolved from simple stalls into sophisticated, multi-purpose spaces.
-              </p>
-              
-              <p className="mb-3">
-                Today's kiosks use advanced materials and engineering. Galvanized steel frames and composite panels make them both durable and attractive.
-              </p>
-              
               <p>
-                Our kiosks blend perfectly into retail spaces, transport hubs, and corporate settings while maintaining all the benefits of modular construction.
+                Today’s modular kiosks are more than temporary booths—they’re fully functional, highly adaptable spaces.
+              </p>
+              <p>
+                As specialists in kiosk design, we’ve helped transform how businesses operate across retail, transport, and events.
+              </p>
+              <p>
+                Featuring galvanised steel frames and composite cladding, our units are sleek, secure, and built to impress.
+              </p>
+              <p>
+                They integrate effortlessly into modern environments while offering all the advantages of offsite construction.
               </p>
             </div>
           </div>
 
-          {/* Section 7 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Cost Benefits for UK Businesses
+              Cost-Effective Spaces for UK Businesses
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                Choosing portable buildings over traditional construction saves money. Many UK businesses now recognize these advantages.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
-                <div className="border border-gray-200 p-3 rounded-md">
-                  <p className="font-medium mb-1">Initial Savings:</p>
-                  <p>Quick manufacturing and installation reduce upfront costs</p>
-                </div>
-                <div className="border border-gray-200 p-3 rounded-md">
-                  <p className="font-medium mb-1">Long-term Benefits:</p>
-                  <p>Energy-efficient design and good insulation lower utility bills</p>
-                </div>
-              </div>
-              
               <p>
-                Our modular kiosks offer financial flexibility. You can move, repurpose, or expand them as your needs change – something fixed buildings can't match.
+                Going modular isn’t just smart—it’s cost-effective. More UK businesses are choosing our kiosks to cut costs without compromising quality.
+              </p>
+              <p>
+                Quick production and on-site installation reduce downtime and upfront spend.
+              </p>
+              <p>
+                Energy-efficient designs also help keep running costs low year after year.
+              </p>
+              <p>
+                Best of all, modular units can grow with your business—move them, reconfigure them, or expand as needed.
               </p>
             </div>
           </div>
 
-          {/* Section 8 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Industry-Specific Applications
+              Tailored Solutions for Every Industry
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                Our kiosks range serves many different industries:
+              <p>
+                Our kiosks are trusted across a wide range of industries:
               </p>
-              
-              <ul className="list-disc pl-5 space-y-3 mb-3">
+              <ul className="list-disc pl-5 space-y-2 mt-2">
                 <li>
-                  <span className="font-semibold">Retail:</span> Pop-up stores, merchandise displays, and product showcases with customizable displays and secure storage
+                  <span className="font-semibold">Retail:</span> Pop-up shops, branded kiosks, and promotional stands
                 </li>
                 <li>
-                  <span className="font-semibold">Food & Beverage:</span> Coffee shops and street food vendors with commercial-grade surfaces and proper ventilation
+                  <span className="font-semibold">Food & Beverage:</span> Street food stalls, coffee bars, and fully equipped kitchens
                 </li>
                 <li>
-                  <span className="font-semibold">Security:</span> Guard houses with reinforced construction and strategic windows for visibility
+                  <span className="font-semibold">Security:</span> Guard stations with reinforced walls and 360° visibility
                 </li>
               </ul>
-              
-              <p>
-                Each application benefits from our bespoke design approach, ensuring the perfect solution for your specific needs.
+              <p className="mt-3">
+                Every solution is customised to meet your operational, branding, and spatial needs.
               </p>
             </div>
           </div>
 
-          {/* Section 9 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               Portable Kiosks & Security Huts
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-2">
-                Our portable kiosks and security huts are changing how businesses address their space needs.
-              </p>
-              
-              <p className="mb-2">
-                These cost-effective structures serve many purposes – from retail kiosks to security booths.
-              </p>
-              
-              <div className="border-l-4 border-gray-300 pl-4 my-3">
-                <p>
-                  Built using the latest techniques, our kiosks set up quickly and perform reliably for years.
-                </p>
-              </div>
-              
               <p>
-                With custom designs, strong materials, and mobility, they offer a modern alternative to traditional construction.
+                Our portable kiosks and security huts redefine how businesses approach space.
+              </p>
+              <p>
+                These multi-functional units are perfect for everything from retail sales to site security.
+              </p>
+              <p>
+                Built with durable materials and tailored to your requirements, they deliver long-term value and rapid ROI.
+              </p>
+              <p>
+                Installation is quick and hassle-free, allowing you to start using your space right away.
               </p>
             </div>
           </div>
 
-          {/* Section 10 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Explore Our Complete Kiosks Range
+              Discover the Full Kiosks Range
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-3">
-                Our extensive kiosks range meets every business need. We offer everything from small security huts to large retail units.
-              </p>
-              
-              <p className="mb-2">
-                Every product in our kiosks range includes:
-              </p>
-              
-              <ul className="list-disc pl-5 space-y-1 mb-3">
-                <li>High-quality steel sandwich panel construction</li>
-                <li>Superior weatherproofing for year-round use</li>
-                <li>Customizable dimensions and layouts</li>
-                <li>Optional premium features and finishes</li>
-              </ul>
-              
               <p>
-                Whether you need a standard unit or a bespoke design, our kiosks range provides the perfect starting point.
+                Our kiosk range has something for every business—whether you need a compact unit or a large-scale retail space.
+              </p>
+              <p>
+                Every unit includes:
+              </p>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>High-strength steel sandwich panels</li>
+                <li>Weatherproof design for all seasons</li>
+                <li>Custom sizing and internal layouts</li>
+                <li>Premium upgrade options available</li>
+              </ul>
+              <p>
+                Browse our full selection online or get in touch for a made-to-measure solution that ticks every box.
               </p>
             </div>
           </div>
 
-          {/* Section 11 */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
               The Future of Modular Construction
             </h2>
             <div className="prose max-w-none text-gray-700">
-              <p className="mb-2">
-                The modular building industry is growing fast across the UK. More organizations recognize the benefits of prefab solutions.
-              </p>
-              
-              <p className="mb-2">
-                We invest in research to stay ahead of trends. Our bespoke design capabilities continue to evolve with new technologies.
-              </p>
-              
-              <p className="font-medium mt-3 mb-2">Smart features we're developing include:</p>
-              <ul className="list-disc pl-5 space-y-1 mb-3">
-                <li>Intelligent climate control systems</li>
-                <li>Touchless operation features</li>
-                <li>Advanced connectivity options</li>
-                <li>Sustainable power solutions</li>
-              </ul>
-              
               <p>
-                Our focus on sustainability shapes our approach to kiosk design. We create durable, adaptable, and recyclable buildings for a greener future.
+                Modular construction is reshaping the UK’s built environment—and we’re proud to be part of that change.
+              </p>
+              <p>
+                Through continuous R&D, we’re developing smarter, more sustainable solutions for modern businesses.
+              </p>
+              <p>
+                Innovations like integrated tech, remote monitoring, and climate control are already shaping our next-generation kiosks.
+              </p>
+              <p>
+                Our commitment to circular design and energy efficiency means we build for both business and the planet.
               </p>
             </div>
           </div>
