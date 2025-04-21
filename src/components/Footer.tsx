@@ -15,9 +15,10 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Building Solutions</h4>
               <p className="text-gray-700 mb-4">
-                Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.
-                As a leading modular building company UK, we provide customizable solutions for diverse applications.
-              </p>
+              High-quality modular kiosks and portable buildings, built in the EU to top-tier standards.
+              As one of the UK's leading modular building companies, we offer custom solutions for retail, security, catering, and more.
+             </p>
+
               <div className="text-gray-700">
                 <div className="flex items-center mb-2">
                   <svg className="h-5 w-5 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -121,7 +122,8 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-300 text-sm mb-4 md:mb-0">
               © {currentYear} Modular Building Solutions. All rights reserved. 
-              <span className="block md:inline md:ml-1">A trusted modular building manufacturer UK providing high-quality portable buildings nationwide.</span>
+             <span className="block md:inline md:ml-1">
+               A trusted UK modular building manufacturer, delivering high-quality portable buildings nationwide.</span>
             </p>
             <div className="flex space-x-6">
               
