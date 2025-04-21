@@ -14,7 +14,10 @@ const Footer = () => {
             {/* Company Information */}
             <div>
               <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Building Solutions</h4>
-              
+              <p className="text-gray-700 mb-4">
+              High-quality modular kiosks and portable buildings, built in the EU to top-tier standards.
+              As one of the UK's leading modular building companies, we offer custom solutions for retail, security, catering, and more.
+             </p>
 
               <div className="text-gray-700">
                 <div className="flex items-center mb-2">
