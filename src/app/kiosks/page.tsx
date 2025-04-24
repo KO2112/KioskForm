@@ -1,4 +1,6 @@
+// app/kiosks/page.tsx
 import KioskContent from './KioskContent';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -26,5 +28,221 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <KioskContent />;
+  return (
+    <>
+      <Script
+        id="kiosks-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": "https://kioskform.co.uk/kiosks/",
+                "url": "https://kioskform.co.uk/kiosks/",
+                "name": "Premium Modular Kiosks | Ticket Booths & Security Cabins",
+                "isPartOf": {
+                  "@id": "https://kioskform.co.uk/#website"
+                },
+                "primaryImageOfPage": {
+                  "@id": "https://kioskform.co.uk/kiosks/#primaryimage"
+                },
+                "image": {
+                  "@id": "https://kioskform.co.uk/kiosks/#primaryimage"
+                },
+                "thumbnailUrl": "https://kioskform.co.uk/kiosks-og.jpg",
+                "datePublished": "2025-03-15T10:00:00+00:00",
+                "dateModified": "2025-04-24T09:00:00+00:00",
+                "description": "EU manufactured portable kiosks for ticket booths, security cabins, and commercial applications. Weather-resistant, fully insulated with electrical installation.",
+                "breadcrumb": {
+                  "@id": "https://kioskform.co.uk/kiosks/#breadcrumb"
+                },
+                "inLanguage": "en-GB",
+                "potentialAction": [
+                  {
+                    "@type": "ReadAction",
+                    "target": ["https://kioskform.co.uk/kiosks/"]
+                  }
+                ]
+              },
+              {
+                "@type": "ImageObject",
+                "inLanguage": "en-GB",
+                "@id": "https://kioskform.co.uk/kiosks/#primaryimage",
+                "url": "https://kioskform.co.uk/kiosks-og.jpg",
+                "contentUrl": "https://kioskform.co.uk/kiosks-og.jpg",
+                "width": 1200,
+                "height": 630,
+                "caption": "Premium Modular Kiosks Collection"
+              },
+              {
+                "@type": "BreadcrumbList",
+                "@id": "https://kioskform.co.uk/kiosks/#breadcrumb",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://kioskform.co.uk/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Premium Modular Kiosks"
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://kioskform.co.uk/#website",
+                "url": "https://kioskform.co.uk/",
+                "name": "KioskForm",
+                "description": "Premium kiosk solutions for businesses across the UK",
+                "potentialAction": [
+                  {
+                    "@type": "SearchAction",
+                    "target": {
+                      "@type": "EntryPoint",
+                      "urlTemplate": "https://kioskform.co.uk/?s={search_term_string}"
+                    },
+                    "query-input": {
+                      "@type": "PropertyValueSpecification",
+                      "valueRequired": true,
+                      "valueName": "search_term_string"
+                    }
+                  }
+                ],
+                "inLanguage": "en-GB"
+              },
+              {
+                "@type": "ItemList",
+                "@id": "https://kioskform.co.uk/kiosks/#itemlist",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Small Modular Kiosk",
+                    "url": "https://kioskform.co.uk/products/small-kiosk"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Large Modular Kiosk",
+                    "url": "https://kioskform.co.uk/products/large-kiosk"
+                  }
+                ]
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/small-kiosk",
+                "name": "Small Modular Kiosk",
+                "description": "Brand new, strong and durable, fully insulated modular kiosk perfect for versatile applications.",
+                "sku": "small-kiosk",
+                "image": {
+                  "@type": "ImageObject",
+                  "url": "https://kioskform.co.uk/kiosk2.jpg",
+                  "width": 800,
+                  "height": 600
+                },
+                "brand": {
+                  "@type": "Brand",
+                  "name": "KioskForm"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://kioskform.co.uk/products/small-kiosk",
+                  "priceCurrency": "GBP",
+                  "price": "1999",
+                  "priceValidUntil": "2025-12-31",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "availability": "https://schema.org/InStock"
+                },
+                "additionalProperty": [
+                  {
+                    "@type": "PropertyValue",
+                    "name": "dimensions",
+                    "value": "143×143 cm"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "internalHeight",
+                    "value": "2.10 meters"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "weight",
+                    "value": "350 kg approx"
+                  }
+                ]
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/large-kiosk",
+                "name": "Large Modular Kiosk",
+                "description": "Spacious, durable and fully insulated modular building suitable for various commercial applications.",
+                "sku": "large-kiosk",
+                "image": {
+                  "@type": "ImageObject",
+                  "url": "https://kioskform.co.uk/kiosk.jpg",
+                  "width": 800,
+                  "height": 600
+                },
+                "brand": {
+                  "@type": "Brand",
+                  "name": "KioskForm"
+                },
+                "offers": {
+                  "@type": "Offer",
+                  "url": "https://kioskform.co.uk/products/large-kiosk",
+                  "priceCurrency": "GBP",
+                  "price": "2499",
+                  "priceValidUntil": "2025-12-31",
+                  "itemCondition": "https://schema.org/NewCondition",
+                  "availability": "https://schema.org/InStock"
+                },
+                "additionalProperty": [
+                  {
+                    "@type": "PropertyValue",
+                    "name": "dimensions",
+                    "value": "218×143 cm"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "internalHeight",
+                    "value": "2.10 meters"
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    "name": "weight",
+                    "value": "400 kg approx"
+                  }
+                ]
+              },
+              {
+                "@type": "Organization",
+                "@id": "https://kioskform.co.uk/#organization",
+                "name": "KioskForm",
+                "url": "https://kioskform.co.uk/",
+                "logo": {
+                  "@type": "ImageObject",
+                  "inLanguage": "en-GB",
+                  "@id": "https://kioskform.co.uk/#/schema/logo/image/",
+                  "url": "https://kioskform.co.uk/logo.png",
+                  "contentUrl": "https://kioskform.co.uk/logo.png",
+                  "width": 192,
+                  "height": 192,
+                  "caption": "KioskForm"
+                },
+                "image": {
+                  "@id": "https://kioskform.co.uk/#/schema/logo/image/"
+                }
+              }
+            ]
+          })
+        }}
+      />
+      <KioskContent />
+    </>
+  );
 }

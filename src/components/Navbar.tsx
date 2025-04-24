@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Building, Phone, Info } from 'lucide-react';
+import { Menu, X, Building, Phone, Info, FileText } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -55,6 +55,7 @@ const Navbar = () => {
             <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Home</Link>
             <Link href="/kiosks" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
             <Link href="/AboutUs" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>About</Link>
+            <Link href="/blog" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Blog</Link>
             <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center">
               <Phone className="w-4 h-5 mr-1" />
               Contact Us
@@ -92,6 +93,10 @@ const Navbar = () => {
             <Link href="/AboutUs" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
               <Info className="w-4 h-4 mr-2" />
               About
+            </Link>
+            <Link href="/blog" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+              <FileText className="w-4 h-4 mr-2" />
+              Blog
             </Link>
             <Link href="/ContactUs" className="flex items-center px-3 py-2 bg-blue-600 text-white rounded-md">
               <Phone className="w-4 h-4 mr-2" />
