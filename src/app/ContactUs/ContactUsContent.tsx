@@ -126,7 +126,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+44 (0)7419208820</p>
+                    <p className="text-gray-600">+44 7729022777</p>
                     <p className="text-sm text-gray-500">Monday to Saturday, 9am - 7pm</p>
                   </div>
                 </div>
@@ -365,7 +365,7 @@ const ContactPage = () => {
             <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-md p-6 text-white">
               <h3 className="text-xl font-bold mb-3">Need a Quick Quote?</h3>
               <p className="text-blue-100 mb-4">
-                If you're in a hurry, call us directly at <strong>+44 7419208820</strong> for immediate assistance.
+                If you're in a hurry, call us directly at <strong>+44 7729022777</strong> for immediate assistance.
               </p>
               <button
                 className="bg-white text-blue-700 font-medium px-4 py-2 rounded-md hover:bg-blue-50 transition-colors inline-flex items-center"

@@ -114,7 +114,7 @@ export default function Home() {
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "telephone": "07419208820",
+            "telephone": "07729022777",
             "contactType": "sales"
           }
         ],
