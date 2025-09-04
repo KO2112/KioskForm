@@ -41,6 +41,42 @@ const OurProductsSection = () => {
       specs: "Dimensions: 2.18m × 1.43m × 2.10m (H), Weight: 400 kg approx.",
       price: "£2,499",
     },
+    {
+      id: "Portable-toilet-130x130",
+      title: "Portable Toilet 130×130",
+      dimensions: "130×130 cm",
+      description: "Complete welfare unit with flushing toilet, wash basin, and electrical setup.",
+      image: "/portable-toilet-130x130-1.png",
+      specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 180 kg approx.",
+      price: "£1,999",
+    },
+    {
+      id: "Portable-Kiosk-130x210",
+      title: "Portable Kiosk 130×210",
+      dimensions: "130×210 cm",
+      description: "Spacious security kiosk with reception desk and sliding windows for professional service.",
+      image: "/portable-kiosk-130x210-1.jpg",
+      specs: "Dimensions: 1.30m × 2.10m × 2.35m (H), Weight: 220 kg approx.",
+      price: "£2,599",
+    },
+    {
+      id: "Modular-Kiosk-150X150",
+      title: "Modular Kiosk 150×150",
+      dimensions: "150×150 cm",
+      description: "Enhanced modular kiosk with larger interior space for reception and security applications.",
+      image: "/modular-kiosk-150x150-1.jpg",
+      specs: "Dimensions: 1.50m × 1.50m × 2.35m (H), Weight: 200 kg approx.",
+      price: "£2,049",
+    },
+    {
+      id: "Modular-Kiosk-210X210",
+      title: "Modular Kiosk 210×210",
+      dimensions: "210×210 cm",
+      description: "Premium large modular kiosk with spacious 4.41m² interior for commercial applications.",
+      image: "/modular-kiosk-210x210-1.jpg",
+      specs: "Dimensions: 2.10m × 2.10m × 2.35m (H), Weight: 280 kg approx.",
+      price: "£2,499",
+    },
   ]
 
   return (

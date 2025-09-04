@@ -153,6 +153,30 @@ export default function Page() {
                     name: "Large Modular Kiosk",
                     url: "https://kioskform.co.uk/products/large-kiosk",
                   },
+                  {
+                    "@type": "ListItem",
+                    position: 5,
+                    name: "Portable Toilet Unit 130x130cm",
+                    url: "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 6,
+                    name: "Portable Kiosk 130x210cm",
+                    url: "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 7,
+                    name: "Modular Kiosk 150x150cm",
+                    url: "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 8,
+                    name: "Modular Kiosk 210x210cm",
+                    url: "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                  },
                 ],
               },
               {
@@ -328,6 +352,182 @@ export default function Page() {
                     "@type": "PropertyValue",
                     name: "weight",
                     value: "400 kg approx",
+                  },
+                ],
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                name: "Portable Toilet Unit 130x130cm",
+                description:
+                  "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections for welfare facilities.",
+                sku: "portable-toilet-130x130",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kioskform.co.uk/portable-toilet-130x130-1.png",
+                  width: 800,
+                  height: 600,
+                },
+                brand: {
+                  "@type": "Brand",
+                  name: "KioskForm",
+                },
+                offers: {
+                  "@type": "Offer",
+                  url: "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                  priceCurrency: "GBP",
+                  price: "1899",
+                  priceValidUntil: "2025-12-31",
+                  itemCondition: "https://schema.org/NewCondition",
+                  availability: "https://schema.org/InStock",
+                },
+                additionalProperty: [
+                  {
+                    "@type": "PropertyValue",
+                    name: "dimensions",
+                    value: "130×130 cm",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "internalHeight",
+                    value: "2.35 meters",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "weight",
+                    value: "180 kg approx",
+                  },
+                ],
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                name: "Portable Kiosk 130x210cm",
+                description:
+                  "Extended portable kiosk with reception desk, sliding windows, and professional security features for service applications.",
+                sku: "portable-kiosk-130x210",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kioskform.co.uk/portable-kiosk-130x210-1.jpg",
+                  width: 800,
+                  height: 600,
+                },
+                brand: {
+                  "@type": "Brand",
+                  name: "KioskForm",
+                },
+                offers: {
+                  "@type": "Offer",
+                  url: "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                  priceCurrency: "GBP",
+                  price: "2199",
+                  priceValidUntil: "2025-12-31",
+                  itemCondition: "https://schema.org/NewCondition",
+                  availability: "https://schema.org/InStock",
+                },
+                additionalProperty: [
+                  {
+                    "@type": "PropertyValue",
+                    name: "dimensions",
+                    value: "130×210 cm",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "internalHeight",
+                    value: "2.35 meters",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "weight",
+                    value: "220 kg approx",
+                  },
+                ],
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                name: "Modular Kiosk 150x150cm",
+                description:
+                  "Spacious modular kiosk with enhanced interior space, reception desk, and professional features for commercial applications.",
+                sku: "modular-kiosk-150x150",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kioskform.co.uk/modular-kiosk-150x150-1.jpg",
+                  width: 800,
+                  height: 600,
+                },
+                brand: {
+                  "@type": "Brand",
+                  name: "KioskForm",
+                },
+                offers: {
+                  "@type": "Offer",
+                  url: "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                  priceCurrency: "GBP",
+                  price: "2399",
+                  priceValidUntil: "2025-12-31",
+                  itemCondition: "https://schema.org/NewCondition",
+                  availability: "https://schema.org/InStock",
+                },
+                additionalProperty: [
+                  {
+                    "@type": "PropertyValue",
+                    name: "dimensions",
+                    value: "150×150 cm",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "internalHeight",
+                    value: "2.35 meters",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "weight",
+                    value: "250 kg approx",
+                  },
+                ],
+              },
+              {
+                "@type": "Product",
+                "@id": "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                name: "Modular Kiosk 210x210cm",
+                description:
+                  "Premium large modular kiosk with spacious 4.41m² interior, ideal for commercial and security applications.",
+                sku: "modular-kiosk-210x210",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://kioskform.co.uk/modular-kiosk-210x210-1.jpg",
+                  width: 800,
+                  height: 600,
+                },
+                brand: {
+                  "@type": "Brand",
+                  name: "KioskForm",
+                },
+                offers: {
+                  "@type": "Offer",
+                  url: "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                  priceCurrency: "GBP",
+                  price: "2899",
+                  priceValidUntil: "2025-12-31",
+                  itemCondition: "https://schema.org/NewCondition",
+                  availability: "https://schema.org/InStock",
+                },
+                additionalProperty: [
+                  {
+                    "@type": "PropertyValue",
+                    name: "dimensions",
+                    value: "210×210 cm",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "internalHeight",
+                    value: "2.35 meters",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "weight",
+                    value: "350 kg approx",
                   },
                 ],
               },
