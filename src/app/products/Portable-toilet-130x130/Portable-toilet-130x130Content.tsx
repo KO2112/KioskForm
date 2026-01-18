@@ -1,6 +1,5 @@
 "use client"
 
-
 import Link from "next/link"
 import { useState } from "react"
 import {
@@ -13,20 +12,39 @@ import {
   ThermometerSnowflake,
   BatteryCharging,
   Star,
-  ImageIcon,
-  ShieldIcon,
   Droplets,
   Users,
   HelpCircle,
   Weight,
   Home,
-  Wrench,
-  Zap,
+  Building,
+  X,
+  ChevronLeft,
+  ZoomIn,
 } from "lucide-react"
 
 const PortableToilet130x130Content = () => {
   const [activeTab, setActiveTab] = useState("specifications")
   const [activeThumbnail, setActiveThumbnail] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxIndex, setLightboxIndex] = useState(0)
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index)
+    setLightboxOpen(true)
+  }
+
+  const closeLightbox = () => {
+    setLightboxOpen(false)
+  }
+
+  const goToPrevious = () => {
+    setLightboxIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+  }
+
+  const goToNext = () => {
+    setLightboxIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
 
   // 10 images for the portable toilet gallery
   const images = [
@@ -43,25 +61,25 @@ const PortableToilet130x130Content = () => {
   ]
 
   const specs = [
-    { icon: Ruler, name: "Outer Dimensions", value: "130 × 130 × 235 cm (W×L×H)" },
-    { icon: Weight, name: "Weight", value: "220 kg approx." },
+    { icon: Ruler, name: "Outer Dimensions", value: "1.3 × 1.3 × 2.35 m (4'11\" × 4'11\" × 7'9\")" },
+    { icon: Weight, name: "Weight", value: "Approximately 200 kg" },
     {
       icon: ThermometerSnowflake,
-      name: "Insulation",
-      value: "Steel sandwich panels with weather-resistant insulation",
+      name: "Wall Construction",
+      value: "Steel double sandwich panels, RAL 9002 color, 50mm styrofoam core, 3mm thick internal and external steel layers",
     },
-    { icon: BatteryCharging, name: "Electrical", value: "Lighting, fuse box, 16 Amp power" },
-    { icon: Droplets, name: "Plumbing", value: "Flushing toilet, wash basin, sewer connection" },
-    { icon: Home, name: "Interior Features", value: "Mirror, soap dispenser, toilet paper holder, vinyl flooring" },
-    { icon: Wrench, name: "Connections", value: "Mains water, waste, and electricity connections" },
-    { icon: Zap, name: "Lifting", value: "Equipped with lugs on top for easy lifting and placement" },
+    { icon: BatteryCharging, name: "Electrical", value: "LED lighting, double plug socket, fuse box, external 16A female site socket" },
+    { icon: Droplets, name: "Plumbing", value: "Ceramic flush toilet, sink, sewer and water connections" },
+    { icon: Home, name: "Interior Features", value: "Mirror, liquid soap dispenser, toilet paper holder, vinyl flooring, ventilation grille, floor drain" },
+    { icon: Building, name: "Fixtures", value: "Ceramic flush toilet, sink, lockable door, built-in bidet wash function" },
+    { icon: Box, name: "Base", value: "Thick fiber cement board with forklift slots and 4 lifting lugs on roof corners" },
   ]
 
   const applications = [
     { icon: Users, name: "Outdoor Events" },
     { icon: Box, name: "Festivals" },
-    { icon: Wrench, name: "Construction Sites" },
-    { icon: ShieldIcon, name: "Industrial Sites" },
+    { icon: Building, name: "Construction Sites" },
+    { icon: Building, name: "Industrial Sites" },
     { icon: Users, name: "Employee Welfare" },
     { icon: Box, name: "Job Sites" },
     { icon: Info, name: "Temporary Facilities" },
@@ -74,32 +92,32 @@ const PortableToilet130x130Content = () => {
     {
       question: "What are the key features of this portable toilet unit?",
       answer:
-        "This unit includes a flushing toilet, wash basin with mirror, liquid soap dispenser, toilet paper holder, vinyl flooring, electric lighting, ventilation grille, and a lockable door. It connects directly to waste, water, and electricity systems.",
+        "This unit includes a ceramic flush toilet with built-in bidet wash function, wash basin with mirror, liquid soap dispenser, toilet paper holder, vinyl flooring, LED lighting, ventilation grille, floor drain, and a lockable door. It connects directly to waste, water, and electricity systems.",
     },
     {
       question: "How should the portable toilet be installed?",
       answer:
-        "For optimal use, we recommend placing the unit on a concrete base or steel beams. It connects directly to mains waste, fresh water, and electricity systems. The unit is equipped with lugs on top for easy lifting and placement.",
+        "For optimal use, we recommend placing the unit on a concrete base or steel beams. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting lugs on the roof corners for easy positioning. Ready to use - just place it in a safe spot and plug into power.",
     },
     {
-      question: "What plumbing connections are required?",
+      question: "What are the exact dimensions and weight?",
       answer:
-        "The unit is plumbed for mains connections including waste and fresh water. It features a sewer connection and is designed to connect directly to existing utility systems for immediate use.",
+        "Outer dimensions (W×L×H): 1.3 × 1.3 × 2.35 meters approx. (4'11\" × 4'11\" × 7'9\"). Weight: Approximately 200 kg.",
     },
     {
       question: "What electrical systems are included?",
       answer:
-        "The toilet unit comes with comprehensive electrical installation including lighting, a fuse box, and 16 Amp power capacity. All electrical components meet safety standards for outdoor and industrial use.",
+        "The unit comes with comprehensive electrical installation including LED lighting, a double plug socket, a fuse box, and an external 16A female site socket. Ready to use - just plug into the power.",
+    },
+    {
+      question: "What are the delivery and pickup options?",
+      answer:
+        "Nationwide delivery is available. Free in-person pick-up is available from our warehouse at LE13BW. For delivery cost, please provide your postcode. Contact us at Mobile: 07497 954779.",
     },
     {
       question: "Is this toilet suitable for outdoor and industrial use?",
       answer:
-        "Absolutely. Built with steel sandwich panels offering excellent weather-resistant insulation, this unit is designed to withstand heavy use and tough conditions, making it ideal for outdoor events, festivals, and industrial sites.",
-    },
-    {
-      question: "What maintenance is required?",
-      answer:
-        "The unit features vinyl flooring for easy cleaning and maintenance. Regular cleaning of the toilet, basin, and interior surfaces is recommended. The durable construction minimizes maintenance requirements.",
+        "Absolutely. Built with steel double sandwich panels with 50mm styrofoam core insulation offering excellent weather-resistant insulation, this unit is designed to withstand heavy use and tough conditions, making it ideal for outdoor events, festivals, and industrial sites.",
     },
   ]
 
@@ -128,42 +146,57 @@ const PortableToilet130x130Content = () => {
           {/* Left Column - Images */}
           <div className="mb-8 lg:mb-0">
             {/* Main Image */}
-            <div className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md mb-4">
-              <div className="h-96 w-full relative bg-gray-100 flex items-center justify-center">
+            <div 
+              className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md mb-4 cursor-pointer group"
+              onClick={() => openLightbox(activeThumbnail)}
+            >
+              <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
                 <img
-                  src={images[activeThumbnail] || "/placeholder.svg"}
+                  src={
+                    images[activeThumbnail] ||
+                    "/placeholder.svg?height=500&width=500&query=portable toilet 130x130cm exterior view"
+                   || "/placeholder.svg"}
                   alt="Portable Toilet Unit 130x130cm view"
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                 />
-                {/* 360 View Button */}
-                <button className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all">
-                  <ImageIcon className="h-5 w-5 text-blue-700" />
-                </button>
+                {/* Zoom indicator */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-3 shadow-lg">
+                    <ZoomIn className="h-6 w-6 text-blue-700" />
+                  </div>
+                </div>
+                {/* Image counter */}
+                <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
+                  {activeThumbnail + 1} / {images.length}
+                </div>
               </div>
             </div>
 
-            {/* Thumbnails - 10 images in 2 rows */}
-            <div className="grid grid-cols-5 gap-2">
+            {/* Thumbnails - 10 images in rows */}
+            <div className="grid grid-cols-6 gap-2">
               {images.map((img, index) => (
                 <button
                   key={index}
-                  className={`border ${activeThumbnail === index ? "border-blue-600" : "border-gray-200"} rounded-md overflow-hidden h-16 bg-white flex items-center justify-center`}
+                  className={`border-2 ${activeThumbnail === index ? "border-blue-600 ring-2 ring-blue-200" : "border-gray-200 hover:border-blue-400"} rounded-md overflow-hidden h-20 bg-white flex items-center justify-center transition-all`}
                   onClick={() => setActiveThumbnail(index)}
                 >
                   <img
-                    src={img || "/placeholder.svg"}
+                    src={img || `/placeholder.svg?height=80&width=80&query=portable toilet view ${index + 1}`}
                     alt={`Thumbnail ${index + 1}`}
                     className="max-h-full max-w-full object-contain"
                   />
                 </button>
               ))}
             </div>
+            
+            {/* Click to expand hint */}
+            <p className="text-center text-sm text-gray-500 mt-3">Click on the main image to expand</p>
           </div>
 
           {/* Right Column - Product Info */}
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Toilet Unit Welfare Cabin 130x130cm</h1>
-            <p className="text-gray-600 mb-4">Modular Toilet Block | Welfare Cabin | Portable Restroom</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Toilet Unit Welfare Cabin Modular Toilet Block 130x130 cm</h1>
+            <p className="text-gray-600 mb-4">Welfare Cabin | Modular Toilet Block | Portable Restroom | (4'11" X 4'11" X 7'9")</p>
 
             {/* Price Tag */}
             <div className="flex items-baseline mb-6">
@@ -174,8 +207,7 @@ const PortableToilet130x130Content = () => {
             {/* Short Description */}
             <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
               <p className="text-blue-800 text-sm">
-                Brand new, durable, and fully insulated portable toilet unit with flushing toilet and wash basin.
-                Perfect for outdoor events, festivals, and industrial sites with complete utility connections.
+                Brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'11" X 4'11" X 7'9"). Ready to use - just place in a safe spot and plug into power. Made in the EU.
               </p>
             </div>
 
@@ -185,27 +217,27 @@ const PortableToilet130x130Content = () => {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Flushing toilet and wash basin with mirror</span>
+                  <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Steel sandwich panels with weather-resistant insulation</span>
+                  <span className="text-gray-700">Ceramic flush toilet with built-in bidet wash function</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Complete electrical installation with lighting and 16 Amp power</span>
+                  <span className="text-gray-700">Sink with mirror, liquid soap dispenser, toilet paper holder, vinyl flooring</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Vinyl flooring and ventilation grille for comfort</span>
+                  <span className="text-gray-700">Complete electrical: LED lighting, double plug socket, fuse box, external 16A site socket</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Sewer connection and mains water/waste connections</span>
+                  <span className="text-gray-700">Sewer and mains water connections, ventilation grille, floor drain</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Lifting lugs for easy transportation and placement</span>
+                  <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting lugs. Made in the EU</span>
                 </li>
               </ul>
             </div>
@@ -221,9 +253,15 @@ const PortableToilet130x130Content = () => {
             </div>
 
             {/* Delivery Info */}
-            <div className="flex items-center text-sm text-gray-600 mb-6">
-              <Truck className="h-5 w-5 text-gray-500 mr-2" />
-              <span>UK mainland delivery | Usually delivered within 3-4 working days</span>
+            <div className="flex flex-col text-sm text-gray-600 mb-6 gap-2">
+              <div className="flex items-center">
+                <Truck className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Nationwide delivery available | Delivery cost available upon providing postcode</span>
+              </div>
+              <div className="flex items-center">
+                <Box className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Free in-person pick-up from our warehouse at LE13BW</span>
+              </div>
             </div>
 
             {/* USPs */}
@@ -304,23 +342,16 @@ const PortableToilet130x130Content = () => {
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
                   <div className="prose prose-blue max-w-none text-gray-700">
                     <p>
-                      This portable toilet cabin is a practical solution for businesses, outdoor events, festivals, or
-                      industrial sites. Built to withstand heavy use and tough conditions, it features a flushing toilet
-                      and wash basin, providing a clean and convenient restroom for employees or customers.
+                      Portable Toilet Unit Welfare Cabin Modular Toilet Block 130x130 cm. Brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'11" X 4'11" X 7'9"). This portable toilet cabin is a practical solution for businesses, outdoor events, festivals, or industrial sites. Built to withstand heavy use and tough conditions, it features a ceramic flush toilet and wash basin, providing a clean and convenient restroom for employees or customers.
                     </p>
                     <p>
-                      Ideal for outdoor settings or prefabricated buildings, the cabin is perfect for job sites or
-                      festivals. Its compact, portable design ensures easy transportation and quick setup. Constructed
-                      with steel sandwich panels, it provides weather-resistant insulation.
+                      Ideal for outdoor settings or prefabricated buildings, the cabin is perfect for job sites or festivals. Its compact, portable design ensures easy transportation and quick setup. Constructed with steel double sandwich panels, it provides excellent weather resistance and insulation. The walls feature a RAL 9002 color, a 50mm styrofoam core insulation, and 3mm-thick internal and external steel layers.
                     </p>
                     <p>
-                      Features include a sewer connection, sink, mirror, liquid soap dispenser, toilet paper holder,
-                      ventilation grille, vinyl flooring, electric lighting, water, and a lockable door. It connects
-                      directly to waste, water, and electricity systems.
+                      Includes sewer and water hookups, a ceramic flush toilet with sink, a mirror, a liquid soap dispenser, a toilet paper holder, a ventilation grille, a floor drain, vinyl flooring, LED electric lighting, a double socket, and a lockable door. It's fully connected to waste, water, and power systems. The toilet also features a built-in non-electric bidet wash function (smart toilet) with a nozzle that extends for cleaning after use.
                     </p>
                     <p>
-                      Plumbed for mains connections—waste and fresh water. Equipped with lugs on top for easy lifting
-                      and placement. Electrical setup includes lighting, a fuse box, and 16 Amp power.
+                      Electrical setup includes LED lighting, a double plug socket, a fuse box, and an external 16A female site socket. The base is made from thick fiber cement board with forklift slots and 4 lifting lugs on the roof corners. Ready to use - just place in a safe spot and plug into the power. Made in the EU.
                     </p>
                   </div>
                 </div>
@@ -332,9 +363,8 @@ const PortableToilet130x130Content = () => {
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-6">Versatile Applications</h3>
                 <p className="text-gray-700 mb-8">
-                  This portable toilet unit is a practical solution for businesses, outdoor events, festivals, or
-                  industrial sites. Built to withstand heavy use and tough conditions, providing clean and convenient
-                  restroom facilities wherever needed.
+                  The compact 130x130cm Portable Toilet Unit is perfectly suitable for a wide range of commercial uses and is
+                  ideal for outdoor events, construction sites, industrial areas, and commercial premises where reliable restroom facilities are important.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -354,9 +384,7 @@ const PortableToilet130x130Content = () => {
                 <div className="mt-10 bg-blue-50 rounded-lg p-6 border border-blue-100">
                   <h4 className="font-semibold text-blue-900 mb-2">Perfect for Multiple Industries</h4>
                   <p className="text-blue-800">
-                    This portable toilet unit is ideal for outdoor events, festivals, construction sites, industrial
-                    areas, employee welfare facilities, temporary installations, and remote locations. It offers a
-                    cost-effective alternative to traditional construction while providing complete restroom facilities.
+                    This portable toilet unit is ideal for outdoor events, festivals, construction sites, industrial areas, employee welfare facilities, job sites, temporary installations, and remote locations. It offers a cost-effective alternative to traditional construction while providing complete, fully-equipped restroom facilities.
                   </p>
                 </div>
               </div>
@@ -403,9 +431,9 @@ const PortableToilet130x130Content = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0 md:mr-8">
-              <h2 className="text-2xl font-bold mb-2">Ready to learn more about our Portable Toilet Unit?</h2>
+              <h2 className="text-2xl font-bold mb-2">Ready to enhance your facility with our Portable Toilet Unit?</h2>
               <p className="text-blue-100">
-                Our team is available to answer any questions and help you with your inquiry.
+                Our team is available to answer any questions and help you with your portable restroom inquiry.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
@@ -425,28 +453,97 @@ const PortableToilet130x130Content = () => {
         <div className="prose prose-blue max-w-none text-gray-600 text-sm">
           <h2>Portable Toilet Unit Welfare Cabin Modular Toilet Block 130x130 cm</h2>
           <p>
-            Brand new, durable, and fully insulated, this unit measures approximately 130x130 cm. This portable toilet
-            cabin is a practical solution for businesses, outdoor events, festivals, or industrial sites. Built to
-            withstand heavy use and tough conditions, it features a flushing toilet and wash basin, providing a clean
-            and convenient restroom for employees or customers.
+            Brand new, durable, and fully insulated, this unit's outer measures approximately 130x130 cm. (4'11"X 4'11" X 7'9") This portable toilet cabin is a practical solution for businesses, outdoor events, festivals, or industrial sites. Built to withstand heavy use and tough conditions, it features a ceramic flush toilet and wash basin, providing a clean and convenient restroom for employees or customers. Ideal for outdoor settings or prefabricated buildings, the cabin is perfect for job sites or festivals.
           </p>
           <p>
-            Ideal for outdoor settings or prefabricated buildings, the cabin is perfect for job sites or festivals. Its
-            compact, portable design ensures easy transportation and quick setup. It is recommended to place it on a
-            concrete base or steel beams, offering a cost-effective alternative to traditional construction.
+            Constructed with steel double sandwich panels, it provides excellent weather resistance and insulation. The walls feature a RAL 9002 color, a 50 mm styrofoam core insulation, and each 3 mm-thick internal and external steel layers. The base is made from thick fiber cement board with forklift slots and 4 lifting lugs on the roof at the corners. For optimal use, it is recommended to place it on a concrete base or steel beams.
           </p>
           <p>
-            Constructed with steel sandwich panels, it provides weather-resistant insulation. Outer dimensions (W×L×H):
-            1.3 × 1.3 × 2.35 meters. Features include a sewer connection, sink, mirror, liquid soap dispenser, toilet
-            paper holder, ventilation grille, vinyl flooring, electric lighting, water, and a lockable door.
+            Includes sewer and water hookups, a ceramic flush toilet with sink, a mirror, a liquid soap dispenser, a toilet paper holder, a ventilation grille, a floor drain, vinyl flooring, LED electric lighting, a double socket, and a lockable door. It's fully connected to waste, water, and power systems. The toilet also features a built-in non-electric bidet wash function (smart toilet) with a nozzle that extends for cleaning after use.
           </p>
           <p>
-            It connects directly to waste, water, and electricity systems. Plumbed for mains connections—waste and fresh
-            water. Equipped with lugs on top for easy lifting and placement. Electrical setup includes lighting, a fuse
-            box, and 16 Amp power. Weight: Approximately 220 kg.
+            Electrical installation includes LED lighting, a double plug socket, a fuse box, and an external 16A female site socket. Weight: Approximately 200 kg. Nationwide delivery is available. Free in-person pick-up available from our warehouse at LE13BW. Mobile: 07497 954779. Made in the EU.
           </p>
         </div>
       </div>
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-50 bg-transparent"
+            onClick={closeLightbox}
+          >
+            <X className="h-8 w-8" />
+          </button>
+
+          {/* Image counter */}
+          <div className="absolute top-4 left-4 text-white text-lg font-medium">
+            {lightboxIndex + 1} / {images.length}
+          </div>
+
+          {/* Previous button */}
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToPrevious()
+            }}
+          >
+            <ChevronLeft className="h-8 w-8" />
+          </button>
+
+          {/* Main lightbox image */}
+          <div 
+            className="max-w-[90vw] max-h-[85vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[lightboxIndex] || "/placeholder.svg"}
+              alt={`Portable Toilet view ${lightboxIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain"
+            />
+          </div>
+
+          {/* Next button */}
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToNext()
+            }}
+          >
+            <ChevronRight className="h-8 w-8" />
+          </button>
+
+          {/* Thumbnail strip at bottom */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 max-w-[90vw] overflow-x-auto pb-2">
+            {images.map((img, index) => (
+              <button
+                key={index}
+                className={`flex-shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                  lightboxIndex === index 
+                    ? "border-white ring-2 ring-white/50" 
+                    : "border-white/30 hover:border-white/60"
+                } bg-transparent`}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setLightboxIndex(index)
+                }}
+              >
+                <img
+                  src={img || "/placeholder.svg"}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

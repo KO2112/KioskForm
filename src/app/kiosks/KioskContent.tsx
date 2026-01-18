@@ -125,7 +125,7 @@ const KiosksPage = () => {
       id: "Modular-Kiosk-150X150",
       title: "Modular Kiosk 150x150cm",
       subtitle: "Reception Desk | Security Booth | Service Center",
-      price: "£2049",
+      price: "£1999",
       dimensions: "150×150 cm",
       description: "Spacious modular kiosk with enhanced interior space, reception desk, and professional features.",
       image: "/modular-kiosk-150x150-1.jpg",
@@ -273,9 +273,94 @@ const KiosksPage = () => {
           </div>
         </div>
 
-        {/* Products Grid - Improved Layout with Larger Images */}
+        {/* Featured Products Section */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Products</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {kiosks
+              .filter((kiosk) => 
+                kiosk.id === "Modular-Kiosk-130x130" || 
+                kiosk.id === "Portable-toilet-130x130" || 
+                kiosk.id === "Modular-Kiosk-150X150"
+              )
+              .map((kiosk) => (
+                <div
+                  key={kiosk.id}
+                  className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
+                >
+                  {/* Product Image */}
+                  <div
+                    className="h-96 sm:h-128 w-full relative bg-blue-100"
+                    style={{
+                      backgroundImage: `url(${kiosk.image})`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-5">
+                      <div className="flex justify-between items-center w-full mb-2">
+                        <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full inline-block">
+                          {kiosk.dimensions}
+                        </span>
+                        <span className="bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+                          {kiosk.price}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold text-white">{kiosk.title}</h3>
+                      <p className="text-blue-100 text-sm">{kiosk.subtitle}</p>
+                    </div>
+                  </div>
+
+                  {/* Product Details */}
+                  <div className="p-5 flex-grow">
+                    <p className="text-gray-700 text-sm mb-4">{kiosk.description}</p>
+
+                    {/* Key Features */}
+                    <span className="font-bold text-gray-900 mb-2 text-sm">KEY FEATURES</span>
+                    <ul className="space-y-2 mb-4">
+                      {kiosk.features.slice(0, 3).map((feature, i) => (
+                        <li key={i} className="flex items-start text-sm">
+                          <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Applications Tags */}
+                    <span className="font-bold text-gray-900 mb-2 text-sm">APPLICATIONS</span>
+                    <div className="flex flex-wrap gap-2">
+                      {kiosk.applications.slice(0, 4).map((app, i) => (
+                        <span key={i} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full">
+                          {app}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* CTA */}
+                  <div className="p-5 bg-gray-50 border-t border-gray-100">
+                    <Link
+                      href={`/products/${kiosk.id}`}
+                      className="flex justify-center items-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors w-full text-sm font-medium"
+                    >
+                      View Kiosk
+                      <ChevronRight className="w-4 h-4 ml-1" />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* All Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {kiosks.map((kiosk) => (
+          {kiosks
+            .filter((kiosk) => 
+              kiosk.id !== "Modular-Kiosk-130x130" && 
+              kiosk.id !== "Portable-toilet-130x130" && 
+              kiosk.id !== "Modular-Kiosk-150X150"
+            )
+            .map((kiosk) => (
             <div
               key={kiosk.id}
               className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"

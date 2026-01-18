@@ -52,12 +52,12 @@ const Navbar = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
-            <Link href="/" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Home</Link>
-            <Link href="/kiosks" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
-            <Link href="/AboutUs" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>About</Link>
-            <Link href="/blog" className={`px-3 py-2 rounded-md text-sm font-medium ${textColor} ${hoverBg}`}>Blog</Link>
-            <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 flex items-center">
-              <Phone className="w-4 h-5 mr-1" />
+            <Link href="/" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Home</Link>
+            <Link href="/kiosks" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
+            <Link href="/AboutUs" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>About</Link>
+            <Link href="/blog" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Blog</Link>
+            <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-5 py-3 rounded-md text-base font-medium hover:bg-blue-700 flex items-center">
+              <Phone className="w-5 h-5 mr-2" />
               Contact Us
             </Link>
           </div>

@@ -15,43 +15,67 @@ import {
   ImageIcon,
   Coffee,
   Ticket,
-  Users,
+  Users,  
   HelpCircle,
   Weight,
   Home,
   Building,
+  X,
+  ChevronLeft,
+  ZoomIn,
 } from "lucide-react"
 
 const ModularKiosk130x130Content = () => {
   const [activeTab, setActiveTab] = useState("specifications")
   const [activeThumbnail, setActiveThumbnail] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxIndex, setLightboxIndex] = useState(0)
 
-  // 10 images for the kiosk gallery
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index)
+    setLightboxOpen(true)
+  }
+
+  const closeLightbox = () => {
+    setLightboxOpen(false)
+  }
+
+  const goToPrevious = () => {
+    setLightboxIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+  }
+
+  const goToNext = () => {
+    setLightboxIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
+
+  // 11 images for the kiosk gallery
   const images = [
-    "/modular-kiosk-130x130-1.jpg",
-    "/modular-kiosk-130x130-2.png",
-    "/modular-kiosk-130x130-3.png",
-    "/modular-kiosk-130x130-4.png",
-    "/modular-kiosk-130x130-5.jpg",
-    "/modular-kiosk-130x130-6.png",
-    "/modular-kiosk-130x130-7.jpg",
-    "/modular-kiosk-130x130-8.jpg",
-    "/modular-kiosk-130x130-9.jpg",
-    "/modular-kiosk-130x130-10.jpg",
+    "/130x130kiosk.jpg",
+    "/130x130kiosk2.jpg",
+    "/130x130kiosk3.jpg",
+    "/130x130kiosk4.jpg",
+    "/130x130kiosk5.jpg",
+    "/130x130kiosk6.jpg",
+    "/130x130kiosk7.jpg",
+    "/130x130kiosk8.jpg",
+    "/130x130kiosk9.jpg",
+    "/130x130kiosk10.jpg",
+    "/130x130kiosk11.jpg",
   ]
 
   const specs = [
-    { icon: Ruler, name: "Outer Dimensions", value: "130 × 130 × 235 cm (W×L×H)" },
-    { icon: Ruler, name: "Window Dimensions", value: "W64×H80 cm, foldable window W64×H40 cm" },
-    { icon: Weight, name: "Weight", value: "170 kg approx." },
+    { icon: Ruler, name: "Outer Dimensions", value: "1.3 × 1.3 × 2.35 m (4'3\" × 4'3\" × 7'9\")" },
+    { icon: Ruler, name: "Window Dimensions", value: "W64 × H80 cm; foldable window W64 × H40 cm" },
+    { icon: Weight, name: "Weight", value: "Approximately 180 kg" },
     {
       icon: ThermometerSnowflake,
-      name: "Insulation",
-      value: "Steel sandwich panels with weather-resistant insulation",
+      name: "Wall Construction",
+      value: "Steel double sandwich panels, RAL 9002 color, 50mm styrofoam core, 3mm thick internal and external steel layers",
     },
-    { icon: BatteryCharging, name: "Electrical", value: "Light, double plug socket, fuse box (16 Amps)" },
-    { icon: Home, name: "Interior Features", value: "Reception desk, corner shelf, PVC flooring" },
-    { icon: Building, name: "Construction", value: "Lockable door with upward sliding and fixed windows" },
+    { icon: BatteryCharging, name: "Electrical", value: "LED light, double plug socket, fuse box, external 16A female 3-pin site socket" },
+    { icon: Home, name: "Interior Features", value: "Internal reception desk, PVC flooring, LED lighting" },
+    { icon: Building, name: "Construction", value: "Lockable door, upward sliding and fixed windows" },
+    { icon: Box, name: "Base", value: "Thick fiber cement board with forklift slots and 4 lifting eyes on roof corners" },
   ]
 
   const applications = [
@@ -63,40 +87,40 @@ const ModularKiosk130x130Content = () => {
     { icon: Users, name: "Welfare Units" },
     { icon: Home, name: "Portable Offices" },
     { icon: Coffee, name: "Catering Units" },
-    { icon: Building, name: "Reception Areas" },
-    { icon: Info, name: "Customer Service Points" },
+    { icon: Building, name: "Security Cabins" },
+    { icon: Info, name: "Surveillance Points" },
   ]
 
   const faqs = [
     {
       question: "What are the key features of this 130x130cm modular kiosk?",
       answer:
-        "This compact modular kiosk includes an internal reception desk, corner shelf, PVC flooring, upward sliding and fixed windows, complete electrical installation with double plug socket, and a lockable door for security.",
+        "This compact modular kiosk features steel double sandwich panels with RAL 9002 color and 50mm styrofoam core insulation. It includes an internal reception desk, PVC flooring, LED lighting, upward sliding and fixed windows, complete electrical installation with LED light, double plug socket, fuse box, external 16A female 3-pin site socket, and a lockable door for security.",
     },
     {
       question: "How should the modular kiosk be installed?",
       answer:
-        "For optimal use, we recommend placing the kiosk on a concrete base or steel beams. This provides excellent stability and makes it a cost-effective alternative to traditional constructions.",
+        "For optimal use, we recommend placing the kiosk on a concrete base or steel beams. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting eyes on the roof corners for easy positioning. Ready to use - just place it in a safe spot and plug into power.",
     },
     {
-      question: "Can the kiosk be customized with branding?",
+      question: "What are the exact dimensions and weight?",
       answer:
-        "Yes, the modular kiosk is fully customizable to reflect your brand identity. You can add logos, signboards, and choose custom colors to match your business requirements.",
+        "Outer dimensions (W×L×H): 1.3 × 1.3 × 2.35 meters approx. (4'3\" × 4'3\" × 7'9\"). Window dimensions: W64 × H80 cm; foldable window dimensions: W64 × H40 cm. Weight: Approximately 180 kg.",
     },
     {
       question: "What electrical systems are included?",
       answer:
-        "The kiosk comes with comprehensive electrical installation including lighting, double plug socket, and a 16 Amp fuse box. All electrical components meet safety standards.",
+        "The kiosk comes with comprehensive electrical installation including an LED light, a double plug socket, a fuse box, and an external 16A female 3-pin site socket. Ready to use - just plug into the power.",
     },
     {
-      question: "Is this modular kiosk suitable for outdoor use?",
+      question: "What are the delivery and pickup options?",
       answer:
-        "Absolutely. Built with steel sandwich panels offering excellent weather-resistant insulation, this kiosk is ideal for outdoor events, construction sites, industrial areas, and commercial premises.",
+        "Nationwide delivery is available. Free in-person pick-up is available from our warehouse at LE13BW. For delivery cost, please provide your postcode. Contact us at Mobile: 07497 954779.",
     },
     {
       question: "What applications is this modular kiosk best suited for?",
       answer:
-        "This versatile kiosk is perfect for ticket booths, information points, catering units, portable offices, reception areas, and customer service points across various industries.",
+        "This versatile kiosk is perfect for gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, coffee or beverage shops, and more. Ideal for outdoor events or surveillance at locations such as construction sites, industrial areas, and commercial premises.",
     },
   ]
 
@@ -125,45 +149,57 @@ const ModularKiosk130x130Content = () => {
           {/* Left Column - Images */}
           <div className="mb-8 lg:mb-0">
             {/* Main Image */}
-            <div className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md mb-4">
-              <div className="h-96 w-full relative bg-gray-100 flex items-center justify-center">
+            <div 
+              className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md mb-4 cursor-pointer group"
+              onClick={() => openLightbox(activeThumbnail)}
+            >
+              <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
                 <img
                   src={
                     images[activeThumbnail] ||
-                    "/placeholder.svg?height=400&width=400&query=modular kiosk 130x130cm exterior view"
-                  }
+                    "/placeholder.svg?height=500&width=500&query=modular kiosk 130x130cm exterior view"
+                   || "/placeholder.svg"}
                   alt="Modular Kiosk 130x130cm view"
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                 />
-                {/* 360 View Button */}
-                <button className="absolute top-4 right-4 bg-white/90 hover:bg-white rounded-full p-2 shadow-md transition-all">
-                  <ImageIcon className="h-5 w-5 text-blue-700" />
-                </button>
+                {/* Zoom indicator */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-3 shadow-lg">
+                    <ZoomIn className="h-6 w-6 text-blue-700" />
+                  </div>
+                </div>
+                {/* Image counter */}
+                <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
+                  {activeThumbnail + 1} / {images.length}
+                </div>
               </div>
             </div>
 
-            {/* Thumbnails - 10 images in 2 rows */}
-            <div className="grid grid-cols-5 gap-2">
+            {/* Thumbnails - 11 images in rows */}
+            <div className="grid grid-cols-6 gap-2">
               {images.map((img, index) => (
                 <button
                   key={index}
-                  className={`border ${activeThumbnail === index ? "border-blue-600" : "border-gray-200"} rounded-md overflow-hidden h-16 bg-white flex items-center justify-center`}
+                  className={`border-2 ${activeThumbnail === index ? "border-blue-600 ring-2 ring-blue-200" : "border-gray-200 hover:border-blue-400"} rounded-md overflow-hidden h-20 bg-white flex items-center justify-center transition-all`}
                   onClick={() => setActiveThumbnail(index)}
                 >
                   <img
-                    src={img || `/placeholder.svg?height=64&width=64&query=modular kiosk view ${index + 1}`}
+                    src={img || `/placeholder.svg?height=80&width=80&query=modular kiosk view ${index + 1}`}
                     alt={`Thumbnail ${index + 1}`}
                     className="max-h-full max-w-full object-contain"
                   />
                 </button>
               ))}
             </div>
+            
+            {/* Click to expand hint */}
+            <p className="text-center text-sm text-gray-500 mt-3">Click on the main image to expand</p>
           </div>
 
           {/* Right Column - Product Info */}
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Modular Kiosk 130x130cm</h1>
-            <p className="text-gray-600 mb-4">Ticket Booth | Information Point | Portable Cabin</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Modular Kiosk Ticket Booth Security Hut Portable Cabin 130x130 cm</h1>
+            <p className="text-gray-600 mb-4">Ticket Booth | Security Hut | Portable Cabin | (4'3" X 4'3" X 7'9")</p>
 
             {/* Price Tag */}
             <div className="flex items-baseline mb-6">
@@ -174,8 +210,7 @@ const ModularKiosk130x130Content = () => {
             {/* Short Description */}
             <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
               <p className="text-blue-800 text-sm">
-                Brand new, durable, and fully insulated compact modular kiosk with built-in reception desk. Perfect for
-                versatile commercial applications with complete electrical installation.
+                Brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'3" X 4'3" X 7'9"). Ready to use - just place in a safe spot and plug into power. Made in the EU.
               </p>
             </div>
 
@@ -185,27 +220,27 @@ const ModularKiosk130x130Content = () => {
               <ul className="space-y-2">
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Steel sandwich panels with weather-resistant insulation</span>
+                  <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Internal reception desk and corner shelf included</span>
+                  <span className="text-gray-700">Internal reception desk, PVC flooring, LED lighting</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Complete electrical installation with double plug socket</span>
+                  <span className="text-gray-700">Complete electrical: LED light, double plug socket, fuse box, external 16A 3-pin site socket</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">PVC flooring and lockable door for security</span>
+                  <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting eyes</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Upward sliding and fixed windows for ventilation</span>
+                  <span className="text-gray-700">Upward sliding and fixed windows, lockable door</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Customizable with logos and signboards</span>
+                  <span className="text-gray-700">Ready to use - just place and plug in. Made in the EU</span>
                 </li>
               </ul>
             </div>
@@ -221,9 +256,15 @@ const ModularKiosk130x130Content = () => {
             </div>
 
             {/* Delivery Info */}
-            <div className="flex items-center text-sm text-gray-600 mb-6">
-              <Truck className="h-5 w-5 text-gray-500 mr-2" />
-              <span>UK mainland delivery | Usually delivered within 3-4 working days</span>
+            <div className="flex flex-col text-sm text-gray-600 mb-6 gap-2">
+              <div className="flex items-center">
+                <Truck className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Nationwide delivery available | Delivery cost available upon providing postcode</span>
+              </div>
+              <div className="flex items-center">
+                <Box className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Free in-person pick-up from our warehouse at LE13BW</span>
+              </div>
             </div>
 
             {/* USPs */}
@@ -304,24 +345,16 @@ const ModularKiosk130x130Content = () => {
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
                   <div className="prose prose-blue max-w-none text-gray-700">
                     <p>
-                      Our Modular Kiosk 130x130cm is brand new, durable, and fully insulated with compact dimensions
-                      perfect for space-conscious applications. This versatile unit comes with a built-in reception desk
-                      and corner shelf for enhanced functionality.
+                      Our Modular Kiosk 130x130 cm is brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'3" X 4'3" X 7'9"). Perfectly versatile for a wide range of uses, including gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, coffee or beverage shops, and more.
                     </p>
                     <p>
-                      Built with steel sandwich panels offering excellent weather-resistant insulation, this modular
-                      kiosk is designed to withstand various weather conditions while maintaining a comfortable interior
-                      environment. The PVC flooring provides durability and easy maintenance.
+                      Constructed with steel double sandwich panels, it provides excellent weather resistance and insulation. The walls feature a RAL 9002 color, a 50mm styrofoam core insulation, and each 3mm-thick internal and external steel layers. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting eyes on the roof at the corners.
                     </p>
                     <p>
-                      The kiosk is customizable to reflect brand identity with options for logos and signboards. For
-                      optimal use, we recommend placing it on a concrete base or steel beams, providing a cost-effective
-                      alternative to traditional constructions.
+                      Equipped with upward sliding and fixed windows, an internal reception desk, PVC flooring, LED lighting, and a lockable door. For optimal use, it is recommended to place it on a concrete base or steel beams, providing a cost-effective alternative to traditional constructions.
                     </p>
                     <p>
-                      Features upward sliding and fixed windows for ventilation, complete electrical installation
-                      including lighting, double plug socket, and a 16 Amp fuse box. The lockable door ensures security
-                      for your equipment and materials.
+                      Electrical installation includes an LED light, a double plug socket, a fuse box, and an external 16A female 3-pin site socket. Ready to use - just place in a safe spot and plug into the power. Made in the EU.
                     </p>
                   </div>
                 </div>
@@ -424,34 +457,100 @@ const ModularKiosk130x130Content = () => {
       {/* SEO Content */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="prose prose-blue max-w-none text-gray-600 text-sm">
-          <h2>Modular Kiosk Ticket Booth Portable Cabin 130x130 cm</h2>
+          <h2>Modular Kiosk Ticket Booth Security Hut Portable Cabin 130x130 cm</h2>
           <p>
-            Our Modular Kiosk 130x130cm is brand new, durable, and fully insulated, with dimensions of approximately
-            130x130 cm. Perfectly versatile for a wide range of uses, including gatehouses, car park attendants, ticket
-            kiosks, information points, catering units, portable offices, welfare units, coffee or beverage shops, and
-            more.
+            Brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'3" X 4'3" X 7'9"). Perfectly versatile for a wide range of uses, including gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, coffee or beverage shops, and more. Ideal for outdoor events or surveillance at locations such as construction sites, industrial areas, and commercial premises.
           </p>
           <p>
-            Ideal for outdoor events or commercial applications at locations such as construction sites, industrial
-            areas, and commercial premises. For optimal use, it is recommended to place it on a concrete base or steel
-            beams, providing a cost-effective alternative to traditional constructions.
+            Constructed with steel double sandwich panels, it provides excellent weather resistance and insulation. The walls feature a RAL 9002 color, a 50mm styrofoam core insulation, and each 3mm-thick internal and external steel layers. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting eyes on the roof at the corners. For optimal use, it is recommended to place it on a concrete base or steel beams, providing a cost-effective alternative to traditional constructions.
           </p>
           <p>
-            Built with steel sandwich panels, offering excellent weather-resistant insulation. Customizable to reflect
-            brand identity with options for logos and signboards. The compact design makes it perfect for
-            space-conscious applications while still providing all essential features.
+            Outer dimensions (W×L×H): 1.3 × 1.3 × 2.35 meters approx. (4'3" × 4'3" × 7'9"). Window dimensions: W64 × H80 cm; foldable window dimensions: W64 × H40 cm. Equipped with upward sliding and fixed windows, an internal reception desk, PVC flooring, LED lighting, and a lockable door. Weight: Approximately 180 kg.
           </p>
           <p>
-            Outer dimensions (W×L×H): 1.3 × 1.3 × 2.35 meters approx. Window dimensions: W64 × H80 cm; foldable window
-            dimensions: W64 × H40 cm. Equipped with upward sliding and fixed windows, an internal reception desk, a
-            corner shelf, PVC flooring, lighting, and a lockable door.
-          </p>
-          <p>
-            Weight: Approximately 170 kg. Electrical installation includes a light, double plug socket, fuse box, and 16
-            Amp power capacity, making it ready for immediate use in various commercial applications.
+            Electrical installation includes an LED light, a double plug socket, a fuse box, and an external 16A female 3-pin site socket. Ready to use - just place in a safe spot and plug into the power. Nationwide delivery available. Free in-person pick-up available from our warehouse at LE13BW. Made in the EU.
           </p>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-50 bg-transparent"
+            onClick={closeLightbox}
+          >
+            <X className="h-8 w-8" />
+          </button>
+
+          {/* Image counter */}
+          <div className="absolute top-4 left-4 text-white text-lg font-medium">
+            {lightboxIndex + 1} / {images.length}
+          </div>
+
+          {/* Previous button */}
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToPrevious()
+            }}
+          >
+            <ChevronLeft className="h-8 w-8" />
+          </button>
+
+          {/* Main lightbox image */}
+          <div 
+            className="max-w-[90vw] max-h-[85vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[lightboxIndex] || "/placeholder.svg"}
+              alt={`Modular Kiosk view ${lightboxIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain"
+            />
+          </div>
+
+          {/* Next button */}
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToNext()
+            }}
+          >
+            <ChevronRight className="h-8 w-8" />
+          </button>
+
+          {/* Thumbnail strip at bottom */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 max-w-[90vw] overflow-x-auto pb-2">
+            {images.map((img, index) => (
+              <button
+                key={index}
+                className={`flex-shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                  lightboxIndex === index 
+                    ? "border-white ring-2 ring-white/50" 
+                    : "border-white/30 hover:border-white/60"
+                } bg-transparent`}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setLightboxIndex(index)
+                }}
+              >
+                <img
+                  src={img || "/placeholder.svg"}
+                  alt={`Thumbnail ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

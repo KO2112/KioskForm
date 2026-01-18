@@ -88,7 +88,7 @@ const BannerSlider = () => {
   
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-[60vh] overflow-hidden">
       
       <h1 className="sr-only">Modular Portable Kiosk</h1>
       

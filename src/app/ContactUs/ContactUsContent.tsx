@@ -1,7 +1,9 @@
 'use client';
 
+import React from "react"
+
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, ChevronRight, CheckCircle, AlertCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ChevronRight, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 import { sendContactEmail } from '../../../lib/resend';
 
 const ContactPage = () => {
@@ -20,7 +22,6 @@ const ContactPage = () => {
     company: '',
     subject: '',
     message: '',
-    productInterest: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -41,7 +42,6 @@ const ContactPage = () => {
         company: formData.company,
         subject: formData.subject,
         message: formData.message,
-        productInterest: formData.productInterest,
       });
       
       if (result.success) {
@@ -59,7 +59,6 @@ const ContactPage = () => {
           company: '',
           subject: '',
           message: '',
-          productInterest: '',
         });
       } else {
         setFormStatus({ 
@@ -126,7 +125,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+44 7729022777</p>
+                    <p className="text-gray-600">+44 7497 954779</p>
                     <p className="text-sm text-gray-500">Monday to Saturday, 9am - 7pm</p>
                   </div>
                 </div>
@@ -148,14 +147,44 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
-                    <p className="text-gray-600">Saturday & Sunday: Closed</p>
+                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                    <p className="text-gray-600">Sunday: Closed</p>
                   </div>
                 </div>
               </div>
               
+              {/* WhatsApp Button */}
+              <div className="mt-6">
+                <a
+                  href="https://wa.me/447497954779"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-medium px-4 py-3 rounded-md transition-colors"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Chat on WhatsApp
+                </a>
+              </div>
+
+              {/* Google Map */}
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <h3 className="font-medium text-gray-900 mb-3">Find Us</h3>
+                <div className="rounded-lg overflow-hidden">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.979672418291!2d-1.1387251233114135!3d52.64228027209348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761d675102bb7%3A0x4ebd0d79a0e721aa!2sKiosk%20Form%20%7C%20Uk%20portable%20buildings%20company!5e0!3m2!1sen!2suk!4v1768765019939!5m2!1sen!2suk" 
+                    width="100%" 
+                    height="200" 
+                    style={{ border: 0 }} 
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Kiosk Form Location"
+                  />
+                </div>
+              </div>
+
               {/* Social Media Links */}
-              <div className="mt-8 pt-6 border-t border-gray-200">
+              <div className="mt-6 pt-6 border-t border-gray-200">
                 <h3 className="font-medium text-gray-900 mb-3">Follow Us</h3>
                 <div className="flex space-x-4">
                   {/* Replace these with your actual social media icons */}
@@ -305,27 +334,7 @@ const ContactPage = () => {
                     />
                   </div>
                   
-                  {/* Product Interest */}
-                  <div>
-                    <label htmlFor="productInterest" className="block text-sm font-medium text-gray-700 mb-1">
-                      Product Interest
-                    </label>
-                    <select
-                      id="productInterest"
-                      name="productInterest"
-                      value={formData.productInterest}
-                      onChange={handleChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    >
-                      <option value="">Please select...</option>
-                      <option value="small-kiosk">Small Modular Kiosk</option>
-                      <option value="large-kiosk">Large Modular Kiosk</option>
-                      <option value="custom">Custom Solution</option>
-                      <option value="other">Other Inquiry</option>
-                    </select>
-                  </div>
-                  
-                  {/* Message Field */}
+{/* Message Field */}
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Message*
@@ -365,7 +374,7 @@ const ContactPage = () => {
             <div className="mt-8 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg shadow-md p-6 text-white">
               <h3 className="text-xl font-bold mb-3">Need a Quick Quote?</h3>
               <p className="text-blue-100 mb-4">
-                If you're in a hurry, call us directly at <strong>+44 7729022777</strong> for immediate assistance.
+                If you're in a hurry, call us directly at <strong>+44 7497 954779</strong> for immediate assistance.
               </p>
               <button
                 className="bg-white text-blue-700 font-medium px-4 py-2 rounded-md hover:bg-blue-50 transition-colors inline-flex items-center"
