@@ -136,7 +136,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900">Email</h3>
-                    <p className="text-gray-600">kioskform@gmail.com</p>
+                    <p className="text-gray-600">info@cabinunits.co.uk</p>
                     <p className="text-sm text-gray-500">We aim to respond within 24 hours</p>
                   </div>
                 </div>
@@ -393,7 +393,7 @@ const ContactPage = () => {
             <div className="p-6">
               <h3 className="font-bold text-gray-900 mb-2">How quickly can you deliver a modular kiosk?</h3>
               <p className="text-gray-600">
-                We typically deliver standard modular kiosks within 2-3 weeks from order confirmation. Custom units may take 4-6 weeks depending on specifications.
+                We typically deliver standard modular kiosks within 1-2 days from order confirmation. Custom units may take 4-6 weeks depending on specifications.
               </p>
             </div>
             <div className="p-6">

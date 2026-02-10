@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/modular-kiosk-130x130-1.jpg",
+        url: "/130x130kiosk.jpg",
         width: 1200,
         height: 630,
         alt: "Modular Kiosk 130x130cm",

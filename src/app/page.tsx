@@ -114,12 +114,12 @@ export default function Home() {
         "contactPoint": [
           {
             "@type": "ContactPoint",
-            "telephone": "07729022777",
+            "telephone": "07497954779",
             "contactType": "sales"
           }
         ],
         "description": "Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.",
-        "email": "kioskform@gmail.com",
+        "email": "info@cabinunits.co.uk",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "UK"

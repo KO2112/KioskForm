@@ -24,6 +24,7 @@ import {
   ChevronLeft,
   ZoomIn,
 } from "lucide-react"
+import ContactForm from '../../../components/ContactForm'
 
 const ModularKiosk150X150Content = () => {
   const [activeTab, setActiveTab] = useState("specifications")
@@ -213,46 +214,8 @@ const ModularKiosk150X150Content = () => {
               </p>
             </div>
 
-            {/* Key Features */}
-            <div className="mb-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h2>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Internal reception desk, PVC flooring, LED lighting</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Complete electrical: LED light, double plug socket, fuse box, external 16A 3-pin site socket</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting eyes</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Upward sliding and fixed windows, lockable door</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Ready to use - just place and plug in. Made in the EU</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Action Button */}
-            <div className="space-y-3 mb-8">
-              <Link
-                href="/ContactUs"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium shadow-sm transition-colors flex items-center justify-center"
-              >
-                Contact Us
-              </Link>
-            </div>
+            {/* Contact Form Section */}
+            <ContactForm />
 
             {/* Delivery Info */}
             <div className="flex flex-col text-sm text-gray-600 mb-6 gap-2">
@@ -307,6 +270,12 @@ const ModularKiosk150X150Content = () => {
               onClick={() => setActiveTab("applications")}
             >
               Applications
+            </button>
+            <button
+              className={`py-4 px-6 font-medium text-sm ${activeTab === "features" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("features")}
+            >
+              Key Features
             </button>
             <button
               className={`py-4 px-6 font-medium text-sm ${activeTab === "faqs" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
@@ -394,7 +363,40 @@ const ModularKiosk150X150Content = () => {
                 </div>
               </div>
             )}
-
+            {/* Key Features Tab */}
+            {activeTab === "features" && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-6">Key Features</h3>
+                <div className="bg-white rounded-lg border border-gray-200 p-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Internal reception desk, PVC flooring, LED lighting</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Complete electrical: LED light, double plug socket, fuse box, external 16A 3-pin site socket</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting eyes</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Upward sliding and fixed windows, lockable door</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Ready to use - just place and plug in. Made in the EU</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
             {/* FAQs Tab */}
             {activeTab === "faqs" && (
               <div>

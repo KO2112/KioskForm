@@ -22,6 +22,7 @@ import {
   ChevronLeft,
   ZoomIn,
 } from "lucide-react"
+import ContactForm from '../../../components/ContactForm'
 
 const PortableToilet130x130Content = () => {
   const [activeTab, setActiveTab] = useState("specifications")
@@ -211,46 +212,8 @@ const PortableToilet130x130Content = () => {
               </p>
             </div>
 
-            {/* Key Features */}
-            <div className="mb-6">
-              <h2 className="text-lg font-semibold text-gray-900 mb-3">Key Features</h2>
-              <ul className="space-y-2">
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Ceramic flush toilet with built-in bidet wash function</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Sink with mirror, liquid soap dispenser, toilet paper holder, vinyl flooring</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Complete electrical: LED lighting, double plug socket, fuse box, external 16A site socket</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Sewer and mains water connections, ventilation grille, floor drain</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting lugs. Made in the EU</span>
-                </li>
-              </ul>
-            </div>
-
-            {/* Action Button */}
-            <div className="space-y-3 mb-8">
-              <Link
-                href="/ContactUs"
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-md font-medium shadow-sm transition-colors flex items-center justify-center"
-              >
-                Contact Us
-              </Link>
-            </div>
+            {/* Contact Form Section */}
+            <ContactForm />
 
             {/* Delivery Info */}
             <div className="flex flex-col text-sm text-gray-600 mb-6 gap-2">
@@ -305,6 +268,12 @@ const PortableToilet130x130Content = () => {
               onClick={() => setActiveTab("applications")}
             >
               Applications
+            </button>
+            <button
+              className={`py-4 px-6 font-medium text-sm ${activeTab === "features" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("features")}
+            >
+              Key Features
             </button>
             <button
               className={`py-4 px-6 font-medium text-sm ${activeTab === "faqs" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
@@ -386,6 +355,41 @@ const PortableToilet130x130Content = () => {
                   <p className="text-blue-800">
                     This portable toilet unit is ideal for outdoor events, festivals, construction sites, industrial areas, employee welfare facilities, job sites, temporary installations, and remote locations. It offers a cost-effective alternative to traditional construction while providing complete, fully-equipped restroom facilities.
                   </p>
+                </div>
+              </div>
+            )}
+
+            {/* Key Features Tab */}
+            {activeTab === "features" && (
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-6">Key Features</h3>
+                <div className="bg-white rounded-lg border border-gray-200 p-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Steel double sandwich panels with 50mm styrofoam core insulation (RAL 9002)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Ceramic flush toilet with built-in bidet wash function</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Sink with mirror, liquid soap dispenser, toilet paper holder, vinyl flooring</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Complete electrical: LED lighting, double plug socket, fuse box, external 16A site socket</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Sewer and mains water connections, ventilation grille, floor drain</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Thick fiber cement board base with forklift slots and 4 lifting lugs. Made in the EU</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             )}
