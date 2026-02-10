@@ -28,8 +28,8 @@ export async function sendContactEmail({
     const resend = new Resend(process.env.RESEND_API_KEY);
     
     const data = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>', // You can change this to your verified domain later
-      to: ['kioskform@gmail.com'], // Replace with your actual email
+      from: 'Contact Form <onboarding@resend.dev>',
+      to: [process.env.CONTACT_EMAIL || 'info@cabinunits.co.uk'],
       subject: `New contact form submission: ${subject}`,
       text: `
         Name: ${name}
