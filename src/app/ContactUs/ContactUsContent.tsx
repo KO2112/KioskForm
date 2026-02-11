@@ -178,7 +178,7 @@ const ContactPage = () => {
                     allowFullScreen 
                     loading="lazy" 
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Kiosk Form Location"
+                    title="Cabinunits Location"
                   />
                 </div>
               </div>
