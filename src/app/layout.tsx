@@ -12,10 +12,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://kioskform.co.uk'),
-  authors: [{ name: 'Kiosk Form' }],
-  creator: 'Kiosk Form',
-  publisher: 'Kiosk Form',
+  metadataBase: new URL('https://cabinunits.co.uk'),
+  authors: [{ name: 'cabinunits' }],
+  creator: 'cabinunits',
+  publisher: 'cabinunits',
   formatDetection: {
     email: false,
     address: false,
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    url: 'https://kioskform.co.uk',
-    siteName: 'Modular Kiosk Solutions',
+    url: 'https://cabinunits.co.uk',
+    siteName: 'cabinunits',
     images: [
       {
         url: '/images/og-image.jpg',

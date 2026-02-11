@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     "portable office",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+    canonical: "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+      "en-GB": "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
     },
   },
   openGraph: {

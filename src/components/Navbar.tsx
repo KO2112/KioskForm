@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Building className={`w-8 h-8 ${logoColor}`} />
-              <span className={`text-2xl font-bold ${logoColor}`}>KioskForm</span>
+              <span className={`text-2xl font-bold ${logoColor}`}>Cabinunits</span>
             </Link>
           </div>
           

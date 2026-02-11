@@ -4,24 +4,24 @@ import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Modular Kiosks & Portable Cabins Blog - KioskForm',
+  title: 'Modular Kiosks & Portable Cabins Blog - CabinUnits',
   description: 'Industry insights on modular kiosks, portable cabins, security booths, and ticket offices. Expert advice on selecting, installing, and maintaining commercial kiosks.',
   keywords: ['modular kiosk blog', 'portable cabin insights', 'kiosk industry news', 'security booth advice', 'commercial kiosk guide'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/blog',
+    canonical: 'https://cabinunits.co.uk/blog',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/blog',
+      'en-GB': 'https://cabinunits.co.uk/blog',
     },
   },
   openGraph: {
-    title: 'Modular Kiosks & Portable Cabins Blog - KioskForm',
+    title: 'Modular Kiosks & Portable Cabins Blog - CabinUnits',
     description: 'Industry insights on modular kiosks, portable cabins, security booths, and ticket offices. Expert advice on selecting, installing, and maintaining commercial kiosks.',
     images: [
       {
         url: '/blog/blog-header.jpg',
         width: 1200,
         height: 630,
-        alt: 'KioskForm Blog',
+        alt: 'CabinUnits Blog',
       },
     ],
   }
@@ -39,46 +39,46 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "CollectionPage",
-                "@id": "https://kioskform.co.uk/blog/",
-                "url": "https://kioskform.co.uk/blog/",
-                "name": "Modular Kiosks & Portable Cabins Blog - KioskForm",
+                "@id": "https://cabinunits.co.uk/blog/",
+                "url": "https://cabinunits.co.uk/blog/",
+                "name": "Modular Kiosks & Portable Cabins Blog - CabinUnits",
                 "isPartOf": {
-                  "@id": "https://kioskform.co.uk/#website"
+                  "@id": "https://cabinunits.co.uk/#website"
                 },
                 "primaryImageOfPage": {
-                  "@id": "https://kioskform.co.uk/blog/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/blog/#primaryimage"
                 },
                 "image": {
-                  "@id": "https://kioskform.co.uk/blog/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/blog/#primaryimage"
                 },
-                "thumbnailUrl": "https://kioskform.co.uk/blog/blog-header.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/blog/blog-header.jpg",
                 "datePublished": "2025-01-01T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "description": "Industry insights on modular kiosks, portable cabins, security booths, and ticket offices. Expert advice on selecting, installing, and maintaining commercial kiosks.",
                 "breadcrumb": {
-                  "@id": "https://kioskform.co.uk/blog/#breadcrumb"
+                  "@id": "https://cabinunits.co.uk/blog/#breadcrumb"
                 },
                 "inLanguage": "en-GB"
               },
               {
                 "@type": "ImageObject",
                 "inLanguage": "en-GB",
-                "@id": "https://kioskform.co.uk/blog/#primaryimage",
-                "url": "https://kioskform.co.uk/blog/blog-header.jpg",
-                "contentUrl": "https://kioskform.co.uk/blog/blog-header.jpg",
+                "@id": "https://cabinunits.co.uk/blog/#primaryimage",
+                "url": "https://cabinunits.co.uk/blog/blog-header.jpg",
+                "contentUrl": "https://cabinunits.co.uk/blog/blog-header.jpg",
                 "width": 1200,
                 "height": 630,
-                "caption": "KioskForm Blog"
+                "caption": "CabinUnits Blog"
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://kioskform.co.uk/blog/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/blog/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://kioskform.co.uk/"
+                    "item": "https://cabinunits.co.uk/"
                   },
                   {
                     "@type": "ListItem",
@@ -89,16 +89,16 @@ export default function Page() {
               },
               {
                 "@type": "WebSite",
-                "@id": "https://kioskform.co.uk/#website",
-                "url": "https://kioskform.co.uk/",
-                "name": "KioskForm",
+                "@id": "https://cabinunits.co.uk/#website",
+                "url": "https://cabinunits.co.uk/",
+                "name": "CabinUnits",
                 "description": "Premium kiosk solutions for businesses across the UK",
                 "potentialAction": [
                   {
                     "@type": "SearchAction",
                     "target": {
                       "@type": "EntryPoint",
-                      "urlTemplate": "https://kioskform.co.uk/?s={search_term_string}"
+                      "urlTemplate": "https://cabinunits.co.uk/?s={search_term_string}"
                     },
                     "query-input": {
                       "@type": "PropertyValueSpecification",
@@ -111,21 +111,21 @@ export default function Page() {
               },
               {
                 "@type": "Organization",
-                "@id": "https://kioskform.co.uk/#organization",
-                "name": "KioskForm",
-                "url": "https://kioskform.co.uk/",
+                "@id": "https://cabinunits.co.uk/#organization",
+                "name": "CabinUnits",
+                "url": "https://cabinunits.co.uk/",
                 "logo": {
                   "@type": "ImageObject",
                   "inLanguage": "en-GB",
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/",
-                  "url": "https://kioskform.co.uk/logo.png",
-                  "contentUrl": "https://kioskform.co.uk/logo.png",
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/",
+                  "url": "https://cabinunits.co.uk/logo.png",
+                  "contentUrl": "https://cabinunits.co.uk/logo.png",
                   "width": 192,
                   "height": 192,
-                  "caption": "KioskForm"
+                  "caption": "CabinUnits"
                 },
                 "image": {
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/"
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/"
                 }
               }
             ]

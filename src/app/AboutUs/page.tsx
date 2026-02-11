@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   description: 'Learn about Modular Kiosks, a leading UK supplier of premium modular kiosks and portable buildings since 2010, featuring EU-manufactured quality structures.',
   keywords: ['modular kiosk company', 'UK portable buildings', 'about modular kiosks', 'kiosk manufacturing', 'portable building solutions'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/AboutUs',
+    canonical: 'https://cabinunits.co.uk/AboutUs',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/AboutUs',
+      'en-GB': 'https://cabinunits.co.uk/AboutUs',
     },
   },
   openGraph: {

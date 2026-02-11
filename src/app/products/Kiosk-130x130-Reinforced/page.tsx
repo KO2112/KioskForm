@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     "gatehouse",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Kiosk-130x130-Reinforced",
+    canonical: "https://cabinunits.co.uk/products/Kiosk-130x130-Reinforced",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Kiosk-130x130-Reinforced",
+      "en-GB": "https://cabinunits.co.uk/products/Kiosk-130x130-Reinforced",
     },
   },
   openGraph: {

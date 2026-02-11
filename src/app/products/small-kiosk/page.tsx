@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   description: 'Fully insulated 143×143cm modular unit perfect for ticket stations, security cabins, and catering applications. Weather-resistant with complete electrical installation.',
   keywords: ['small modular kiosk', 'ticket booth', 'security cabin', 'catering unit', '5ft kiosk', 'portable kiosk'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/products/small-kiosk',
+    canonical: 'https://cabinunits.co.uk/products/small-kiosk',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/products/small-kiosk',
+      'en-GB': 'https://cabinunits.co.uk/products/small-kiosk',
     },
   },
   openGraph: {

@@ -15,9 +15,9 @@ export const metadata = {
     "steel sandwich panels",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+    canonical: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+      "en-GB": "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
     },
   },
   openGraph: {

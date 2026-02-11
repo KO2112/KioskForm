@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "portable washroom",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Portable-toilet-130x130",
+    canonical: "https://cabinunits.co.uk/products/Portable-toilet-130x130",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Portable-toilet-130x130",
+      "en-GB": "https://cabinunits.co.uk/products/Portable-toilet-130x130",
     },
   },
   openGraph: {

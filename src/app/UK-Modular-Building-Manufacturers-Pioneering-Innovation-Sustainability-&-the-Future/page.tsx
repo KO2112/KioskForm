@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   description: 'Discover how UK modular building manufacturers are revolutionizing construction with sustainable, efficient, and innovative building solutions.',
   keywords: ['UK modular building manufacturers', 'modular construction UK', 'prefabricated buildings', 'sustainable modular solutions', 'offsite construction'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/uk-modular-building-manufacturers',
+    canonical: 'https://cabinunits.co.uk/uk-modular-building-manufacturers',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/uk-modular-building-manufacturers',
+      'en-GB': 'https://cabinunits.co.uk/uk-modular-building-manufacturers',
     },
   },
   openGraph: {
@@ -40,52 +40,52 @@ export default function ModularBuildingPage() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/",
-                "url": "https://kioskform.co.uk/uk-modular-building-manufacturers/",
+                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/",
+                "url": "https://cabinunits.co.uk/uk-modular-building-manufacturers/",
                 "name": "UK Modular Building Manufacturers: Pioneering Innovation, Sustainability & the Future",
                 "isPartOf": {
-                  "@id": "https://kioskform.co.uk/#website"
+                  "@id": "https://cabinunits.co.uk/#website"
                 },
                 "primaryImageOfPage": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
                 },
                 "image": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
                 },
-                "thumbnailUrl": "https://kioskform.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "description": "Discover how UK modular building manufacturers are revolutionizing construction with sustainable, efficient, and innovative building solutions.",
                 "breadcrumb": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#breadcrumb"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#breadcrumb"
                 },
                 "inLanguage": "en-GB",
                 "potentialAction": [
                   {
                     "@type": "ReadAction",
-                    "target": ["https://kioskform.co.uk/uk-modular-building-manufacturers/"]
+                    "target": ["https://cabinunits.co.uk/uk-modular-building-manufacturers/"]
                   }
                 ]
               },
               {
                 "@type": "ImageObject",
                 "inLanguage": "en-GB",
-                "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#primaryimage",
-                "url": "https://kioskform.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
-                "contentUrl": "https://kioskform.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage",
+                "url": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "contentUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
                 "width": 1200,
                 "height": 630,
                 "caption": "UK Modular Building Manufacturing Industry"
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
                     "position": 1,
                     "name": "Home",
-                    "item": "https://kioskform.co.uk/"
+                    "item": "https://cabinunits.co.uk/"
                   },
                   {
                     "@type": "ListItem",
@@ -96,16 +96,16 @@ export default function ModularBuildingPage() {
               },
               {
                 "@type": "WebSite",
-                "@id": "https://kioskform.co.uk/#website",
-                "url": "https://kioskform.co.uk/",
-                "name": "KioskForm",
+                "@id": "https://cabinunits.co.uk/#website",
+                "url": "https://cabinunits.co.uk/",
+                "name": "cabinunits",
                 "description": "Premium kiosk solutions for businesses across the UK",
                 "potentialAction": [
                   {
                     "@type": "SearchAction",
                     "target": {
                       "@type": "EntryPoint",
-                      "urlTemplate": "https://kioskform.co.uk/?s={search_term_string}"
+                      "urlTemplate": "https://cabinunits.co.uk/?s={search_term_string}"
                     },
                     "query-input": {
                       "@type": "PropertyValueSpecification",
@@ -118,46 +118,46 @@ export default function ModularBuildingPage() {
               },
               {
                 "@type": "Article",
-                "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#article",
+                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#article",
                 "isPartOf": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/"
                 },
                 "author": {
-                  "@id": "https://kioskform.co.uk/#/schema/person/admin"
+                  "@id": "https://cabinunits.co.uk/#/schema/person/admin"
                 },
                 "headline": "UK Modular Building Manufacturers: Pioneering Innovation, Sustainability & the Future",
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "mainEntityOfPage": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/"
                 },
                 "wordCount": 1350,
                 "publisher": {
-                  "@id": "https://kioskform.co.uk/#organization"
+                  "@id": "https://cabinunits.co.uk/#organization"
                 },
                 "image": {
-                  "@id": "https://kioskform.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
                 },
-                "thumbnailUrl": "https://kioskform.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
                 "inLanguage": "en-GB"
               },
               {
                 "@type": "Organization",
-                "@id": "https://kioskform.co.uk/#organization",
-                "name": "KioskForm",
-                "url": "https://kioskform.co.uk/",
+                "@id": "https://cabinunits.co.uk/#organization",
+                "name": "CabinUnits",
+                "url": "https://cabinunits.co.uk/",
                 "logo": {
                   "@type": "ImageObject",
                   "inLanguage": "en-GB",
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/",
-                  "url": "https://kioskform.co.uk/logo.png",
-                  "contentUrl": "https://kioskform.co.uk/logo.png",
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/",
+                  "url": "https://cabinunits.co.uk/logo.png",
+                  "contentUrl": "https://cabinunits.co.uk/logo.png",
                   "width": 192,
                   "height": 192,
-                  "caption": "KioskForm"
+                  "caption": "cabinunits"
                 },
                 "image": {
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/"
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/"
                 }
               }
             ]

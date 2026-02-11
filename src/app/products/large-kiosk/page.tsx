@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   description: 'Fully insulated 218×143cm modular unit ideal for gatehouse, carpark attendants, ticket kiosks, security cabins & catering applications. Complete with electrical installation & weather-resistant materials.',
   keywords: ['large modular kiosk', 'ticket booth', 'security cabin', 'portable cabin', 'gatehouse', 'carpark hut', 'catering unit'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/products/large-kiosk',
+    canonical: 'https://cabinunits.co.uk/products/large-kiosk',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/products/large-kiosk',
+      'en-GB': 'https://cabinunits.co.uk/products/large-kiosk',
     },
   },
   openGraph: {

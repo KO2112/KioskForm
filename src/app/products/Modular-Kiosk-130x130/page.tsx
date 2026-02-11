@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "UK supplier",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Modular-Kiosk-130x130",
+    canonical: "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Modular-Kiosk-130x130",
+      "en-GB": "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
     },
   },
   openGraph: {

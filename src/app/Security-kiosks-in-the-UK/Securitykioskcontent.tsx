@@ -50,7 +50,7 @@ const SecurityKioskContent = () => {
               </p>
               
               <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Security Huts Explained</h2>
-              Characterized by their compact and efficient design, <a href="https://kioskform.co.uk">security huts</a> are specifically created for locations requiring staffed security but lacking space or necessity for larger installations.
+              Characterized by their compact and efficient design, <a href="https://cabinunits.co.uk">security huts</a> are specifically created for locations requiring staffed security but lacking space or necessity for larger installations.
               
               <p className="mb-6">
                 Despite their modest footprint, these security huts offer substantial functionality. Many come equipped with essential communication systems, climate control features, and occasionally restroom facilities to ensure they satisfy the fundamental needs of security staff, facilitating continuous and comfortable operation throughout extended shifts.

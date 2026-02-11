@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     "information point",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/kiosks",
+    canonical: "https://cabinunits.co.uk/kiosks",
     languages: {
-      "en-GB": "https://kioskform.co.uk/kiosks",
+      "en-GB": "https://cabinunits.co.uk/kiosks",
     },
   },
   openGraph: {
@@ -48,53 +48,53 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://kioskform.co.uk/kiosks/",
-                url: "https://kioskform.co.uk/kiosks/",
+                "@id": "https://cabinunits.co.uk/kiosks/",
+                url: "https://cabinunits.co.uk/kiosks/",
                 name: "Premium Modular Kiosks | Ticket Booths & Security Cabins",
                 isPartOf: {
-                  "@id": "https://kioskform.co.uk/#website",
+                  "@id": "https://cabinunits.co.uk/#website",
                 },
                 primaryImageOfPage: {
-                  "@id": "https://kioskform.co.uk/kiosks/#primaryimage",
+                  "@id": "https://cabinunits.co.uk/kiosks/#primaryimage",
                 },
                 image: {
-                  "@id": "https://kioskform.co.uk/kiosks/#primaryimage",
+                  "@id": "https://cabinunits.co.uk/kiosks/#primaryimage",
                 },
-                thumbnailUrl: "https://kioskform.co.uk/kiosks-og.jpg",
+                thumbnailUrl: "https://cabinunits.co.uk/kiosks-og.jpg",
                 datePublished: "2025-03-15T10:00:00+00:00",
                 dateModified: "2025-04-24T09:00:00+00:00",
                 description:
                   "EU manufactured portable kiosks for ticket booths, security cabins, and commercial applications. Weather-resistant, fully insulated with electrical installation.",
                 breadcrumb: {
-                  "@id": "https://kioskform.co.uk/kiosks/#breadcrumb",
+                  "@id": "https://cabinunits.co.uk/kiosks/#breadcrumb",
                 },
                 inLanguage: "en-GB",
                 potentialAction: [
                   {
                     "@type": "ReadAction",
-                    target: ["https://kioskform.co.uk/kiosks/"],
+                    target: ["https://cabinunits.co.uk/kiosks/"],
                   },
                 ],
               },
               {
                 "@type": "ImageObject",
                 inLanguage: "en-GB",
-                "@id": "https://kioskform.co.uk/kiosks/#primaryimage",
-                url: "https://kioskform.co.uk/kiosks-og.jpg",
-                contentUrl: "https://kioskform.co.uk/kiosks-og.jpg",
+                "@id": "https://cabinunits.co.uk/kiosks/#primaryimage",
+                url: "https://cabinunits.co.uk/kiosks-og.jpg",
+                contentUrl: "https://cabinunits.co.uk/kiosks-og.jpg",
                 width: 1200,
                 height: 630,
                 caption: "Premium Modular Kiosks Collection",
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://kioskform.co.uk/kiosks/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/kiosks/#breadcrumb",
                 itemListElement: [
                   {
                     "@type": "ListItem",
                     position: 1,
                     name: "Home",
-                    item: "https://kioskform.co.uk/",
+                    item: "https://cabinunits.co.uk/",
                   },
                   {
                     "@type": "ListItem",
@@ -105,16 +105,16 @@ export default function Page() {
               },
               {
                 "@type": "WebSite",
-                "@id": "https://kioskform.co.uk/#website",
-                url: "https://kioskform.co.uk/",
-                name: "KioskForm",
+                "@id": "https://cabinunits.co.uk/#website",
+                url: "https://cabinunits.co.uk/",
+                name: "CabinUnits",
                 description: "Premium kiosk solutions for businesses across the UK",
                 potentialAction: [
                   {
                     "@type": "SearchAction",
                     target: {
                       "@type": "EntryPoint",
-                      urlTemplate: "https://kioskform.co.uk/?s={search_term_string}",
+                      urlTemplate: "https://cabinunits.co.uk/?s={search_term_string}",
                     },
                     "query-input": {
                       "@type": "PropertyValueSpecification",
@@ -127,78 +127,78 @@ export default function Page() {
               },
               {
                 "@type": "ItemList",
-                "@id": "https://kioskform.co.uk/kiosks/#itemlist",
+                "@id": "https://cabinunits.co.uk/kiosks/#itemlist",
                 itemListElement: [
                   {
                     "@type": "ListItem",
                     position: 1,
                     name: "Modular Kiosk 130x130cm Anti-Vandal",
-                    url: "https://kioskform.co.uk/products/Kiosk-130x130-Reinforced",
+                    url: "https://cabinunits.co.uk/products/Kiosk-130x130-Reinforced",
                   },
                   {
                     "@type": "ListItem",
                     position: 2,
                     name: "Modular Kiosk 130x130cm",
-                    url: "https://kioskform.co.uk/products/Modular-Kiosk-130x130",
+                    url: "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
                   },
                   {
                     "@type": "ListItem",
                     position: 3,
                     name: "Small Modular Kiosk",
-                    url: "https://kioskform.co.uk/products/small-kiosk",
+                    url: "https://cabinunits.co.uk/products/small-kiosk",
                   },
                   {
                     "@type": "ListItem",
                     position: 4,
                     name: "Large Modular Kiosk",
-                    url: "https://kioskform.co.uk/products/large-kiosk",
+                    url: "https://cabinunits.co.uk/products/large-kiosk",
                   },
                   {
                     "@type": "ListItem",
                     position: 5,
                     name: "Portable Toilet Unit 130x130cm",
-                    url: "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                    url: "https://cabinunits.co.uk/products/Portable-toilet-130x130",
                   },
                   {
                     "@type": "ListItem",
                     position: 6,
                     name: "Portable Kiosk 130x210cm",
-                    url: "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                    url: "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
                   },
                   {
                     "@type": "ListItem",
                     position: 7,
                     name: "Modular Kiosk 150x150cm",
-                    url: "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                    url: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
                   },
                   {
                     "@type": "ListItem",
                     position: 8,
                     name: "Modular Kiosk 210x210cm",
-                    url: "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                    url: "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
                   },
                 ],
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Kiosk-130x130-Reinforced",
+                "@id": "https://cabinunits.co.uk/products/Kiosk-130x130-Reinforced",
                 name: "Modular Kiosk 130x130cm Anti-Vandal",
                 description:
                   "Compact, durable kiosk with anti-vandal features and steel fence protection for enhanced security applications.",
                 sku: "kiosk-130x130-reinforced",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/kiosk-130x130-1.png",
+                  url: "https://cabinunits.co.uk/kiosk-130x130-1.png",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Kiosk-130x130-Reinforced",
+                  url: "https://cabinunits.co.uk/products/Kiosk-130x130-Reinforced",
                   priceCurrency: "GBP",
                   price: "1999",
                   priceValidUntil: "2025-12-31",
@@ -225,24 +225,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Modular-Kiosk-130x130",
+                "@id": "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
                 name: "Modular Kiosk 130x130cm",
                 description:
                   "Versatile compact kiosk perfect for commercial applications with built-in reception desk and complete electrical installation.",
                 sku: "modular-kiosk-130x130",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/modular-kiosk-130x130-1.jpg",
+                  url: "https://cabinunits.co.uk/modular-kiosk-130x130-1.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Modular-Kiosk-130x130",
+                  url: "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
                   priceCurrency: "GBP",
                   price: "1999",
                   priceValidUntil: "2025-12-31",
@@ -269,24 +269,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/small-kiosk",
+                "@id": "https://cabinunits.co.uk/products/small-kiosk",
                 name: "Small Modular Kiosk",
                 description:
                   "Brand new, strong and durable, fully insulated modular kiosk perfect for versatile applications.",
                 sku: "small-kiosk",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/kiosk2.jpg",
+                  url: "https://cabinunits.co.uk/kiosk2.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/small-kiosk",
+                  url: "https://cabinunits.co.uk/products/small-kiosk",
                   priceCurrency: "GBP",
                   price: "1999",
                   priceValidUntil: "2025-12-31",
@@ -313,24 +313,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/large-kiosk",
+                "@id": "https://cabinunits.co.uk/products/large-kiosk",
                 name: "Large Modular Kiosk",
                 description:
                   "Spacious, durable and fully insulated modular building suitable for various commercial applications.",
                 sku: "large-kiosk",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/kiosk.jpg",
+                  url: "https://cabinunits.co.uk/kiosk.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/large-kiosk",
+                  url: "https://cabinunits.co.uk/products/large-kiosk",
                   priceCurrency: "GBP",
                   price: "2499",
                   priceValidUntil: "2025-12-31",
@@ -357,24 +357,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                "@id": "https://cabinunits.co.uk/products/Portable-toilet-130x130",
                 name: "Portable Toilet Unit 130x130cm",
                 description:
                   "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections for welfare facilities.",
                 sku: "portable-toilet-130x130",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/portable-toilet-130x130-1.png",
+                  url: "https://cabinunits.co.uk/portable-toilet-130x130-1.png",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Portable-toilet-130x130",
+                  url: "https://cabinunits.co.uk/products/Portable-toilet-130x130",
                   priceCurrency: "GBP",
                   price: "1899",
                   priceValidUntil: "2025-12-31",
@@ -401,24 +401,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                "@id": "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
                 name: "Portable Kiosk 130x210cm",
                 description:
                   "Extended portable kiosk with reception desk, sliding windows, and professional security features for service applications.",
                 sku: "portable-kiosk-130x210",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/portable-kiosk-130x210-1.jpg",
+                  url: "https://cabinunits.co.uk/portable-kiosk-130x210-1.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Portable-Kiosk-130x210",
+                  url: "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
                   priceCurrency: "GBP",
                   price: "2199",
                   priceValidUntil: "2025-12-31",
@@ -445,24 +445,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                "@id": "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
                 name: "Modular Kiosk 150x150cm",
                 description:
                   "Spacious modular kiosk with enhanced interior space, reception desk, and professional features for commercial applications.",
                 sku: "modular-kiosk-150x150",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/modular-kiosk-150x150-1.jpg",
+                  url: "https://cabinunits.co.uk/modular-kiosk-150x150-1.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Modular-Kiosk-150X150",
+                  url: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
                   priceCurrency: "GBP",
                   price: "2399",
                   priceValidUntil: "2025-12-31",
@@ -489,24 +489,24 @@ export default function Page() {
               },
               {
                 "@type": "Product",
-                "@id": "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                "@id": "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
                 name: "Modular Kiosk 210x210cm",
                 description:
                   "Premium large modular kiosk with spacious 4.41m² interior, ideal for commercial and security applications.",
                 sku: "modular-kiosk-210x210",
                 image: {
                   "@type": "ImageObject",
-                  url: "https://kioskform.co.uk/modular-kiosk-210x210-1.jpg",
+                  url: "https://cabinunits.co.uk/modular-kiosk-210x210-1.jpg",
                   width: 800,
                   height: 600,
                 },
                 brand: {
                   "@type": "Brand",
-                  name: "KioskForm",
+                  name: "CabinUnits",
                 },
                 offers: {
                   "@type": "Offer",
-                  url: "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+                  url: "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
                   priceCurrency: "GBP",
                   price: "2899",
                   priceValidUntil: "2025-12-31",
@@ -533,21 +533,21 @@ export default function Page() {
               },
               {
                 "@type": "Organization",
-                "@id": "https://kioskform.co.uk/#organization",
-                name: "KioskForm",
-                url: "https://kioskform.co.uk/",
+                "@id": "https://cabinunits.co.uk/#organization",
+                name: "CabinUnits",
+                url: "https://cabinunits.co.uk/",
                 logo: {
                   "@type": "ImageObject",
                   inLanguage: "en-GB",
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/",
-                  url: "https://kioskform.co.uk/logo.png",
-                  contentUrl: "https://kioskform.co.uk/logo.png",
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/",
+                  url: "https://cabinunits.co.uk/logo.png",
+                  contentUrl: "https://cabinunits.co.uk/logo.png",
                   width: 192,
                   height: 192,
-                  caption: "KioskForm",
+                  caption: "CabinUnits",
                 },
                 image: {
-                  "@id": "https://kioskform.co.uk/#/schema/logo/image/",
+                  "@id": "https://cabinunits.co.uk/#/schema/logo/image/",
                 },
               },
             ],

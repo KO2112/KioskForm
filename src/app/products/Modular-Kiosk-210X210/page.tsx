@@ -15,9 +15,9 @@ export const metadata = {
     "outdoor security booth",
   ],
   alternates: {
-    canonical: "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+    canonical: "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
     languages: {
-      "en-GB": "https://kioskform.co.uk/products/Modular-Kiosk-210X210",
+      "en-GB": "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
     },
   },
   openGraph: {

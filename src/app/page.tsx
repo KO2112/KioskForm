@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description: 'Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
   keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, digital signage kiosk, custom kiosk design',
   alternates: {
-    canonical: 'https://kioskform.co.uk',
+    canonical: 'https://cabinunits.co.uk',
     languages: {
-      'en-GB': 'https://kioskform.co.uk',
+      'en-GB': 'https://cabinunits.co.uk',
     },
   },
   openGraph: {
@@ -45,29 +45,29 @@ export default function Home() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://kioskform.co.uk/",
-        "url": "https://kioskform.co.uk/",
+        "@id": "https://cabinunits.co.uk/",
+        "url": "https://cabinunits.co.uk/",
         "name": "Modular Kiosk Solutions | UK Portable Buildings",
         "isPartOf": {
-          "@id": "https://kioskform.co.uk/#website"
+          "@id": "https://cabinunits.co.uk/#website"
         },
         "datePublished": "2022-10-15T00:00:00+00:00",
         "dateModified": "2025-04-19T00:00:00+00:00",
         "description": "Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
         "breadcrumb": {
-          "@id": "https://kioskform.co.uk/#breadcrumb"
+          "@id": "https://cabinunits.co.uk/#breadcrumb"
         },
         "inLanguage": "en-GB",
         "potentialAction": [
           {
             "@type": "ReadAction",
-            "target": ["https://kioskform.co.uk/"]
+            "target": ["https://cabinunits.co.uk/"]
           }
         ]
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://kioskform.co.uk/#breadcrumb",
+        "@id": "https://cabinunits.co.uk/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -78,15 +78,15 @@ export default function Home() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://kioskform.co.uk/#website",
-        "url": "https://kioskform.co.uk/",
-        "name": "KioskForm",
+        "@id": "https://cabinunits.co.uk/#website",
+        "url": "https://cabinunits.co.uk/",
+        "name": "cabinunits",
         "description": "Premium modular kiosks and portable buildings",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://kioskform.co.uk/?s={search_term_string}"
+            "urlTemplate": "https://cabinunits.co.uk/?s={search_term_string}"
           },
           "query-input": {
             "@type": "PropertyValueSpecification",
@@ -98,15 +98,15 @@ export default function Home() {
       },
       {
         "@type": "Organization",
-        "@id": "https://kioskform.co.uk/#organization",
-        "name": "KioskForm",
-        "url": "https://kioskform.co.uk",
+        "@id": "https://cabinunits.co.uk/#organization",
+        "name": "cabinunits",
+        "url": "https://cabinunits.co.uk",
         "logo": {
           "@type": "ImageObject",
-          "@id": "https://kioskform.co.uk/#logo",
-          "url": "https://kioskform.co.uk/logo.png",
-          "contentUrl": "https://kioskform.co.uk/logo.png",
-          "caption": "KioskForm",
+          "@id": "https://cabinunits.co.uk/#logo",
+          "url": "https://cabinunits.co.uk/logo.png",
+          "contentUrl": "https://cabinunits.co.uk/logo.png",
+          "caption": "cabinunits",
           "inLanguage": "en-GB",
           "width": "665",
           "height": "112"

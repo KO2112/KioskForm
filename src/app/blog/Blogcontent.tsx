@@ -10,7 +10,7 @@ const BlogContent = () => {
     <div className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">KioskForm Blog</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Cabinunits Blog</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Industry insights, product updates, and expert advice on modular kiosks and portable cabin solutions.
           </p>
@@ -97,7 +97,7 @@ const BlogContent = () => {
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Stay Updated on Modular & Portable Solutions</h2>
           <div className="prose max-w-none text-gray-700">
             <p className="mb-4">
-              Welcome to the KioskForm blog, your premier resource for the latest developments in modular buildings, portable cabins, and kiosk solutions across the United Kingdom. Our commitment to keeping you informed ensures you'll find a wealth of valuable content updated regularly with industry innovations, case studies, and practical insights.
+              Welcome to the CabinUnits blog, your premier resource for the latest developments in modular buildings, portable cabins, and kiosk solutions across the United Kingdom. Our commitment to keeping you informed ensures you'll find a wealth of valuable content updated regularly with industry innovations, case studies, and practical insights.
             </p>
             <p className="mb-4">
               Our team of industry experts continuously monitors emerging trends in modular construction, sustainable building practices, and innovative applications of portable structures across diverse sectors including retail, security, healthcare, education, and construction. Whether you're a facilities manager, business owner, or project developer, our blog posts provide actionable information to help you make informed decisions about modular solutions.

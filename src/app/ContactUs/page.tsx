@@ -6,9 +6,9 @@ export const metadata: Metadata = {
   description: 'Get in touch with Modular Kiosks for premium portable buildings and custom kiosk solutions across the UK. Request quotes, custom designs, or technical support.',
   keywords: ['contact modular kiosks', 'UK kiosk manufacturer', 'custom kiosk quote', 'portable building inquiry', 'modular building consultation'],
   alternates: {
-    canonical: 'https://kioskform.co.uk/ContactUs',
+    canonical: 'https://cabinunits.co.uk/ContactUs',
     languages: {
-      'en-GB': 'https://kioskform.co.uk/ContactUs',
+      'en-GB': 'https://cabinunits.co.uk/ContactUs',
     },
   },
   openGraph: {
