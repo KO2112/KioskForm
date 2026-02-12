@@ -17,6 +17,7 @@ export const metadata: Metadata = {
     "gatehouse",
     "reception booth",
     "UK supplier",
+    "cabin",
   ],
   alternates: {
     canonical: "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",

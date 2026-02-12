@@ -126,7 +126,7 @@ const ModularKiosk130x130Content = () => {
   ]
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
+    <div className="bg-gray-50 min-h-screen pt-16 overflow-x-hidden">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
@@ -259,27 +259,27 @@ const ModularKiosk130x130Content = () => {
       <div className="border-t border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Tabs Navigation */}
-          <div className="flex border-b border-gray-200">
+          <div className="flex border-b border-gray-200 overflow-x-auto">
             <button
-              className={`py-4 px-6 font-medium text-sm ${activeTab === "specifications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "specifications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
               onClick={() => setActiveTab("specifications")}
             >
               Specifications
             </button>
             <button
-              className={`py-4 px-6 font-medium text-sm ${activeTab === "applications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "applications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
               onClick={() => setActiveTab("applications")}
             >
               Applications
             </button>
             <button
-              className={`py-4 px-6 font-medium text-sm ${activeTab === "features" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "features" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
               onClick={() => setActiveTab("features")}
             >
               Key Features
             </button>
             <button
-              className={`py-4 px-6 font-medium text-sm ${activeTab === "faqs" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "faqs" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
               onClick={() => setActiveTab("faqs")}
             >
               FAQs
@@ -287,10 +287,10 @@ const ModularKiosk130x130Content = () => {
           </div>
 
           {/* Tab Content */}
-          <div className="py-8">
+          <div className="py-8 w-full max-w-full">
             {/* Specifications Tab */}
             {activeTab === "specifications" && (
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Technical Specifications</h3>
                   <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
@@ -312,7 +312,7 @@ const ModularKiosk130x130Content = () => {
 
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
-                  <div className="prose prose-blue max-w-none text-gray-700">
+                  <div className="prose prose-blue max-w-none w-full text-gray-700 prose-sm sm:prose-base">
                     <p>
                       Our Modular Kiosk 130x130 cm is brand new, durable, and fully insulated, with dimensions of approximately 130x130 cm (4'3" X 4'3" X 7'9"). Perfectly versatile for a wide range of uses, including gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, coffee or beverage shops, and more.
                     </p>
@@ -332,7 +332,7 @@ const ModularKiosk130x130Content = () => {
 
             {/* Applications Tab */}
             {activeTab === "applications" && (
-              <div>
+              <div className="w-full">
                 <h3 className="text-lg font-bold text-gray-900 mb-6">Versatile Applications</h3>
                 <p className="text-gray-700 mb-8">
                   The compact 130x130cm Modular Kiosk is perfectly versatile for a wide range of commercial uses and is
@@ -340,7 +340,7 @@ const ModularKiosk130x130Content = () => {
                   efficiency is important.
                 </p>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
                   {applications.map((app, index) => (
                     <div
                       key={index}
@@ -367,7 +367,7 @@ const ModularKiosk130x130Content = () => {
 
             {/* Key Features Tab */}
             {activeTab === "features" && (
-              <div>
+              <div className="w-full">
                 <h3 className="text-lg font-bold text-gray-900 mb-6">Key Features</h3>
                 <div className="bg-white rounded-lg border border-gray-200 p-6">
                   <ul className="space-y-3">
@@ -402,17 +402,17 @@ const ModularKiosk130x130Content = () => {
 
             {/* FAQs Tab */}
             {activeTab === "faqs" && (
-              <div>
+              <div className="w-full">
                 <h3 className="text-lg font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
 
                 <div className="space-y-4">
                   {faqs.map((faq, index) => (
-                    <div key={index} className="bg-white rounded-lg border border-gray-200 p-5">
-                      <h4 className="font-medium text-gray-900 flex items-start mb-2">
-                        <HelpCircle className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                        {faq.question}
-                      </h4>
-                      <p className="text-gray-700 pl-7">{faq.answer}</p>
+                    <div key={index} className="bg-white rounded-lg border border-gray-200 p-4 sm:p-5 w-full">
+                      <div className="flex gap-2 sm:gap-3 mb-3">
+                        <HelpCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <h4 className="font-medium text-gray-900 text-sm sm:text-base">{faq.question}</h4>
+                      </div>
+                      <p className="text-gray-700 text-sm sm:text-base ml-7 sm:ml-8">{faq.answer}</p>
                     </div>
                   ))}
                 </div>
