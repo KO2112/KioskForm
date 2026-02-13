@@ -107,9 +107,14 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+            
+            // Google Analytics 4 Configuration
             gtag('config', 'G-SE76KS1HFG', {
               'anonymize_ip': true
             });
+            
+            // Google Ads Configuration
+            gtag('config', 'AW-707974874');
           `}
         </Script>
       </head>
