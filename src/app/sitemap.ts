@@ -89,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-&-the-Future`,
+      url: `${baseUrl}/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.9,

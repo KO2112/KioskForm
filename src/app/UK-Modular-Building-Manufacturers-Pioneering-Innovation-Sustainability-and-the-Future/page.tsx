@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   description: 'Discover how UK modular building manufacturers are revolutionizing construction with sustainable, efficient, and innovative building solutions.',
   keywords: ['UK modular building manufacturers', 'modular construction UK', 'prefabricated buildings', 'sustainable modular solutions', 'offsite construction'],
   alternates: {
-    canonical: 'https://cabinunits.co.uk/uk-modular-building-manufacturers',
+    canonical: 'https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future',
     languages: {
-      'en-GB': 'https://cabinunits.co.uk/uk-modular-building-manufacturers',
+      'en-GB': 'https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future',
     },
   },
   openGraph: {
@@ -40,46 +40,46 @@ export default function ModularBuildingPage() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/",
-                "url": "https://cabinunits.co.uk/uk-modular-building-manufacturers/",
+                "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/",
+                "url": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/",
                 "name": "UK Modular Building Manufacturers: Pioneering Innovation, Sustainability & the Future",
                 "isPartOf": {
                   "@id": "https://cabinunits.co.uk/#website"
                 },
                 "primaryImageOfPage": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#primaryimage"
                 },
                 "image": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#primaryimage"
                 },
-                "thumbnailUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/modular-building-manufacturers.jpg",
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "description": "Discover how UK modular building manufacturers are revolutionizing construction with sustainable, efficient, and innovative building solutions.",
                 "breadcrumb": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#breadcrumb"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#breadcrumb"
                 },
                 "inLanguage": "en-GB",
                 "potentialAction": [
                   {
                     "@type": "ReadAction",
-                    "target": ["https://cabinunits.co.uk/uk-modular-building-manufacturers/"]
+                    "target": ["https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/"]
                   }
                 ]
               },
               {
                 "@type": "ImageObject",
                 "inLanguage": "en-GB",
-                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage",
-                "url": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
-                "contentUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#primaryimage",
+                "url": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/modular-building-manufacturers.jpg",
+                "contentUrl": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/modular-building-manufacturers.jpg",
                 "width": 1200,
                 "height": 630,
                 "caption": "UK Modular Building Manufacturing Industry"
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
@@ -118,9 +118,9 @@ export default function ModularBuildingPage() {
               },
               {
                 "@type": "Article",
-                "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#article",
+                "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#article",
                 "isPartOf": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/"
                 },
                 "author": {
                   "@id": "https://cabinunits.co.uk/#/schema/person/admin"
@@ -129,16 +129,16 @@ export default function ModularBuildingPage() {
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "mainEntityOfPage": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/"
                 },
                 "wordCount": 1350,
                 "publisher": {
                   "@id": "https://cabinunits.co.uk/#organization"
                 },
                 "image": {
-                  "@id": "https://cabinunits.co.uk/uk-modular-building-manufacturers/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/#primaryimage"
                 },
-                "thumbnailUrl": "https://cabinunits.co.uk/uk-modular-building-manufacturers/modular-building-manufacturers.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future/modular-building-manufacturers.jpg",
                 "inLanguage": "en-GB"
               },
               {
