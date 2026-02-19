@@ -1,3 +1,6 @@
+import Script from "next/script"
+import ModularKiosk150X150Content from "./Modular-Kiosk-150X150Content"
+
 export const metadata = {
   title: "Modular Kiosk 150x150cm - Ticket Booth Security Hut | Portable Cabin",
   description:
@@ -36,8 +39,49 @@ export const metadata = {
   },
 }
 
-import ModularKiosk150X150Content from "./Modular-Kiosk-150X150Content"
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
+  name: "Modular Kiosk 150x150cm",
+  description:
+    "Spacious modular kiosk with enhanced interior space, reception desk, and professional features for commercial applications.",
+  sku: "modular-kiosk-150x150",
+  image: {
+    "@type": "ImageObject",
+    url: "https://cabinunits.co.uk/modular-kiosk-150x150-1.jpg",
+    width: 800,
+    height: 600,
+  },
+  brand: {
+    "@type": "Brand",
+    name: "CabinUnits",
+  },
+  offers: {
+    "@type": "Offer",
+    url: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
+    priceCurrency: "GBP",
+    price: "1999",
+    priceValidUntil: "2025-12-31",
+    itemCondition: "https://schema.org/NewCondition",
+    availability: "https://schema.org/InStock",
+  },
+  additionalProperty: [
+    { "@type": "PropertyValue", name: "dimensions", value: "150×150 cm" },
+    { "@type": "PropertyValue", name: "internalHeight", value: "2.35 meters" },
+    { "@type": "PropertyValue", name: "weight", value: "250 kg approx" },
+  ],
+}
 
 export default function Page() {
-  return <ModularKiosk150X150Content />
+  return (
+    <>
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <ModularKiosk150X150Content />
+    </>
+  )
 }

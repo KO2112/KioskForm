@@ -1,4 +1,5 @@
 import PortableToilet130x130Content from "./Portable-toilet-130x130Content"
+import Script from "next/script"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -36,6 +37,49 @@ export const metadata: Metadata = {
   },
 }
 
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "https://cabinunits.co.uk/products/Portable-toilet-130x130",
+  name: "Portable Toilet Unit 130x130cm",
+  description:
+    "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections for welfare facilities.",
+  sku: "portable-toilet-130x130",
+  image: {
+    "@type": "ImageObject",
+    url: "https://cabinunits.co.uk/portable-toilet-130x130-1.png",
+    width: 800,
+    height: 600,
+  },
+  brand: {
+    "@type": "Brand",
+    name: "CabinUnits",
+  },
+  offers: {
+    "@type": "Offer",
+    url: "https://cabinunits.co.uk/products/Portable-toilet-130x130",
+    priceCurrency: "GBP",
+    price: "1999",
+    priceValidUntil: "2025-12-31",
+    itemCondition: "https://schema.org/NewCondition",
+    availability: "https://schema.org/InStock",
+  },
+  additionalProperty: [
+    { "@type": "PropertyValue", name: "dimensions", value: "130×130 cm" },
+    { "@type": "PropertyValue", name: "internalHeight", value: "2.35 meters" },
+    { "@type": "PropertyValue", name: "weight", value: "180 kg approx" },
+  ],
+}
+
 export default function Page() {
-  return <PortableToilet130x130Content />
+  return (
+    <>
+      <Script
+        id="product-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <PortableToilet130x130Content />
+    </>
+  )
 }
