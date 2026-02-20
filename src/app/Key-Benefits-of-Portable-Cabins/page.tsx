@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: 'Discover how portable cabins and kiosks can transform your business operations with cost savings, rapid deployment, and versatile applications across industries.',
   keywords: ['portable cabin benefits', 'kiosk advantages', 'modular building solutions', 'temporary office space', 'mobile business units', 'cost-effective workspace'],
   alternates: {
-    canonical: 'https://cabinunits.co.uk/benefit',
+    canonical: 'https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins',
     languages: {
-      'en-GB': 'https://cabinunits.co.uk/benefit',
+      'en-GB': 'https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins',
     },
   },
   openGraph: {
@@ -39,46 +39,46 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://cabinunits.co.uk/benefit/",
-                "url": "https://cabinunits.co.uk/benefit/",
+                "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/",
+                "url": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/",
                 "name": "Key Benefits of Portable Cabins & Kiosks for Businesses",
                 "isPartOf": {
                   "@id": "https://cabinunits.co.uk/#website"
                 },
                 "primaryImageOfPage": {
-                  "@id": "https://cabinunits.co.uk/benefit/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#primaryimage"
                 },
                 "image": {
-                  "@id": "https://cabinunits.co.uk/benefit/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#primaryimage"
                 },
-                "thumbnailUrl": "https://cabinunits.co.uk/benefit/portable-cabin-benefits.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/portable-cabin-benefits.jpg",
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "description": "Discover how portable cabins and kiosks can transform your business operations with cost savings, rapid deployment, and versatile applications across industries.",
                 "breadcrumb": {
-                  "@id": "https://cabinunits.co.uk/benefit/#breadcrumb"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#breadcrumb"
                 },
                 "inLanguage": "en-GB",
                 "potentialAction": [
                   {
                     "@type": "ReadAction",
-                    "target": ["https://cabinunits.co.uk/benefit/"]
+                    "target": ["https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/"]
                   }
                 ]
               },
               {
                 "@type": "ImageObject",
                 "inLanguage": "en-GB",
-                "@id": "https://cabinunits.co.uk/benefit/#primaryimage",
-                "url": "https://cabinunits.co.uk/benefit/portable-cabin-benefits.jpg",
-                "contentUrl": "https://cabinunits.co.uk/benefit/portable-cabin-benefits.jpg",
+                "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#primaryimage",
+                "url": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/portable-cabin-benefits.jpg",
+                "contentUrl": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/portable-cabin-benefits.jpg",
                 "width": 1200,
                 "height": 630,
                 "caption": "Portable Cabins and Kiosks Benefits"
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://cabinunits.co.uk/benefit/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",
@@ -117,9 +117,9 @@ export default function Page() {
               },
               {
                 "@type": "Article",
-                "@id": "https://cabinunits.co.uk/benefit/#article",
+                "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#article",
                 "isPartOf": {
-                  "@id": "https://cabinunits.co.uk/benefit/"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/"
                 },
                 "author": {
                   "@id": "https://cabinunits.co.uk/#/schema/person/admin"
@@ -128,16 +128,16 @@ export default function Page() {
                 "datePublished": "2025-04-15T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "mainEntityOfPage": {
-                  "@id": "https://cabinunits.co.uk/benefit/"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/"
                 },
                 "wordCount": 1250,
                 "publisher": {
                   "@id": "https://cabinunits.co.uk/#organization"
                 },
                 "image": {
-                  "@id": "https://cabinunits.co.uk/benefit/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/#primaryimage"
                 },
-                "thumbnailUrl": "https://cabinunits.co.uk/benefit/portable-cabin-benefits.jpg",
+                "thumbnailUrl": "https://cabinunits.co.uk/Key-Benefits-of-Portable-Cabins/portable-cabin-benefits.jpg",
                 "inLanguage": "en-GB"
               },
               {

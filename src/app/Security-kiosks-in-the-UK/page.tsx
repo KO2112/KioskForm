@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   description: 'Discover how security kiosks are transforming safety and service efficiency across the UK. Explore innovations in security huts, CCTV monitoring and customizable solutions.',
   keywords: ['security kiosks UK', 'security huts', 'CCTV kiosks', 'kiosk manufacturers UK', 'security booth', 'guard kiosk'],
   alternates: {
-    canonical: 'https://cabinunits.co.uk/security-kiosks-in-the-UK',
+    canonical: 'https://cabinunits.co.uk/Security-kiosks-in-the-UK',
     languages: {
-      'en-GB': 'https://cabinunits.co.uk/security-kiosks-in-the-UK',
+      'en-GB': 'https://cabinunits.co.uk/Security-kiosks-in-the-UK',
     },
   },
   openGraph: {
@@ -39,37 +39,37 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/",
-                "url": "https://cabinunits.co.uk/security-kiosks-in-the-UK/",
+                "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/",
+                "url": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/",
                 "name": "Security Kiosks in the UK - Enhanced Safety & Functionality | CabinUnits",
                 "isPartOf": {
                   "@id": "https://cabinunits.co.uk/#website"
                 },
                 "primaryImageOfPage": {
-                  "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/#primaryimage"
                 },
                 "image": {
-                  "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/#primaryimage"
+                  "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/#primaryimage"
                 },
                 "thumbnailUrl": "https://cabinunits.co.uk/kiosk3.jpg",
                 "datePublished": "2025-04-20T10:00:00+00:00",
                 "dateModified": "2025-04-24T09:00:00+00:00",
                 "description": "Discover how security kiosks are transforming safety and service efficiency across the UK. Explore innovations in security huts, CCTV monitoring and customizable solutions.",
                 "breadcrumb": {
-                  "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/#breadcrumb"
+                  "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/#breadcrumb"
                 },
                 "inLanguage": "en-GB",
                 "potentialAction": [
                   {
                     "@type": "ReadAction",
-                    "target": ["https://cabinunits.co.uk/security-kiosks-in-the-UK/"]
+                    "target": ["https://cabinunits.co.uk/Security-kiosks-in-the-UK/"]
                   }
                 ]
               },
               {
                 "@type": "ImageObject",
                 "inLanguage": "en-GB",
-                "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/#primaryimage",
+                "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/#primaryimage",
                 "url": "https://cabinunits.co.uk/blog/security-kiosks-uk.jpg",
                 "contentUrl": "https://cabinunits.co.uk/blog/security-kiosks-uk.jpg",
                 "width": 1200,
@@ -78,7 +78,7 @@ export default function Page() {
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://cabinunits.co.uk/security-kiosks-in-the-UK/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/Security-kiosks-in-the-UK/#breadcrumb",
                 "itemListElement": [
                   {
                     "@type": "ListItem",

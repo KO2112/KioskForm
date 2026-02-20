@@ -68,7 +68,7 @@ const BlogContent = () => {
 
           {/* Blog Post 3 Preview */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-            <Link href="/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-&-the-Future">
+            <Link href="/UK-Modular-Building-Manufacturers-Pioneering-Innovation-Sustainability-and-the-Future">
               <div className="relative h-48 w-full">
                 <Image 
                   src="/kiosk4.jpg" 
