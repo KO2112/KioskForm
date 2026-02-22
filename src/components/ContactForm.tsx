@@ -5,6 +5,24 @@ import { useState } from 'react';
 import { ChevronRight, CheckCircle, AlertCircle, MessageCircle } from 'lucide-react';
 import { sendContactEmail } from '../../lib/resend';
 
+// Google Ads conversion tracking function
+declare let gtag: (...args: any[]) => void;
+
+function gtag_report_conversion(url?: string) {
+  const callback = function () {
+    if (typeof url !== 'undefined') {
+      window.location.href = url;
+    }
+  };
+  if (typeof window !== 'undefined' && typeof gtag === 'function') {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-707974874/QsZfCIfa-vwbENqty9EC',
+      'event_callback': callback
+    });
+  }
+  return false;
+}
+
 const ContactForm = () => {
   const [formStatus, setFormStatus] = useState({
     submitted: false,
@@ -31,6 +49,7 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    gtag_report_conversion();
     
     try {
       const result = await sendContactEmail({
