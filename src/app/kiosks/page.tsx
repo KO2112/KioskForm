@@ -138,8 +138,8 @@ export default function Page() {
                   {
                     "@type": "ListItem",
                     position: 2,
-                    name: "Modular Kiosk 130x130cm",
-                    url: "https://cabinunits.co.uk/products/Modular-Kiosk-130x130",
+                    name: "Modular Cabin 115x125cm",
+                    url: "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
                   },
                   {
                     "@type": "ListItem",

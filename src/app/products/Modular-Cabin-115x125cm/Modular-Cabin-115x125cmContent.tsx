@@ -1,0 +1,677 @@
+"use client"
+
+import Link from "next/link"
+import { useState } from "react"
+import {
+  ChevronRight,
+  CheckCircle,
+  Box,
+  Info,
+  Truck,
+  Ruler,
+  ThermometerSnowflake,
+  BatteryCharging,
+  Star,
+  ImageIcon,
+  Coffee,
+  Ticket,
+  Users,  
+  HelpCircle,
+  Weight,
+  Home,
+  Building,
+  X,
+  ChevronLeft,
+  ZoomIn,
+} from "lucide-react"
+import ContactForm from '../../../components/ContactForm'
+
+const ModularCabin115x125cmContent = () => {
+  const [activeTab, setActiveTab] = useState("specifications")
+  const [activeThumbnail, setActiveThumbnail] = useState(0)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [lightboxIndex, setLightboxIndex] = useState(0)
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index)
+    setLightboxOpen(true)
+  }
+
+  const closeLightbox = () => {
+    setLightboxOpen(false)
+  }
+
+  const goToPrevious = () => {
+    setLightboxIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1))
+  }
+
+  const goToNext = () => {
+    setLightboxIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
+  }
+
+  // 12 images for the cabin gallery
+  const images = [
+    "/Modular-Cabin-115x125cm.png",
+    "/Modular-Cabin-115x125cm2.png",
+    "/Modular-Cabin-115x125cm3.png",
+    "/Modular-Cabin-115x125cm4.png",
+    "/Modular-Cabin-115x125cm5.png",
+    "/Modular-Cabin-115x125cm6.png",
+    "/Modular-Cabin-115x125cm7.png",
+    "/Modular-Cabin-115x125cm8.png",
+    "/Modular-Cabin-115x125cm9.png",
+    "/Modular-Cabin-115x125cm10.png",
+    "/Modular-Cabin-115x125cm11.png",
+    "/Modular-Cabin-115x125cm12.png",
+  ]
+
+  const specs = [
+    { icon: Ruler, name: "Outer Dimensions", value: "1.15 × 1.25 × 2.35 m (3'9\" × 4'1\" × 7'9\")" },
+    { icon: Ruler, name: "Window Dimensions", value: "W64 × H80 cm; foldable window W64 × H40 cm" },
+    { icon: Weight, name: "Weight", value: "Approximately 180 kg" },
+    {
+      icon: ThermometerSnowflake,
+      name: "Wall Construction",
+      value: "Steel double sandwich panels, RAL 9002 color, 50mm styrofoam core, 3mm thick internal and external steel layers",
+    },
+    { icon: BatteryCharging, name: "Electrical", value: "LED light, double plug socket, fuse box, external 16A female 3-pin site socket" },
+    { icon: Home, name: "Interior Features", value: "Internal reception desk, PVC flooring, LED lighting" },
+    { icon: Building, name: "Construction", value: "Lockable door, upward sliding and fixed windows" },
+    { icon: Box, name: "Base", value: "Thick fiber cement board with forklift slots and 4 lifting eyes on roof corners" },
+  ]
+
+  const applications = [
+    { icon: Ticket, name: "Ticket Booths" },
+    { icon: Info, name: "Information Points" },
+    { icon: Coffee, name: "Coffee/Beverage Shops" },
+    { icon: Box, name: "Gatehouses" },
+    { icon: Box, name: "Car Park Attendants" },
+    { icon: Users, name: "Welfare Units" },
+    { icon: Home, name: "Portable Offices" },
+    { icon: Coffee, name: "Catering Units" },
+    { icon: Building, name: "Security Cabins" },
+    { icon: Info, name: "Surveillance Points" },
+  ]
+
+  const faqs = [
+    {
+      question: "What are the key features of this 115x125cm modular cabin?",
+      answer:
+        "This compact modular cabin features steel double sandwich panels with RAL 9002 color and 50mm styrofoam core insulation. It includes an internal reception desk, PVC flooring, LED lighting, upward sliding and fixed windows, complete electrical installation with LED light, double plug socket, fuse box, external 16A female 3-pin site socket, and a lockable door for security.",
+    },
+    {
+      question: "How should the modular cabin be installed?",
+      answer:
+        "For optimal use, we recommend placing the cabin on a concrete base or steel beams. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting eyes on the roof corners for easy positioning. Ready to use - just place it in a safe spot and plug into power.",
+    },
+    {
+      question: "What are the exact dimensions and weight?",
+      answer:
+        "Outer dimensions (W×L×H): 1.15 × 1.25 × 2.35 meters approx. (3'9\" × 4'1\" × 7'9\"). Window dimensions: W64 × H80 cm; foldable window dimensions: W64 × H40 cm. Weight: Approximately 160 kg.",
+    },
+    {
+      question: "What electrical systems are included?",
+      answer:
+        "The cabin comes with comprehensive electrical installation including an LED light, a double plug socket, a fuse box, and an external 16A female 3-pin site socket. Ready to use - just plug into the power.",
+    },
+    {
+      question: "What are the delivery and pickup options?",
+      answer:
+        "Nationwide delivery is available. Free in-person pick-up is available from our warehouse at LE13BW. For delivery cost, please provide your postcode. Contact us at Mobile: 07497 954779.",
+    },
+    {
+      question: "What applications is this modular cabin best suited for?",
+      answer:
+        "This versatile cabin is perfect for gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, coffee or beverage shops, and more. Ideal for outdoor events or surveillance at locations such as construction sites, industrial areas, and commercial premises.",
+    },
+  ]
+
+  return (
+    <div className="bg-gray-50 min-h-screen pt-16 overflow-x-hidden">
+      {/* Breadcrumb */}
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+          <nav className="flex text-sm">
+            <Link href="/" className="text-gray-500 hover:text-gray-700">
+              Home
+            </Link>
+            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+            <Link href="/kiosks" className="text-gray-500 hover:text-gray-700">
+              Kiosks
+            </Link>
+            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
+            <span className="text-gray-900 font-medium">Modular Cabin 115x125cm</span>
+          </nav>
+        </div>
+      </div>
+
+      {/* Product Main Section */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
+          {/* Left Column - Images */}
+          <div className="mb-8 lg:mb-0">
+            {/* Main Image */}
+            <div 
+              className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-md mb-4 cursor-pointer group"
+              onClick={() => openLightbox(activeThumbnail)}
+            >
+              <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
+                <img
+                  src={
+                    images[activeThumbnail] ||
+                    "/placeholder.svg?height=500&width=500&query=modular cabin 115x125cm exterior view"
+                   || "/placeholder.svg"}
+                  alt={`Modular Cabin 115x125cm - Ticket Booth exterior view ${activeThumbnail + 1}`}
+                  className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
+                />
+                {/* Zoom indicator */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/90 rounded-full p-3 shadow-lg">
+                    <ZoomIn className="h-6 w-6 text-blue-700" />
+                  </div>
+                </div>
+                {/* Image counter */}
+                <div className="absolute bottom-4 left-4 bg-black/60 text-white text-sm px-3 py-1 rounded-full">
+                  {activeThumbnail + 1} / {images.length}
+                </div>
+              </div>
+            </div>
+
+            {/* Thumbnails - 12 images in rows */}
+            <div className="grid grid-cols-6 gap-2">
+              {images.map((img, index) => (
+                <button
+                  key={index}
+                  className={`border-2 ${activeThumbnail === index ? "border-blue-600 ring-2 ring-blue-200" : "border-gray-200 hover:border-blue-400"} rounded-md overflow-hidden h-20 bg-white flex items-center justify-center transition-all`}
+                  onClick={() => setActiveThumbnail(index)}
+                >
+                  <img
+                    src={img || `/placeholder.svg?height=80&width=80&query=modular cabin view ${index + 1}`}
+                    alt={`Modular Cabin 115x125cm portable booth - view ${index + 1}`}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </button>
+              ))}
+            </div>
+            
+            {/* Click to expand hint */}
+            <p className="text-center text-sm text-gray-500 mt-3">Click on the main image to expand</p>
+          </div>
+
+          {/* Right Column - Product Info */}
+          <div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 115x125cm</h1>
+            <p className="text-gray-600 mb-4">Security Hut | Ticket Booth | Gatehouses | Information Point | (3'9" x 4'1" x 7'9")</p>
+
+            {/* Price Tag */}
+            <div className="flex items-baseline mb-6">
+              <span className="text-3xl font-bold text-gray-900">£1,799</span>
+              <span className="ml-2 text-sm text-gray-500">including VAT</span>
+            </div>
+
+            {/* Short Description */}
+            <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
+              <p className="text-blue-800 text-sm">
+                Brand new, durable, and fully insulated modular cabin with approximate external dimensions of 1.15 m (W) x 1.25m (L) x 2.35 m (H) (3'9" x 4'1" x 7'9"). Ready to use – simply position the unit and connect to a suitable power supply. Made in the EU.
+              </p>
+            </div>
+
+            {/* Contact Form Section */}
+            <ContactForm />
+
+            {/* Delivery Info */}
+            <div className="flex flex-col text-sm text-gray-600 mb-6 gap-2">
+              <div className="flex items-center">
+                <Truck className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Nationwide delivery available | Delivery cost available upon providing postcode</span>
+              </div>
+              <div className="flex items-center">
+                <Box className="h-5 w-5 text-gray-500 mr-2" />
+                <span>Free in-person pick-up from our warehouse at LE13BW</span>
+              </div>
+            </div>
+
+            {/* USPs */}
+            <div className="grid grid-cols-2 gap-3 mb-6">
+              <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center">
+                <div className="bg-blue-100 rounded-full p-2 mr-3">
+                  <Star className="h-4 w-4 text-blue-700" />
+                </div>
+                <span className="text-sm text-gray-700">Compact Design</span>
+              </div>
+              <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center">
+                <div className="bg-blue-100 rounded-full p-2 mr-3">
+                  <ThermometerSnowflake className="h-4 w-4 text-blue-700" />
+                </div>
+                <span className="text-sm text-gray-700">Fully Insulated</span>
+              </div>
+              <div className="bg-white p-3 rounded-lg border border-gray-200 flex items-center">
+                <div className="bg-blue-100 rounded-full p-2 mr-3">
+                  <Building className="h-4 w-4 text-blue-700" />
+                </div>
+                <span className="text-sm text-gray-700">Versatile Applications</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Tabs Section */}
+      <div className="border-t border-gray-200 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Tabs Navigation */}
+          <div className="flex border-b border-gray-200 overflow-x-auto">
+            <button
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "specifications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("specifications")}
+            >
+              Specifications
+            </button>
+            <button
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "applications" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("applications")}
+            >
+              Applications
+            </button>
+            <button
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "features" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("features")}
+            >
+              Key Features
+            </button>
+            <button
+              className={`py-4 px-2 sm:px-6 font-medium text-xs sm:text-sm whitespace-nowrap ${activeTab === "faqs" ? "text-blue-600 border-b-2 border-blue-600" : "text-gray-500 hover:text-gray-700"}`}
+              onClick={() => setActiveTab("faqs")}
+            >
+              FAQs
+            </button>
+          </div>
+
+          {/* Tab Content */}
+          <div className="py-8 w-full max-w-full">
+            {/* Specifications Tab */}
+            {activeTab === "specifications" && (
+              <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">Technical Specifications</h3>
+                  <div className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden">
+                    <ul className="divide-y divide-gray-200">
+                      {specs.map((spec, index) => (
+                        <li key={index} className="px-4 py-3 flex items-center">
+                          <div className="bg-blue-100 rounded-full p-2 mr-3">
+                            <spec.icon className="h-4 w-4 text-blue-700" />
+                          </div>
+                          <div className="flex-1">
+                            <span className="text-sm font-medium text-gray-900">{spec.name}</span>
+                            <p className="text-sm text-gray-600">{spec.value}</p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
+                  <div className="prose prose-blue max-w-none w-full text-gray-700 prose-sm sm:prose-base">
+                    <p>
+                      <strong>Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 115x125cm</strong> - Brand new, durable, and fully insulated modular cabin with approximate external dimensions of 1.15 m (W) x 1.25m (L) x 2.35 m (H) (3'9" x 4'1" x 7'9").
+                    </p>
+                    <p>
+                      <strong>Key Construction Features:</strong> Constructed from steel double-skin sandwich panels for excellent durability, insulation, and weather resistance. Wall finish: RAL 9002. Insulation: 50 mm polystyrene (styrofoam) core. Base: thick fibre cement board with 4 lifting hooks on the roof corners. Window size: 64 cm (W) x 80 cm (H) with foldable section: 64 cm (W) x 40 cm (H). Features upward sliding service window, internal reception desk, and lockable door. Internal cabin dimensions (WxLxH): 100x110x220 cm approx. (3'3" x 3'7" x 7'2").
+                    </p>
+                    <p>
+                      <strong>Electrical Specification:</strong> Internal LED lighting, double plug socket, fuse box installed, and external 16A 3-pin site socket. Ready to use – simply position the unit and connect to a suitable power supply.
+                    </p>
+                    <p>
+                      <strong>Additional Details:</strong> Flooring is durable PVC. Weight: Approx. 180 kg. Made in the EU. Suitable for placement on a concrete base or steel beams.
+                    </p>
+                    <h4 className="font-bold mt-3 mb-2">🏗️ Ideal Uses</h4>
+                    <p>
+                      Perfect for a wide range of applications. Use as a <Link href="/kiosks" className="text-blue-600 hover:underline font-semibold">commercial ticket booth</Link>, security hut, information kiosk, <Link href="/products/Portable-toilet-130x130" className="text-blue-600 hover:underline font-semibold">alternative to portable toilets</Link>, or gatehouses. This compact portable cabin offers a cost-effective and flexible alternative to traditional construction for businesses across the UK.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Applications Tab */}
+            {activeTab === "applications" && (
+              <div className="w-full">
+                <h3 className="text-lg font-bold text-gray-900 mb-6">Versatile Applications</h3>
+                <p className="text-gray-700 mb-8">
+                  The compact 115x125cm Modular Cabin is perfectly versatile for a wide range of commercial uses and is
+                  ideal for outdoor events, construction sites, industrial areas, and commercial premises where space
+                  efficiency is important.
+                </p>
+
+                <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
+                  {applications.map((app, index) => (
+                    <div
+                      key={index}
+                      className="bg-white rounded-lg border border-gray-200 p-4 text-center hover:shadow-md transition-shadow"
+                    >
+                      <div className="bg-blue-100 rounded-full p-3 mx-auto mb-3 w-12 h-12 flex items-center justify-center">
+                        <app.icon className="h-5 w-5 text-blue-700" />
+                      </div>
+                      <h4 className="font-medium text-gray-900 text-sm">{app.name}</h4>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-10 bg-blue-50 rounded-lg p-6 border border-blue-100">
+                  <h4 className="font-semibold text-blue-900 mb-2">Ideal Uses & Applications</h4>
+                  <p className="text-blue-800 mb-3">
+                    Perfect for a wide range of applications, including: <strong>Security huts/gatehouses</strong>, <strong>ticket kiosks</strong>, information points, car park attendant booths, construction site offices, <strong>welfare units</strong>, catering units/coffee kiosks, and commercial or industrial surveillance points. A cost-effective and flexible alternative to traditional construction.
+                  </p>
+                  <p className="text-blue-800">
+                    Explore our full range of <Link href="/kiosks" className="font-semibold text-blue-700 hover:underline">modular cabins and portable kiosks</Link> to find the perfect solution for your business needs.
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Key Features Tab */}
+            {activeTab === "features" && (
+              <div className="w-full">
+                <h3 className="text-lg font-bold text-gray-900 mb-6">Key Features</h3>
+                <div className="bg-white rounded-lg border border-gray-200 p-6">
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Steel double-skin sandwich panels with 50mm polystyrene (styrofoam) core insulation (RAL 9002)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Upward sliding service window (64cm W x 80cm H) with foldable section (64cm W x 40cm H)</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Internal reception desk, durable PVC flooring, LED lighting</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Complete electrical: Internal LED lighting, double plug socket, fuse box, external 16A 3-pin site socket</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Thick fiber cement board base with 4 lifting hooks on roof corners</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Lockable door for security. Internal dimensions: 100x110x220 cm (3'3" x 3'7" x 7'2")</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
+                      <span className="text-gray-700">Weight: Approx. 180 kg. Ready to use - simply position and plug in. Made in the EU</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            {/* FAQs Tab */}
+            {activeTab === "faqs" && (
+              <div className="w-full">
+                <h3 className="text-lg font-bold text-gray-900 mb-6">Frequently Asked Questions</h3>
+
+                <div className="space-y-4">
+                  {faqs.map((faq, index) => (
+                    <div key={index} className="bg-white rounded-lg border border-gray-200 p-4 sm:p-5 w-full">
+                      <div className="flex gap-2 sm:gap-3 mb-3">
+                        <HelpCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+                        <h4 className="font-medium text-gray-900 text-sm sm:text-base">{faq.question}</h4>
+                      </div>
+                      <p className="text-gray-700 text-sm sm:text-base ml-7 sm:ml-8">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-8 bg-gray-100 rounded-lg p-6">
+                  <h4 className="font-semibold text-gray-900 mb-2">Need more information?</h4>
+                  <p className="text-gray-700 mb-4">
+                    Our team is ready to assist you with any inquiries regarding our compact modular cabins.
+                  </p>
+                  <Link
+                    href="/ContactUs"
+                    className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium"
+                  >
+                    Contact Us
+                    <ChevronRight className="w-4 h-4 ml-1" />
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Comparison Section */}
+      <div className="bg-gray-50 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">How It Compares to Other Modular Cabins</h2>
+          <div className="overflow-x-auto bg-white rounded-lg shadow-sm border border-gray-200">
+            <table className="w-full">
+              <thead className="bg-blue-50 border-b border-gray-200">
+                <tr>
+                  <th className="px-4 py-3 text-left text-sm font-semibold text-gray-900">Feature</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">115x125cm<br/>(This Unit)</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">130x130cm</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">150x150cm</th>
+                  <th className="px-4 py-3 text-center text-sm font-semibold text-gray-900">210x210cm</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-200">
+                <tr className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900">Dimensions</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">1.15 × 1.25m</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">1.30 × 1.30m</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">1.50 × 1.50m</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">2.10 × 2.10m</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900">Weight</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">180 kg</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">170 kg</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">250 kg</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">350 kg</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900">Price</td>
+                  <td className="px-4 py-3 text-center text-sm font-semibold text-green-600">£1,799</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">£1,999</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">£2,049</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">£2,499</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900">Interior Space</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">100×110cm</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">130×130cm</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">150×150cm</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">210×210cm</td>
+                </tr>
+                <tr className="hover:bg-gray-50">
+                  <td className="px-4 py-3 text-sm font-medium text-gray-900">Best For</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">Compact sites, ticket booths</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">Standard ticket booths</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">Reception areas</td>
+                  <td className="px-4 py-3 text-center text-sm text-gray-600">Offices, large premises</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      {/* Related Products Section */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8">Explore Other Modular Cabin Options</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Link href="/products/Modular-Kiosk-130x130" className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-32 flex items-center justify-center">
+              <span className="text-white font-bold text-lg">130×130cm</span>
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900 mb-1">Modular Kiosk 130×130cm</h3>
+              <p className="text-sm text-gray-600 mb-3">Versatile standard size with excellent interior space</p>
+              <p className="text-lg font-bold text-green-600">£1,999</p>
+            </div>
+          </Link>
+
+          <Link href="/products/Modular-Kiosk-150X150" className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-gradient-to-r from-blue-700 to-blue-800 h-32 flex items-center justify-center">
+              <span className="text-white font-bold text-lg">150×150cm</span>
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900 mb-1">Modular Kiosk 150×150cm</h3>
+              <p className="text-sm text-gray-600 mb-3">Enhanced space for reception areas and offices</p>
+              <p className="text-lg font-bold text-green-600">£2,049</p>
+            </div>
+          </Link>
+
+          <Link href="/products/Modular-Kiosk-210X210" className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-100">
+            <div className="bg-gradient-to-r from-blue-900 to-indigo-900 h-32 flex items-center justify-center">
+              <span className="text-white font-bold text-lg">210×210cm</span>
+            </div>
+            <div className="p-4">
+              <h3 className="font-semibold text-gray-900 mb-1">Modular Kiosk 210×210cm</h3>
+              <p className="text-sm text-gray-600 mb-3">Premium size for commercial spaces and operations</p>
+              <p className="text-lg font-bold text-green-600">£2,499</p>
+            </div>
+          </Link>
+        </div>
+
+        <div className="mt-8 bg-blue-50 rounded-lg p-6 border border-blue-100">
+          <h3 className="font-semibold text-blue-900 mb-2">Can't Find the Right Size?</h3>
+          <p className="text-blue-800 mb-4">
+            We offer various modular cabin sizes to suit different applications and budgets. Browse our complete range of <Link href="/kiosks" className="font-semibold hover:underline">portable cabins and kiosks</Link>, or <Link href="/ContactUs" className="font-semibold hover:underline">contact us</Link> for custom solutions.
+          </p>
+        </div>
+      </div>
+
+      {/* Call To Action */}
+      <div className="bg-gradient-to-r from-blue-700 to-blue-600 text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="md:flex items-center justify-between">
+            <div className="mb-6 md:mb-0 md:mr-8">
+              <h2 className="text-2xl font-bold mb-2">Ready to learn more about our Compact Modular Cabin?</h2>
+              <p className="text-blue-100">
+                Our team is available to answer any questions and help you with your inquiry.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+              <Link
+                href="/ContactUs"
+                className="bg-white text-blue-700 px-6 py-3 rounded-md hover:bg-blue-50 transition-colors shadow-md font-medium text-center"
+              >
+                Get a Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* SEO Content */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="prose prose-blue max-w-none text-gray-600 text-sm">
+          <h2>Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 115x125cm</h2>
+          <p>
+            Brand new, durable, and fully insulated modular cabin with approximate external dimensions of 1.15 m (W) x 1.25m (L) x 2.35 m (H) (3'9" x 4'1" x 7'9"). Constructed from steel double-skin sandwich panels for excellent durability, insulation, and weather resistance. Wall finish: RAL 9002. Insulation: 50 mm polystyrene (styrofoam) core.
+          </p>
+          <p>
+            <strong>Key Features:</strong> Base: thick fibre cement board with 4 lifting hooks on the roof corners. Window size: 64 cm (W) x 80 cm (H) with foldable section: 64 cm (W) x 40 cm (H). Upward sliding service window, internal reception desk, lockable door. Cabin internal dimensions (WxLxH) 100x110x220 cm approx. (3'3" x 3'7" x 7'2"). Durable PVC flooring with LED lighting throughout.
+          </p>
+          <p>
+            <strong>Electrical Specification:</strong> Internal LED lighting, double plug socket, fuse box installed, and external 16A 3-pin site socket. Ready to use – simply position the unit and connect to a suitable power supply.
+          </p>
+          <p>
+            <strong>Additional Details:</strong> Weight: Approx. 180 kg. Made in the EU. Suitable for placement on a concrete base or steel beams. Perfect for a wide range of applications, including security huts/gatehouses, ticket kiosks/information points, car park attendant booths, construction site offices, welfare units, catering units/coffee kiosks, and commercial or industrial surveillance points. A cost-effective and flexible alternative to traditional construction. Nationwide delivery available. Free in-person pick-up available from our warehouse at LE13BW. 
+            <br/><br/>
+            For more information about our range of <Link href="/kiosks" className="text-blue-600 hover:underline font-semibold">portable kiosks and modular cabins</Link>, or to see how this cabin compares to our <Link href="/products/Modular-Kiosk-130x130" className="text-blue-600 hover:underline font-semibold">130×130cm modular kiosk</Link>, please contact our team or visit our main <Link href="/" className="text-blue-600 hover:underline font-semibold">website</Link>.
+          </p>
+        </div>
+      </div>
+
+      {/* Lightbox Modal */}
+      {lightboxOpen && (
+        <div 
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          {/* Close button */}
+          <button 
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-50 bg-transparent"
+            onClick={closeLightbox}
+          >
+            <X className="h-8 w-8" />
+          </button>
+
+          {/* Image counter */}
+          <div className="absolute top-4 left-4 text-white text-lg font-medium">
+            {lightboxIndex + 1} / {images.length}
+          </div>
+
+          {/* Previous button */}
+          <button
+            className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToPrevious()
+            }}
+          >
+            <ChevronLeft className="h-8 w-8" />
+          </button>
+
+          {/* Main lightbox image */}
+          <div 
+            className="max-w-[90vw] max-h-[85vh] flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[lightboxIndex] || "/placeholder.svg"}
+              alt={`Modular Cabin 115x125cm portable ticket booth - detailed view ${lightboxIndex + 1}`}
+              className="max-w-full max-h-[85vh] object-contain"
+            />
+          </div>
+
+          {/* Next button */}
+          <button
+            className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
+            onClick={(e) => {
+              e.stopPropagation()
+              goToNext()
+            }}
+          >
+            <ChevronRight className="h-8 w-8" />
+          </button>
+
+          {/* Thumbnail strip at bottom */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 max-w-[90vw] overflow-x-auto pb-2">
+            {images.map((img, index) => (
+              <button
+                key={index}
+                className={`flex-shrink-0 w-16 h-16 rounded-md overflow-hidden border-2 transition-all ${
+                  lightboxIndex === index 
+                    ? "border-white ring-2 ring-white/50" 
+                    : "border-white/30 hover:border-white/60"
+                } bg-transparent`}
+                onClick={(e) => {
+                  e.stopPropagation()
+                  setLightboxIndex(index)
+                }}
+              >
+                <img
+                  src={img || "/placeholder.svg"}
+                  alt={`Modular Cabin 115x125cm portable booth - thumbnail view ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default ModularCabin115x125cmContent

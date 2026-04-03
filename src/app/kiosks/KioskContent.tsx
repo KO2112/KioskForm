@@ -35,13 +35,13 @@ const KiosksPage = () => {
       icon: Shield,
     },
     {
-      id: "Modular-Kiosk-130x130",
-      title: "Modular Kiosk 130x130cm",
+      id: "Modular-Cabin-115x125cm",
+      title: "Modular Cabin 115x125cm",
       subtitle: "Ticket Booth | Information Point | Catering Unit",
-      price: "£1999",
-      dimensions: "130×130 cm",
-      description: "Versatile compact kiosk perfect for commercial applications with built-in reception desk.",
-      image: "/modular-kiosk-130x130-1.jpg",
+      price: "£1799",
+      dimensions: "115×125 cm",
+      description: "Compact modular cabin perfect for commercial applications with built-in reception desk.",
+      image: "/Modular-Cabin-115x125cm.png",
       features: [
         "Steel sandwich panels with weather-resistant insulation",
         "Internal reception desk and corner shelf included",
@@ -49,7 +49,7 @@ const KiosksPage = () => {
         "PVC flooring and lockable door for security",
         "Upward sliding and fixed windows for ventilation",
         "Customizable with logos and signboards",
-        "Weight: 170 kg approx.",
+        "Weight: 160 kg approx.",
         "Internal height: 2.35 meters",
       ],
       applications: [
@@ -121,35 +121,7 @@ const KiosksPage = () => {
       ],
       icon: Shield,
     },
-    {
-      id: "Modular-Kiosk-150X150",
-      title: "Modular Kiosk 150x150cm",
-      subtitle: "Reception Desk | Security Booth | Service Center",
-      price: "£1999",
-      dimensions: "150×150 cm",
-      description: "Spacious modular kiosk with enhanced interior space, reception desk, and professional features.",
-      image: "/modular-kiosk-150x150-1.jpg",
-      features: [
-        "Spacious 2.25m² interior with reception desk",
-        "Multiple window configurations for versatility",
-        "Steel sandwich panels with premium insulation",
-        "Enhanced electrical system with multiple circuits",
-        "Professional flooring and security features",
-        "Climate control preparation",
-        "Weight: 250 kg approx.",
-        "Internal height: 2.35 meters",
-      ],
-      applications: [
-        "Reception centers",
-        "Security stations",
-        "Ticket booths",
-        "Information centers",
-        "Customer service",
-        "Professional offices",
-        "Commercial applications",
-      ],
-      icon: Box,
-    },
+
     {
       id: "Modular-Kiosk-210X210",
       title: "Modular Kiosk 210x210cm",
@@ -279,9 +251,8 @@ const KiosksPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {kiosks
               .filter((kiosk) => 
-                kiosk.id === "Modular-Kiosk-130x130" || 
-                kiosk.id === "Portable-toilet-130x130" || 
-                kiosk.id === "Modular-Kiosk-150X150"
+                kiosk.id === "Modular-Cabin-115x125cm" || 
+                kiosk.id === "Portable-toilet-130x130"
               )
               .map((kiosk) => (
                 <div
@@ -307,7 +278,7 @@ const KiosksPage = () => {
                         </span>
                       </div>
                       <h3 className="text-xl font-bold text-white">{kiosk.title}</h3>
-                      <p className="text-blue-100 text-sm">{kiosk.subtitle}</p>
+                      <p className="text-white text-sm">{kiosk.subtitle}</p>
                     </div>
                   </div>
 

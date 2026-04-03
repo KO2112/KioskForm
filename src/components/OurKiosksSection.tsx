@@ -24,6 +24,15 @@ const OurProductsSection = () => {
       price: "£1,999",
     },
     {
+      id: "Modular-Cabin-115x125cm",
+      title: "Modular Cabin 115×125",
+      dimensions: "115×125 cm",
+      description: "Compact modular cabin perfect for ticket booths, information points, and catering units.",
+      image: "/Modular-Cabin-115x125cm.jpg",
+      specs: "Dimensions: 1.15m × 1.25m × 2.35m (H), Weight: 160 kg approx.",
+      price: "£1,799",
+    },
+    {
       id: "small-kiosk",
       title: "Small Modular Kiosk",
       dimensions: "143×143 cm",
