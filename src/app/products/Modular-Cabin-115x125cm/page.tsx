@@ -60,10 +60,20 @@ export default function ModularCabin115x125cmPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            name: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 115x125cm",
-            image: ["/Modular-Cabin-115x125cm.jpg"],
+            "@id": "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
+            name: "115x125cm Modular Cabin - Portable Ticket Booth & Security Hut",
+            image: [
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/Modular-Cabin-115x125cm.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Modular Cabin 115x125cm"
+              }
+            ],
             description:
               "Brand new, durable, and fully insulated modular cabin with approximate external dimensions of 1.15m (W) x 1.25m (L) x 2.35m (H). Perfect for security huts, ticket booths, gatehouses and information points. Made in the EU with LED lighting and electrical installation.",
+            sku: "modular-cabin-115x125",
             brand: {
               "@type": "Brand",
               name: "Cabin Units",
@@ -79,6 +89,7 @@ export default function ModularCabin115x125cmPage() {
               priceCurrency: "GBP",
               price: "1799",
               availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition",
               seller: {
                 "@type": "Organization",
                 name: "Cabin Units",
