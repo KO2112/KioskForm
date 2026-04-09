@@ -1,4 +1,5 @@
 import Kiosk130x130Content from "./Kiosk-130x130Content"
+import { ProductSchema } from "@/components/ProductSchema"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -36,5 +37,10 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-  return <Kiosk130x130Content />
+  return (
+    <>
+      <ProductSchema productId="Kiosk-130x130-Reinforced" />
+      <Kiosk130x130Content />
+    </>
+  )
 }
