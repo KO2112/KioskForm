@@ -7,9 +7,9 @@ import Footer from '@/components/Footer';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Modular Kiosk Solutions | UK Portable Buildings',
+  title: 'Modular Kiosk Solutions | UK Portable cabins',
   description: 'Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
-  keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, digital signage kiosk, custom kiosk design',
+  keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, construction kiosk, custom kiosk design',
   alternates: {
     canonical: 'https://cabinunits.co.uk',
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Modular Kiosk Solutions | UK Portable Buildings',
+    title: 'Modular Kiosk Solutions | UK Portable cabins',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modular Kiosk Solutions | UK Portable Buildings',
+    title: 'Modular Kiosk Solutions | UK Portable cabins',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: ['kiosk.jpg'],
   },
@@ -47,7 +47,7 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://cabinunits.co.uk/",
         "url": "https://cabinunits.co.uk/",
-        "name": "Modular Kiosk Solutions | UK Portable Buildings",
+        "name": "Modular Kiosk Solutions | UK Portable cabins",
         "isPartOf": {
           "@id": "https://cabinunits.co.uk/#website"
         },
@@ -81,7 +81,7 @@ export default function Home() {
         "@id": "https://cabinunits.co.uk/#website",
         "url": "https://cabinunits.co.uk/",
         "name": "cabinunits",
-        "description": "Premium modular kiosks and portable buildings",
+        "description": "Premium modular kiosks and portable cabins",
         "potentialAction": {
           "@type": "SearchAction",
           "target": {
@@ -118,7 +118,7 @@ export default function Home() {
             "contactType": "sales"
           }
         ],
-        "description": "Premium modular kiosks and portable buildings manufactured in the EU with the highest quality standards.",
+        "description": "Premium modular kiosks and portable cabins manufactured in the EU with the highest quality standards.",
         "email": "info@cabinunits.co.uk",
         "address": {
           "@type": "PostalAddress",
