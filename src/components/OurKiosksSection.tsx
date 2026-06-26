@@ -24,15 +24,6 @@ const OurProductsSection = () => {
       price: "£1,999",
     },
     {
-      id: "Modular-Cabin-115x125cm",
-      title: "Modular Cabin 115×125",
-      dimensions: "115×125 cm",
-      description: "Compact modular cabin perfect for ticket booths, information points, and catering units.",
-      image: "/Modular-Cabin-115x125cm.png",
-      specs: "Dimensions: 1.15m × 1.25m × 2.35m (H), Weight: 160 kg approx.",
-      price: "£1,799",
-    },
-    {
       id: "small-kiosk",
       title: "Small Modular Kiosk",
       dimensions: "143×143 cm",
@@ -58,6 +49,25 @@ const OurProductsSection = () => {
       image: "/portable-toilet-130x130-1.png",
       specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 180 kg approx.",
       price: "£1,999",
+      details: [
+        "Ceramic flushing toilet and wash basin",
+        "Fully insulated steel sandwich panels",
+        "Ready for water, waste, and electrical connections",
+      ],
+    },
+    {
+      id: "Portable-Double-Toilet-Block",
+      title: "Portable Double Toilet Block",
+      dimensions: "160×210×256 cm",
+      description: "Heavy-duty double WC cabin with two separate cubicles, wash basins, and full ready-to-connect services.",
+      image: "/DoubleToilet.png",
+      specs: "External dimensions: 1.60m × 2.10m × 2.56m, Weight: 610 kg approx.",
+      price: "£2,699.99",
+      details: [
+        "Two separate WC cubicles with ceramic toilets",
+        "Integrated basins, vanity cabinets, mirrors, and ventilation",
+        "Fully pre-wired and pre-plumbed for quick installation",
+      ],
     },
     {
       id: "Portable-Kiosk-130x210",
@@ -76,6 +86,11 @@ const OurProductsSection = () => {
       image: "/modular-kiosk-150x150-1.jpg",
       specs: "Dimensions: 1.50m × 1.50m × 2.35m (H), Weight: 200 kg approx.",
       price: "£2,049",
+      details: [
+        "More internal space for reception and service counters",
+        "Fully insulated steel sandwich panel construction",
+        "Suitable for ticketing, security, and commercial use",
+      ],
     },
     {
       id: "Modular-Kiosk-210X210",
@@ -101,8 +116,8 @@ const OurProductsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {products
             .filter((product) => 
-              product.id === "Modular-Cabin-115x125cm" || 
               product.id === "Portable-toilet-130x130" || 
+              product.id === "Portable-Double-Toilet-Block" || 
               product.id === "Modular-Kiosk-150X150"
             )
             .map((product) => (
@@ -111,8 +126,9 @@ const OurProductsSection = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
             >
               {/* Product Image */}
-              <div
-                className="h-96 sm:h-128 w-full relative bg-blue-100"
+              <Link
+                href={`/products/${product.id}`}
+                className="h-96 sm:h-128 w-full relative bg-blue-100 block"
                 style={{
                   backgroundImage: `url(${product.image})`,
                   backgroundSize: "cover",
@@ -130,12 +146,22 @@ const OurProductsSection = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-white">{product.title}</h3>
                 </div>
-              </div>
+              </Link>
 
               {/* Product Details */}
               <div className="p-5 flex-grow">
                 <p className="text-gray-700 mb-4">{product.description}</p>
-                <p className="text-sm text-gray-600 mb-6">{product.specs}</p>
+                <p className="text-sm text-gray-600 mb-4">{product.specs}</p>
+                {product.details && (
+                  <ul className="space-y-2 mb-4">
+                    {product.details.map((detail, index) => (
+                      <li key={index} className="flex items-start text-sm text-gray-700">
+                        <span className="text-blue-600 mr-2 mt-0.5">•</span>
+                        <span>{detail}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
 
               {/* CTA */}

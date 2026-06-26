@@ -162,18 +162,24 @@ export default function Page() {
                   {
                     "@type": "ListItem",
                     position: 6,
+                    name: "Portable Double Toilet Block",
+                    url: "https://cabinunits.co.uk/products/Portable-Double-Toilet-Block",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 7,
                     name: "Portable Kiosk 130x210cm",
                     url: "https://cabinunits.co.uk/products/Portable-Kiosk-130x210",
                   },
                   {
                     "@type": "ListItem",
-                    position: 7,
+                    position: 8,
                     name: "Modular Kiosk 150x150cm",
                     url: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
                   },
                   {
                     "@type": "ListItem",
-                    position: 8,
+                    position: 9,
                     name: "Modular Kiosk 210x210cm",
                     url: "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
                   },

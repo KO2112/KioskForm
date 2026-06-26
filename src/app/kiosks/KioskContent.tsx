@@ -93,6 +93,33 @@ const KiosksPage = () => {
       icon: Box,
     },
     {
+      id: "Portable-Double-Toilet-Block",
+      title: "Portable Double Toilet Block",
+      subtitle: "Prefabricated WC Unit | Insulated Toilet Cabin | Ready for Connection",
+      price: "£2,699.99",
+      dimensions: "160×210×256 cm",
+      description: "Brand new, heavy-duty portable double toilet cabin with two separate WC cubicles and full ready-to-connect plumbing and electrical systems.",
+      image: "/DoubleToilet.png",
+      features: [
+        "Two separate toilet cubicles with ceramic flushing toilets",
+        "Integrated wash basins, vanity cabinets, mirrors, and soap dispensers",
+        "Fully insulated construction with heavy-duty steel frame",
+        "Pre-wired and pre-plumbed for mains water, waste, and electricity",
+        "Automatic sensor-controlled LED lighting and ventilation",
+        "Suitable for construction sites, events, farms, and commercial premises",
+      ],
+      applications: [
+        "Construction sites",
+        "Outdoor events",
+        "Festivals",
+        "Sports facilities",
+        "Farms",
+        "Temporary accommodation",
+        "Commercial workplaces",
+      ],
+      icon: Box,
+    },
+    {
       id: "Portable-Kiosk-130x210",
       title: "Portable Kiosk 130x210cm",
       subtitle: "Security Hut | Reception Desk | Service Point",
@@ -252,7 +279,8 @@ const KiosksPage = () => {
             {kiosks
               .filter((kiosk) => 
                 kiosk.id === "Modular-Cabin-115x125cm" || 
-                kiosk.id === "Portable-toilet-130x130"
+                kiosk.id === "Portable-toilet-130x130" ||
+                kiosk.id === "Portable-Double-Toilet-Block"
               )
               .map((kiosk) => (
                 <div
