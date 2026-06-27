@@ -174,12 +174,18 @@ export default function Page() {
                   {
                     "@type": "ListItem",
                     position: 8,
+                    name: "Portable Kiosk 150x210cm",
+                    url: "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 9,
                     name: "Modular Kiosk 150x150cm",
                     url: "https://cabinunits.co.uk/products/Modular-Kiosk-150X150",
                   },
                   {
                     "@type": "ListItem",
-                    position: 9,
+                    position: 10,
                     name: "Modular Kiosk 210x210cm",
                     url: "https://cabinunits.co.uk/products/Modular-Kiosk-210X210",
                   },
@@ -446,6 +452,50 @@ export default function Page() {
                     "@type": "PropertyValue",
                     name: "weight",
                     value: "220 kg approx",
+                  },
+                ],
+              },
+              {
+                "@type": "Product",
+                "@id": "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
+                name: "Portable Kiosk 150x210cm",
+                description:
+                  "Brand new portable kiosk cabin 150x210cm with full insulation, electrical installation, and ready-to-use setup. Ideal for security huts, ticket booths, and gatehouse applications.",
+                sku: "portable-kiosk-150x210",
+                image: {
+                  "@type": "ImageObject",
+                  url: "https://cabinunits.co.uk/150x210 Kiosk.jpg",
+                  width: 800,
+                  height: 600,
+                },
+                brand: {
+                  "@type": "Brand",
+                  name: "CabinUnits",
+                },
+                offers: {
+                  "@type": "Offer",
+                  url: "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
+                  priceCurrency: "GBP",
+                  price: "1999",
+                  priceValidUntil: "2025-12-31",
+                  itemCondition: "https://schema.org/NewCondition",
+                  availability: "https://schema.org/InStock",
+                },
+                additionalProperty: [
+                  {
+                    "@type": "PropertyValue",
+                    name: "dimensions",
+                    value: "150×210×256 cm",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "internalDimensions",
+                    value: "135×195×237 cm approx.",
+                  },
+                  {
+                    "@type": "PropertyValue",
+                    name: "weight",
+                    value: "495 kg approx",
                   },
                 ],
               },

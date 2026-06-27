@@ -79,17 +79,17 @@ const OurProductsSection = () => {
       price: "£2,599",
     },
     {
-      id: "Modular-Kiosk-150X150",
-      title: "Modular Kiosk 150×150",
-      dimensions: "150×150 cm",
-      description: "Enhanced modular kiosk with larger interior space for reception and security applications.",
-      image: "/modular-kiosk-150x150-1.jpg",
-      specs: "Dimensions: 1.50m × 1.50m × 2.35m (H), Weight: 200 kg approx.",
-      price: "£2,049",
+      id: "Portable-Kiosk-150x210",
+      title: "Portable Kiosk 150×210",
+      dimensions: "150×210 cm",
+      description: "Brand new insulated kiosk cabin with full electrical installation and immediate dispatch availability.",
+      image: "/150x210%20Kiosk.jpg",
+      specs: "Dimensions: 1.50m × 2.10m × 2.56m, Weight: 495 kg approx.",
+      price: "£1,999",
       details: [
-        "More internal space for reception and service counters",
-        "Fully insulated steel sandwich panel construction",
-        "Suitable for ticketing, security, and commercial use",
+        "Strong galvanised steel frame with insulated double-skin steel panels",
+        "Internal LED lighting, double plug socket, fuse box, and external 32A site socket",
+        "Internal reception desk, durable PVC flooring, and lockable PVC door",
       ],
     },
     {
@@ -118,7 +118,7 @@ const OurProductsSection = () => {
             .filter((product) => 
               product.id === "Portable-toilet-130x130" || 
               product.id === "Portable-Double-Toilet-Block" || 
-              product.id === "Modular-Kiosk-150X150"
+              product.id === "Portable-Kiosk-150x210"
             )
             .map((product) => (
             <div

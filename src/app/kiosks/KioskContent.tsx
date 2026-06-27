@@ -148,7 +148,35 @@ const KiosksPage = () => {
       ],
       icon: Shield,
     },
-
+    {
+      id: "Portable-Kiosk-150x210",
+      title: "Portable Kiosk 150x210cm",
+      subtitle: "Security Hut | Ticket Booth | Gatehouse",
+      price: "£1999",
+      dimensions: "150×210 cm",
+      description: "Brand new modular kiosk cabin with insulation, electrical installation, and immediate dispatch availability.",
+      image: "/150x210%20Kiosk.jpg",
+      features: [
+        "Strong galvanised steel frame structure",
+        "Steel double-skin sandwich panels with 40 mm polyurethane core insulation",
+        "Internal LED lighting and double plug socket",
+        "Internal fuse box and external 32A site socket",
+        "Internal reception desk and durable PVC flooring",
+        "Two 100×100 cm inward-opening windows",
+        "Outward-opening 70×200 cm lockable PVC door",
+        "Suitable for forklift transport and fully assembled",
+      ],
+      applications: [
+        "Security huts",
+        "Ticket kiosks",
+        "Gatehouses",
+        "Car park attendant booths",
+        "Information points",
+        "Construction site offices",
+        "Catering units",
+      ],
+      icon: Box,
+    },
     {
       id: "Modular-Kiosk-210X210",
       title: "Modular Kiosk 210x210cm",
@@ -278,7 +306,7 @@ const KiosksPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {kiosks
               .filter((kiosk) => 
-                kiosk.id === "Modular-Cabin-115x125cm" || 
+                kiosk.id === "Portable-Kiosk-150x210" || 
                 kiosk.id === "Portable-toilet-130x130" ||
                 kiosk.id === "Portable-Double-Toilet-Block"
               )
@@ -288,14 +316,15 @@ const KiosksPage = () => {
                   className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
                 >
                   {/* Product Image */}
-                  <div
-                    className="h-96 sm:h-128 w-full relative bg-blue-100"
-                    style={{
-                      backgroundImage: `url(${kiosk.image})`,
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
+                  <Link href={`/products/${kiosk.id}`} className="block h-96 sm:h-128 w-full relative bg-blue-100 overflow-hidden">
+                    <div
+                      className="h-full w-full"
+                      style={{
+                        backgroundImage: `url(${kiosk.image})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-5">
                       <div className="flex justify-between items-center w-full mb-2">
                         <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full inline-block">
@@ -308,7 +337,7 @@ const KiosksPage = () => {
                       <h3 className="text-xl font-bold text-white">{kiosk.title}</h3>
                       <p className="text-white text-sm">{kiosk.subtitle}</p>
                     </div>
-                  </div>
+                  </Link>
 
                   {/* Product Details */}
                   <div className="p-5 flex-grow">
@@ -356,6 +385,7 @@ const KiosksPage = () => {
           {kiosks
             .filter((kiosk) => 
               kiosk.id !== "Modular-Kiosk-130x130" && 
+              kiosk.id !== "Modular-Cabin-115x125cm" && 
               kiosk.id !== "Portable-toilet-130x130" && 
               kiosk.id !== "Modular-Kiosk-150X150"
             )
@@ -365,14 +395,15 @@ const KiosksPage = () => {
               className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
             >
               {/* Product Image - Increased Height */}
-              <div
-                className="h-96 sm:h-128 w-full relative bg-blue-100" // Increased image heights
-                style={{
-                  backgroundImage: `url(${kiosk.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
+              <Link href={`/products/${kiosk.id}`} className="block h-96 sm:h-128 w-full relative bg-blue-100 overflow-hidden">
+                <div
+                  className="h-full w-full"
+                  style={{
+                    backgroundImage: `url(${kiosk.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-5">
                   <div className="flex justify-between items-center w-full mb-2">
                     <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full inline-block">
@@ -385,7 +416,7 @@ const KiosksPage = () => {
                   <h2 className="text-2xl font-bold text-white">{kiosk.title}</h2>
                   <p className="text-blue-100 text-sm">{kiosk.subtitle}</p>
                 </div>
-              </div>
+              </Link>
 
               {/* Product Details */}
               <div className="p-5 flex-grow">

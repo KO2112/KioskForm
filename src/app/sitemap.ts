@@ -47,7 +47,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/products/Portable-Double-Toilet-Block`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/products/Portable-Kiosk-130x210`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/Portable-Kiosk-150x210`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.9,
