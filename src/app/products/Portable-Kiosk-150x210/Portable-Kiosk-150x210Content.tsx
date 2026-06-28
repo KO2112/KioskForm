@@ -431,7 +431,7 @@ const PortableKiosk150x210Content = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0 md:mr-8">
-              <h2 className="text-2xl font-bold mb-2">Get the booth you need today</h2>
+              <h2 className="text-2xl font-bold mb-2">Get the kiosk you need today</h2>
               <p className="text-blue-100">Ideal for security, ticketing, event management, and commercial service points.</p>
             </div>
             <Link

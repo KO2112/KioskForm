@@ -196,11 +196,12 @@ const PortableDoubleToiletBlockContent = () => {
 
             <div className="flex items-baseline mb-6">
               <span className="text-3xl font-bold text-gray-900">£2,699.99</span>
+              <span className="ml-2 text-sm text-gray-500">excluding VAT and shipping</span>
             </div>
 
             <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
               <p className="text-blue-800 text-sm">
-                Brand new, heavy-duty portable toilet cabin designed for quick connection to mains electricity, fresh water, and waste drainage. Ideal for construction sites, events, farms, and commercial premises.
+                Brand new, durable, and fully insulated with office-ready electrical installation.
               </p>
             </div>
 

@@ -25,7 +25,7 @@ import {
 } from "lucide-react"
 import ContactForm from "../../../components/ContactForm"
 
-const PortableKiosk110x150Content = () => {
+const PortableKiosk110x130Content = () => {
   const [activeTab, setActiveTab] = useState("specifications")
   const [activeThumbnail, setActiveThumbnail] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -49,23 +49,24 @@ const PortableKiosk110x150Content = () => {
   }
 
   const images = [
-    "/110x150.jpg",
-    "/110x150%202.jpg",
-    "/110x150%203.jpg",
-    "/110x150%204.jpg",
-    "/110x150%205.jpg",
-    "/110x150%206.jpg",
-    "/110x150%207.jpg",
-    "/110x150%208.jpg",
+    "/110x130Kiosk.jpg",
+    "/110x130Kiosk%201.jpg",
+    "/110x130Kiosk%202.jpg",
+    "/110x130Kiosk%203.jpg",
+    "/110x130Kiosk%204.jpg",
+    "/110x130Kiosk%205.jpg",
+    "/110x130Kiosk%206.jpg",
+    "/110x130Kiosk%207.jpg",
+    "/110x130Kiosk%208.jpg",
   ]
 
   const specs = [
-    { icon: Ruler, name: "External Dimensions", value: "1.10 × 1.50 × 2.56 m (W×L×H) approx." },
-    { icon: Ruler, name: "Internal Dimensions", value: "0.95 × 1.35 × 2.37 m (W×L×H) approx." },
+    { icon: Ruler, name: "External Dimensions", value: "1.10 × 1.30 × 2.56 m (W×L×H) approx." },
+    { icon: Ruler, name: "Internal Dimensions", value: "1.00 × 1.20 × 2.37 m (W×L×H) approx." },
     { icon: ThermometerSnowflake, name: "Wall Construction", value: "20 mm steel sheets with 40 mm polyurethane insulation" },
     { icon: Box, name: "Base", value: "Fibre cement board reinforced with galvanised steel frame" },
     { icon: Building, name: "Corner Columns", value: "Galvanised steel columns finished in anthracite" },
-    { icon: BatteryCharging, name: "Electrical Specification", value: "Internal LED lighting, internal double plug socket, fuse box, external site socket" },
+    { icon: BatteryCharging, name: "Electrical Specification", value: "Internal LED lighting, internal double plug socket, fuse box, external site socket, portable heater" },
     { icon: Home, name: "Flooring", value: "Durable 3 mm PVC floor finish" },
     { icon: Info, name: "Window & Door", value: "Two 60×100 cm inward-opening windows and lockable PVC door" },
   ]
@@ -89,12 +90,12 @@ const PortableKiosk110x150Content = () => {
     {
       question: "What electrical features are included?",
       answer:
-        "The cabin includes internal LED lighting, internal double plug socket, fuse box, and an external site socket for reliable power.",
+        "The cabin includes internal LED lighting, an internal double plug socket, a fuse box, an external site socket, and a portable heater.",
     },
     {
       question: "How many windows and what door type does it have?",
       answer:
-        "It has two inward-opening 60×100 cm windows and one lockable outward-opening PVC door for secure access.",
+        "It features two inward-opening 60×100 cm windows and one lockable outward-opening PVC door for secure access.",
     },
     {
       question: "Can this kiosk be transported by forklift?",
@@ -104,7 +105,7 @@ const PortableKiosk110x150Content = () => {
     {
       question: "Is the price inclusive of delivery?",
       answer:
-        "Delivery costs vary by postcode and whether forklift assistance is required. VAT and delivery are not included in the listed price.",
+        "Delivery costs vary by postcode. VAT and shipping are not included in the listed price.",
     },
   ]
 
@@ -121,7 +122,7 @@ const PortableKiosk110x150Content = () => {
               kiosks
             </Link>
             <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <span className="text-gray-900 font-medium">Portable Kiosk 110x150cm</span>
+            <span className="text-gray-900 font-medium">Portable Kiosk 110x130cm</span>
           </nav>
         </div>
       </div>
@@ -136,7 +137,7 @@ const PortableKiosk110x150Content = () => {
               <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
                 <img
                   src={images[activeThumbnail]}
-                  alt="Portable Kiosk 110x150cm Cabin Booth"
+                  alt="Portable Kiosk 110x130cm Cabin Booth"
                   className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
@@ -170,8 +171,8 @@ const PortableKiosk110x150Content = () => {
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 110x150 cm</h1>
-            <p className="text-gray-600 mb-4">Compact insulated kiosk with full electrical installation and fast delivery for security and ticket applications.</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 110x130 cm</h1>
+            <p className="text-gray-600 mb-4">Compact insulated modular kiosk with full electrical installation, security features and fast UK delivery.</p>
 
             <div className="flex items-baseline mb-6">
               <span className="text-3xl font-bold text-gray-900">£1,799</span>
@@ -180,7 +181,7 @@ const PortableKiosk110x150Content = () => {
 
             <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
               <p className="text-blue-800 text-sm">
-                Brand new compact kiosk cabin with external dimensions 1.10m x 1.50m x 2.56m. In stock and available for immediate dispatch, collection, or viewing.
+                Brand new compact kiosk cabin with external dimensions 1.10m x 1.30m x 2.56m. In stock and available for immediate dispatch, collection, or viewing.
               </p>
             </div>
 
@@ -287,7 +288,7 @@ const PortableKiosk110x150Content = () => {
                         The unit includes internal LED lighting, a double plug socket, an internal fuse box, an external site socket, and a portable heater, making it ready for immediate use once positioned and connected to a suitable power source. Its internal reception desk, utility shelf, PVC flooring, and secure outward-opening PVC door make it practical for everyday site use.
                       </p>
                       <p>
-                        With external dimensions of approximately 110 × 150 × 256 cm and an internal working area of around 95 × 135 × 237 cm, this kiosk is ideal where space is limited but performance cannot be compromised. Nationwide delivery is available across the UK, with collection or viewing also available from our Leicester warehouse.
+                        With external dimensions of approximately 110 × 130 × 256 cm and an internal working area of around 100 × 120 × 237 cm, this kiosk is ideal where space is limited but performance cannot be compromised. Nationwide delivery is available across the UK, with collection or viewing also available from our Leicester warehouse.
                       </p>
                     </div>
                   </div>
@@ -375,38 +376,38 @@ const PortableKiosk110x150Content = () => {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="relative left-1/2 w-screen -ml-[50vw] bg-gradient-to-r from-blue-700 to-blue-600 text-white mt-8">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div className="md:flex items-center justify-between">
-              <div className="mb-6 md:mb-0 md:mr-8">
-                <h2 className="text-2xl font-bold mb-2">Ready to discuss your compact kiosk?</h2>
-                <p className="text-blue-100">
-                  Contact us for product availability, site delivery, and a tailored quotation for your project.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
-                <Link href="/ContactUs" className="bg-white text-blue-700 px-6 py-3 rounded-md hover:bg-blue-50 transition-colors shadow-md font-medium text-center">
-                  Get a Quote
-                </Link>
-              </div>
+      <div className="relative left-1/2 w-screen -ml-[50vw] bg-gradient-to-r from-blue-700 to-blue-600 text-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <div className="md:flex md:items-center md:justify-between gap-6">
+            <div className="mb-6 md:mb-0 md:mr-8">
+              <h2 className="text-2xl font-bold mb-2">Ready to discuss your compact kiosk?</h2>
+              <p className="text-blue-100">
+                Contact us for product availability, site delivery, and a tailored quotation for your project.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+              <Link href="/ContactUs" className="bg-white text-blue-700 px-6 py-3 rounded-md hover:bg-blue-50 transition-colors shadow-md font-medium text-center">
+                Get a Quote
+              </Link>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="prose prose-blue max-w-none text-gray-600 text-sm">
-            <h2>Portable Kiosk Cabin Booth | Modular Security Cabin | Ticket Hut</h2>
-            <p>
-              Our portable kiosk cabins are designed to provide a secure, comfortable, and practical workspace for ticketing, security, gate access, reception, and other on-site operations. Manufactured in the EU with durable insulated sandwich panels and a strong galvanised steel frame, each unit offers excellent durability and weather resistance with minimal site preparation.
-            </p>
-            <p>
-              The compact 110x150cm model is supplied with internal LED lighting, power sockets, a fuse box, an external site socket, and a portable heater, making it ready for immediate use once connected to a suitable power supply. Two inward-opening windows, a lockable outward-opening PVC door, and an internal reception desk provide both security and usability.
-            </p>
-            <p>
-              Suitable for both temporary and permanent deployment, this kiosk is ideal for construction sites, car parks, events, and commercial premises where a robust, ready-to-use cabin is required. Nationwide delivery is available across the UK, and pickup or viewing can be arranged from our Leicester warehouse.
-            </p>
-          </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="prose prose-blue max-w-none text-gray-600 text-sm">
+          <h2>Portable Kiosk Cabin Booth | Modular Security Cabin | Ticket Hut</h2>
+          <p>
+            Our portable kiosk cabins are designed to provide a secure, comfortable, and practical workspace for ticketing, security, gate access, reception, and other on-site operations. Manufactured in the EU with durable insulated sandwich panels and a strong galvanised steel frame, each unit offers excellent durability and weather resistance with minimal site preparation.
+          </p>
+          <p>
+            The compact 110x130cm model is supplied with internal LED lighting, power sockets, a fuse box, an external site socket, and a portable heater, making it ready for immediate use once connected to a suitable power supply. Two inward-opening windows, a lockable outward-opening PVC door, and an internal reception desk provide both security and usability.
+          </p>
+          <p>
+            Suitable for both temporary and permanent deployment, this kiosk is ideal for construction sites, car parks, events, and commercial premises where a robust, ready-to-use cabin is required. Nationwide delivery is available across the UK, and pickup or viewing can be arranged from our Leicester warehouse.
+          </p>
         </div>
       </div>
 
@@ -462,4 +463,4 @@ const PortableKiosk110x150Content = () => {
   )
 }
 
-export default PortableKiosk110x150Content
+export default PortableKiosk110x130Content
