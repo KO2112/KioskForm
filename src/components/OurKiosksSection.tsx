@@ -15,6 +15,20 @@ const OurProductsSection = () => {
       price: "£1,999",
     },
     {
+      id: "Portable-Kiosk-110x150",
+      title: "Portable Kiosk 110×150",
+      dimensions: "110×150 cm",
+      description: "Compact portable kiosk designed for efficient use of space with full service-ready functionality.",
+      image: "/110x150.jpg",
+      specs: "Dimensions: 1.10m × 1.50m × 2.56m (H), Weight: 210 kg approx.",
+      price: "£1,799",
+      details: [
+        "Fully insulated 40mm steel panel walls for all-weather use.",
+        "Internal LED lighting, internal sockets, fuse box, and external site socket.",
+        "Two inward-opening windows and a lockable PVC door for security.",
+      ],
+    },
+    {
       id: "Modular-Kiosk-130x130",
       title: "Modular Kiosk 130×130",
       dimensions: "130×130 cm",
@@ -116,7 +130,7 @@ const OurProductsSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {products
             .filter((product) => 
-              product.id === "Portable-toilet-130x130" || 
+              product.id === "Portable-Kiosk-110x150" || 
               product.id === "Portable-Double-Toilet-Block" || 
               product.id === "Portable-Kiosk-150x210"
             )
@@ -180,10 +194,10 @@ const OurProductsSection = () => {
 
         <div className="text-center">
           <Link
-            href="/ContactUs"
+            href="/kiosks"
             className="inline-flex items-center px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
           >
-            Request a Quote
+            View All Kiosks
             <ChevronRight className="w-5 h-5 ml-2" />
           </Link>
         </div>

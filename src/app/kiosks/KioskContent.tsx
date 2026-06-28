@@ -6,89 +6,31 @@ import { ChevronRight, CheckCircle, Box, Shield, Info } from "lucide-react"
 const KiosksPage = () => {
   const kiosks = [
     {
-      id: "Kiosk-130x130-Reinforced",
-      title: "Modular Kiosk 130x130cm Anti-Vandal",
-      subtitle: "Security Hut | Ticket Booth | Surveillance Point",
+      id: "Portable-Kiosk-150x210",
+      title: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Gate House 150x210 cm",
+      subtitle: "Security Hut | Ticket Booth | Gatehouse",
       price: "£1999",
-      dimensions: "130×130 cm",
-      description: "Compact, durable kiosk with anti-vandal features and steel fence protection for enhanced security.",
-      image: "/kiosk-130x130-1.png",
+      dimensions: "150×210 cm",
+      description: "Brand new modular kiosk cabin with insulation, electrical installation, and immediate dispatch availability.",
+      image: "/150x210%20Kiosk.jpg",
       features: [
-        "Anti-vandal door/windows with steel fence protection",
-        "Steel sandwich panels with weather-resistant insulation",
-        "Internal reception desk and corner shelf included",
-        "Complete electrical installation with double plug socket",
-        "PVC flooring and lockable door for security",
-        "Upward sliding and fixed windows for ventilation",
-        "Weight: 170 kg approx.",
-        "Internal height: 2.35 meters",
+        "Strong galvanised steel frame structure",
+        "Steel double-skin sandwich panels with 40 mm polyurethane core insulation",
+        "Internal LED lighting and double plug socket",
+        "Internal fuse box and external 32A site socket",
+        "Internal reception desk and durable PVC flooring",
+        "Two 100×100 cm inward-opening windows",
+        "Outward-opening 70×200 cm lockable PVC door",
+        "Suitable for forklift transport and fully assembled",
       ],
       applications: [
         "Security huts",
-        "Surveillance points",
-        "Ticket booths",
+        "Ticket kiosks",
         "Gatehouses",
-        "Car park attendants",
+        "Car park attendant booths",
         "Information points",
-        "Welfare units",
-      ],
-      icon: Shield,
-    },
-    {
-      id: "Modular-Cabin-115x125cm",
-      title: "Modular Cabin 115x125cm",
-      subtitle: "Ticket Booth | Information Point | Catering Unit",
-      price: "£1799",
-      dimensions: "115×125 cm",
-      description: "Compact modular cabin perfect for commercial applications with built-in reception desk.",
-      image: "/Modular-Cabin-115x125cm.png",
-      features: [
-        "Steel sandwich panels with weather-resistant insulation",
-        "Internal reception desk and corner shelf included",
-        "Complete electrical installation with double plug socket",
-        "PVC flooring and lockable door for security",
-        "Upward sliding and fixed windows for ventilation",
-        "Customizable with logos and signboards",
-        "Weight: 160 kg approx.",
-        "Internal height: 2.35 meters",
-      ],
-      applications: [
-        "Ticket booths",
-        "Information points",
-        "Coffee shops",
+        "Construction site offices",
         "Catering units",
-        "Portable offices",
-        "Reception areas",
-        "Customer service points",
-      ],
-      icon: Box,
-    },
-    {
-      id: "Portable-toilet-130x130",
-      title: "Portable Toilet Unit 130x130cm",
-      subtitle: "Welfare Cabin | Site Toilet | Event Facility",
-      price: "£1999",
-      dimensions: "130×130 cm",
-      description: "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections.",
-      image: "/portable-toilet-130x130-1.png",
-      features: [
-        "Flushing toilet with ceramic bowl and soft-close seat",
-        "Wash basin with hot and cold water taps",
-        "Steel sandwich panels with weather-resistant insulation",
-        "Complete plumbing installation with waste connections",
-        "Electrical installation with lighting and ventilation",
-        "Non-slip flooring and lockable door",
-        "Weight: 180 kg approx.",
-        "Internal height: 2.35 meters",
-      ],
-      applications: [
-        "Construction sites",
-        "Event venues",
-        "Welfare facilities",
-        "Temporary installations",
-        "Remote locations",
-        "Emergency facilities",
-        "Outdoor events",
       ],
       icon: Box,
     },
@@ -120,151 +62,62 @@ const KiosksPage = () => {
       icon: Box,
     },
     {
-      id: "Portable-Kiosk-130x210",
-      title: "Portable Kiosk 130x210cm",
-      subtitle: "Security Hut | Reception Desk | Service Point",
-      price: "£2599",
-      dimensions: "130×210 cm",
-      description: "Extended portable kiosk with reception desk, sliding windows, and professional security features.",
-      image: "/portable-kiosk-130x210-1.jpg",
-      features: [
-        "Reception desk with customer service window",
-        "Sliding windows for secure transactions",
-        "Steel sandwich panels with superior insulation",
-        "Complete electrical installation with multiple outlets",
-        "Professional flooring and secure locking system",
-        "Ventilation system for comfort",
-        "Weight: 220 kg approx.",
-        "Internal height: 2.35 meters",
-      ],
-      applications: [
-        "Security checkpoints",
-        "Reception areas",
-        "Ticket offices",
-        "Information points",
-        "Customer service",
-        "Access control",
-        "Professional services",
-      ],
-      icon: Shield,
-    },
-    {
-      id: "Portable-Kiosk-150x210",
-      title: "Portable Kiosk 150x210cm",
-      subtitle: "Security Hut | Ticket Booth | Gatehouse",
-      price: "£1999",
-      dimensions: "150×210 cm",
-      description: "Brand new modular kiosk cabin with insulation, electrical installation, and immediate dispatch availability.",
-      image: "/150x210%20Kiosk.jpg",
+      id: "Portable-Kiosk-110x150",
+      title: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 110x150 cm",
+      subtitle: "Security Hut | Ticket Booth | Modular Cabin",
+      price: "£1,799",
+      dimensions: "110×150 cm",
+      description: "Brand new durable modular cabin with full insulation, LED lighting, plug sockets, fuse box, and immediate dispatch availability.",
+      image: "/110x150.jpg",
       features: [
         "Strong galvanised steel frame structure",
-        "Steel double-skin sandwich panels with 40 mm polyurethane core insulation",
-        "Internal LED lighting and double plug socket",
-        "Internal fuse box and external 32A site socket",
-        "Internal reception desk and durable PVC flooring",
-        "Two 100×100 cm inward-opening windows",
-        "Outward-opening 70×200 cm lockable PVC door",
+        "20 mm inner and outer steel sheet panels with 40 mm polyurethane insulation",
+        "Internal LED lighting and internal double plug socket",
+        "Internal fuse box and external site socket",
+        "Durable PVC flooring and lockable outward-opening PVC door",
+        "Two 60×100 cm inward-opening windows",
+        "Internal reception desk and utility shelf",
         "Suitable for forklift transport and fully assembled",
       ],
       applications: [
         "Security huts",
         "Ticket kiosks",
         "Gatehouses",
+        "Welfare units",
         "Car park attendant booths",
-        "Information points",
-        "Construction site offices",
         "Catering units",
+        "Information points",
       ],
       icon: Box,
     },
     {
-      id: "Modular-Kiosk-210X210",
-      title: "Modular Kiosk 210x210cm",
-      subtitle: "Large Security Booth | Commercial Office | Service Center",
-      price: "£2499",
-      dimensions: "210×210 cm",
-      description:
-        "Premium large modular kiosk with spacious 4.41m² interior, ideal for commercial and security applications.",
-      image: "/modular-kiosk-210x210-1.jpg",
+      id: "Portable-toilet-130x130",
+      title: "Portable Toilet Unit Welfare Cabin Modular Toilet Block 130x130 cm",
+      subtitle: "Welfare Cabin | Modular Toilet Block | Site Toilet",
+      price: "£1999",
+      dimensions: "130×130 cm",
+      description: "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections for welfare and event use.",
+      image: "/portable-toilet-130x130-1.png",
       features: [
-        "Spacious 4.41m² interior with full reception setup",
-        "Multiple service windows and access points",
-        "Premium steel sandwich panel construction",
-        "Advanced electrical system with full power distribution",
-        "Professional commercial-grade flooring",
-        "Enhanced security and locking systems",
-        "Weight: 350 kg approx.",
+        "Flushing toilet with ceramic bowl and soft-close seat",
+        "Wash basin with hot and cold water taps",
+        "Steel sandwich panels with weather-resistant insulation",
+        "Complete plumbing installation with waste connections",
+        "Electrical installation with lighting and ventilation",
+        "Non-slip flooring and lockable door",
+        "Weight: 180 kg approx.",
         "Internal height: 2.35 meters",
       ],
       applications: [
-        "Commercial offices",
-        "Security headquarters",
-        "Event management",
-        "Professional services",
-        "Large-scale operations",
-        "Corporate facilities",
-        "Premium installations",
-      ],
-      icon: Shield,
-    },
-    {
-      id: "small-kiosk",
-      title: "Small Modular Kiosk",
-      subtitle: "Ticket Booth | Security Kiosk | Catering Unit",
-      price: "£1999",
-      dimensions: "143×143 cm",
-      description: "Brand new, strong and durable, fully insulated modular kiosk perfect for versatile applications.",
-      image: "/kiosk2.jpg", // Replace with your actual image path
-      features: [
-        "Fully insulated steel sandwich panels for weather resistance",
-        "Forklift pockets in the base for easy transportation",
-        "Electrical installation: Light, socket, fuse box (16 Amps)",
-        "Upward sliding and fixed windows",
-        "Internal height: 2.10 meters",
-        "Windows: W64×H80 cm, foldable window W64×H40 cm",
-        "Weight: 350 kg approx.",
-        "Customizable for brand identity and signage",
-      ],
-      applications: [
-        "Ticket booths",
-        "Security cabins",
-        "Information points",
-        "Coffee shops",
-        "Gatehouses",
-        "Car park attendant huts",
-        "Surveillance points",
+        "Construction sites",
+        "Event venues",
+        "Welfare facilities",
+        "Temporary installations",
+        "Remote locations",
+        "Emergency facilities",
+        "Outdoor events",
       ],
       icon: Box,
-    },
-    {
-      id: "large-kiosk",
-      title: "Large Modular Kiosk",
-      subtitle: "Security Booth | Office | Catering Unit",
-      price: "£2499",
-      dimensions: "218×143 cm",
-      description:
-        "Spacious, durable and fully insulated modular building suitable for various commercial applications.",
-      image: "/kiosk.jpg", // Replace with your actual image path
-      features: [
-        "Tough, weather-resistant steel sandwich panel construction",
-        "Forklift pockets included in the base",
-        "Electrical installation: Light, socket, fuse box (16 Amps)",
-        "Upward sliding and fixed windows",
-        "Internal height: 2.10 meters",
-        "Windows: W128×H80 cm, foldable window W128×H40 cm",
-        "Weight: 400 kg approx.",
-        "Customizable exterior for branding needs",
-      ],
-      applications: [
-        "Gatehouses",
-        "Offices",
-        "Security cabins",
-        "Ticket kiosks",
-        "Catering units",
-        "Welfare units",
-        "Information points",
-      ],
-      icon: Shield,
     },
   ]
 
@@ -300,96 +153,11 @@ const KiosksPage = () => {
           </div>
         </div>
 
-        {/* Featured Products Section */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Featured Products</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {kiosks
-              .filter((kiosk) => 
-                kiosk.id === "Portable-Kiosk-150x210" || 
-                kiosk.id === "Portable-toilet-130x130" ||
-                kiosk.id === "Portable-Double-Toilet-Block"
-              )
-              .map((kiosk) => (
-                <div
-                  key={kiosk.id}
-                  className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
-                >
-                  {/* Product Image */}
-                  <Link href={`/products/${kiosk.id}`} className="block h-96 sm:h-128 w-full relative bg-blue-100 overflow-hidden">
-                    <div
-                      className="h-full w-full"
-                      style={{
-                        backgroundImage: `url(${kiosk.image})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-5">
-                      <div className="flex justify-between items-center w-full mb-2">
-                        <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full inline-block">
-                          {kiosk.dimensions}
-                        </span>
-                        <span className="bg-green-600 text-white text-sm font-bold px-3 py-1 rounded-full">
-                          {kiosk.price}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-bold text-white">{kiosk.title}</h3>
-                      <p className="text-white text-sm">{kiosk.subtitle}</p>
-                    </div>
-                  </Link>
-
-                  {/* Product Details */}
-                  <div className="p-5 flex-grow">
-                    <p className="text-gray-700 text-sm mb-4">{kiosk.description}</p>
-
-                    {/* Key Features */}
-                    <span className="font-bold text-gray-900 mb-2 text-sm">KEY FEATURES</span>
-                    <ul className="space-y-2 mb-4">
-                      {kiosk.features.slice(0, 3).map((feature, i) => (
-                        <li key={i} className="flex items-start text-sm">
-                          <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                          <span className="text-gray-700">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-
-                    {/* Applications Tags */}
-                    <span className="font-bold text-gray-900 mb-2 text-sm">APPLICATIONS</span>
-                    <div className="flex flex-wrap gap-2">
-                      {kiosk.applications.slice(0, 4).map((app, i) => (
-                        <span key={i} className="bg-gray-100 text-gray-700 text-xs px-2 py-1 rounded-full">
-                          {app}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="p-5 bg-gray-50 border-t border-gray-100">
-                    <Link
-                      href={`/products/${kiosk.id}`}
-                      className="flex justify-center items-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors w-full text-sm font-medium"
-                    >
-                      View Kiosk
-                      <ChevronRight className="w-4 h-4 ml-1" />
-                    </Link>
-                  </div>
-                </div>
-              ))}
-          </div>
-        </div>
+       
 
         {/* All Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {kiosks
-            .filter((kiosk) => 
-              kiosk.id !== "Modular-Kiosk-130x130" && 
-              kiosk.id !== "Modular-Cabin-115x125cm" && 
-              kiosk.id !== "Portable-toilet-130x130" && 
-              kiosk.id !== "Modular-Kiosk-150X150"
-            )
-            .map((kiosk) => (
+          {kiosks.map((kiosk) => (
             <div
               key={kiosk.id}
               className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col h-full border border-gray-100 hover:shadow-lg transition-shadow"
