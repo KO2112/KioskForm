@@ -65,7 +65,7 @@ const KiosksPage = () => {
       id: "Portable-Kiosk-110x150",
       title: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 110x150 cm",
       subtitle: "Security Hut | Ticket Booth | Modular Cabin",
-      price: "£1,799",
+      price: "£1,949",
       dimensions: "110×150 cm",
       description: "Brand new durable modular cabin with full insulation, LED lighting, plug sockets, fuse box, and immediate dispatch availability.",
       image: "/110x150.jpg",
