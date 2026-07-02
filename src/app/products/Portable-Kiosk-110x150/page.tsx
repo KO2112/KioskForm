@@ -64,7 +64,7 @@ const productSchema = {
     "@type": "Offer",
     url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x150",
     priceCurrency: "GBP",
-    price: "1799",
+    price: "1949",
     priceValidUntil: "2026-12-31",
     itemCondition: "https://schema.org/NewCondition",
     availability: "https://schema.org/InStock",

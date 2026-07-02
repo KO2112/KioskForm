@@ -174,7 +174,7 @@ const PortableKiosk110x150Content = () => {
             <p className="text-gray-600 mb-4">Compact insulated kiosk with full electrical installation and fast delivery for security and ticket applications.</p>
 
             <div className="flex items-baseline mb-6">
-              <span className="text-3xl font-bold text-gray-900">£1,799</span>
+              <span className="text-3xl font-bold text-gray-900">£1,949</span>
               <span className="ml-2 text-sm text-gray-500">excluding VAT and shipping</span>
             </div>
 
