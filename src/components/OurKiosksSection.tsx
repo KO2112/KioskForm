@@ -10,8 +10,7 @@ const OurProductsSection = () => {
       title: "Anti-Vandal Kiosk 130×130",
       dimensions: "130×130 cm",
       description: "Reinforced security kiosk with anti-vandal features and steel fence protection.",
-      image: "/kiosk-130x130-1.png",
-      specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 170 kg approx.",
+      image: "/kiosk-130x130-1.png",      alt: "Anti-vandal kiosk 130×130cm exterior view",      specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 170 kg approx.",
       price: "£1,999",
     },
     {
@@ -20,6 +19,7 @@ const OurProductsSection = () => {
       dimensions: "110×150 cm",
       description: "Compact portable kiosk designed for efficient use of space with full service-ready functionality.",
       image: "/110x150.jpg",
+      alt: "Portable kiosk 110x150cm exterior view",
       specs: "Dimensions: 1.10m × 1.50m × 2.56m (H), Weight: 210 kg approx.",
       price: "£1,799",
       details: [
@@ -34,6 +34,7 @@ const OurProductsSection = () => {
       dimensions: "130×130 cm",
       description: "Versatile modular kiosk perfect for ticket booths, information points, and catering.",
       image: "/modular-kiosk-130x130-1.jpg",
+      alt: "Modular kiosk 130x130cm exterior view",
       specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 170 kg approx.",
       price: "£1,999",
     },
@@ -43,6 +44,7 @@ const OurProductsSection = () => {
       dimensions: "143×143 cm",
       description: "Brand new, strong and durable booth perfect for tickets, security, or coffee units.",
       image: "/kiosk2.jpg",
+      alt: "Small modular kiosk 143x143cm exterior view",
       specs: "Dimensions: 1.43m × 1.43m × 2.10m (H), Weight: 350 kg approx.",
       price: "£1,999",
     },
@@ -52,6 +54,7 @@ const OurProductsSection = () => {
       dimensions: "218×143 cm",
       description: "Spacious durable kiosk for gatehouses, offices, or catering units.",
       image: "/kiosk.jpg",
+      alt: "Large modular kiosk 218x143cm exterior view",
       specs: "Dimensions: 2.18m × 1.43m × 2.10m (H), Weight: 400 kg approx.",
       price: "£2,499",
     },
@@ -61,6 +64,7 @@ const OurProductsSection = () => {
       dimensions: "130×130 cm",
       description: "Complete welfare unit with flushing toilet, wash basin, and electrical setup.",
       image: "/portable-toilet-130x130-1.png",
+      alt: "Portable toilet 130x130cm welfare cabin exterior view",
       specs: "Dimensions: 1.30m × 1.30m × 2.35m (H), Weight: 180 kg approx.",
       price: "£1,999",
       details: [
@@ -75,6 +79,7 @@ const OurProductsSection = () => {
       dimensions: "160×210×256 cm",
       description: "Heavy-duty double WC cabin with two separate cubicles, wash basins, and full ready-to-connect services.",
       image: "/DoubleToilet.png",
+      alt: "Portable double toilet block exterior view",
       specs: "External dimensions: 1.60m × 2.10m × 2.56m, Weight: 610 kg approx.",
       price: "£2,699.99",
       details: [
@@ -89,6 +94,7 @@ const OurProductsSection = () => {
       dimensions: "130×210 cm",
       description: "Spacious security kiosk with reception desk and sliding windows for professional service.",
       image: "/portable-kiosk-130x210-1.jpg",
+      alt: "Portable kiosk 130x210cm exterior view",
       specs: "Dimensions: 1.30m × 2.10m × 2.35m (H), Weight: 220 kg approx.",
       price: "£2,599",
     },
@@ -97,7 +103,8 @@ const OurProductsSection = () => {
       title: "Portable Kiosk 150×210",
       dimensions: "150×210 cm",
       description: "Brand new insulated kiosk cabin with full electrical installation and immediate dispatch availability.",
-      image: "/150x210%20Kiosk.jpg",
+      image: "/150x210kiosk1.jpg",
+      alt: "Portable kiosk 150x210cm exterior front view",
       specs: "Dimensions: 1.50m × 2.10m × 2.56m, Weight: 495 kg approx.",
       price: "£1,999",
       details: [
@@ -112,6 +119,7 @@ const OurProductsSection = () => {
       dimensions: "210×210 cm",
       description: "Premium large modular kiosk with spacious 4.41m² interior for commercial applications.",
       image: "/modular-kiosk-210x210-1.jpg",
+      alt: "Modular kiosk 210x210cm exterior view",
       specs: "Dimensions: 2.10m × 2.10m × 2.35m (H), Weight: 280 kg approx.",
       price: "£2,499",
     },
@@ -142,13 +150,13 @@ const OurProductsSection = () => {
               {/* Product Image */}
               <Link
                 href={`/products/${product.id}`}
-                className="h-96 sm:h-128 w-full relative bg-blue-100 block"
-                style={{
-                  backgroundImage: `url(${product.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className="h-96 sm:h-128 w-full relative bg-blue-100 block overflow-hidden"
               >
+                <img
+                  src={product.image}
+                  alt={product.alt ?? product.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-5">
                   <div className="flex justify-between items-center w-full mb-2">
                     <span className="bg-blue-600 text-white text-xs font-medium px-2 py-1 rounded-full inline-block">

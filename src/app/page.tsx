@@ -1,6 +1,7 @@
 import BannerSlider from '@/components/BannerSlider';
 import { Metadata } from 'next';
 import OurKiosksSection from '@/components/OurKiosksSection';
+import OurWorkSection from '@/components/OurWorkSection';
 import AboutUsSection from '@/components/AboutUs';
 import SEOEnhancedSection from '@/components/SEOEnhanced';
 import Footer from '@/components/Footer';
@@ -140,6 +141,7 @@ export default function Home() {
       <main>
         <BannerSlider />
         <OurKiosksSection/>
+        <OurWorkSection />
         <AboutUsSection/>
         <SEOEnhancedSection/>
         <Footer/>

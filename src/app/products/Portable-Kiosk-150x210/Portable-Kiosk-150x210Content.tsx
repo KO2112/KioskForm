@@ -51,6 +51,7 @@ const PortableKiosk150x210Content = () => {
   }
 
   const images = [
+    { src: "/150x210kiosk1.jpg", alt: "Portable kiosk 150x210cm main exterior front view" },
     { src: "/150x210kiosk2.jpg", alt: "Portable kiosk 150x210cm front exterior view" },
     { src: "/150x210kiosk3.jpg", alt: "Portable kiosk 150x210cm side view with window" },
     { src: "/150x210kiosk4.jpg", alt: "Portable kiosk 150x210cm angled view showing door" },
