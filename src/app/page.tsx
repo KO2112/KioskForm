@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Modular Kiosk Solutions | UK Portable cabins',
+  title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
   description: 'Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
   keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, construction kiosk, custom kiosk design',
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Modular Kiosk Solutions | UK Portable cabins',
+    title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: [
       {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Modular Kiosk Solutions | UK Portable cabins',
+    title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: ['kiosk.jpg'],
   },
@@ -47,7 +47,7 @@ export default function Home() {
         "@type": "WebPage",
         "@id": "https://cabinunits.co.uk/",
         "url": "https://cabinunits.co.uk/",
-        "name": "Modular Kiosk Solutions | UK Portable cabins",
+        "name": "Cabin Units | Modular & Portable Kiosk Cabins UK",
         "isPartOf": {
           "@id": "https://cabinunits.co.uk/#website"
         },

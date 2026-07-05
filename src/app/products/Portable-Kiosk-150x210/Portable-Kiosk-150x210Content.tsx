@@ -51,14 +51,18 @@ const PortableKiosk150x210Content = () => {
   }
 
   const images = [
-    "/150x210%20Kiosk.jpg",
-    "/150x210%20Kiosk%201.jpg",
-    "/150x210%20Kiosk%202.jpg",
-    "/150x210%20Kiosk%203.jpg",
-    "/150x210%20Kiosk%204.jpg",
-    "/150x210%20Kiosk%205.jpg",
-    "/150x210%20Kiosk%206.jpg",
-    "/150x210%20Kiosk%207.jpg",
+    { src: "/150x210kiosk2.jpg", alt: "Portable kiosk 150x210cm front exterior view" },
+    { src: "/150x210kiosk3.jpg", alt: "Portable kiosk 150x210cm side view with window" },
+    { src: "/150x210kiosk4.jpg", alt: "Portable kiosk 150x210cm angled view showing door" },
+    { src: "/150x210kiosk5.jpg", alt: "Portable kiosk 150x210cm rear exterior view" },
+    { src: "/150x210kiosk6.jpg", alt: "Portable kiosk 150x210cm close-up of window and paneling" },
+    { src: "/150x210kiosk7.jpg", alt: "Portable kiosk 150x210cm roof and upper structure detail" },
+    { src: "/150x210kiosk8.jpg", alt: "Portable kiosk 150x210cm side profile and door detail" },
+    { src: "/150x210kiosk9.jpg", alt: "Portable kiosk 150x210cm exterior on site" },
+    { src: "/150x210kiosk10.jpg", alt: "Portable kiosk 150x210cm front door entrance detail" },
+    { src: "/150x210kiosk11.jpg", alt: "Portable kiosk 150x210cm finished exterior view" },
+    { src: "/150x210kiosk12.jpg", alt: "Portable kiosk 150x210cm close-up of external finish" },
+    { src: "/150x210kiosk13.jpg", alt: "Portable kiosk 150x210cm full cabin exterior view" },
   ]
 
   const specs = [
@@ -168,8 +172,8 @@ const PortableKiosk150x210Content = () => {
             >
               <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
                 <img
-                  src={images[activeThumbnail]}
-                  alt="Portable Kiosk 150x210cm Cabin Booth"
+                  src={images[activeThumbnail].src}
+                  alt={images[activeThumbnail].alt}
                   className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
@@ -191,8 +195,8 @@ const PortableKiosk150x210Content = () => {
                   onClick={() => setActiveThumbnail(index)}
                 >
                   <img
-                    src={img}
-                    alt={`Thumbnail ${index + 1}`}
+                    src={img.src}
+                    alt={img.alt}
                     className="max-h-full max-w-full object-contain"
                   />
                 </button>
@@ -504,7 +508,7 @@ const PortableKiosk150x210Content = () => {
           </button>
 
           <div className="max-w-[90vw] max-h-[85vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
-            <img src={images[lightboxIndex]} alt={`Portable Kiosk view ${lightboxIndex + 1}`} className="max-w-full max-h-[85vh] object-contain" />
+            <img src={images[lightboxIndex].src} alt={images[lightboxIndex].alt} className="max-w-full max-h-[85vh] object-contain" />
           </div>
 
           <button
@@ -529,7 +533,7 @@ const PortableKiosk150x210Content = () => {
                   setLightboxIndex(index)
                 }}
               >
-                <img src={img} alt={`Thumbnail ${index + 1}`} className="w-full h-full object-cover" />
+                <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
               </button>
             ))}
           </div>
