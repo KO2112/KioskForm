@@ -1,6 +1,34 @@
 'use client';
 
 const SEOEnhancedSection = () => {
+  const faqs = [
+    {
+      question: 'What is the difference between a kiosk and a modular cabin?',
+      answer:
+        'A kiosk is usually a compact, customer-facing unit for retail, information, or security, while a modular cabin is a more flexible portable building used for offices, welfare spaces, ticket booths, or site accommodation.',
+    },
+    {
+      question: 'Are your kiosks and cabins suitable for outdoor use?',
+      answer:
+        'Yes. Our units are built with durable insulated panels, weather-resistant finishes, and secure doors and windows, making them suitable for outdoor and semi-permanent installations.',
+    },
+    {
+      question: 'Can you customise a kiosk or cabin for my business?',
+      answer:
+        'Absolutely. We offer tailored sizing, layouts, finishes, electrical setups, and branding options so each unit fits your operations and appearance.',
+    },
+    {
+      question: 'How quickly can a modular kiosk or cabin be deployed?',
+      answer:
+        'Because they are prefabricated, modular kiosks and cabins can be manufactured and installed much faster than traditional construction, helping businesses get operational quickly.',
+    },
+    {
+      question: 'Do you supply kiosks and cabins across the UK?',
+      answer:
+        'Yes. We supply and deliver across the UK, with solutions suitable for construction sites, retail spaces, events, security locations, and more.',
+    },
+  ];
+
   return (
     <section className="py-12 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -225,6 +253,25 @@ const SEOEnhancedSection = () => {
               <p>
                 Our commitment to circular design and energy efficiency means we build for both business and the planet.
               </p>
+            </div>
+          </div>
+
+          <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Common Questions About Kiosks and Cabins
+            </h2>
+            <p className="text-gray-600 mb-6">
+              These plain-English answers help visitors and AI assistants quickly understand what we offer and how our modular buildings work.
+            </p>
+            <div className="space-y-4">
+              {faqs.map((item) => (
+                <details key={item.question} className="rounded-xl border border-gray-200 bg-gray-50 p-4">
+                  <summary className="cursor-pointer font-semibold text-gray-900">
+                    {item.question}
+                  </summary>
+                  <p className="mt-3 text-gray-700">{item.answer}</p>
+                </details>
+              ))}
             </div>
           </div>
 

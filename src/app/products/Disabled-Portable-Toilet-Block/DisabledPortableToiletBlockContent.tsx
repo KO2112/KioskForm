@@ -24,7 +24,7 @@ import {
 } from "lucide-react"
 import ContactForm from "../../../components/ContactForm"
 
-const PortableDoubleToiletBlockContent = () => {
+const DisabledPortableToiletBlockContent = () => {
   const [activeTab, setActiveTab] = useState("specifications")
   const [activeThumbnail, setActiveThumbnail] = useState(0)
   const [lightboxOpen, setLightboxOpen] = useState(false)
@@ -48,22 +48,25 @@ const PortableDoubleToiletBlockContent = () => {
   }
 
   const images = [
-    "/DoubleToilet.png",
-    "/DoubleToilet7.png",
-    "/DoubleToilet2.png",
-    "/DoubleToilet3.png",
-    "/DoubleToilet4.JPG",
-    "/DoubleToilet5.jpeg",
-    "/DoubleToilet6.jpeg",
-    "/DoubleToilet10.jpg",
-    "/DoubleToilet8.jpeg",
-    "/DoubleToilet9.jpeg",
+    "/DisabledToiletKiosk1.jpg",
+    "/DisabledToiletKiosk2.jpg",
+    "/DisabledToiletKiosk3.jpg",
+    "/DisabledToiletKiosk4.jpg",
+    "/DisabledToiletKiosk5.jpg",
+    "/DisabledToiletKiosk6.jpg",
+    "/DisabledToiletKiosk7.jpg",
+    "/DisabledToiletKiosk8.jpg",
+    "/DisabledToiletKiosk9.jpg",
+    "/DisabledToiletKiosk10.jpg",
+    "/DisabledToiletKiosk11.jpg",
+    "/DisabledToiletKiosk12.jpg",
   ]
 
   const specs = [
-    { icon: Ruler, name: "External Dimensions", value: "160 × 210 × 256 cm (5'3\" × 6'11\" × 8'5\")" },
-    { icon: Ruler, name: "Internal Dimensions (Each Toilet Cabin)", value: "98 × 146 × 256 cm (3'3\" × 4'9\" × 7'9\")" },
-    { icon: Weight, name: "Approximate Weight", value: "610 kg" },
+    { icon: Ruler, name: "External Dimensions", value: "170 × 170 × 256 cm (5'3\" × 6'11\" × 8'5\")" },
+    { icon: Ruler, name: "Internal Dimensions (Each Toilet Cabin)", value: "155 × 155 × 236 cm (5'1\" × 5'1\" × 7'9\")" },
+    { icon: Weight, name: "Approximate Weight", value: "445 kg" },
+    { icon: Ruler, name: "Outer Ramp Dimensions", value: "120 × 145 cm (W × L)" },
     {
       icon: ThermometerSnowflake,
       name: "Construction",
@@ -72,19 +75,19 @@ const PortableDoubleToiletBlockContent = () => {
     {
       icon: BatteryCharging,
       name: "Electrical",
-      value: "Wall-mounted electric heaters, automatic sensor-controlled LED lighting, automatic sensor-controlled ventilation, external 32A male site electrical connection",
+      value: "Wall-mounted electric heater, automatic sensor-controlled LED lighting, automatic sensor-controlled ventilation, external 32A male site electrical connection",
     },
     {
       icon: Droplets,
       name: "Plumbing",
-      value: "Two ceramic flushing toilets, integrated wash basins, hot and cold water pipe, waste drainage ready for connection",
+      value: "Ceramic flushing toilet, integrated wash basin, built-in bidet wash function, hot and cold water pipe, floor drain",
     },
     {
       icon: Home,
       name: "Interior Features",
-      value: "Two vanity cabinets, mirrors, liquid soap dispensers, toilet roll holders, vinyl flooring, floor drains, lockable entrance doors",
+      value: "Grab rails, tilted mirror, liquid soap dispenser, toilet roll holder, vinyl flooring, lockable entrance door",
     },
-    { icon: Box, name: "Installation", value: "Fully pre-wired and pre-plumbed for connection to mains water, waste, and electricity" },
+    { icon: Box, name: "Installation", value: "Fully pre-wired and pre-plumbed for connection to mains water, sewer, and electricity" },
   ]
 
   const applications = [
@@ -102,7 +105,7 @@ const PortableDoubleToiletBlockContent = () => {
 
   const faqs = [
     {
-      question: "What makes this portable double toilet block suitable for outdoor use?",
+      question: "What makes this disabled portable toilet block suitable for outdoor use?",
       answer:
         "The cabin is manufactured from premium insulated sandwich panels and a heavy-duty galvanised steel frame, making it durable, weather-resistant, and suitable for year-round outdoor use.",
     },
@@ -112,14 +115,14 @@ const PortableDoubleToiletBlockContent = () => {
         "Yes. It is fully pre-wired and pre-plumbed and is designed to be connected to mains electricity, fresh water, and waste drainage quickly and easily.",
     },
     {
-      question: "What are the dimensions and weight of the double toilet cabin?",
+      question: "What are the dimensions and weight of the disabled toilet cabin?",
       answer:
-        "External dimensions are approximately 160 × 210 × 256 cm, with each toilet cabin measuring around 98 × 146 × 256 cm. The approximate weight is 610 kg.",
+        "External dimensions are approximately 170 × 170 × 256 cm, with each toilet cabin measuring around 155 × 155 × 236 cm. The approximate weight is 445 kg.",
     },
     {
-      question: "What facilities are included inside each toilet cubicle?",
+      question: "What accessibility features are included?",
       answer:
-        "Each cabin includes a ceramic flushing toilet, wash basin, vanity cabinet, mirror, liquid soap dispenser, toilet roll holder, vinyl flooring, floor drain, and lockable door.",
+        "The unit features an access ramp for wheelchair entry, grab rails, a ceramic flushing toilet, integrated wash basin, and a lockable door for safe and convenient use.",
     },
     {
       question: "Do you offer delivery across the UK?",
@@ -146,7 +149,7 @@ const PortableDoubleToiletBlockContent = () => {
               kiosks
             </Link>
             <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <span className="text-gray-900 font-medium">Portable Double Toilet Block</span>
+            <span className="text-gray-900 font-medium">Disabled Portable Toilet Block</span>
           </nav>
         </div>
       </div>
@@ -161,7 +164,7 @@ const PortableDoubleToiletBlockContent = () => {
               <div className="h-[500px] w-full relative bg-gray-100 flex items-center justify-center">
                 <img
                   src={images[activeThumbnail]}
-                  alt="Portable Double Toilet Block view"
+                  alt="Disabled Portable Toilet Block view"
                   className="max-h-full max-w-full object-contain transition-transform group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all flex items-center justify-center">
@@ -191,17 +194,17 @@ const PortableDoubleToiletBlockContent = () => {
           </div>
 
           <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Portable Double Toilet Block</h1>
-            <p className="text-gray-600 mb-4">Insulated WC Cabin | Double Toilet Unit | Ready for Connection</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Disabled Portable Toilet Block</h1>
+            <p className="text-gray-600 mb-4">Prefabricated WC Unit | Accessibility Ready | Ready for Connection</p>
 
             <div className="flex items-baseline mb-6">
-              <span className="text-3xl font-bold text-gray-900">£2,699.99</span>
+              <span className="text-3xl font-bold text-gray-900">£2,999</span>
               <span className="ml-2 text-sm text-gray-500">excluding VAT and shipping</span>
             </div>
 
             <div className="bg-blue-50 rounded-lg p-4 mb-6 border border-blue-100">
               <p className="text-blue-800 text-sm">
-                Brand new, durable, and fully insulated with office-ready electrical installation.
+                Brand new, heavy-duty portable toilet cabin with accessible ramp, grab rails, wash basin, and full ready-to-connect services.
               </p>
             </div>
 
@@ -235,7 +238,7 @@ const PortableDoubleToiletBlockContent = () => {
                 <div className="bg-blue-100 rounded-full p-2 mr-3">
                   <Star className="h-4 w-4 text-blue-700" />
                 </div>
-                <span className="text-sm text-gray-700">Heavy Duty Build</span>
+                <span className="text-sm text-gray-700">Accessible Design</span>
               </div>
             </div>
           </div>
@@ -297,13 +300,13 @@ const PortableDoubleToiletBlockContent = () => {
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Product Description</h3>
                   <div className="prose prose-blue max-w-none text-gray-700">
                     <p>
-                      Our portable double toilet block is a brand new, heavy-duty prefabricated WC unit designed to deliver reliable, hygienic sanitation in the most demanding environments. Manufactured in the EU, it combines high-quality insulated sandwich panels with a robust steel frame for excellent durability and thermal performance.
+                      Our disabled portable toilet block is a brand new, heavy-duty prefabricated WC unit designed to provide a practical, hygienic, and accessible washroom solution for construction sites, industrial premises, outdoor events, festivals, sports facilities, farms, temporary accommodation, and commercial workplaces.
                     </p>
                     <p>
-                      The cabin features two separate toilet cubicles, ceramic flushing toilets, integrated wash basins, a built-in bidet wash function, wall-mounted electric heaters, automatic sensor-controlled LED lighting, and automatic sensor-controlled ventilation. It is fully pre-wired and pre-plumbed to make installation straightforward once connected to mains water, waste, and electricity.
+                      Manufactured in the EU using high-quality insulated sandwich panels and a robust steel frame, this portable WC unit is built for long-term outdoor use in all weather conditions. It features an access ramp for wheelchair entry, grab rails, a ceramic flushing toilet, an integrated wash basin, a built-in bidet wash function, wall-mounted electric heater, automatic sensor-controlled LED lighting, and automatic sensor-controlled ventilation.
                     </p>
                     <p>
-                      Internal appointments include vanity cabinets, mirrors, liquid soap dispensers, toilet roll holders, vinyl flooring, floor drains, and lockable entrance doors. With an external footprint of approximately 160 × 210 × 256 cm and a total weight of around 610 kg, it is built to provide a practical and long-lasting washroom solution for outdoor and temporary applications.
+                      The unit is fully pre-wired and pre-plumbed and is ready for connection to mains electricity, fresh water, waste drainage, and sewer systems. External dimensions are approximately 170 × 170 × 256 cm, with internal toilet cabin dimensions of around 155 × 155 × 236 cm. The unit weighs approximately 445 kg and is suitable for year-round outdoor installation.
                     </p>
                     <p>
                       For the best installation, we recommend placing the cabin on a level concrete base, slabs, hardcore, or steel beams. Nationwide delivery is available throughout the UK, with delivery costs based on postcode and unloading requirements.
@@ -317,7 +320,7 @@ const PortableDoubleToiletBlockContent = () => {
               <div>
                 <h3 className="text-lg font-bold text-gray-900 mb-6">Versatile Applications</h3>
                 <p className="text-gray-700 mb-8">
-                  This fully insulated portable double toilet cabin is ideal for sites and facilities that need dependable welfare facilities without the cost and lead time of traditional building work.
+                  This accessible portable toilet cabin is ideal for projects and facilities that require reliable welfare provision without the cost and lead time of traditional building work.
                 </p>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
@@ -332,9 +335,9 @@ const PortableDoubleToiletBlockContent = () => {
                 </div>
 
                 <div className="mt-10 bg-blue-50 rounded-lg p-6 border border-blue-100">
-                  <h4 className="font-semibold text-blue-900 mb-2">Perfect for Temporary and Permanent Welfare Needs</h4>
+                  <h4 className="font-semibold text-blue-900 mb-2">Perfect for Accessible Temporary and Permanent Welfare Needs</h4>
                   <p className="text-blue-800">
-                    Whether you need a hygienic toilet block for a construction project, an outdoor event, a festival, a farm, or a commercial workplace, this prefabricated WC unit provides comfort, durability, and quick installation with minimal disruption.
+                    Whether you need an accessible toilet block for a construction project, an outdoor event, a festival, a farm, or a commercial workplace, this prefabricated WC unit provides comfort, durability, and quick installation with minimal disruption.
                   </p>
                 </div>
               </div>
@@ -347,7 +350,7 @@ const PortableDoubleToiletBlockContent = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Double toilet cabin layout with two separate WC cubicles</span>
+                      <span className="text-gray-700">Accessible disabled toilet block with access ramp and grab rails</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
@@ -355,15 +358,15 @@ const PortableDoubleToiletBlockContent = () => {
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Ceramic flushing toilets, integrated wash basins, and built-in bidet wash function</span>
+                      <span className="text-gray-700">Ceramic flushing toilet, integrated wash basin, and built-in bidet wash function</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Automatic sensor-controlled LED lighting, ventilation, wall-mounted electric heaters, and external 32A male site connection</span>
+                      <span className="text-gray-700">Automatic sensor-controlled LED lighting, ventilation, wall-mounted electric heater, and external 32A male site connection</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-700">Vanity cabinets, mirrors, soap dispensers, toilet roll holders, vinyl flooring, floor drains, and lockable entrance doors</span>
+                      <span className="text-gray-700">Tilted mirror, liquid soap dispenser, toilet roll holder, vinyl flooring, floor drain, and lockable entrance door</span>
                     </li>
                     <li className="flex items-start">
                       <CheckCircle className="h-5 w-5 text-green-600 mr-3 flex-shrink-0 mt-0.5" />
@@ -393,7 +396,7 @@ const PortableDoubleToiletBlockContent = () => {
                 <div className="mt-8 bg-gray-100 rounded-lg p-6">
                   <h4 className="font-semibold text-gray-900 mb-2">Need a quotation or delivery advice?</h4>
                   <p className="text-gray-700 mb-4">
-                    Our team can help with delivery planning, site access, and installation requirements for your portable toilet block.
+                    Our team can help with delivery planning, site access, and installation requirements for your disabled portable toilet block.
                   </p>
                   <Link href="/ContactUs" className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm font-medium">
                     Contact Us
@@ -410,7 +413,7 @@ const PortableDoubleToiletBlockContent = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="md:flex items-center justify-between">
             <div className="mb-6 md:mb-0 md:mr-8">
-              <h2 className="text-2xl font-bold mb-2">Ready to discuss your portable double toilet block?</h2>
+              <h2 className="text-2xl font-bold mb-2">Ready to discuss your disabled portable toilet block?</h2>
               <p className="text-blue-100">
                 Contact us for product availability, site delivery, and a tailored quotation for your project.
               </p>
@@ -426,15 +429,15 @@ const PortableDoubleToiletBlockContent = () => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="prose prose-blue max-w-none text-gray-600 text-sm">
-          <h2>Portable Double Toilet Block | Prefabricated WC Units | Fully Insulated Toilet Cabins</h2>
+          <h2>Disabled Portable Toilet Block | Prefabricated WC Unit | Accessible Toilet Cabin</h2>
           <p>
-            Our portable double toilet block is a brand new, heavy-duty prefabricated washroom solution designed for construction sites, industrial premises, outdoor events, festivals, sports facilities, farms, temporary accommodation, and commercial workplaces. Manufactured in the EU using premium insulated sandwich panels and a robust steel frame, it delivers a practical, hygienic, and durable toilet cabin for long-term outdoor use.
+            Our disabled portable toilet block is a brand new, heavy-duty prefabricated washroom solution designed for construction sites, industrial premises, outdoor events, festivals, sports facilities, farms, temporary accommodation, and commercial workplaces. Manufactured in the EU using premium insulated sandwich panels and a robust steel frame, it delivers a practical, hygienic, and durable toilet cabin for long-term outdoor use.
           </p>
           <p>
-            The unit is supplied as a fully insulated toilet cabin with two separate WC cubicles, ceramic flushing toilets, integrated wash basins, built-in bidet wash functions, wall-mounted electric heaters, sensor-controlled LED lighting, and automatic ventilation. It is fully pre-wired and pre-plumbed for straightforward connection to mains electricity, fresh water, and waste drainage.
+            The unit is supplied as a fully insulated accessible toilet cabin with an access ramp, grab rails, ceramic flushing toilet, integrated wash basin, built-in bidet wash function, wall-mounted electric heater, sensor-controlled LED lighting, and automatic ventilation. It is fully pre-wired and pre-plumbed for straightforward connection to mains electricity, fresh water, and waste drainage.
           </p>
           <p>
-            External dimensions are approximately 160 × 210 × 256 cm, with each toilet cabin measuring around 98 × 146 × 256 cm. The unit weighs approximately 610 kg and is finished with weather-resistant materials suitable for year-round outdoor installation. For best results, we recommend placing the cabin on a level concrete base, slabs, hardcore, or steel beams.
+            External dimensions are approximately 170 × 170 × 256 cm, with each toilet cabin measuring around 155 × 155 × 236 cm. The unit weighs approximately 445 kg and is finished with weather-resistant materials suitable for year-round outdoor installation. For best results, we recommend placing the cabin on a level concrete base, slabs, hardcore, or steel beams.
           </p>
           <p>
             Nationwide delivery is available across the UK, and we can advise on delivery method and site access requirements before installation. Please contact us for a quote, delivery guidance, or to discuss your specific requirements.
@@ -455,7 +458,7 @@ const PortableDoubleToiletBlockContent = () => {
               <ChevronRight className="h-6 w-6" />
             </button>
             <div className="bg-white rounded-lg overflow-hidden">
-              <img src={images[lightboxIndex]} alt={`Portable Double Toilet Block view ${lightboxIndex + 1}`} className="w-full h-[80vh] object-contain" />
+              <img src={images[lightboxIndex]} alt={`Disabled Portable Toilet Block view ${lightboxIndex + 1}`} className="w-full h-[80vh] object-contain" />
             </div>
           </div>
         </div>
@@ -464,4 +467,4 @@ const PortableDoubleToiletBlockContent = () => {
   )
 }
 
-export default PortableDoubleToiletBlockContent
+export default DisabledPortableToiletBlockContent

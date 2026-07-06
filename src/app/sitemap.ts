@@ -53,6 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/products/Disabled-Portable-Toilet-Block`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/products/Portable-Kiosk-130x210`,
       lastModified: new Date(),
       changeFrequency: 'weekly',

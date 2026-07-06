@@ -125,6 +125,52 @@ export default function Home() {
           "@type": "PostalAddress",
           "addressCountry": "UK"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cabinunits.co.uk/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between a kiosk and a modular cabin?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A kiosk is usually a compact, customer-facing unit for retail, information, or security, while a modular cabin is a more flexible portable building used for offices, welfare spaces, ticket booths, or site accommodation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your kiosks and cabins suitable for outdoor use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our units are built with durable insulated panels, weather-resistant finishes, and secure doors and windows, making them suitable for outdoor and semi-permanent installations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you customise a kiosk or cabin for my business?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We offer tailored sizing, layouts, finishes, electrical setups, and branding options so each unit fits your operations and appearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can a modular kiosk or cabin be deployed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because they are prefabricated, modular kiosks and cabins can be manufactured and installed much faster than traditional construction, helping businesses get operational quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you supply kiosks and cabins across the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We supply and deliver across the UK, with solutions suitable for construction sites, retail spaces, events, security locations, and more."
+            }
+          }
+        ]
       }
     ]
   };
