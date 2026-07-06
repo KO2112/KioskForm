@@ -146,35 +146,7 @@ const KiosksPage = () => {
       ],
       icon: Box,
     },
-    {
-      id: "Portable-toilet-130x130",
-      title: "Portable Toilet Unit Welfare Cabin Modular Toilet Block 130x130 cm",
-      subtitle: "Welfare Cabin | Modular Toilet Block | Site Toilet",
-      price: "£1999",
-      dimensions: "130×130 cm",
-      description: "Complete portable toilet unit with flushing toilet, wash basin, and full plumbing connections for welfare and event use.",
-      image: "/portable-toilet-130x130-1.png",
-      features: [
-        "Flushing toilet with ceramic bowl and soft-close seat",
-        "Wash basin with hot and cold water taps",
-        "Steel sandwich panels with weather-resistant insulation",
-        "Complete plumbing installation with waste connections",
-        "Electrical installation with lighting and ventilation",
-        "Non-slip flooring and lockable door",
-        "Weight: 180 kg approx.",
-        "Internal height: 2.35 meters",
-      ],
-      applications: [
-        "Construction sites",
-        "Event venues",
-        "Welfare facilities",
-        "Temporary installations",
-        "Remote locations",
-        "Emergency facilities",
-        "Outdoor events",
-      ],
-      icon: Box,
-    },
+    
   ]
 
   return (
