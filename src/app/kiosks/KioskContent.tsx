@@ -65,7 +65,7 @@ const KiosksPage = () => {
       id: "Disabled-Portable-Toilet-Block",
       title: "Disabled Portable Toilet Block",
       subtitle: "Accessible WC Unit | Wheelchair Access | Ready for Connection",
-      price: "Price on request",
+      price: "£2,999",
       dimensions: "170×170×256 cm",
       description: "Heavy-duty accessible portable toilet cabin with ramp, grab rails, ceramic toilet, wash basin, and full ready-to-connect services.",
       image: "/DisabledToiletKiosk1.jpg",
