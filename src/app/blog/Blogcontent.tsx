@@ -20,6 +20,78 @@ const BlogContent = () => {
 
           {/* Blog Post 1 Preview */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/car-park-attendant-kiosks">
+              <div className="relative h-48 w-full">
+                <Image 
+                  src="/110x130Kiosk.jpg" 
+                  alt="Car park attendant kiosk" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 7, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Car Park Attendant Kiosks for UK Parking Operators
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Explore how insulated car park attendant kiosks can improve access control, customer service and staff comfort at parking sites across the UK.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Blog Post 2 Preview */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/construction-site-security-cabins">
+              <div className="relative h-48 w-full">
+                <Image 
+                  src="/110x150.jpg" 
+                  alt="Construction site security cabin" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 7, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Construction Site Security Cabins for Safer, Smarter Sites
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Learn how secure, insulated cabins support gatehouses, site offices and access control on busy construction projects.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Blog Post 3 Preview */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/festival-ticket-booths">
+              <div className="relative h-48 w-full">
+                <Image 
+                  src="/150x210%20Kiosk.jpg" 
+                  alt="Festival ticket booth" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 7, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Festival Ticket Booths for Fast, Professional Event Entry
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Discover weatherproof ticket booths and box office cabins designed for festivals, outdoor events and high-traffic entry points.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
+
+          {/* Blog Post 4 Preview */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
             <Link href="/Security-kiosks-in-the-UK">
               <div className="relative h-48 w-full">
                 <Image 
