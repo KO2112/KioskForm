@@ -92,6 +92,29 @@ const BlogContent = () => {
 
           {/* Blog Post 4 Preview */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/security-gatehouse">
+              <div className="relative h-48 w-full">
+                <Image 
+                  src="/150x210%20Kiosk.jpg" 
+                  alt="Security gatehouse cabin" 
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 8, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Security Gatehouse Cabins for Controlled, Professional Site Entry
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Discover how insulated security gatehouse cabins provide a strong first impression, better access control and a practical working space for site teams.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
             <Link href="/Security-kiosks-in-the-UK">
               <div className="relative h-48 w-full">
                 <Image 
