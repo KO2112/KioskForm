@@ -10,7 +10,6 @@ import {
   Lock,
   Car,
   Truck,
-  Info,
 } from "lucide-react"
 
 const heroPoints = [
@@ -22,13 +21,13 @@ const heroPoints = [
 const kiosks = [
   {
     id: "Portable-Kiosk-110x130",
-    title: "110x130cm Attendant Kiosk",
+    title: "110x130cm Car Park Kiosk",
     tag: "Best for single-bay footprint",
     price: "£1,799",
     dimensions: "110×130 cm",
     image: "/110x130Kiosk.jpg",
     description:
-      "Our most compact attendant kiosk, with a portable heater fitted as standard — ideal for barriers, pay-and-display points, or a tight entrance position.",
+      "Our most compact car park kiosk, with a portable heater fitted as standard — ideal for barriers, pay-and-display points, or a tight entrance position.",
     features: [
       "Portable heater fitted as standard",
       "40mm polyurethane insulated panels",
@@ -38,7 +37,7 @@ const kiosks = [
   },
   {
     id: "Portable-Kiosk-110x150",
-    title: "110x150cm Attendant Kiosk",
+    title: "110x150cm Car Park Kiosk",
     tag: "Best for extra desk space",
     price: "£1,949",
     dimensions: "110×150 cm",
@@ -56,7 +55,7 @@ const kiosks = [
 
 const faqs = [
   {
-    q: "Will the attendant be warm in winter?",
+    q: "Will staff be warm in winter?",
     a: "Our 110x130cm kiosk comes with a portable heater fitted as standard, and all units are fully insulated with 40mm polyurethane core panels to keep the inside comfortable.",
   },
   {
@@ -95,7 +94,7 @@ export default function CarParkContent() {
           <Link href="/kiosks" className="hover:text-blue-600">
             Kiosks
           </Link>{" "}
-          <span className="mx-1">/</span> <span className="text-gray-700">Car Park Attendant Kiosks</span>
+          <span className="mx-1">/</span> <span className="text-gray-700">Car Park Kiosks</span>
         </div>
       </div>
 
@@ -107,14 +106,14 @@ export default function CarParkContent() {
             </span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-bold max-w-3xl leading-tight">
-            Car Park Attendant Kiosks for Parking Operators and Councils
+            Car Park Kiosks for Parking Operators and Councils
           </h1>
           <p className="mt-4 text-slate-200 max-w-2xl text-lg">
             Compact, insulated parking kiosks for barrier control, pay stations and reception points — built to keep staff comfortable and your site running smoothly.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
-              href="/ContactUs?interest=car-park-attendant-kiosk"
+              href="/ContactUs?interest=car-park-kiosk"
               className="inline-flex items-center justify-center bg-sky-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-400 transition-colors"
             >
               Get a Quote for Your Car Park
@@ -145,9 +144,9 @@ export default function CarParkContent() {
         <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
           <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] items-start">
             <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-3">Practical parking booths that work from day one</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">Practical parking kiosks that work from day one</h2>
               <p className="text-gray-700 text-sm leading-7 mb-3">
-                Our car park attendant kiosks are designed for operators who need a robust, weatherproof booth without sacrificing comfort or ease of installation. Each unit arrives insulated, fully wired and ready for a fast handover on site.
+                Our car park kiosks are designed for operators who need a robust, weatherproof booth without sacrificing comfort or ease of installation. Each unit arrives insulated, fully wired and ready for a fast handover on site.
               </p>
               <p className="text-gray-700 text-sm leading-7">
                 Whether you are fitting out a single bay, several entrances or a full multi-storey operation, we can help you choose a kiosk layout that supports staff comfort, secure access and straightforward maintenance.
@@ -226,7 +225,7 @@ export default function CarParkContent() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800">Heated & insulated</h3>
-                  <p className="text-gray-600 text-sm">Portable heating and insulated wall panels help keep attendants comfortable all day.</p>
+                  <p className="text-gray-600 text-sm">Portable heating and insulated wall panels help keep staff comfortable all day.</p>
                 </div>
               </div>
               <div className="flex items-start p-3">
@@ -277,11 +276,11 @@ export default function CarParkContent() {
               <div className="mb-4 md:mb-0">
                 <h2 className="text-2xl font-bold mb-2">Fitting out a car park?</h2>
                 <p className="text-slate-200">
-                  Tell us how many bays or attendant points you need to cover and we'll put together a quote.
+                  Tell us how many bays or kiosk points you need to cover and we'll put together a quote.
                 </p>
               </div>
               <Link
-                href="/ContactUs?interest=car-park-attendant-kiosk"
+                href="/ContactUs?interest=car-park-kiosk"
                 className="inline-flex items-center bg-sky-500 text-white px-6 py-3 rounded-md hover:bg-sky-400 transition-colors shadow-md font-semibold"
               >
                 Request a Quote
@@ -313,7 +312,7 @@ export default function CarParkContent() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">Who uses car park attendant kiosks?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">Who uses car park kiosks?</h2>
             <p className="text-gray-700 leading-7 text-sm sm:text-base">
               These kiosks are commonly used by parking operators, councils, facilities managers and private sites. They are ideal for barrier control, ticketing points, pay stations and general reception duties. They also work well for sites that need a practical and professional booth without the cost of a full building.
             </p>
@@ -326,7 +325,7 @@ export default function CarParkContent() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-t border-gray-200 mt-6">
         <p className="text-gray-600 text-sm leading-7">
-          Our car park attendant kiosks are supplied brand new, fully insulated and wired ready to connect, with a portable heater fitted as standard on our compact model. Used by parking operators, facilities managers and councils across the UK for entry control, ticketing and reception points.
+          Our car park kiosks are supplied brand new, fully insulated and wired ready to connect, with a portable heater fitted as standard on our compact model. Used by parking operators, facilities managers and councils across the UK for entry control, ticketing and reception points.
         </p>
       </div>
     </div>

@@ -20,7 +20,7 @@ const BlogContent = () => {
 
           {/* Blog Post 1 Preview */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-            <Link href="/car-park-attendant-kiosks">
+            <Link href="/car-park-kiosks">
               <div className="relative h-48 w-full">
                 <Image 
                   src="/110x130Kiosk.jpg" 

@@ -4,13 +4,13 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Car Park Attendant Kiosks | Heated Parking Booths for UK Sites",
+  title: "Car Park Kiosks | Heated Parking Booths for UK Sites",
   description:
-    "Looking for durable car park attendant kiosks in the UK? Explore insulated parking booths with heating, secure access and power for operators and councils.",
+    "Looking for durable car park kiosks in the UK? Explore insulated parking booths with heating, secure access and power for operators and councils.",
   keywords: [
-    "car park attendant kiosk",
+    "car park kiosk",
     "parking booth",
-    "parking attendant hut",
+    "parking kiosk",
     "car park kiosk UK",
     "toll booth cabin",
     "parking control kiosk",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "parking operator kiosk",
   ],
   alternates: {
-    canonical: "https://cabinunits.co.uk/car-park-attendant-kiosks",
+    canonical: "https://cabinunits.co.uk/car-park-kiosks",
     languages: {
-      "en-GB": "https://cabinunits.co.uk/car-park-attendant-kiosks",
+      "en-GB": "https://cabinunits.co.uk/car-park-kiosks",
     },
   },
   robots: {
@@ -38,25 +38,25 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://cabinunits.co.uk/car-park-attendant-kiosks",
+    url: "https://cabinunits.co.uk/car-park-kiosks",
     siteName: "CabinUnits",
-    title: "Car Park Attendant Kiosks | Heated Parking Booths for UK Sites",
+    title: "Car Park Kiosks | Heated Parking Booths for UK Sites",
     description:
-      "Insulated car park attendant kiosks with heating, secure access and power for parking operators across the UK.",
+      "Insulated car park kiosks with heating, secure access and power for parking operators across the UK.",
     images: [
       {
         url: "/110x130Kiosk.jpg",
         width: 800,
         height: 600,
-        alt: "Car park attendant kiosk",
+        alt: "Car park kiosk",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Car Park Attendant Kiosks | Heated Parking Booths for UK Sites",
+    title: "Car Park Kiosks | Heated Parking Booths for UK Sites",
     description:
-      "Insulated car park attendant kiosks with heating, secure access and power for parking operators across the UK.",
+      "Insulated car park kiosks with heating, secure access and power for parking operators across the UK.",
     images: ["/110x130Kiosk.jpg"],
   },
 }
@@ -65,7 +65,7 @@ export default function Page() {
   return (
     <>
       <Script
-        id="car-park-attendant-kiosks-schema"
+        id="car-park-kiosks-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -73,30 +73,30 @@ export default function Page() {
             "@graph": [
               {
                 "@type": "WebPage",
-                "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/",
-                url: "https://cabinunits.co.uk/car-park-attendant-kiosks/",
-                name: "Car Park Attendant Kiosks | Heated Parking Booths for UK Sites",
+                "@id": "https://cabinunits.co.uk/car-park-kiosks/",
+                url: "https://cabinunits.co.uk/car-park-kiosks/",
+                name: "Car Park Kiosks | Heated Parking Booths for UK Sites",
                 isPartOf: {
                   "@id": "https://cabinunits.co.uk/#website",
                 },
                 description:
-                  "Insulated car park attendant kiosks with heating, secure access and power for parking operators, councils and facilities teams.",
+                  "Insulated car park kiosks with heating, secure access and power for parking operators, councils and facilities teams.",
                 breadcrumb: {
-                  "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/#breadcrumb",
+                  "@id": "https://cabinunits.co.uk/car-park-kiosks/#breadcrumb",
                 },
                 inLanguage: "en-GB",
                 about: {
                   "@type": "Thing",
-                  name: "Car park attendant kiosks",
+                  name: "Car park kiosks",
                 },
               },
               {
                 "@type": "Service",
-                "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/#service",
-                serviceType: "Car park attendant kiosks",
-                name: "Car park attendant kiosks",
+                "@id": "https://cabinunits.co.uk/car-park-kiosks/#service",
+                serviceType: "Car park kiosks",
+                name: "Car park kiosks",
                 description:
-                  "Insulated, fully wired parking kiosks for attendants, barrier control, pay stations and reception points.",
+                  "Insulated, fully wired parking kiosks for operators, barrier control, pay stations and reception points.",
                 provider: {
                   "@id": "https://cabinunits.co.uk/#organization",
                 },
@@ -107,16 +107,16 @@ export default function Page() {
               },
               {
                 "@type": "BreadcrumbList",
-                "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/#breadcrumb",
+                "@id": "https://cabinunits.co.uk/car-park-kiosks/#breadcrumb",
                 itemListElement: [
                   { "@type": "ListItem", position: 1, name: "Home", item: "https://cabinunits.co.uk/" },
                   { "@type": "ListItem", position: 2, name: "Kiosks", item: "https://cabinunits.co.uk/kiosks" },
-                  { "@type": "ListItem", position: 3, name: "Car Park Attendant Kiosks" },
+                  { "@type": "ListItem", position: 3, name: "Car Park Kiosks" },
                 ],
               },
               {
                 "@type": "ItemList",
-                "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/#itemlist",
+                "@id": "https://cabinunits.co.uk/car-park-kiosks/#itemlist",
                 itemListElement: [
                   {
                     "@type": "ListItem",
@@ -140,7 +140,7 @@ export default function Page() {
               },
               {
                 "@type": "FAQPage",
-                "@id": "https://cabinunits.co.uk/car-park-attendant-kiosks/#faq",
+                "@id": "https://cabinunits.co.uk/car-park-kiosks/#faq",
                 mainEntity: [
                   {
                     "@type": "Question",
@@ -160,7 +160,7 @@ export default function Page() {
                   },
                   {
                     "@type": "Question",
-                    name: "Will the attendant be warm in winter?",
+                    name: "Will staff be warm in winter?",
                     acceptedAnswer: {
                       "@type": "Answer",
                       text: "Our 110x130cm kiosk comes with a portable heater fitted as standard, and all units are fully insulated with 40mm polyurethane core panels to keep the inside comfortable.",
