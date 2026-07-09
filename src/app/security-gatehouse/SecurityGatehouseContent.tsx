@@ -108,7 +108,7 @@ export default function SecurityGatehouseContent() {
                 </span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold max-w-3xl leading-tight">
-                Modular Security Gatehouse Cabins for Sale and Hire in the UK
+                Modular Security Gatehouse for Sale and Hire in the UK
               </h1>
               <p className="mt-4 text-slate-200 max-w-2xl text-lg">
                 Buy or hire a dependable gatehouse cabin for secure site entry, visitor management and barrier control with insulated, weatherproof construction and fast delivery.

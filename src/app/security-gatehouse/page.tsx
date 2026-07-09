@@ -4,9 +4,9 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
+  title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
   description:
-    "Buy or hire modular security gatehouse cabins in the UK. Durable, insulated gatehouse cabins for secure site entry, barrier control and visitor management.",
+    "Buy or hire modular security gatehouse in the UK. Durable, insulated gatehouse cabins for secure site entry, barrier control and visitor management.",
   keywords: [
     "security gatehouse",
     "gatehouse kiosk",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/security-gatehouse",
     siteName: "CabinUnits",
-    title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
+    title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
     description:
       "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
     images: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
+    title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
     description:
       "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
     images: ["/110x130Kiosk.jpg"],
