@@ -64,19 +64,19 @@ const kiosks = [
 const faqs = [
   {
     q: "What is a security gatehouse used for?",
-    a: "A security gatehouse is a compact, secure cabin used for access control, visitor management, and day-to-day site operations at entrances and sensitive locations.",
+    a: "A security gatehouse is a compact, secure cabin used for access control, visitor management and day-to-day site operations at entrances and sensitive locations.",
   },
   {
     q: "Why choose a modular gatehouse over a temporary office?",
-    a: "A modular gatehouse is faster to install, weather-resistant, and purpose-built for security staff who need a dependable and professional control point.",
+    a: "A modular gatehouse is faster to install, weather-resistant and purpose-built for security staff who need a dependable and professional control point. It also gives a more polished first impression at the entrance.",
   },
   {
     q: "Can it be used for construction or industrial sites?",
-    a: "Yes. These cabins are ideal for construction sites, industrial estates, warehouses, schools, public buildings and private facilities.",
+    a: "Yes. These cabins are ideal for construction sites, industrial estates, warehouses, schools, public buildings and private facilities where a secure, visible entry point is needed.",
   },
   {
     q: "Is the gatehouse suitable for all weather conditions?",
-    a: "Yes. Each unit is fully insulated and designed to remain comfortable and practical in both winter and summer conditions.",
+    a: "Yes. Each unit is fully insulated and designed to remain comfortable and practical in both winter and summer conditions, with lighting, power and secure access built in.",
   },
 ]
 
@@ -84,9 +84,9 @@ export default function SecurityGatehouseContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
+    <div className="bg-gray-50 min-h-screen pt-10">
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-gray-500">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-blue-600">
             Home
           </Link>{" "}
@@ -100,42 +100,61 @@ export default function SecurityGatehouseContent() {
 
       <div className="bg-gradient-to-br from-slate-900 via-sky-900 to-blue-800 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="bg-sky-400/20 text-sky-200 text-xs font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
-              <Shield className="w-3.5 h-3.5" /> Secure entry solutions
-            </span>
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-bold max-w-3xl leading-tight">
-            Security Gatehouse Cabins for Safe, Professional Site Entry
-          </h1>
-          <p className="mt-4 text-slate-200 max-w-2xl text-lg">
-            Create a dependable control point for visitors, deliveries and staff with a robust gatehouse cabin that combines security, comfort and easy installation.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
-            <Link
-              href="/ContactUs?interest=security-gatehouse"
-              className="inline-flex items-center justify-center bg-sky-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-400 transition-colors"
-            >
-              Request a Gatehouse Quote
-              <ChevronRight className="w-4 h-4 ml-1" />
-            </Link>
-            <Link
-              href="/kiosks"
-              className="inline-flex items-center justify-center bg-white/10 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/20 transition-colors border border-white/20"
-            >
-              View All Kiosks
-            </Link>
-          </div>
-          <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {heroPoints.map((point, i) => {
-              const Icon = point.icon
-              return (
-                <div key={i} className="flex items-center gap-3 bg-white/10 border border-white/10 rounded-lg px-4 py-3">
-                  <Icon className="w-5 h-5 text-sky-300 flex-shrink-0" />
-                  <span className="text-sm text-slate-100">{point.label}</span>
-                </div>
-              )
-            })}
+          <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <span className="bg-sky-400/20 text-sky-200 text-xs font-semibold px-3 py-1 rounded-full inline-flex items-center gap-1">
+                  <Shield className="w-3.5 h-3.5" /> Secure entry solutions
+                </span>
+              </div>
+              <h1 className="text-3xl sm:text-4xl font-bold max-w-3xl leading-tight">
+                Modular Security Gatehouse Cabins for Sale and Hire in the UK
+              </h1>
+              <p className="mt-4 text-slate-200 max-w-2xl text-lg">
+                Buy or hire a dependable gatehouse cabin for secure site entry, visitor management and barrier control with insulated, weatherproof construction and fast delivery.
+              </p>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/ContactUs?interest=security-gatehouse"
+                  className="inline-flex items-center justify-center bg-sky-500 text-white px-6 py-3 rounded-md font-semibold hover:bg-sky-400 transition-colors"
+                >
+                  Request a Gatehouse Quote
+                  <ChevronRight className="w-4 h-4 ml-1" />
+                </Link>
+                <Link
+                  href="/kiosks"
+                  className="inline-flex items-center justify-center bg-white/10 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/20 transition-colors border border-white/20"
+                >
+                  View All Kiosks
+                </Link>
+              </div>
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {heroPoints.map((point, i) => {
+                  const Icon = point.icon
+                  return (
+                    <div key={i} className="flex items-center gap-3 bg-white/10 border border-white/10 rounded-lg px-4 py-3">
+                      <Icon className="w-5 h-5 text-sky-300 flex-shrink-0" />
+                      <span className="text-sm text-slate-100">{point.label}</span>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <div className="mt-8 rounded-xl border border-white/15 bg-white/10 p-4 sm:p-5 backdrop-blur-sm">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-200">Buy or hire</p>
+                <p className="mt-2 text-sm text-slate-100">
+                  Choose a compact gatehouse for a temporary entrance or a larger cabin for a permanent-looking control point. Our units are ready for quick delivery across the UK.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+              <img
+                src="/110x130Kiosk.jpg"
+                alt="Security gatehouse cabin installed at a secure site entrance"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -217,6 +236,26 @@ export default function SecurityGatehouseContent() {
 
         <div className="bg-white shadow-sm rounded-lg overflow-hidden mb-12 border border-gray-100">
           <div className="p-6">
+            <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] items-center">
+              <div>
+                <h2 className="text-xl font-bold text-gray-900 mb-3">A gatehouse cabin built for secure site entry</h2>
+                <p className="text-gray-700 text-sm leading-7">
+                  From single-entry gates to large contractor sites, these cabins provide a clear, protected point for staff to manage visitors, deliveries and access control without the cost or delay of a permanent build.
+                </p>
+              </div>
+              <div className="overflow-hidden rounded-lg border border-gray-100">
+                <img
+                  src="/110x130Kiosk.jpg"
+                  alt="Security gatehouse cabin at a secure site entrance"
+                  className="h-56 w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white shadow-sm rounded-lg overflow-hidden mb-12 border border-gray-100">
+          <div className="p-6">
             <h2 className="text-xl font-bold text-gray-900 mb-5">Why secure sites choose these gatehouse cabins</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-start p-3">
@@ -251,6 +290,28 @@ export default function SecurityGatehouseContent() {
         </div>
 
         <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-5">Helpful gatehouse guides</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <Link href="/construction-site-security-cabins" className="rounded-lg border border-gray-200 p-4 hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <p className="font-semibold text-gray-900">Construction site security cabins</p>
+              <p className="mt-1 text-sm text-gray-600">See how gatehouse cabins support temporary and active building sites.</p>
+            </Link>
+            <Link href="/car-park-kiosks" className="rounded-lg border border-gray-200 p-4 hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <p className="font-semibold text-gray-900">Car park kiosk and cabin solutions</p>
+              <p className="mt-1 text-sm text-gray-600">Explore related entry-point cabins for parking operators and facilities teams.</p>
+            </Link>
+            <Link href="/kiosks" className="rounded-lg border border-gray-200 p-4 hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <p className="font-semibold text-gray-900">View all kiosks and cabins</p>
+              <p className="mt-1 text-sm text-gray-600">Compare compact, mid-size and larger cabins for secure access points.</p>
+            </Link>
+            <Link href="/blog" className="rounded-lg border border-gray-200 p-4 hover:border-sky-300 hover:bg-sky-50 transition-colors">
+              <p className="font-semibold text-gray-900">Read our blog</p>
+              <p className="mt-1 text-sm text-gray-600">Find practical guidance on modular cabins, portable buildings and site security.</p>
+            </Link>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 mb-12">
           <h2 className="text-xl font-bold text-gray-900 mb-5">Questions about security gatehouses</h2>
           <div className="divide-y divide-gray-100">
             {faqs.map((item, i) => (
@@ -264,7 +325,9 @@ export default function SecurityGatehouseContent() {
                     className={`w-4 h-4 text-gray-500 flex-shrink-0 transition-transform ${openFaq === i ? "rotate-180" : ""}`}
                   />
                 </button>
-                {openFaq === i && <p className="text-gray-600 text-sm mt-3 leading-relaxed">{item.a}</p>}
+                <div className="mt-3 text-gray-600 text-sm leading-relaxed" aria-live="polite">
+                  {openFaq === i ? item.a : <span className="sr-only">{item.a}</span>}
+                </div>
               </div>
             ))}
           </div>
@@ -274,9 +337,9 @@ export default function SecurityGatehouseContent() {
           <div className="p-6 md:p-8">
             <div className="md:flex items-center justify-between">
               <div className="mb-4 md:mb-0">
-                <h2 className="text-2xl font-bold mb-2">Need a site entry cabin?</h2>
+                <h2 className="text-2xl font-bold mb-2">Need a security gatehouse cabin?</h2>
                 <p className="text-slate-200">
-                  Tell us about your site, access requirements and preferred size and we will help you choose the right gatehouse.
+                  Tell us about your site, access requirements and preferred size and we will help you choose the right gatehouse cabin for hire or purchase.
                 </p>
               </div>
               <Link

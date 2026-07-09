@@ -4,9 +4,9 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Security Gatehouse | Secure Cabins | CabinUnits",
+  title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
   description:
-    "Explore durable security gatehouse cabins for entrances, barriers and secure control points. Insulated, weatherproof and ready to use.",
+    "Buy or hire modular security gatehouse cabins in the UK. Durable, insulated gatehouse cabins for secure site entry, barrier control and visitor management.",
   keywords: [
     "security gatehouse",
     "gatehouse kiosk",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/security-gatehouse",
     siteName: "CabinUnits",
-    title: "Security Gatehouse | Secure Cabins | CabinUnits",
+    title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
     description:
-      "Practical security gatehouse cabins for site access, staff control points and visitor entry locations across the UK.",
+      "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
     images: [
       {
         url: "/110x130Kiosk.jpg",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Security Gatehouse | Secure Cabins | CabinUnits",
+    title: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
     description:
-      "Practical security gatehouse cabins for site access, staff control points and visitor entry locations across the UK.",
+      "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
     images: ["/110x130Kiosk.jpg"],
   },
 }
@@ -74,12 +74,12 @@ export default function Page() {
                 "@type": "WebPage",
                 "@id": "https://cabinunits.co.uk/security-gatehouse/",
                 url: "https://cabinunits.co.uk/security-gatehouse/",
-                name: "Security Gatehouse | Secure Cabins | CabinUnits",
+                name: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
                 isPartOf: {
                   "@id": "https://cabinunits.co.uk/#website",
                 },
                 description:
-                  "Security gatehouse cabins for secure entry points, barrier control and site access management.",
+                  "Buy or hire modular security gatehouse cabins in the UK for secure site entry, barrier control and visitor management.",
                 breadcrumb: {
                   "@id": "https://cabinunits.co.uk/security-gatehouse/#breadcrumb",
                 },
@@ -92,10 +92,10 @@ export default function Page() {
               {
                 "@type": "Service",
                 "@id": "https://cabinunits.co.uk/security-gatehouse/#service",
-                serviceType: "Security gatehouse",
+                serviceType: "Security gatehouse cabins",
                 name: "Security gatehouse cabins",
                 description:
-                  "Insulated, fully wired gatehouse cabins for security staff, access control and visitor management.",
+                  "Insulated, fully wired gatehouse cabins for security staff, access control and visitor management in the UK.",
                 provider: {
                   "@id": "https://cabinunits.co.uk/#organization",
                 },

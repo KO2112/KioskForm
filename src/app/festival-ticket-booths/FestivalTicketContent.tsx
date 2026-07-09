@@ -118,9 +118,9 @@ export default function FestivalTicketContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
+    <div className="bg-gray-50 min-h-screen pt-10">
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 text-sm text-gray-500">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-blue-600">
             Home
           </Link>{" "}

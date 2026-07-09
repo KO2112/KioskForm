@@ -4,17 +4,18 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Building, Phone, Info, FileText } from 'lucide-react';
+import { Menu, X, Building, Phone, Info, FileText, ChevronDown } from 'lucide-react';
 import AnnouncementBar from './announcement-bar';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [productUsesOpen, setProductUsesOpen] = useState(false);
   const pathname = usePathname();
 
 
   useEffect(() => {
-
     setMobileMenuOpen(false);
+    setProductUsesOpen(false);
   }, [pathname]);
 
   const navbarBg = 'bg-white py-4 shadow-md';
@@ -37,6 +38,21 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Home</Link>
               <Link href="/kiosks" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
+              <div className="relative group">
+                <button
+                  type="button"
+                  className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg} flex items-center`}
+                >
+                  Product Uses
+                  <ChevronDown className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
+                </button>
+                <div className="absolute left-0 top-full mt-2 w-64 rounded-md border border-gray-200 bg-white py-2 shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+                  <Link href="/security-gatehouse" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Security gatehouses</Link>
+                  <Link href="/festival-ticket-booths" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Festival ticket booths</Link>
+                  <Link href="/construction-site-security-cabins" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Construction site cabins</Link>
+                  <Link href="/car-park-kiosks" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Car park kiosk & cabins</Link>
+                </div>
+              </div>
               <Link href="/AboutUs" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>About</Link>
               <Link href="/blog" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Blog</Link>
               <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-5 py-3 rounded-md text-base font-medium hover:bg-blue-700 flex items-center">
@@ -73,6 +89,32 @@ const Navbar = () => {
                 <Building className="w-4 h-4 mr-2" />
                 Kiosks
               </Link>
+              <div className="px-3 py-2">
+                <button
+                  type="button"
+                  onClick={() => setProductUsesOpen(!productUsesOpen)}
+                  className="mb-2 flex w-full items-center justify-between text-sm font-semibold uppercase tracking-wide text-gray-500"
+                >
+                  <span>Product Uses</span>
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${productUsesOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {productUsesOpen && (
+                  <div className="space-y-1">
+                    <Link href="/security-gatehouse" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                      Security gatehouses
+                    </Link>
+                    <Link href="/festival-ticket-booths" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                      Festival ticket booths
+                    </Link>
+                    <Link href="/construction-site-security-cabins" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                      Construction site cabins
+                    </Link>
+                    <Link href="/car-park-kiosks" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                      Car park kiosk & cabins
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link href="/AboutUs" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <Info className="w-4 h-4 mr-2" />
                 About
