@@ -1,79 +1,133 @@
 import type { Metadata } from "next"
 import Script from "next/script"
-import ModularCabin115x125cmContent from "./Modular-Cabin-115x125cmContent"
+import PortableKiosk110x130Content from "./Modular-Cabin-115x125cmContent"
 
 export const metadata: Metadata = {
-  title: "115x125cm Modular Cabin | Portable Ticket Booth & Security Hut UK",
+  title: "110x130cm Portable Kiosk | Security Hut & Ticket Booth Cabin UK",
   description:
-    "Premium UK modular cabin 115x125cm - fully insulated portable ticket booth with LED lighting, reception desk & electrical installation. Perfect for security huts, gatehouses & catering units. Made in EU.",
+    "UK modular security cabin 110x130cm - insulated portable kiosk with built-in heater, LED lighting, reception desk & electrical installation. Ideal security hut, ticket booth & gatehouse. Fast dispatch.",
   keywords: [
-    "modular cabin 115x125cm",
-    "portable ticket booth UK",
-    "security hut 115x125",
-    "portable cabin",
-    "modular kiosk",
-    "ticket booth",
+    "portable kiosk 110x130",
+    "security cabin UK",
+    "security hut 110x130",
+    "modular cabin",
+    "ticket booth cabin",
     "gatehouse UK",
-    "portable office",
-    "catering unit",
-    "information kiosk",
-    "compact portable cabin",
-    "fully insulated cabin",
+    "car park attendant booth",
+    "portable cabin with heater",
+    "welfare unit cabin",
+    "insulated security kiosk",
+    "compact security cabin",
     "modular building UK",
-    "reception booth",
   ],
   alternates: {
-    canonical: "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
+    canonical: "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
     languages: {
-      "en-GB": "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
+      "en-GB": "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
     },
   },
   openGraph: {
-    title: "115x125cm Modular Cabin - Portable Ticket Booth & Security Solutions",
+    title: "110x130cm Portable Kiosk - Security Hut, Ticket Booth & Gatehouse",
     description:
-      "Compact 115×125cm fully insulated modular cabin with LED lighting, double plug socket & reception desk. Ideal security hut, ticket booth & gatehouse. UK delivery available.",
+      "Compact 110x130cm insulated security cabin with a built-in heater, LED lighting, double plug socket & reception desk. Ready for immediate dispatch across the UK.",
     type: "website",
     images: [
       {
-        url: "/Modular-Cabin-115x125cm.jpg",
+        url: "/110x130Kiosk.jpg",
         width: 1200,
-        height: 630,
-        alt: "Modular Cabin 115x125cm",
+        height: 900,
+        alt: "Portable Kiosk Security Cabin 110x130cm - main exterior view",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "115x125cm Modular Cabin - Portable Ticket Booth & Security Hut UK",
-    description: "Fully insulated portable cabin with LED lighting, reception desk & electrical installation. Perfect ticket booth, security hut or gatehouse.",
-    images: ["/Modular-Cabin-115x125cm.jpg"],
+    title: "110x130cm Portable Kiosk | Security Hut & Ticket Booth Cabin UK",
+    description: "Insulated portable security cabin with a built-in heater, LED lighting, and full electrical installation. Ready for immediate dispatch.",
+    images: ["/110x130Kiosk.jpg"],
   },
 }
 
-export default function ModularCabin115x125cmPage() {
+export default function PortableKiosk110x130Page() {
   return (
     <>
-      <ModularCabin115x125cmContent />
+      <PortableKiosk110x130Content />
       <Script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            "@id": "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
-            name: "115x125cm Modular Cabin - Portable Ticket Booth & Security Hut",
+            "@id": "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
+            name: "110x130cm Portable Kiosk - Security Hut, Ticket Booth & Gatehouse",
             image: [
               {
                 "@type": "ImageObject",
-                url: "https://cabinunits.co.uk/Modular-Cabin-115x125cm.jpg",
+                url: "https://cabinunits.co.uk/110x130Kiosk.jpg",
                 width: 1200,
-                height: 630,
-                alt: "Modular Cabin 115x125cm"
+                height: 900,
+                alt: "Portable Kiosk Security Cabin 110x130cm - main exterior view"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%201.jpg",
+                width: 1200,
+                height: 900,
+                alt: "110x130cm security cabin - front exterior view"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%202.jpg",
+                width: 1200,
+                height: 900,
+                alt: "110x130cm security cabin - angled exterior view showing insulated panel walls"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%203.jpg",
+                width: 1200,
+                height: 900,
+                alt: "Security cabin 110x130cm - side view showing window placement"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%204.jpg",
+                width: 1200,
+                height: 900,
+                alt: "110x130cm ticket booth cabin - close-up of window and frame"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%205.jpg",
+                width: 1200,
+                height: 900,
+                alt: "Portable security hut 110x130cm - lockable outward-opening PVC door"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%206.jpg",
+                width: 1200,
+                height: 900,
+                alt: "110x130cm modular cabin interior - reception desk and utility shelf"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%207.jpg",
+                width: 1200,
+                height: 900,
+                alt: "Security cabin 110x130cm - internal electrical fitting, fuse box and socket"
+              },
+              {
+                "@type": "ImageObject",
+                url: "https://cabinunits.co.uk/110x130Kiosk%208.jpg",
+                width: 1200,
+                height: 900,
+                alt: "110x130cm portable kiosk - base detail showing forklift transport slots"
               }
             ],
             description:
-              "Brand new, durable, and fully insulated modular cabin with approximate external dimensions of 1.15m (W) x 1.25m (L) x 2.35m (H). Perfect for security huts, ticket booths, gatehouses and information points. Made in the EU with LED lighting and electrical installation.",
-            sku: "modular-cabin-115x125",
+              "Brand new, insulated modular security cabin with approximate external dimensions of 1.10m (W) x 1.30m (L). Fitted with a portable heater, LED lighting and full electrical installation. Suited to security huts, ticket booths, gatehouses and welfare units. Made in the EU.",
+            sku: "portable-kiosk-110x130",
             brand: {
               "@type": "Brand",
               name: "Cabin Units",
@@ -85,7 +139,7 @@ export default function ModularCabin115x125cmPage() {
             },
             offers: {
               "@type": "Offer",
-              url: "https://cabinunits.co.uk/products/Modular-Cabin-115x125cm",
+              url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
               priceCurrency: "GBP",
               price: "1799",
               availability: "https://schema.org/InStock",
@@ -106,7 +160,7 @@ export default function ModularCabin115x125cmPage() {
             specifications: {
               "@type": "PropertyValue",
               name: "Dimensions",
-              value: "1.15m W x 1.25m L x 2.35m H (3'9\" x 4'1\" x 7'9\")",
+              value: "1.10m W x 1.30m L (approx. external footprint)",
             },
           }),
         }}
@@ -120,34 +174,34 @@ export default function ModularCabin115x125cmPage() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "What are the key features of this 115x125cm modular cabin?",
+                name: "What are the key features of this 110x130cm security cabin?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "This compact modular cabin features steel double sandwich panels with RAL 9002 color and 50mm styrofoam core insulation. It includes an internal reception desk, PVC flooring, LED lighting, upward sliding and fixed windows, complete electrical installation with LED light, double plug socket, fuse box, external 16A female 3-pin site socket, and a lockable door for security.",
+                  text: "This compact security cabin is built from steel double-skin sandwich panels with a 40mm polyurethane insulated core. It includes an internal reception desk, utility shelf, LED lighting, a double plug socket, a fuse box, an external site socket, a lockable outward-opening PVC door, and a portable heater fitted as standard.",
                 },
               },
               {
                 "@type": "Question",
-                name: "How should the modular cabin be installed?",
+                name: "Does this cabin come with heating?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "For optimal use, we recommend placing the cabin on a concrete base or steel beams. The base is made from thick fiber cement board with forklift slots at the base and 4 lifting eyes on the roof corners for easy positioning. Ready to use - just place it in a safe spot and plug into power.",
+                  text: "Yes. A portable heater is fitted as standard, which makes this size particularly suited to staff working shifts through colder months.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What are the exact dimensions and weight?",
+                name: "What are the window and door dimensions?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Outer dimensions (W×L×H): 1.15 × 1.25 × 2.35 meters approx. (3'9\" × 4'1\" × 7'9\"). Window dimensions: W64 × H80 cm; foldable window dimensions: W64 × H40 cm. Weight: Approximately 180 kg. Internal dimensions: 100x110x220 cm (3'3\" x 3'7\" x 7'2\").",
+                  text: "The cabin has two inward-opening windows measuring 60cm x 100cm, and a lockable, outward-opening PVC door for secure access.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What electrical systems are included?",
+                name: "How is the cabin installed and moved?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The cabin comes with comprehensive electrical installation including internal LED light, double plug socket, fuse box, and an external 16A female 3-pin site socket. Ready to use - just plug into the power.",
+                  text: "The cabin is fully assembled before dispatch and is suitable for forklift transport, so it can be positioned or repositioned on site with standard site equipment.",
                 },
               },
               {
@@ -155,15 +209,15 @@ export default function ModularCabin115x125cmPage() {
                 name: "What are the delivery and pickup options?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Nationwide delivery is available. Free in-person pick-up is available from our warehouse at LE13BW, Leicester. For delivery cost, please provide your postcode. Contact us at Mobile: 07497 954779.",
+                  text: "Nationwide delivery is available. Free in-person pick-up is available from our warehouse at LE13BW, Leicester. For a delivery cost, please provide your postcode. Contact us at Mobile: 07497 954779.",
                 },
               },
               {
                 "@type": "Question",
-                name: "What applications is this modular cabin best suited for?",
+                name: "What applications is this cabin best suited for?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "This versatile cabin is perfect for security huts, gatehouses, car park attendants, ticket kiosks, information points, catering units, security cabins, offices, welfare units, and surveillance points. Ideal for outdoor events or surveillance at locations such as construction sites, industrial areas, and commercial premises.",
+                  text: "This cabin suits security huts, ticket kiosks, gatehouses, welfare units, car park attendant booths, catering units, and information points. It's a popular choice for construction sites, car parks, and commercial premises.",
                 },
               },
             ],
