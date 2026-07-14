@@ -47,6 +47,7 @@ const Navbar = () => {
                   <ChevronDown className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
                 </button>
                 <div className="absolute left-0 top-full mt-2 w-64 rounded-md border border-gray-200 bg-white py-2 shadow-lg opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+                  <Link href="/portable-cabins" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Portable cabins</Link>
                   <Link href="/security-gatehouse" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Security gatehouses</Link>
                   <Link href="/festival-ticket-booths" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Festival ticket booths</Link>
                   <Link href="/construction-site-security-cabins" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Construction site cabins</Link>
@@ -100,6 +101,9 @@ const Navbar = () => {
                 </button>
                 {productUsesOpen && (
                   <div className="space-y-1">
+                    <Link href="/portable-cabins" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                      Portable cabins
+                    </Link>
                     <Link href="/security-gatehouse" className="flex items-center px-2 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                       Security gatehouses
                     </Link>
