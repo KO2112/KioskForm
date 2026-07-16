@@ -151,12 +151,13 @@ export default function PortableCabinsContent() {
             New · Insulated · Delivered ready to connect
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold max-w-3xl leading-tight">
-            Portable Cabins for Sale in the UK
+            Compact Portable Cabins for Sale in the UK
           </h1>
           <p className="mt-5 text-blue-100 max-w-2xl text-lg leading-relaxed">
-            Brand new portable cabins with insulated panels, pre-wired electrics
-            and heating — built for site offices, gatehouses, kiosks and
-            welfare points. In stock in Leicester, delivered anywhere in the UK.
+            Small, insulated portable cabins with pre-wired electrics and
+            heating — sized for gatehouses, kiosks, pay points and one- or
+            two-person site offices where a full-size cabin is overkill. In
+            stock in Leicester, delivered anywhere in the UK.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link

@@ -4,7 +4,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Portable Cabins for Sale UK | From £1,799 | Cabin Units",
+  title: "Portable Cabins for Sale UK | Compact & Insulated | Cabin Units",
   description:
     "New insulated portable cabins from £1,799 ex VAT. Pre-wired, heated and in stock now — fast UK delivery or free Leicester collection. Get a quote today.",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/portable-cabins",
     siteName: "CabinUnits",
-    title: "Portable Cabins for Sale UK | From £1,799 | Cabin Units",
+    title: "Portable Cabins for Sale UK | Compact & Insulated | Cabin Units",
     description:
       "New insulated portable cabins from £1,799 ex VAT. Pre-wired, heated and in stock now — fast UK delivery or free Leicester collection.",
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portable Cabins for Sale UK | From £1,799 | Cabin Units",
+    title: "Portable Cabins for Sale UK | Compact & Insulated | Cabin Units",
     description:
       "New insulated portable cabins from £1,799 ex VAT. Pre-wired, heated and in stock now — fast UK delivery or free Leicester collection.",
     images: ["/110x130Kiosk.jpg"],
@@ -78,7 +78,7 @@ export default function Page() {
                 "@type": "WebPage",
                 "@id": "https://cabinunits.co.uk/portable-cabins/",
                 url: "https://cabinunits.co.uk/portable-cabins/",
-                name: "Portable Cabins for Sale UK | From £1,799 | Cabin Units",
+                name: "Portable Cabins for Sale UK | Compact & Insulated | Cabin Units",
                 isPartOf: { "@id": "https://cabinunits.co.uk/#website" },
                 description:
                   "New portable cabins for sale across the UK — insulated, pre-wired and delivered ready to connect. Site offices, gatehouses, kiosks and welfare cabins.",
