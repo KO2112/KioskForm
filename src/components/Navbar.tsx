@@ -38,6 +38,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-6">
               <Link href="/" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Home</Link>
               <Link href="/kiosks" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
+              <Link href="/welfare-cabins" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Welfare Cabins</Link>
               <div className="relative group">
                 <button
                   type="button"
@@ -89,6 +90,10 @@ const Navbar = () => {
               <Link href="/kiosks" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <Building className="w-4 h-4 mr-2" />
                 Kiosks
+              </Link>
+              <Link href="/welfare-cabins" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
+                <Building className="w-4 h-4 mr-2" />
+                Welfare Cabins
               </Link>
               <div className="px-3 py-2">
                 <button

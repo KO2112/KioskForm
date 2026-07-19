@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Company Information */}
             <div>
-              <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Building Solutions</h4>
+              <h4 className="text-lg font-bold text-gray-900 mb-4">Cabin Units</h4>
               <p className="text-gray-700 mb-4">
               High-quality modular kiosks and portable buildings, built in the EU to top-tier standards.
               As one of the UK's leading modular building companies, we offer custom solutions for retail, security, catering, and more.
@@ -79,15 +79,15 @@ const Footer = () => {
               <h4 className="text-lg font-bold text-gray-900 mb-4">Modular Solutions</h4>
               <ul className="space-y-3">
                 <li>
-                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                  <Link href="/security-gatehouse" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
                     <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
-                    Security Kiosks
+                    Security Gatehouses
                   </Link>
                 </li>
                 <li>
-                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                  <Link href="/festival-ticket-booths" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
                     <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
@@ -95,11 +95,35 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                  <Link href="/portable-cabins" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
                     <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
-                    Portable Offices
+                    Portable Cabins
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/welfare-cabins" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Welfare Cabins
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/construction-site-security-cabins" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Construction Site Cabins
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/car-park-kiosks" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Car Park Kiosks & Cabins
                   </Link>
                 </li>
                 <li>
@@ -121,7 +145,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-300 text-sm mb-4 md:mb-0">
-              © {currentYear} Modular Building Solutions. All rights reserved. 
+              © {currentYear} Cabin Units. All rights reserved. 
              <span className="block md:inline md:ml-1">
                A trusted UK modular building manufacturer, delivering high-quality portable buildings nationwide.</span>
             </p>

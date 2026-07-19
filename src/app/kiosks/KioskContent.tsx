@@ -35,60 +35,6 @@ const KiosksPage = () => {
       icon: Box,
     },
     {
-      id: "Portable-Double-Toilet-Block",
-      title: "Portable Double Toilet Block",
-      subtitle: "Prefabricated WC Unit | Insulated Toilet Cabin | Ready for Connection",
-      price: "£2,699.99",
-      dimensions: "160×210×256 cm",
-      description: "Brand new, heavy-duty portable double toilet cabin with two separate WC cubicles and full ready-to-connect plumbing and electrical systems.",
-      image: "/DoubleToilet.png",
-      features: [
-        "Two separate toilet cubicles with ceramic flushing toilets",
-        "Integrated wash basins, vanity cabinets, mirrors, and soap dispensers",
-        "Fully insulated construction with heavy-duty steel frame",
-        "Pre-wired and pre-plumbed for mains water, waste, and electricity",
-        "Automatic sensor-controlled LED lighting and ventilation",
-        "Suitable for construction sites, events, farms, and commercial premises",
-      ],
-      applications: [
-        "Construction sites",
-        "Outdoor events",
-        "Festivals",
-        "Sports facilities",
-        "Farms",
-        "Temporary accommodation",
-        "Commercial workplaces",
-      ],
-      icon: Box,
-    },
-    {
-      id: "Disabled-Portable-Toilet-Block",
-      title: "Disabled Portable Toilet Block",
-      subtitle: "Accessible WC Unit | Wheelchair Access | Ready for Connection",
-      price: "£2,999",
-      dimensions: "170×170×256 cm",
-      description: "Heavy-duty accessible portable toilet cabin with ramp, grab rails, ceramic toilet, wash basin, and full ready-to-connect services.",
-      image: "/DisabledToiletKiosk1.jpg",
-      features: [
-        "Wheelchair access ramp and grab rails",
-        "Ceramic flushing toilet and integrated wash basin",
-        "Fully insulated construction with galvanised steel frame",
-        "Pre-wired and pre-plumbed for mains water, sewer, and electricity",
-        "Automatic sensor-controlled LED lighting and ventilation",
-        "Suitable for construction sites, events, farms, and commercial premises",
-      ],
-      applications: [
-        "Construction sites",
-        "Outdoor events",
-        "Festivals",
-        "Sports facilities",
-        "Farms",
-        "Temporary accommodation",
-        "Commercial workplaces",
-      ],
-      icon: Box,
-    },
-    {
       id: "Portable-Kiosk-110x150",
       title: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 110x150 cm",
       subtitle: "Security Hut | Ticket Booth | Modular Cabin",
@@ -146,7 +92,6 @@ const KiosksPage = () => {
       ],
       icon: Box,
     },
-    
   ]
 
   return (
