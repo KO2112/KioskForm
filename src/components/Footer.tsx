@@ -71,6 +71,22 @@ const Footer = () => {
                     Contact Us
                   </Link>
                 </li>
+                <li>
+                  <Link href="/terms-and-conditions" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Terms &amp; Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy-policy" className="text-gray-700 hover:text-blue-600 transition-colors flex items-center text-base font-medium">
+                    <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
             
@@ -150,7 +166,12 @@ const Footer = () => {
                A trusted UK modular building manufacturer, delivering high-quality portable buildings nationwide.</span>
             </p>
             <div className="flex space-x-6">
-              
+              <Link href="/terms-and-conditions" className="text-gray-300 hover:text-white text-sm transition-colors">
+                Terms &amp; Conditions
+              </Link>
+              <Link href="/privacy-policy" className="text-gray-300 hover:text-white text-sm transition-colors">
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ import OurKiosksSection from '@/components/OurKiosksSection';
 import OurWorkSection from '@/components/OurWorkSection';
 import AboutUsSection from '@/components/AboutUs';
 import SEOEnhancedSection from '@/components/SEOEnhanced';
-import Footer from '@/components/Footer';
+
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -190,7 +190,7 @@ export default function Home() {
         <OurWorkSection />
         <AboutUsSection/>
         <SEOEnhancedSection/>
-        <Footer/>
+        
       </main>
     </>
   );
