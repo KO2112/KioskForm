@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import WelfareCabinsContent from './content';
 
 export const metadata: Metadata = {
-  title: 'Welfare Cabins | Portable Toilet Blocks for Site Welfare UK',
+  title: 'Welfare Units | Portable Toilet Blocks for Site Welfare UK',
   description:
-    'Insulated welfare cabins and portable toilet blocks for construction sites, events and farms. Double and accessible units, ready to connect. Fast UK dispatch.',
+    'Insulated welfare units and portable toilet blocks for construction sites, events and farms. Double and accessible options, ready to connect. Fast UK dispatch.',
   keywords:
-    'welfare cabins, welfare units, portable toilet block, site welfare facilities, construction site toilets, disabled toilet block, accessible portable toilet, site welfare UK',
+    'welfare unit, welfare units UK, welfare cabin, portable toilet block, site welfare facilities, construction site welfare unit, disabled toilet block, accessible portable toilet, site welfare UK',
   alternates: {
     canonical: 'https://cabinunits.co.uk/welfare-cabins',
     languages: {
@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Welfare Cabins | Portable Toilet Blocks for Site Welfare UK',
+    title: 'Welfare Units | Portable Toilet Blocks for Site Welfare UK',
     description:
-      'Insulated welfare cabins and portable toilet blocks for construction sites, events and farms. Double and accessible units, ready to connect.',
+      'Insulated welfare units and portable toilet blocks for construction sites, events and farms. Double and accessible options, ready to connect.',
     url: 'https://cabinunits.co.uk/welfare-cabins',
     siteName: 'CabinUnits',
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: 'https://cabinunits.co.uk/DoubleToilet.png',
         width: 800,
         height: 600,
-        alt: 'Portable double toilet welfare block',
+        alt: 'Portable double toilet welfare unit',
       },
     ],
     type: 'website',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Welfare Cabins | Portable Toilet Blocks for Site Welfare UK',
+    title: 'Welfare Units | Portable Toilet Blocks for Site Welfare UK',
     description:
-      'Insulated welfare cabins and portable toilet blocks for construction sites, events and farms across the UK.',
+      'Insulated welfare units and portable toilet blocks for construction sites, events and farms across the UK.',
     images: ['https://cabinunits.co.uk/DoubleToilet.png'],
   },
 };
@@ -47,12 +47,12 @@ export default function WelfareCabinsPage() {
         "@type": "WebPage",
         "@id": "https://cabinunits.co.uk/welfare-cabins",
         "url": "https://cabinunits.co.uk/welfare-cabins",
-        "name": "Welfare Cabins | Portable Toilet Blocks for Site Welfare UK",
+        "name": "Welfare Units | Portable Toilet Blocks for Site Welfare UK",
         "isPartOf": {
           "@id": "https://cabinunits.co.uk/#website"
         },
         "description":
-          "Insulated welfare cabins and portable toilet blocks for construction sites, events and farms. Double and accessible units, ready to connect.",
+          "Insulated welfare units and portable toilet blocks for construction sites, events and farms. Double and accessible options, ready to connect.",
         "breadcrumb": {
           "@id": "https://cabinunits.co.uk/welfare-cabins#breadcrumb"
         },
@@ -71,7 +71,7 @@ export default function WelfareCabinsPage() {
           {
             "@type": "ListItem",
             "position": 2,
-            "name": "Welfare Cabins",
+            "name": "Welfare Units",
             "item": "https://cabinunits.co.uk/welfare-cabins"
           }
         ]
@@ -82,23 +82,23 @@ export default function WelfareCabinsPage() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Do construction sites legally need welfare facilities?",
+            "name": "Do construction sites legally need welfare units?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Under UK health and safety law, sites must provide adequate welfare facilities including toilets and washing points for the number of workers on site. Our welfare cabins are built to help sites meet these requirements quickly."
+              "text": "Yes. Under UK health and safety law, sites must provide adequate welfare facilities including toilets and washing points for the number of workers on site. Our welfare units are built to help sites meet these requirements quickly."
             }
           },
           {
             "@type": "Question",
-            "name": "What's the difference between the double and disabled toilet block?",
+            "name": "What's the difference between the double and disabled welfare unit?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The double toilet block has two separate cubicles for general use. The disabled toilet block is a single, wheelchair-accessible cubicle with a ramp and grab rails, sized to meet accessibility needs."
+              "text": "The double welfare unit has two separate cubicles for general use. The disabled welfare unit is a single, wheelchair-accessible cubicle with a ramp and grab rails, sized to meet accessibility needs."
             }
           },
           {
             "@type": "Question",
-            "name": "Are the welfare cabins ready to connect on delivery?",
+            "name": "Are the welfare units ready to connect on delivery?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. Both units are pre-wired and pre-plumbed for mains water, waste and electricity, with sensor-controlled LED lighting. A qualified plumber and electrician can connect it the same day it arrives."
