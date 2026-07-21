@@ -16,14 +16,62 @@ const BlogContent = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+          {/* NEW: Planning Permission Guide */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/portable-cabin-planning-permission">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/110x130Kiosk.jpg"
+                  alt="Portable cabin sited on private land without planning permission"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 21, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Do You Need Planning Permission for a Portable Cabin?
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  Usually not — but there are exceptions worth knowing. Our plain-English guide covers when permission applies, how to check with your council in under an hour, and building regulations too.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
+
+          {/* NEW: Cabin vs Container Comparison */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+            <Link href="/portable-cabin-vs-shipping-container">
+              <div className="relative h-48 w-full">
+                <Image
+                  src="/150x210kiosk1.jpg"
+                  alt="Purpose-built insulated portable cabin compared with a converted shipping container"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <div className="text-sm text-blue-600 mb-2">July 21, 2026</div>
+                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                  Portable Cabin vs Converted Shipping Container: What&apos;s the Difference?
+                </h2>
+                <p className="text-gray-600 mb-4">
+                  They look similar in photos, but insulation, condensation, weight and cost tell a different story. An honest comparison to help you pick the right unit for your site.
+                </p>
+                <div className="text-blue-600 font-medium hover:underline">Read More →</div>
+              </div>
+            </Link>
+          </div>
 
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
             <Link href="/Security-kiosks-in-the-UK">
               <div className="relative h-48 w-full">
                 <Image 
                   src="/kiosk3.jpg" 
-                  alt="Portable Office Cabins" 
+                  alt="Security kiosk installed at a UK site entrance" 
                   fill
                   className="object-cover"
                 />
@@ -47,7 +95,7 @@ const BlogContent = () => {
               <div className="relative h-48 w-full">
                 <Image 
                   src="/kiosk5.jpg" 
-                  alt="Portable Office Cabins" 
+                  alt="Portable cabin and kiosk units used by UK businesses" 
                   fill
                   className="object-cover"
                 />
@@ -71,7 +119,7 @@ const BlogContent = () => {
               <div className="relative h-48 w-full">
                 <Image 
                   src="/kiosk4.jpg" 
-                  alt="Portable Office Cabins" 
+                  alt="Modular building manufactured for a UK client" 
                   fill
                   className="object-cover"
                 />
