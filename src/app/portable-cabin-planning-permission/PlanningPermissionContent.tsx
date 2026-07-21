@@ -11,7 +11,7 @@ export default function PlanningPermissionContent() {
           <span className="mx-1">/</span>
           <Link href="/blog" className="hover:text-blue-600">Blog</Link>
           <span className="mx-1">/</span>
-          <span className="text-slate-700">Planning Permission for Portable Cabins</span>
+          <span className="text-slate-700">Planning Permission for Portable Buildings</span>
         </div>
       </div>
 
@@ -22,13 +22,15 @@ export default function PlanningPermissionContent() {
             Buying Guide
           </p>
           <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-4">
-            Do You Need Planning Permission for a Portable Cabin?
+            Do Portable Buildings Need Planning Permission?
           </h1>
           <p className="text-lg text-slate-600 leading-relaxed">
-            The short answer: usually not. In most everyday business
-            situations, a portable cabin on private land does not need
-            planning permission — but there are a handful of exceptions worth
-            knowing before you order. Here's how it works in plain English.
+            The short answer: usually not. Whether you call it a portable
+            building, a portable cabin or a portacabin, the rule is the same —
+            in most everyday business situations, a temporary structure on
+            private land does not need planning permission. There are a
+            handful of exceptions worth knowing before you order. Here's how
+            it works in plain English.
           </p>
           <div className="flex items-center gap-3 mt-5 text-sm text-slate-500">
             <span>By the Cabin Units team</span>
@@ -59,6 +61,12 @@ export default function PlanningPermissionContent() {
             <h2 className="text-2xl font-bold text-slate-900 mb-3">
               Why portable cabins usually don't need permission
             </h2>
+            <p className="text-slate-700 leading-7 mb-4">
+              "Portable building" is the general term that covers portable
+              cabins, portacabins, kiosks and modular units alike — and the
+              planning rules don't distinguish between them, so whichever
+              term you search for, the answer below applies equally.
+            </p>
             <p className="text-slate-700 leading-7 mb-4">
               Planning permission exists to control "development" — the
               construction of permanent buildings and permanent changes to how

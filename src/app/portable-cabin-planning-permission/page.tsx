@@ -4,9 +4,9 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Do You Need Planning Permission for a Portable Cabin? | Cabin Units",
+  title: "Do Portable Buildings Need Planning Permission? | Cabin Units",
   description:
-    "Usually not — portable cabins are moveable, temporary structures. Learn the exceptions, how to check with your council in under an hour, and when a cabin can be sited the same week.",
+    "Do portable buildings need planning permission? Usually not — portable cabins and portacabins are moveable, temporary structures. Learn the exceptions and how to check with your council.",
   alternates: {
     canonical: "https://cabinunits.co.uk/portable-cabin-planning-permission",
     languages: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/portable-cabin-planning-permission",
     siteName: "CabinUnits",
-    title: "Do You Need Planning Permission for a Portable Cabin?",
+    title: "Do Portable Buildings Need Planning Permission?",
     description:
       "Usually not — portable cabins are moveable, temporary structures. Learn the exceptions and how to check with your council in under an hour.",
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Do You Need Planning Permission for a Portable Cabin?",
+    title: "Do Portable Buildings Need Planning Permission?",
     description:
       "Usually not — portable cabins are moveable, temporary structures. Learn the exceptions and how to check with your council quickly.",
     images: ["/110x130Kiosk.jpg"],
@@ -63,7 +63,7 @@ export default function Page() {
               {
                 "@type": "BlogPosting",
                 "@id": "https://cabinunits.co.uk/portable-cabin-planning-permission/#article",
-                headline: "Do You Need Planning Permission for a Portable Cabin?",
+                headline: "Do Portable Buildings Need Planning Permission?",
                 description:
                   "In most everyday business situations, a portable cabin on private land does not need planning permission. This guide explains why, the exceptions, and how to check with your council quickly.",
                 image: "https://cabinunits.co.uk/110x130Kiosk.jpg",
@@ -87,7 +87,7 @@ export default function Page() {
                 itemListElement: [
                   { "@type": "ListItem", position: 1, name: "Home", item: "https://cabinunits.co.uk/" },
                   { "@type": "ListItem", position: 2, name: "Blog", item: "https://cabinunits.co.uk/blog" },
-                  { "@type": "ListItem", position: 3, name: "Planning Permission for Portable Cabins" },
+                  { "@type": "ListItem", position: 3, name: "Planning Permission for Portable Buildings" },
                 ],
               },
               {
@@ -96,10 +96,26 @@ export default function Page() {
                 mainEntity: [
                   {
                     "@type": "Question",
+                    name: "Do portable buildings need planning permission?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Usually not. Portable buildings — including portable cabins and portacabins — are classed as temporary, moveable structures rather than permanent development, so using one for typical business purposes on private land does not normally require planning permission. Permission may be needed if the building becomes permanent, sits in a conservation area, or is used as living accommodation.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
                     name: "Do you need planning permission for a portable cabin?",
                     acceptedAnswer: {
                       "@type": "Answer",
                       text: "Usually not. A portable cabin used temporarily on private land — such as a construction site, car park or yard — is a moveable structure rather than a permanent building, so it does not normally require planning permission. Permission may be needed if the cabin becomes permanent, sits in a conservation area, or is used as living accommodation.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Do portacabins need planning permission?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "No, not usually. Portacabin is a common name for a portable cabin, and the same rule applies: because it's a temporary, moveable structure rather than a permanent building, a portacabin used for typical business purposes on private land does not normally require planning permission. The same exceptions apply too — long-term permanent siting, conservation areas, and residential use.",
                     },
                   },
                   {
