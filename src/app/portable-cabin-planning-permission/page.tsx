@@ -6,7 +6,19 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
   title: "Do Portable Buildings Need Planning Permission? | Cabin Units",
   description:
-    "Do portable buildings need planning permission? Usually not — portable cabins and portacabins are moveable, temporary structures. Learn the exceptions and how to check with your council.",
+    "Do portable buildings need planning permission? Usually not if under 100m² and in place 28 days or less. Learn the permitted development rule, the exceptions, and how to check with your council.",
+  keywords: [
+    "do portable buildings need planning permission",
+    "planning permission for portable buildings",
+    "do you need planning permission for a portable cabin",
+    "do portacabins need planning permission",
+    "do you need planning permission for portacabins",
+    "portable cabin planning permission",
+    "portacabin planning permission",
+    "temporary building planning permission",
+    "permitted development portable building",
+    "planning permission site cabin",
+  ],
   alternates: {
     canonical: "https://cabinunits.co.uk/portable-cabin-planning-permission",
     languages: {
@@ -99,7 +111,7 @@ export default function Page() {
                     name: "Do portable buildings need planning permission?",
                     acceptedAnswer: {
                       "@type": "Answer",
-                      text: "Usually not. Portable buildings — including portable cabins and portacabins — are classed as temporary, moveable structures rather than permanent development, so using one for typical business purposes on private land does not normally require planning permission. Permission may be needed if the building becomes permanent, sits in a conservation area, or is used as living accommodation.",
+                      text: "Usually not, within limits. As a general guide, a portable building typically falls within permitted development — meaning no separate planning application — if its floor area is under 100m² and it's in place for 28 days or less in a calendar year. Beyond those limits, or in a conservation area, or for residential use, permission is more likely to be needed. Thresholds vary by nation and council, so always confirm with your local planning authority.",
                     },
                   },
                   {

@@ -7,6 +7,17 @@ export const metadata: Metadata = {
   title: "Portable Cabin vs Shipping Container: Which to Buy? | Cabin Units",
   description:
     "Purpose-built portable cabin or converted shipping container? Honest comparison of insulation, condensation, weight, cost and security — and which suits your site.",
+  keywords: [
+    "portable cabin vs shipping container",
+    "portable cabin or container",
+    "container cabin vs portable cabin",
+    "shipping container conversion vs portable cabin",
+    "insulated portable cabin",
+    "portable cabin condensation",
+    "portacabin vs container",
+    "modular kiosk vs container",
+    "site cabin vs container",
+  ],
   alternates: {
     canonical: "https://cabinunits.co.uk/portable-cabin-vs-shipping-container",
     languages: {

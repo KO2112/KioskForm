@@ -1,267 +1,360 @@
 "use client"
 
 import Link from "next/link"
-import { CheckCircle, AlertTriangle, ChevronRight } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 
 export default function PlanningPermissionContent() {
   return (
-    <div className="bg-slate-50 min-h-screen pt-6">
+    <div className="bg-white min-h-screen pt-6">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-slate-200">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-slate-500">
+      <div className="border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-gray-500">
           <Link href="/" className="hover:text-blue-600">Home</Link>
           <span className="mx-1">/</span>
           <Link href="/blog" className="hover:text-blue-600">Blog</Link>
           <span className="mx-1">/</span>
-          <span className="text-slate-700">Planning Permission for Portable Buildings</span>
+          <span className="text-gray-700">Planning Permission for Portable Buildings</span>
         </div>
       </div>
 
-      <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-        {/* Header */}
-        <header className="mb-8">
-          <p className="text-blue-700 font-semibold text-sm uppercase tracking-wider mb-3">
-            Buying Guide
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight mb-4">
+      {/* Hero banner */}
+      <div className="relative w-full h-[24rem] sm:h-[28rem] lg:h-[30rem] overflow-hidden">
+        <img
+          src="/kiosk4.jpg"
+          alt="Portable cabin installed on a UK commercial site"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-slate-900/30" />
+        <div className="relative h-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-end pb-10">
+          <Link
+            href="/blog"
+            className="absolute top-6 left-4 sm:left-6 lg:left-8 text-white/80 text-sm font-medium hover:text-white transition-colors"
+          >
+            &lt; All posts
+          </Link>
+          <div className="flex flex-wrap items-center gap-2 mb-4">
+            <span className="bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full">
+              Buying Guide
+            </span>
+            <span className="bg-white/15 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded-full border border-white/20">
+              Portable Cabins
+            </span>
+            <span className="text-white/70 text-xs font-medium">6 min read</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight max-w-3xl mb-4 [text-shadow:0_2px_12px_rgba(0,0,0,0.4)]">
             Do Portable Buildings Need Planning Permission?
           </h1>
-          <p className="text-lg text-slate-600 leading-relaxed">
-            The short answer: usually not. Whether you call it a portable
-            building, a portable cabin or a portacabin, the rule is the same —
-            in most everyday business situations, a temporary structure on
-            private land does not need planning permission. There are a
-            handful of exceptions worth knowing before you order. Here's how
-            it works in plain English.
-          </p>
-          <div className="flex items-center gap-3 mt-5 text-sm text-slate-500">
-            <span>By the Cabin Units team</span>
-            <span>·</span>
+          <div className="flex items-center gap-3 text-sm text-white/80">
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-amber-400 text-slate-900 text-xs font-bold">
+              CU
+            </span>
+            <span className="font-medium text-white">Cabin Units team</span>
+            <span aria-hidden="true">·</span>
             <time dateTime="2026-07-21">21 July 2026</time>
-            <span>·</span>
-            <span>6 min read</span>
           </div>
-        </header>
-
-        {/* Key takeaway box */}
-        <div className="border-l-4 border-blue-600 bg-blue-50 rounded-r-lg p-5 mb-10">
-          <h2 className="font-bold text-slate-900 mb-2 text-base">Key takeaway</h2>
-          <p className="text-slate-700 text-sm leading-6">
-            A portable cabin used temporarily on private land — a construction
-            site, a car park, a yard — usually doesn't require planning
-            permission, because it's a moveable structure rather than a
-            permanent building. Permission may be needed if the cabin becomes
-            permanent, sits in a protected area, or is used as living
-            accommodation. When in doubt, one phone call to your local
-            planning authority settles it.
-          </p>
         </div>
+      </div>
 
-        {/* Body */}
-        <div className="space-y-10">
-          <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              Why portable cabins usually don't need permission
-            </h2>
-            <p className="text-slate-700 leading-7 mb-4">
-              "Portable building" is the general term that covers portable
-              cabins, portacabins, kiosks and modular units alike — and the
-              planning rules don't distinguish between them, so whichever
-              term you search for, the answer below applies equally.
-            </p>
-            <p className="text-slate-700 leading-7 mb-4">
-              Planning permission exists to control "development" — the
-              construction of permanent buildings and permanent changes to how
-              land is used. A portable cabin sits outside most of that by
-              design. It isn't built on the land; it's delivered to it. It has
-              no foundations, it isn't fixed to the ground, and it can be
-              lifted away by forklift as easily as it arrived. In planning
-              terms, that makes it closer to parking a vehicle than erecting a
-              building.
-            </p>
-            <p className="text-slate-700 leading-7 mb-4">
-              On top of that, UK planning rules include specific allowances
-              that cover the most common cabin uses. Buildings needed
-              temporarily in connection with construction work — site offices,
-              welfare units, security cabins — are generally permitted for the
-              duration of the project without a separate application. And land
-              can typically be put to a temporary use for a limited number of
-              days per year without permission, which covers many seasonal and
-              event setups.
-            </p>
-            <p className="text-slate-700 leading-7">
-              This is one of the biggest practical advantages of a{" "}
-              <Link href="/portable-cabins" className="text-blue-700 font-medium hover:underline">
-                portable cabin
-              </Link>{" "}
-              over a permanent building: for a typical business use, you can
-              order on Monday and have staff working from it the same week —
-              no drawings, no application fees, no eight-week wait for a
-              decision.
-            </p>
-          </section>
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-          <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              When you might need planning permission
-            </h2>
-            <p className="text-slate-700 leading-7 mb-4">
-              The exceptions are about permanence, location and use. You
-              should check with your local planning authority before siting a
-              cabin if any of the following apply:
-            </p>
-            <ul className="space-y-3 mb-4">
-              {[
-                {
-                  title: "The cabin is staying put long term.",
-                  text: "The longer a structure remains in one place, the more it starts to look like permanent development in the eyes of a planning officer. A cabin serving a two-year construction project is fine; the same cabin still sitting there five years after the project ended may not be.",
-                },
-                {
-                  title: "You're in a conservation area or near a listed building.",
-                  text: "Protected areas carry stricter rules, and structures that would be fine elsewhere can require consent here.",
-                },
-                {
-                  title: "The cabin will be lived in.",
-                  text: "Residential use is treated completely differently from business use. A cabin used as living accommodation — even in a garden — generally needs permission.",
-                },
-                {
-                  title: "The land has planning conditions attached.",
-                  text: "Some sites have conditions from previous planning decisions that restrict what can be placed on them. Your title deeds or the council's planning portal will show these.",
-                },
-                {
-                  title: "The cabin changes how the land is used.",
-                  text: "Placing a cabin on a field and running a business from it is a change of use of the land itself, which is a planning matter regardless of how moveable the cabin is.",
-                },
-              ].map((item, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-500 mt-0.5 flex-shrink-0" />
-                  <p className="text-slate-700 leading-6 text-sm">
-                    <span className="font-semibold text-slate-900">{item.title}</span>{" "}
-                    {item.text}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </section>
+        {/* Intro */}
+        <p className="text-gray-700 leading-7 mb-4">
+          It's the question we get asked more than any other, usually right
+          before someone places an order. The answer for most of our customers
+          is no — but it depends on how long the building is staying, how big
+          it is, and what you're using it for. This guide covers the actual
+          rules, the exceptions, and what to do if you're not sure.
+        </p>
+        <p className="text-gray-700 leading-7 mb-8">
+          One quick note on words before we start: portable building, portable
+          cabin, portacabin, site cabin — planning officers don't care which
+          one you say. The rules look at what the structure is and how it's
+          used, not what the industry calls it.
+        </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              How to check in under an hour
-            </h2>
-            <p className="text-slate-700 leading-7 mb-4">
-              If your situation touches any of the exceptions above, don't
-              guess — check. It's faster than most people expect:
-            </p>
-            <ol className="space-y-3 mb-4 list-none">
-              {[
-                "Call your local planning authority's duty planner (every council has one) and describe the cabin, the site and how long it'll be there. For a clearly temporary business use, many will confirm the position over the phone.",
-                "Search your council's online planning portal for your site to spot any existing conditions on the land.",
-                "For certainty in borderline cases, apply for a Lawful Development Certificate — a formal confirmation from the council that your cabin doesn't need permission. It costs a fraction of a full application.",
-              ].map((step, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-blue-700 text-white text-xs font-bold flex items-center justify-center mt-0.5">
-                    {i + 1}
-                  </span>
-                  <p className="text-slate-700 leading-6 text-sm">{step}</p>
-                </li>
-              ))}
-            </ol>
-            <p className="text-slate-700 leading-7">
-              If you buy from us, we'll happily supply exact dimensions,
-              weights and specification sheets for any council enquiry — it's
-              a two-minute email and it usually answers every question a
-              planning officer has.
-            </p>
-          </section>
+        {/* Featured image */}
+        <figure className="mb-10">
+          <img
+            src="/110x130Kiosk.jpg"
+            alt="Compact 110x130cm portable cabin of the type that typically sits within permitted development limits"
+            className="w-full rounded-lg"
+          />
+        </figure>
 
-          <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              What about building regulations?
-            </h2>
-            <p className="text-slate-700 leading-7">
-              Planning permission and building regulations are separate
-              systems, and people often mix them up. Building regulations
-              cover how a structure is constructed rather than whether it can
-              be placed. Small, moveable units used for short-term business
-              purposes are generally exempt — another advantage of a compact
-              cabin over converting or constructing something on site. The
-              electrical connection is the one part to take seriously: have a
-              qualified electrician connect the cabin's pre-wired system to
-              your supply, and keep the certificate.
-            </p>
-          </section>
+        {/* Section 1 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          The Big Question: Do You Need Permission?
+        </h2>
+        <p className="text-gray-700 leading-7 mb-4">
+          The short answer for most of our customers is no — a portable
+          building generally doesn't need a planning application if it's under
+          100m² in floor area and in place for 28 days or less in a calendar
+          year. In England, land can be put to a temporary use for up to 28
+          days a year without an application, and buildings under 100m²
+          attract far less scrutiny than larger ones. A small unit covering an
+          event, a seasonal operation or a short project sits comfortably
+          inside those limits.
+        </p>
+        <p className="text-gray-700 leading-7 mb-4">
+          Construction sites get their own allowance. Buildings needed
+          temporarily in connection with building work — site offices, welfare
+          units, security cabins — are permitted for the duration of the
+          project. No application, as long as they go when the project does.
+        </p>
+        <p className="text-gray-700 leading-7 mb-10">
+          For the compact{" "}
+          <Link href="/portable-cabins" className="text-blue-600 font-medium hover:underline">
+            portable cabins
+          </Link>{" "}
+          we sell, the size test is never the problem. Our largest unit is
+          3.15m² — you could fit thirty of them inside the 100m² limit.
+          Duration and use are where the real questions live.
+        </p>
 
-          <section>
-            <h2 className="text-2xl font-bold text-slate-900 mb-3">
-              The bottom line
-            </h2>
-            <p className="text-slate-700 leading-7 mb-4">
-              For the way most of our customers use portable cabins — parking
-              kiosks, security gatehouses, ticket booths, site offices on
-              active projects — planning permission is not normally required,
-              and the cabin can be working the day it arrives. The exceptions
-              are predictable: permanence, protected locations, residential
-              use. If none of those apply to you, you're very likely in the
-              clear; if one does, a quick call to the council costs nothing
-              and settles it.
-            </p>
-            <p className="text-slate-500 text-sm leading-6 italic">
-              This guide is general information, not legal or planning advice.
-              Planning rules differ between England, Scotland, Wales and
-              Northern Ireland and depend on your specific site — always
-              confirm with your local planning authority if you're unsure.
-            </p>
-          </section>
-        </div>
+        {/* Section 2 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          What If the Cabin Is Staying Longer Than 28 Days?
+        </h2>
+        <p className="text-gray-700 leading-7 mb-4">
+          This is where most of our customers actually sit. A parking kiosk or
+          gatehouse isn't there for a month; it's there for years. Does that
+          mean permission is automatically required? Not necessarily — but it
+          does mean you should check rather than assume.
+        </p>
+        <p className="text-gray-700 leading-7 mb-4">
+          A genuinely moveable structure that isn't fixed to the ground is
+          treated differently from built development, and councils take a
+          range of views on small units serving an existing, lawful use of the
+          land. A ticket kiosk in a car park that already operates as a car
+          park is a very different conversation from a new building enabling a
+          brand-new use of a field. In practice, plenty of small kiosks and
+          gatehouses sit on commercial sites across the UK without ever having
+          been through a planning application — and some councils would want
+          one. There is no single national answer, which is exactly why the
+          phone call matters.
+        </p>
+        <p className="text-gray-700 leading-7 mb-10">
+          The situations where you should definitely expect to need
+          permission: anything used as living accommodation, anything in a
+          conservation area or the setting of a listed building, land with
+          restrictive planning conditions already attached, and cases where
+          the building changes what the land is used for. Those four come up
+          again and again, and none of them are worth gambling on.
+        </p>
+
+        {/* Image */}
+        <figure className="mb-10">
+          <img
+            src="/150x210kiosk1.jpg"
+            alt="150x210cm portable cabin delivered fully assembled, ready to be positioned by forklift"
+            className="w-full rounded-lg"
+          />
+        </figure>
+
+        {/* Section 3 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          How Long Does Planning Permission Take?
+        </h2>
+        <p className="text-gray-700 leading-7 mb-4">
+          If you do need to apply, budget eight to twelve weeks for a
+          decision. Councils aim for eight on straightforward applications;
+          twelve is common in practice. Apply early — the application fee is
+          modest, and it's far cheaper than an enforcement problem later.
+        </p>
+        <p className="text-gray-700 leading-7 mb-4">
+          A typical application needs a location plan and site plan, ownership
+          certificates, a short design and access statement for some cases,
+          and the fee. Because our cabins arrive as finished units, we can
+          send you the exact dimensions, weights and elevation photos the same
+          day you ask — customers have used our spec sheets directly in their
+          applications.
+        </p>
+        <p className="text-gray-700 leading-7 mb-10">
+          And if the need was genuinely urgent and the building went in first?
+          Retrospective permission exists for exactly that, and councils grant
+          it routinely where the case is honest. But be clear-eyed about the
+          risk: if a retrospective application is refused, the council can
+          serve an enforcement notice requiring the building's removal. With a
+          forklift-moveable cabin that's an afternoon's work rather than a
+          demolition — one of the quieter advantages of buying portable — but
+          it's still a situation better avoided than managed.
+        </p>
+
+        {/* Image */}
+        <figure className="mb-10">
+          <img
+            src="/kiosk3.jpg"
+            alt="Compact security kiosk positioned at a site entrance"
+            className="w-full rounded-lg"
+          />
+        </figure>
+
+        {/* Section 4 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          How to Get a Straight Answer From Your Council
+        </h2>
+        <p className="text-gray-700 leading-7 mb-4">
+          Every planning authority runs a duty planner service — a planner
+          whose job includes answering exactly this kind of question. Ring the
+          council, ask for planning, describe the unit, the site and how long
+          it's staying. For a clearly temporary business use they'll often
+          tell you the position on the spot. While you're at it, search your
+          address on the council's online planning portal; any conditions
+          attached to the land from past decisions will show up there.
+        </p>
+        <p className="text-gray-700 leading-7 mb-10">
+          If you want certainty in writing — say the site is leased and your
+          landlord wants proof — a Lawful Development Certificate is the
+          formal route. The council confirms in writing that your use doesn't
+          need permission. It costs half the fee of a full application and
+          turns "the council said it was probably fine" into a document.
+        </p>
+
+        {/* Image */}
+        <figure className="mb-10">
+          <img
+            src="/110x150.jpg"
+            alt="110x150cm insulated portable cabin pre-wired with fuse box and site socket"
+            className="w-full rounded-lg"
+          />
+        </figure>
+
+        {/* Section 5 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          A Word on Building Regulations
+        </h2>
+        <p className="text-gray-700 leading-7 mb-10">
+          Different system, common confusion. Building regulations govern how
+          a structure is constructed; planning governs whether it can be
+          placed. Small moveable units used for short-term business purposes
+          are generally exempt from building regs. The one part to treat
+          properly is the electrical connection: our cabins arrive pre-wired
+          with a fuse box and site socket, and the hookup to your supply
+          should be done by a qualified electrician who gives you a
+          certificate. Keep it with the cabin's paperwork.
+        </p>
+
+        {/* Section 6 */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
+          Where That Leaves You
+        </h2>
+        <p className="text-gray-700 leading-7 mb-4">
+          Most of the cabins we sell go to car parks, site entrances and event
+          operations, and most of those customers never needed a planning
+          application — short durations, existing commercial sites, small
+          units. If that sounds like your situation, you're very likely fine.
+          If your cabin is staying for years, sitting somewhere protected, or
+          changing what the land does, spend ten minutes on the phone with the
+          council first. We'll send whatever specs the conversation needs.
+        </p>
+        <p className="text-gray-500 text-sm leading-6 italic mb-10">
+          This guide is general information based on our experience supplying
+          cabins across the UK, not legal or planning advice. Rules differ
+          between England, Scotland, Wales and Northern Ireland and change
+          over time — your local planning authority is the final word for your
+          site.
+        </p>
 
         {/* CTA */}
-        <div className="mt-12 bg-blue-950 text-white rounded-lg p-6 sm:p-8">
+        <div className="bg-blue-600 text-white rounded-lg p-6 sm:p-8 mb-4">
           <h2 className="text-xl font-bold mb-2">
-            Ready when you are — no paperwork needed
+            Need the spec sheet for a council enquiry?
           </h2>
           <p className="text-blue-100 text-sm leading-6 mb-5">
             Our insulated portable cabins start at £1,799 ex VAT, arrive
-            pre-wired and fully assembled, and are in stock for fast UK
-            delivery.
+            pre-wired and fully assembled, and we'll send dimensions, weights
+            and photos for any planning conversation the same day.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
               href="/portable-cabins"
-              className="inline-flex items-center justify-center bg-amber-400 text-blue-950 px-5 py-2.5 rounded-md font-bold hover:bg-amber-300 transition-colors text-sm"
+              className="inline-flex items-center justify-center bg-white text-blue-700 px-5 py-2.5 rounded-md font-bold hover:bg-blue-50 transition-colors text-sm"
             >
               View Portable Cabins <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
             <Link
               href="/ContactUs?interest=portable-cabin"
-              className="inline-flex items-center justify-center bg-white/10 border border-white/20 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-white/20 transition-colors text-sm"
+              className="inline-flex items-center justify-center bg-blue-700 border border-blue-400 text-white px-5 py-2.5 rounded-md font-semibold hover:bg-blue-800 transition-colors text-sm"
             >
               Ask a Question
             </Link>
           </div>
         </div>
-
-        {/* Related reading */}
-        <div className="mt-10 border-t border-slate-200 pt-6">
-          <h2 className="font-bold text-slate-900 mb-3 text-base">Related reading</h2>
-          <ul className="space-y-2 text-sm">
-            <li className="flex items-start gap-2">
-              <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-              <Link
-                href="/portable-cabin-vs-shipping-container"
-                className="text-blue-700 font-medium hover:underline"
-              >
-                Portable cabin vs converted shipping container: what's the difference?
-              </Link>
-            </li>
-            <li className="flex items-start gap-2">
-              <CheckCircle className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-              <Link href="/portable-cabins" className="text-blue-700 font-medium hover:underline">
-                Compact portable cabins for sale — full range and prices
-              </Link>
-            </li>
-          </ul>
-        </div>
       </article>
+
+      {/* Related Resources */}
+      <div className="bg-gray-50 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Related Resources</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Link href="/portable-cabin-vs-shipping-container">
+                <div className="h-44 w-full overflow-hidden">
+                  <img
+                    src="/150x210kiosk1.jpg"
+                    alt="Purpose-built portable cabin compared with a converted shipping container"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="text-xs text-blue-600 font-medium mb-2">Blog | Buying Guide</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Portable Cabin vs Converted Shipping Container
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    They look similar in photos, but insulation, condensation and weight tell a different story...
+                  </p>
+                  <span className="text-blue-600 text-sm font-medium hover:underline">Read more</span>
+                </div>
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Link href="/Security-kiosks-in-the-UK">
+                <div className="h-44 w-full overflow-hidden">
+                  <img
+                    src="/kiosk3.jpg"
+                    alt="Security kiosk installed at a UK site entrance"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="text-xs text-blue-600 font-medium mb-2">Blog</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Security Kiosks in the UK
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    How security kiosks are transforming safety and service efficiency across the UK...
+                  </p>
+                  <span className="text-blue-600 text-sm font-medium hover:underline">Read more</span>
+                </div>
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+              <Link href="/Key-Benefits-of-Portable-Cabins">
+                <div className="h-44 w-full overflow-hidden">
+                  <img
+                    src="/kiosk5.jpg"
+                    alt="Portable cabin and kiosk units used by UK businesses"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-5">
+                  <div className="text-xs text-blue-600 font-medium mb-2">Blog</div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                    Key Benefits of Portable Cabins & Kiosks
+                  </h3>
+                  <p className="text-gray-600 text-sm mb-3">
+                    Cost savings, rapid deployment and versatile applications across industries...
+                  </p>
+                  <span className="text-blue-600 text-sm font-medium hover:underline">Read more</span>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }

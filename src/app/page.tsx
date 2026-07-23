@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
     images: [
       {
-        url: '/kiosk2.jpg',
+        url: '/110x130Kiosk.jpg',
         width: 1200,
         height: 630,
         alt: 'Modular Kiosk Solutions',
