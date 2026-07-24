@@ -20,7 +20,7 @@ export default function PlanningPermissionContent() {
       {/* Hero banner */}
       <div className="relative w-full h-[24rem] sm:h-[28rem] lg:h-[30rem] overflow-hidden">
         <img
-          src="/kiosk4.jpg"
+          src="/cabinunits-slider-bg2-2400x900.jpg"
           alt="Portable cabin installed on a UK commercial site"
           className="absolute inset-0 w-full h-full object-cover"
         />
