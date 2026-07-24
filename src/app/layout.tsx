@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  verification: {
+    other: {
+      'p:domain_verify': 'fc05add7b67899105eca1b9a17fc580a',
+    },
+  },
   alternates: {
     canonical: '/',
     languages: {
