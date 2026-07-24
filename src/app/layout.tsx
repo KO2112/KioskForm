@@ -139,6 +139,13 @@ export default function RootLayout({
             gtag('config', 'AW-707974874');
           `}
         </Script>
+
+        {/* Ahrefs Web Analytics */}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="q4bMMaICqmO5gGF/9IW9hg"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={inter.className}>
         <Navbar />
