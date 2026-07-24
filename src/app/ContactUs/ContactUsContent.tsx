@@ -1,16 +1,25 @@
 'use client';
 
 import React from 'react';
-import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, ChevronRight, CheckCircle, AlertCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Phone, Mail, MapPin, Clock, ChevronRight, CheckCircle, AlertCircle, Tag } from 'lucide-react';
 import { sendContactEmail } from '../../../lib/resend';
 
 const MAP_SRC =
   'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d178176.12546445066!2d-1.1281356780872747!3d52.594668197432085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761d675102bb7%3A0x4ebd0d79a0e721aa!2sCabin%20Units%20%7C%20Uk%20portable%20buildings%20company!5e0!3m2!1sen!2suk!4v1784482157063!5m2!1sen!2suk';
 
+function prettifySlug(slug: string): string {
+  return slug
+    .replace(/[-_]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
 const ContactPage = () => {
   const [formStatus, setFormStatus] = useState({ submitted: false, error: false, message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [reference, setReference] = useState({ interest: '', referrer: '' });
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -19,6 +28,21 @@ const ContactPage = () => {
     subject: '',
     message: '',
   });
+
+  // Capture ?interest= and the referring page so enquiry emails say what they're about
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const interest = params.get('interest') || params.get('product') || '';
+    const referrer =
+      document.referrer && !document.referrer.includes('/ContactUs') ? document.referrer : '';
+    if (interest || referrer) setReference({ interest, referrer });
+    if (interest) {
+      setFormData(prev =>
+        prev.subject ? prev : { ...prev, subject: `Enquiry: ${prettifySlug(interest)}` }
+      );
+    }
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -30,8 +54,21 @@ const ContactPage = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const referenceLines: string[] = [];
+    if (reference.interest) {
+      referenceLines.push(`Product / page of interest: ${prettifySlug(reference.interest)} (${reference.interest})`);
+    }
+    if (reference.referrer) referenceLines.push(`Came from: ${reference.referrer}`);
+    if (typeof window !== 'undefined') referenceLines.push(`Form URL: ${window.location.href}`);
+
+    const messageWithReference =
+      referenceLines.length > 0
+        ? `${formData.message}\n\n----------------\n${referenceLines.join('\n')}`
+        : formData.message;
+
     try {
-      const result = await sendContactEmail({ ...formData });
+      const result = await sendContactEmail({ ...formData, message: messageWithReference });
       if (result.success) {
         setFormStatus({ submitted: true, error: false, message: 'Thank you! Your message has been sent successfully.' });
         setFormData({ name: '', email: '', phone: '', company: '', subject: '', message: '' });
@@ -95,6 +132,15 @@ const ContactPage = () => {
               <span className="px-3 text-xs text-gray-400 uppercase tracking-wide">or fill in the form</span>
               <div className="flex-1 border-t border-gray-200" />
             </div>
+
+            {reference.interest && !formStatus.submitted && (
+              <div className="flex items-center gap-2 bg-blue-50 border border-blue-100 rounded-lg px-3 py-2 mb-5">
+                <Tag className="h-4 w-4 text-blue-600 flex-shrink-0" />
+                <span className="text-sm text-blue-800">
+                  Enquiring about: <span className="font-semibold">{prettifySlug(reference.interest)}</span>
+                </span>
+              </div>
+            )}
 
             {formStatus.submitted ? (
               <div className="bg-green-50 border border-green-200 rounded-xl p-6 flex items-start">
@@ -223,7 +269,7 @@ const ContactPage = () => {
               <div className="flex items-start">
                 <Clock className="w-4 h-4 text-blue-700 mr-2.5 mt-0.5 shrink-0" />
                 <p className="text-sm text-gray-700">
-                  Mon – Sat: 9 AM – 7 PM · Sun: Closed
+                  Mon – Sat: 8 AM – 6 PM · Sun: Closed
                 </p>
               </div>
             </div>
@@ -235,27 +281,27 @@ const ContactPage = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Frequently asked questions</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">How quickly can you deliver a modular kiosk?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">How quickly can you deliver a cabin or kiosk?</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                We typically deliver standard modular kiosks within 1–2 days from order confirmation. Custom units may take 4–6 weeks depending on specifications.
+                Standard units are in stock at our Leicester warehouse and available for fast dispatch. Delivery is quoted by postcode — tell us your location and timescale at enquiry stage and we'll confirm a delivery date. Free collection from Leicester is also available.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Do you provide installation services?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">What happens on delivery day?</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Yes, we offer professional installation services throughout the UK. Our experienced team will ensure your kiosk is properly set up and ready for use.
+                Your unit arrives fully assembled and is offloaded into position — all you need is a firm, level surface and access for the delivery vehicle. Each cabin is pre-wired, so a qualified electrician simply connects it to your power supply and it's ready to use.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
-              <h3 className="font-semibold text-gray-900 mb-2">Can modular kiosks be customised with branding?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Can I view a cabin before buying?</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Absolutely! We offer full customisation options including custom colours, branding, signage, and special features to match your business identity.
+                Yes — viewings at our Leicester warehouse (LE1 3BW) are welcome by arrangement. Call or message us to book a time and you can look inside the units before you decide.
               </p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
               <h3 className="font-semibold text-gray-900 mb-2">What warranty do you provide?</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                All our modular kiosks come with a standard 12-month warranty covering manufacturing defects. Extended warranty options are available upon request.
+                Our units come with a standard 12-month warranty covering manufacturing defects. Ask us about extended warranty options when you enquire.
               </p>
             </div>
           </div>
@@ -263,16 +309,16 @@ const ContactPage = () => {
 
         {/* SEO copy */}
         <div className="mt-12 mb-4">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">How we can help you with UK kiosks</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">How Cabin Units can help</h2>
           <div className="text-gray-600 space-y-4 max-w-4xl">
             <p>
-              Our dedicated team of kiosk specialists is ready to assist you with any enquiries about our modular kiosk solutions — specifications, customisation options, pricing, or delivery timeframes.
+              Whether you need a portable cabin, security kiosk, ticket booth, gatehouse or welfare unit, we're happy to talk through specifications, layouts, pricing and delivery for your site.
             </p>
             <p>
-              When you reach out, you'll be connected with knowledgeable professionals who understand the requirements of retail, hospitality, healthcare, transport, construction, and events. We take the time to understand your specific needs before recommending solutions, and offer ongoing support and maintenance long after installation.
+              Our customers include parking operators, security firms, event organisers, councils, facilities teams and construction companies — so whatever the setting, we've usually supplied something similar and can tell you honestly what works. We'll also send spec sheets, dimensions and photos for planning enquiries or landlord approvals on request.
             </p>
             <p>
-              For urgent matters, call our direct line during business hours. For detailed enquiries or project specifications, the contact form above helps us gather what we need to give you an accurate, helpful response.
+              For urgent matters, call or WhatsApp us during opening hours. For detailed enquiries, the form above helps us gather what we need to give you an accurate quote first time.
             </p>
           </div>
         </div>

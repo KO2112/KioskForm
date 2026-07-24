@@ -93,9 +93,6 @@ const BannerSlider = () => {
   return (
     <div className="relative h-[340px] md:h-[400px] lg:h-[460px] overflow-hidden">
 
-      <h1 className="sr-only">Modular Portable Kiosk</h1>
-
-
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -115,6 +112,9 @@ const BannerSlider = () => {
 
       <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center z-20">
         <div className="max-w-xl">
+          <h1 className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-amber-400 mb-3 [text-shadow:0_1px_6px_rgba(0,0,0,0.5)]">
+            Modular Portable Cabins and Kiosks
+          </h1>
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-2 tracking-tight transition-opacity duration-500 [text-shadow:0_1px_8px_rgba(0,0,0,0.45)]">
             {currentSlideData.title}
           </h3>

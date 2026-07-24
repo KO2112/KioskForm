@@ -2,27 +2,32 @@ import AboutUsContent from './AboutUsContent';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Us | Modular Kiosk Solutions - UK Portable Buildings',
-  description: 'Learn about Modular Kiosks, a leading UK supplier of premium modular kiosks and portable buildings since 2010, featuring EU-manufactured quality structures.',
-  keywords: ['modular kiosk company', 'UK portable buildings', 'about modular kiosks', 'kiosk manufacturing', 'portable building solutions'],
+  title: 'About Cabin Units | Portable Cabins & Kiosks, Leicester UK',
+  description:
+    'Cabin Units supplies brand new, EU-manufactured portable cabins, kiosks and welfare units from our Leicester warehouse — insulated, pre-wired and delivered across the UK.',
+  keywords: [
+    'about cabin units',
+    'cabin units leicester',
+    'portable cabin supplier UK',
+    'modular kiosk supplier',
+    'portable buildings Leicester',
+  ],
   alternates: {
     canonical: 'https://cabinunits.co.uk/AboutUs',
-    languages: {
-      'en-GB': 'https://cabinunits.co.uk/AboutUs',
-    },
   },
   openGraph: {
-    title: 'About Modular Kiosks | UK Portable Building Solutions',
-    description: 'Discover our story as the leading provider of high-quality modular kiosks and portable buildings across the UK since 2010.',
+    title: 'About Cabin Units | Portable Cabins & Kiosks, Leicester UK',
+    description:
+      'Brand new, EU-manufactured portable cabins and kiosks, supplied from Leicester and delivered across the UK.',
     images: [
       {
         url: '/kiosk.jpg',
         width: 1200,
         height: 630,
-        alt: 'Modular Kiosk Solutions',
+        alt: 'Cabin Units portable cabin outside the Leicester warehouse',
       },
     ],
-  }
+  },
 };
 
 export default function Page() {

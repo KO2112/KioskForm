@@ -62,7 +62,6 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     images: ['/images/twitter-image.jpg'],
-    creator: '@yourtwitterhandle',
   },
 };
 
@@ -74,6 +73,49 @@ export default function RootLayout({
   return (
     <html lang="en-GB">
       <head>
+        {/* Site-wide LocalBusiness schema — single source of truth for the Cabin Units entity */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              '@id': 'https://cabinunits.co.uk/#organization',
+              name: 'Cabin Units',
+              url: 'https://cabinunits.co.uk/',
+              logo: 'https://cabinunits.co.uk/logo.png',
+              image: 'https://cabinunits.co.uk/110x130Kiosk.jpg',
+              description:
+                'Cabin Units supplies brand new, EU-manufactured portable cabins, kiosks, gatehouses and welfare units from its Leicester warehouse, with UK-wide delivery.',
+              telephone: '+447497954779',
+              email: 'info@cabinunits.co.uk',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Unit 7D, 66 Friday Street',
+                addressLocality: 'Leicester',
+                postalCode: 'LE1 3BW',
+                addressCountry: 'GB',
+              },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: 52.6407,
+                longitude: -1.1289,
+              },
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                  opens: '08:00',
+                  closes: '18:00',
+                },
+              ],
+              priceRange: '££',
+              areaServed: { '@type': 'Country', name: 'United Kingdom' },
+              sameAs: ['https://maps.google.com/?cid=5673705921598398890'],
+            }),
+          }}
+        />
+
         {/* Google Consent Mode - Initialize as denied, wait for user consent */}
         <Script
           id="google-consent-mode"

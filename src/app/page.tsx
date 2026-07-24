@@ -4,6 +4,7 @@ import OurKiosksSection from '@/components/OurKiosksSection';
 import OurWorkSection from '@/components/OurWorkSection';
 import AboutUsSection from '@/components/AboutUs';
 import SEOEnhancedSection from '@/components/SEOEnhanced';
+import HomeFaqSchema from '@/components/Homefaqschema';
 
 import Script from 'next/script';
 
@@ -190,7 +191,7 @@ export default function Home() {
         <OurWorkSection />
         <AboutUsSection/>
         <SEOEnhancedSection/>
-        
+        <HomeFaqSchema/>
       </main>
     </>
   );
