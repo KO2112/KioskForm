@@ -49,15 +49,15 @@ const PortableKiosk110x130Content = () => {
   }
 
   const images = [
-    "/110x130Kiosk.jpg",
-    "/110x130Kiosk%201.jpg",
-    "/110x130Kiosk%202.jpg",
-    "/110x130Kiosk%203.jpg",
-    "/110x130Kiosk%204.jpg",
-    "/110x130Kiosk%205.jpg",
-    "/110x130Kiosk%206.jpg",
-    "/110x130Kiosk%207.jpg",
-    "/110x130Kiosk%208.jpg",
+    "/PortableCabin1.jpg",
+    "/PortableCabin2.jpg",
+    "/PortableCabin3.jpg",
+    "/PortableCabin4.jpg",
+    "/PortableCabin5.jpg",
+    "/PortableCabin6.jpg",
+    "/PortableCabin7.jpg",
+    "/PortableCabin8.jpg",
+    "/PortableCabin9.jpg",
   ]
 
   const specs = [
