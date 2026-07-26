@@ -34,10 +34,10 @@ export default function HomeFaqSchema() {
             },
             {
               '@type': 'Question',
-              name: 'Can you customise a kiosk or cabin for my business?',
+              name: 'Can I add my own branding or signage to a kiosk?',
               acceptedAnswer: {
                 '@type': 'Answer',
-                text: 'Absolutely. We offer tailored sizing, layouts, finishes, electrical setups, and branding options so each unit fits your operations and appearance.',
+                text: 'Yes. Our kiosks are ready-built standard units rather than made to order, but most customers add their own branding, signage or vinyl wrap to the exterior after delivery.',
               },
             },
             {

@@ -358,7 +358,7 @@ const ModularKiosk150X150Content = () => {
                   <p className="text-blue-800">
                     This spacious modular kiosk is ideal for gatehouses, car park attendants, ticket kiosks, information
                     points, catering units, portable offices, welfare units, coffee or beverage shops, and many more
-                    applications. Contact us to discuss how we can customize it for your specific needs.
+                    applications. 
                   </p>
                 </div>
               </div>

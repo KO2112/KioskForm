@@ -92,9 +92,9 @@ const ModularKiosk210X210Content = () => {
         "The kiosk comes with comprehensive electrical installation including lighting, double plug socket, fuse box, and 16 Amp power connection for all your operational needs.",
     },
     {
-      question: "Can the kiosk be customized for branding?",
+      question: "Can I add my own branding or signage to a kiosk?",
       answer:
-        "Yes, the kiosk offers customizable branding options to match your company's identity and requirements. Contact us to discuss your specific branding needs.",
+        "Yes. Our kiosks are ready-built standard units rather than made to order, but most customers add their own branding, signage or vinyl wrap to the exterior after delivery.",
     },
     {
       question: "What are the window specifications for this model?",
@@ -206,10 +206,7 @@ const ModularKiosk210X210Content = () => {
                   <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
                   <span className="text-gray-700">Lockable door with security features</span>
                 </li>
-                <li className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">Customizable branding options available</span>
-                </li>
+                
               </ul>
             </div>
 

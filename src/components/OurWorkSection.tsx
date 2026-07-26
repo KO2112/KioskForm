@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const images = [
   {
-    src: "/ourkioskcabinwork1.jpeg",
+    src: "/ourworksection1.png",
     alt: "Finished portable kiosk cabin exterior on site",
   },
   {
@@ -26,7 +26,7 @@ const images = [
     alt: "Modular kiosk cabin unit ready for delivery",
   },
   {
-    src: "/ourkioskcabinwork7.jpeg",
+    src: "/ourworksection23.jpeg",
     alt: "Portable kiosk cabin completed and staged at the site",
   },
 ]

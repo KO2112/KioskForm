@@ -252,9 +252,9 @@ const KiosksPage = () => {
           <div className="p-6 md:p-8">
             <div className="md:flex items-center justify-between">
               <div className="mb-4 md:mb-0">
-                <h2 className="text-2xl font-bold mb-2">Need a Custom Solution?</h2>
+                <h2 className="text-2xl font-bold mb-2">Need Help Choosing the Right Size?</h2>
                 <p className="text-blue-100">
-                  Our modular kiosks can be customized to meet your specific requirements.
+                  Browse our range of ready-to-go kiosks and cabins, in stock and ready for fast delivery.
                 </p>
               </div>
               <Link

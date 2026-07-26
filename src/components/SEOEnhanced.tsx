@@ -13,9 +13,9 @@ const SEOEnhancedSection = () => {
         'Yes. Our units are built with durable insulated panels, weather-resistant finishes, and secure doors and windows, making them suitable for outdoor and semi-permanent installations.',
     },
     {
-      question: 'Can you customise a kiosk or cabin for my business?',
+      question: 'Can I add my own branding or signage to a kiosk?',
       answer:
-        'Absolutely. We offer tailored sizing, layouts, finishes, electrical setups, and branding options so each unit fits your operations and appearance.',
+        'Yes. Our kiosks are ready-built standard units rather than made to order, but most customers add their own branding, signage or vinyl wrap to the exterior after delivery.',
     },
     {
       question: 'How quickly can a modular kiosk or cabin be deployed?',
@@ -93,17 +93,17 @@ const SEOEnhancedSection = () => {
 
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Fully Customisable to Your Business
+              A Range Built for Real Businesses
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                No two businesses are the same—which is why we offer full customisation on every unit we build.
+                Every business is different, which is why we stock a range of sizes and layouts rather than just one option.
               </p>
               <p>
-                From layout and size to finishes and branding, we’ll work with you to design a kiosk that fits your exact needs.
+                From compact kiosks to larger cabins, you can pick the unit that already fits your space and use case — no waiting on a build.
               </p>
               <p>
-                Our bespoke service ensures you get a purpose-built solution that enhances your operations and reflects your identity.
+                Add your own branding and signage after delivery to make it feel like yours from day one.
               </p>
             </div>
           </div>
@@ -188,7 +188,7 @@ const SEOEnhancedSection = () => {
                 </li>
               </ul>
               <p className="mt-3">
-                Every solution is customised to meet your operational, branding, and spatial needs.
+                Every business finds the right fit from our range, based on operational, branding, and spatial needs.
               </p>
             </div>
           </div>
@@ -227,7 +227,7 @@ const SEOEnhancedSection = () => {
               <ul className="list-disc pl-5 space-y-2">
                 <li>High-strength steel sandwich panels</li>
                 <li>Weatherproof design for all seasons</li>
-                <li>Custom sizing and internal layouts</li>
+                <li>A range of sizes and layouts</li>
                 <li>Premium upgrade options available</li>
               </ul>
               <p>

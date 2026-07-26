@@ -34,7 +34,7 @@ const AboutUsSection = () => {
               Built Around Your Needs
             </p>
             <p>
-              Every project is tailored. We customise size, layout, and finishes to suit your exact requirements and brand.
+              Every business is different, so we stock a range of sizes and layouts to match what you actually need.
             </p>
             <p className="mt-2">
               With over a decade of experience, our team delivers smart, functional designs that last.
@@ -85,7 +85,7 @@ const AboutUsSection = () => {
           </div>
 
           <div className="p-4 bg-blue-50 rounded-lg">
-            <div className="font-bold text-blue-600 text-xl mb-2">Custom Design</div>
+            <div className="font-bold text-blue-600 text-xl mb-2">Different Sizes</div>
             <p className="text-gray-600">Made to fit your brand</p>
           </div>
 

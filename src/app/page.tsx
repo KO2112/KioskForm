@@ -10,8 +10,8 @@ import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
-  description: 'Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
-  keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, construction kiosk, custom kiosk design',
+  description: 'Explore portable modular kiosk cabins for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
+  keywords: 'modular kiosk, UK kiosk manufacturer, interactive kiosk, food & security kiosk, construction kiosk, kiosk design, portable cabin',
   alternates: {
     canonical: 'https://cabinunits.co.uk',
     languages: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
-    description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
+    description: 'Explore portable modular kiosk cabins for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
     images: [
       {
         url: '/110x130Kiosk.jpg',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Cabin Units | Modular & Portable Kiosk Cabins UK',
-    description: 'Discover our range of enterprise-grade modular kiosks designed and manufactured in the EU. Custom design service available for all business requirements.',
+    description: 'Explore portable modular kiosk cabins for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.',
     images: ['kiosk.jpg'],
   },
 };
@@ -55,7 +55,7 @@ export default function Home() {
         },
         "datePublished": "2022-10-15T00:00:00+00:00",
         "dateModified": "2025-04-19T00:00:00+00:00",
-        "description": "Explore custom modular kiosks for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
+        "description": "Explore portable modular kiosk cabins for retail, food service, security, and more in the UK. Durable, weatherproof designs built for high-traffic commercial areas.",
         "breadcrumb": {
           "@id": "https://cabinunits.co.uk/#breadcrumb"
         },
@@ -149,10 +149,10 @@ export default function Home() {
           },
           {
             "@type": "Question",
-            "name": "Can you customise a kiosk or cabin for my business?",
+            "name": "Can I add my own branding or signage to a kiosk?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolutely. We offer tailored sizing, layouts, finishes, electrical setups, and branding options so each unit fits your operations and appearance."
+              "text": "Yes. Our kiosks are ready-built standard units rather than made to order, but most customers add their own branding, signage or vinyl wrap to the exterior after delivery."
             }
           },
           {

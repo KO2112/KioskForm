@@ -98,7 +98,7 @@ export default function CarParkContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-6">
+    <div className="bg-slate-50 min-h-screen pt-16 sm:pt-6">
       {/* Breadcrumb */}
       <div className="bg-white border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-slate-500">

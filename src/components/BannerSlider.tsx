@@ -11,7 +11,7 @@ const BannerSlider = () => {
   const slides = [
     {
       title: "Modular Portable Buildings",
-      subtitle: "Custom Solutions For Your Business",
+      subtitle: "Ready-to-Go Solutions For Your Business",
       description: "Modular kiosks built for food, retail, and security — tailored to your needs.",
       image: "/cabinunits-banner-1920x1080.jpg",
       overlay: "bg-gradient-to-r from-blue-950/40 to-transparent",
@@ -28,7 +28,7 @@ const BannerSlider = () => {
       buttonLink: "/kiosks"
     },
     {
-      title: "Customizable Designs",
+      title: "Compact & Practical Designs",
       subtitle: "Built To Your Specifications",
       description: "Engineered modular kiosks and buildings for food, retail, and security. Strong, flexible, and ready for any use.",
       image: "/cabinunits-slider-bg2-2400x900.jpg",

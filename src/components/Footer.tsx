@@ -16,7 +16,7 @@ const Footer = () => {
               <h4 className="text-lg font-bold text-gray-900 mb-4">Cabin Units</h4>
               <p className="text-gray-700 mb-4">
               High-quality modular kiosks and portable buildings, built in the EU to top-tier standards.
-              As one of the UK's leading modular building companies, we offer custom solutions for retail, security, catering, and more.
+              Cabin Units supplies a range of kiosks and cabins for retail, security, catering, and more.
              </p>
 
               <div className="text-gray-700 mb-4">
@@ -162,7 +162,7 @@ const Footer = () => {
                     <svg className="h-3 w-3 text-blue-600 mr-2" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
                       <path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                     </svg>
-                    Custom Modular Buildings
+                    Modular and Portable Cabins
                   </Link>
                 </li>
               </ul>
