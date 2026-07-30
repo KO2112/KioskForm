@@ -42,6 +42,14 @@ export default function HomeFaqSchema() {
             },
             {
               '@type': 'Question',
+              name: 'Do you offer smaller, compact cabin sizes?',
+              acceptedAnswer: {
+                '@type': 'Answer',
+                text: 'Yes. Our range spans from compact kiosks up to larger portable cabins, all insulated and pre-wired, in stock in Leicester for fast UK delivery.',
+              },
+            },
+            {
+              '@type': 'Question',
               name: 'How quickly can a modular kiosk or cabin be deployed?',
               acceptedAnswer: {
                 '@type': 'Answer',

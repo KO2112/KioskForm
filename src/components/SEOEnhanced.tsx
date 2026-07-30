@@ -18,6 +18,11 @@ const SEOEnhancedSection = () => {
         'Yes. Our kiosks are ready-built standard units rather than made to order, but most customers add their own branding, signage or vinyl wrap to the exterior after delivery.',
     },
     {
+      question: 'Do you offer smaller, compact cabin sizes?',
+      answer:
+        'Yes. Our range spans from compact kiosks up to larger portable cabins, all insulated and pre-wired, in stock in Leicester for fast UK delivery.',
+    },
+    {
       question: 'How quickly can a modular kiosk or cabin be deployed?',
       answer:
         'Because they are prefabricated, modular kiosks and cabins can be manufactured and installed much faster than traditional construction, helping businesses get operational quickly.',
@@ -40,16 +45,35 @@ const SEOEnhancedSection = () => {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                A modular or portable kiosk is a pre-built, self-contained structure that’s easy to transport and set up.
+                A modular or portable kiosk is a pre-built, self-contained structure that's easy to transport and set up.
               </p>
               <p>
                 Designed for flexibility, these units are perfect for short-term, semi-permanent, or mobile use.
               </p>
               <p>
-                You’ll see them used as ticket booths at events, food outlets at hospitals, or site offices on construction projects.
+                You'll see them used as ticket booths at events, food outlets at hospitals, or site offices on construction projects.
               </p>
               <p>
                 Their simplicity, speed of deployment, and versatility make them an ideal solution for businesses needing flexible space—without the cost or delay of permanent construction.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Portable Cabins for Sale in the UK
+            </h2>
+            <div className="prose max-w-none text-gray-700">
+              <p>
+                Our range spans from compact kiosks up to larger portable cabins — insulated,
+                pre-wired and ready to connect, sized for gatehouses, pay points and one- or
+                two-person site offices where a full-size cabin is overkill. Every unit is in
+                stock in Leicester for fast UK delivery.
+              </p>
+              <p>
+                <a href="/portable-cabins" className="text-blue-600 font-semibold hover:underline">
+                  Explore our full portable cabin range →
+                </a>
               </p>
             </div>
           </div>
@@ -60,7 +84,7 @@ const SEOEnhancedSection = () => {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                As one of the UK’s top modular building suppliers, we deliver innovative kiosk solutions tailored to your business goals.
+                As one of the UK's top modular building suppliers, we deliver innovative kiosk solutions tailored to your business goals.
               </p>
               <p>
                 Our range features European-built units that combine long-lasting materials with modern design.
@@ -114,7 +138,7 @@ const SEOEnhancedSection = () => {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                Innovation drives everything we do. We don’t just follow trends—we set them.
+                Innovation drives everything we do. We don't just follow trends—we set them.
               </p>
               <p>
                 From eco-conscious materials to energy-efficient insulation, our kiosks are built with the latest in construction technology.
@@ -130,14 +154,14 @@ const SEOEnhancedSection = () => {
 
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Modern Kiosks for Today’s Businesses
+              Modern Kiosks for Today's Businesses
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                Today’s modular kiosks are more than temporary booths—they’re fully functional, highly adaptable spaces.
+                Today's modular kiosks are more than temporary booths—they're fully functional, highly adaptable spaces.
               </p>
               <p>
-                As specialists in kiosk design, we’ve helped transform how businesses operate across retail, transport, and events.
+                As specialists in kiosk design, we've helped transform how businesses operate across retail, transport, and events.
               </p>
               <p>
                 Featuring galvanised steel frames and composite cladding, our units are sleek, secure, and built to impress.
@@ -154,7 +178,7 @@ const SEOEnhancedSection = () => {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                Going modular isn’t just smart—it’s cost-effective. More UK businesses are choosing our kiosks to cut costs without compromising quality.
+                Going modular isn't just smart—it's cost-effective. More UK businesses are choosing our kiosks to cut costs without compromising quality.
               </p>
               <p>
                 Quick production and on-site installation reduce downtime and upfront spend.
@@ -242,10 +266,10 @@ const SEOEnhancedSection = () => {
             </h2>
             <div className="prose max-w-none text-gray-700">
               <p>
-                Modular construction is reshaping the UK’s built environment—and we’re proud to be part of that change.
+                Modular construction is reshaping the UK's built environment—and we're proud to be part of that change.
               </p>
               <p>
-                Through continuous R&D, we’re developing smarter, more sustainable solutions for modern businesses.
+                Through continuous R&D, we're developing smarter, more sustainable solutions for modern businesses.
               </p>
               <p>
                 Innovations like integrated tech, remote monitoring, and climate control are already shaping our next-generation kiosks.
