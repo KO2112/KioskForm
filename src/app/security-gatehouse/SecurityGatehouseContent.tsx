@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronRight, ChevronDown, CheckCircle, Shield, Lock, Truck, Building2, ArrowRight, Phone } from "lucide-react"
+import { ChevronRight, ChevronDown, CheckCircle, Shield, Lock, Building2, ArrowRight, Phone, Zap, Clock, MapPin } from "lucide-react"
 
 const cabins = [
   {
@@ -58,6 +58,15 @@ const cabins = [
   },
 ]
 
+const specRows = [
+  { label: "Wall construction", value: "20mm steel sheets with 40mm polyurethane core insulation" },
+  { label: "Frame", value: "Galvanised steel columns finished in RAL 7039 anthracite" },
+  { label: "Electrics", value: "LED lighting, double socket, internal fuse box, external site socket" },
+  { label: "Door & windows", value: "Lockable PVC door, inward-opening windows" },
+  { label: "Transport", value: "Suitable for forklift transport, delivered fully assembled" },
+  { label: "Condition", value: "Brand new, EU manufactured, in stock for immediate dispatch" },
+]
+
 const faqs = [
   {
     q: "What is a security gatehouse used for?",
@@ -74,6 +83,14 @@ const faqs = [
   {
     q: "Is the gatehouse suitable for all weather conditions?",
     a: "Yes. Each unit is fully insulated and designed to remain comfortable and practical in both winter and summer conditions, with lighting, power and secure access built in.",
+  },
+  {
+    q: "How much does a security gatehouse cost?",
+    a: "Our gatehouse range is priced at £1,799 for the 110x130cm unit, £1,949 for the 110x150cm and £1,999 for the 150x210cm, all excluding VAT and shipping. Every unit is brand new, insulated and pre-wired, with no extra fit-out costs.",
+  },
+  {
+    q: "Can I view a gatehouse before I buy?",
+    a: "Yes — viewings at our Leicester warehouse (LE1 3BW) are welcome by arrangement. Call or message us to book a time and look inside the units before you decide.",
   },
 ]
 
@@ -112,11 +129,11 @@ export default function SecurityGatehouseContent() {
             Secure entry solutions
           </p>
           <h1 className="text-3xl sm:text-5xl font-bold max-w-3xl leading-tight">
-            Modular Security Gatehouse for Sale and Hire in the UK
+            Modular Security Gatehouses for Sale in the UK
           </h1>
           <p className="mt-5 text-blue-100 max-w-2xl text-lg leading-relaxed">
-            Buy or hire a dependable gatehouse cabin for secure site entry, visitor management and
-            barrier control with insulated, weatherproof construction and fast delivery.
+            Buy a dependable gatehouse cabin for secure site entry, visitor management and
+            barrier control — insulated, weatherproof construction, in stock and delivered fast.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
@@ -139,7 +156,7 @@ export default function SecurityGatehouseContent() {
               { k: "From", v: "£1,799" },
               { k: "Access", v: "Lockable" },
               { k: "Transport", v: "Forklift-ready" },
-              { k: "Option", v: "Buy or hire" },
+              { k: "Stock", v: "Fast dispatch" },
             ].map((s, i) => (
               <div key={i} className="px-4 py-4 text-center">
                 <div className="text-[11px] uppercase tracking-wider text-blue-300">{s.k}</div>
@@ -147,8 +164,6 @@ export default function SecurityGatehouseContent() {
               </div>
             ))}
           </div>
-
-          
         </div>
       </div>
 
@@ -216,7 +231,8 @@ export default function SecurityGatehouseContent() {
             ))}
           </div>
           <p className="text-slate-500 text-sm mt-4">
-            All prices exclude VAT and shipping. Nationwide UK delivery quoted by postcode.
+            All prices exclude VAT and shipping. Nationwide UK delivery quoted by postcode —
+            free collection from our Leicester warehouse (LE1 3BW).
           </p>
         </section>
 
@@ -299,6 +315,32 @@ export default function SecurityGatehouseContent() {
           </div>
         </section>
 
+        {/* ---------------- SPEC TABLE (new) ---------------- */}
+        <section className="pb-14">
+          <h2 className="text-2xl font-bold text-slate-900 mb-3">
+            Security gatehouse specification
+          </h2>
+          <p className="text-slate-700 leading-7 mb-6 max-w-3xl">
+            Every gatehouse in our range shares the same core build quality. Here's what you get
+            as standard, before you add any options:
+          </p>
+          <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+            <dl className="divide-y divide-slate-100">
+              {specRows.map((row, i) => (
+                <div
+                  key={i}
+                  className="grid grid-cols-1 sm:grid-cols-[240px_1fr] px-5 py-3 gap-1 sm:gap-4"
+                >
+                  <dt className="text-xs font-mono uppercase tracking-wide text-slate-500 sm:pt-0.5">
+                    {row.label}
+                  </dt>
+                  <dd className="text-sm text-slate-800">{row.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+
         {/* ---------------- HELPFUL GUIDES ---------------- */}
         <section className="pb-14">
           <div className="bg-white rounded-lg border border-slate-200 p-6">
@@ -357,6 +399,26 @@ export default function SecurityGatehouseContent() {
           </section>
 
           <section>
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">
+              In stock vs made to order — why that matters for a gatehouse
+            </h2>
+            <p className="text-slate-700 leading-7 mb-3">
+              Most gatehouse suppliers quote a bespoke build: your size, your layout, built to
+              order — which usually means several weeks before it's anywhere near your site. Our
+              range works differently. Every gatehouse cabin is standard-built and already in
+              stock at our Leicester warehouse, so there's no factory queue between placing an
+              order and having something to install.
+            </p>
+            <p className="text-slate-700 leading-7">
+              For most sites, a bespoke build isn't actually needed — a security cabin's job is
+              largely the same wherever it sits: shelter, power, lockable access and a clear line
+              of sight. Choosing from a range of ready sizes gets you a working gatehouse in days
+              rather than weeks, and you can see the exact unit before you commit rather than
+              trusting a drawing.
+            </p>
+          </section>
+
+          <section>
             <h2 className="text-2xl font-bold text-slate-900 mb-3">Who benefits from a gatehouse cabin?</h2>
             <p className="text-slate-700 leading-7 mb-3">
               These cabins are widely used by construction companies, facilities managers,
@@ -367,6 +429,23 @@ export default function SecurityGatehouseContent() {
             <p className="text-slate-700 leading-7">
               The result is a simple, durable and attractive solution that supports both security
               goals and day-to-day operations from the very first arrival.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-bold text-slate-900 mb-3">
+              Delivery and installation
+            </h2>
+            <p className="text-slate-700 leading-7 mb-3">
+              We deliver gatehouse cabins throughout the UK, with delivery cost quoted by
+              postcode. Each unit travels fully assembled and is offloaded into position on
+              arrival — all you need is a firm, level surface and access for the delivery
+              vehicle.
+            </p>
+            <p className="text-slate-700 leading-7">
+              Because every cabin is pre-wired with an internal fuse box and external site
+              socket, connecting it is a simple job for your electrician. Prefer to see a unit
+              first? Viewing and free collection are available from our Leicester warehouse.
             </p>
           </section>
         </div>
@@ -416,7 +495,7 @@ export default function SecurityGatehouseContent() {
                 <h2 className="text-2xl font-bold mb-2">Need a security gatehouse cabin?</h2>
                 <p className="text-blue-100 max-w-xl">
                   Tell us about your site, access requirements and preferred size and we will help
-                  you choose the right gatehouse cabin for hire or purchase.
+                  you choose the right gatehouse cabin for your site.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">

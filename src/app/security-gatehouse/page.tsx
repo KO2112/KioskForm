@@ -4,11 +4,12 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
+  title: "Security Gatehouse for Sale | UK | CabinUnits",
   description:
-    "Buy or hire modular security gatehouse in the UK. Durable, insulated gatehouse cabins for secure site entry, barrier control and visitor management.",
+    "Buy a modular security gatehouse in the UK. Durable, insulated gatehouse cabins for secure site entry, barrier control and visitor management. In stock, fast delivery.",
   keywords: [
     "security gatehouse",
+    "security gatehouse for sale",
     "gatehouse kiosk",
     "security cabin",
     "security booth",
@@ -19,9 +20,6 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://cabinunits.co.uk/security-gatehouse",
-    languages: {
-      "en-GB": "https://cabinunits.co.uk/security-gatehouse",
-    },
   },
   robots: {
     index: true,
@@ -39,9 +37,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/security-gatehouse",
     siteName: "CabinUnits",
-    title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
+    title: "Security Gatehouse for Sale | UK | CabinUnits",
     description:
-      "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
+      "Buy a modular security gatehouse cabin in the UK for secure site entry, visitor management and access control. In stock, fast delivery.",
     images: [
       {
         url: "/110x130Kiosk.jpg",
@@ -53,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Security Gatehouse | Buy & Hire UK | CabinUnits",
+    title: "Security Gatehouse for Sale | UK | CabinUnits",
     description:
-      "Buy or hire modular security gatehouse cabins in the UK for secure site entry, visitor management and access control.",
+      "Buy a modular security gatehouse cabin in the UK for secure site entry, visitor management and access control.",
     images: ["/110x130Kiosk.jpg"],
   },
 }
@@ -74,12 +72,12 @@ export default function Page() {
                 "@type": "WebPage",
                 "@id": "https://cabinunits.co.uk/security-gatehouse/",
                 url: "https://cabinunits.co.uk/security-gatehouse/",
-                name: "Security Gatehouse Cabins | Buy & Hire UK | CabinUnits",
+                name: "Security Gatehouses for Sale | UK | CabinUnits",
                 isPartOf: {
                   "@id": "https://cabinunits.co.uk/#website",
                 },
                 description:
-                  "Buy or hire modular security gatehouse cabins in the UK for secure site entry, barrier control and visitor management.",
+                  "Buy a modular security gatehouse cabin in the UK for secure site entry, barrier control and visitor management.",
                 breadcrumb: {
                   "@id": "https://cabinunits.co.uk/security-gatehouse/#breadcrumb",
                 },
@@ -90,19 +88,67 @@ export default function Page() {
                 },
               },
               {
-                "@type": "Service",
-                "@id": "https://cabinunits.co.uk/security-gatehouse/#service",
-                serviceType: "Security gatehouse cabins",
-                name: "Security gatehouse cabins",
-                description:
-                  "Insulated, fully wired gatehouse cabins for security staff, access control and visitor management in the UK.",
-                provider: {
-                  "@id": "https://cabinunits.co.uk/#organization",
-                },
-                areaServed: {
-                  "@type": "Country",
-                  name: "United Kingdom",
-                },
+                "@type": "ItemList",
+                "@id": "https://cabinunits.co.uk/security-gatehouse/#itemlist",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    item: {
+                      "@type": "Product",
+                      name: "110x130cm Security Gatehouse",
+                      url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
+                      image: "https://cabinunits.co.uk/110x130Kiosk.jpg",
+                      brand: { "@type": "Brand", name: "Cabin Units" },
+                      offers: {
+                        "@type": "Offer",
+                        price: "1799",
+                        priceCurrency: "GBP",
+                        availability: "https://schema.org/InStock",
+                        itemCondition: "https://schema.org/NewCondition",
+                        url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    item: {
+                      "@type": "Product",
+                      name: "110x150cm Security Gatehouse",
+                      url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x150",
+                      image: "https://cabinunits.co.uk/110x150.jpg",
+                      brand: { "@type": "Brand", name: "Cabin Units" },
+                      offers: {
+                        "@type": "Offer",
+                        price: "1949",
+                        priceCurrency: "GBP",
+                        availability: "https://schema.org/InStock",
+                        itemCondition: "https://schema.org/NewCondition",
+                        url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x150",
+                      },
+                    },
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    item: {
+                      "@type": "Product",
+                      name: "150x210cm Security Gatehouse",
+                      url: "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
+                      image: "https://cabinunits.co.uk/150x210kiosk1.jpg",
+                      brand: { "@type": "Brand", name: "Cabin Units" },
+                      offers: {
+                        "@type": "Offer",
+                        price: "1999",
+                        priceCurrency: "GBP",
+                        availability: "https://schema.org/InStock",
+                        itemCondition: "https://schema.org/NewCondition",
+                        url: "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
+                      },
+                    },
+                  },
+                ],
               },
               {
                 "@type": "BreadcrumbList",
@@ -111,30 +157,6 @@ export default function Page() {
                   { "@type": "ListItem", position: 1, name: "Home", item: "https://cabinunits.co.uk/" },
                   { "@type": "ListItem", position: 2, name: "Kiosks", item: "https://cabinunits.co.uk/kiosks" },
                   { "@type": "ListItem", position: 3, name: "Security Gatehouse" },
-                ],
-              },
-              {
-                "@type": "ItemList",
-                "@id": "https://cabinunits.co.uk/security-gatehouse/#itemlist",
-                itemListElement: [
-                  {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Portable Kiosk 110x130cm",
-                    url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x130",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Portable Kiosk 110x150cm",
-                    url: "https://cabinunits.co.uk/products/Portable-Kiosk-110x150",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Portable Kiosk 150x210cm",
-                    url: "https://cabinunits.co.uk/products/Portable-Kiosk-150x210",
-                  },
                 ],
               },
               {
@@ -171,6 +193,22 @@ export default function Page() {
                     acceptedAnswer: {
                       "@type": "Answer",
                       text: "Yes. Each unit is fully insulated and designed to remain comfortable and practical in both winter and summer conditions.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "How much does a security gatehouse cost?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Our gatehouse range is priced at £1,799 for the 110x130cm unit, £1,949 for the 110x150cm and £1,999 for the 150x210cm, all excluding VAT and shipping.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Can I view a gatehouse before I buy?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Yes — viewings at our Leicester warehouse (LE1 3BW) are welcome by arrangement. Call or message us to book a time and look inside the units before you decide.",
                     },
                   },
                 ],
