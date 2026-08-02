@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Building, Phone, Info, FileText, ChevronDown } from 'lucide-react';
+import { Menu, X, Building, Phone, Info, FileText, ChevronDown, ChevronRight } from 'lucide-react';
 import AnnouncementBar from './announcement-bar';
 
 const Navbar = () => {
@@ -35,14 +35,14 @@ const Navbar = () => {
               </Link>
             </div>
 
-            <div className="hidden md:flex items-center space-x-6">
-              <Link href="/" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Home</Link>
-              <Link href="/kiosks" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Kiosks</Link>
-              <Link href="/welfare-cabins" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Welfare Cabins</Link>
+            <div className="hidden xl:flex items-center space-x-6">
+              <Link href="/" className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg}`}>Home</Link>
+              <Link href="/kiosks" className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg}`}>Cabins & Kiosks</Link>
+              <Link href="/welfare-cabins" className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg}`}>Welfare Cabins</Link>
               <div className="relative group">
                 <button
                   type="button"
-                  className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg} flex items-center`}
+                  className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg} flex items-center`}
                 >
                   Product Uses
                   <ChevronDown className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:rotate-180" />
@@ -55,15 +55,18 @@ const Navbar = () => {
                   <Link href="/car-park-kiosks" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Car park kiosk & cabins</Link>
                 </div>
               </div>
-              <Link href="/AboutUs" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>About</Link>
-              <Link href="/blog" className={`px-4 py-3 rounded-md text-base font-medium ${textColor} ${hoverBg}`}>Blog</Link>
-              <Link href="/ContactUs" className="ml-2 bg-blue-600 text-white px-5 py-3 rounded-md text-base font-medium hover:bg-blue-700 flex items-center">
-                <Phone className="w-5 h-5 mr-2" />
-                Contact Us
+              <Link href="/AboutUs" className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg}`}>About</Link>
+              <Link href="/blog" className={`px-4 py-3 rounded-md text-base font-medium whitespace-nowrap ${textColor} ${hoverBg}`}>Blog</Link>
+              <Link
+                href="/ContactUs?interest=quote"
+                className="ml-2 inline-flex items-center bg-amber-400 text-blue-950 px-5 py-3 rounded-md text-base font-bold whitespace-nowrap shadow-sm hover:bg-amber-300 hover:shadow-md transition-all duration-200"
+              >
+                Get a Quote
+                <ChevronRight className="w-4 h-4 ml-1.5" />
               </Link>
             </div>
 
-            <div className="md:hidden flex items-center">
+            <div className="xl:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className={`inline-flex items-center justify-center p-2 rounded-md ${textColor} ${hoverBg}`}
@@ -82,14 +85,14 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden">
+          <div className="xl:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
               <Link href="/" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 Home
               </Link>
               <Link href="/kiosks" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <Building className="w-4 h-4 mr-2" />
-                Kiosks
+                Cabins & Kiosks
               </Link>
               <Link href="/welfare-cabins" className="flex items-center px-3 py-2 text-gray-700 hover:bg-gray-100 rounded-md">
                 <Building className="w-4 h-4 mr-2" />
@@ -132,9 +135,12 @@ const Navbar = () => {
                 <FileText className="w-4 h-4 mr-2" />
                 Blog
               </Link>
-              <Link href="/ContactUs" className="flex items-center px-3 py-2 bg-blue-600 text-white rounded-md">
-                <Phone className="w-4 h-4 mr-2" />
-                Contact Us
+              <Link
+                href="/ContactUs?interest=quote"
+                className="flex items-center justify-center px-3 py-3 bg-amber-400 text-blue-950 font-bold rounded-md shadow-sm hover:bg-amber-300 transition-colors"
+              >
+                Get a Quote
+                <ChevronRight className="w-4 h-4 ml-1.5" />
               </Link>
             </div>
           </div>

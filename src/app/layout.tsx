@@ -5,6 +5,7 @@ import CookieBanner from '@/components/CookieBanner';
 import './globals.css';
 import Script from 'next/script';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -196,6 +197,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );
