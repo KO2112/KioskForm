@@ -87,8 +87,8 @@ const ContactPage = () => {
     'w-full px-3.5 py-2.5 bg-gray-50 border border-gray-200 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600 focus:bg-white transition-colors';
 
   return (
-    <div className="bg-white min-h-screen pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="min-h-screen bg-white pt-4 sm:pt-4">
+      <div className="mx-auto max-w-7xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">
 
         {/* 50/50 split: form left, map right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">

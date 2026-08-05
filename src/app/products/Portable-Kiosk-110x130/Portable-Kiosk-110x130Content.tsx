@@ -110,9 +110,9 @@ const PortableKiosk110x130Content = () => {
   ]
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <div className="min-h-screen bg-gray-50 pt-4 sm:pt-4">
+      <div className="border-b border-gray-200 bg-white">
+        <div className="mx-auto max-w-6xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8">
           <nav className="flex text-sm">
             <Link href="/" className="text-gray-500 hover:text-gray-700">
               Home
@@ -127,7 +127,7 @@ const PortableKiosk110x130Content = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-6xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">
         <div className="lg:grid lg:grid-cols-2 lg:gap-12">
           <div className="mb-8 lg:mb-0">
             <div

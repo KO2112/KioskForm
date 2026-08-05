@@ -121,10 +121,10 @@ export default function WelfareCabinsContent() {
   const [openFaq, setOpenFaq] = useState<number | null>(0)
 
   return (
-    <div className="bg-slate-50 min-h-screen pt-16 sm:pt-6">
+    <div className="min-h-screen bg-slate-50 pt-4 sm:pt-4">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-slate-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-sm text-slate-500">
+      <div className="border-b border-slate-200 bg-white">
+        <div className="mx-auto max-w-6xl px-3 py-0.5 text-xs text-slate-500 sm:px-6 sm:py-1.5 sm:text-sm lg:px-8">
           <Link href="/" className="hover:text-blue-600">
             Home
           </Link>{" "}
@@ -144,43 +144,43 @@ export default function WelfareCabinsContent() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          <p className="text-amber-400 font-semibold tracking-widest uppercase text-xs mb-4">
+        <div className="relative mx-auto max-w-6xl px-3 py-3 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+          <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-widest text-amber-400 sm:mb-4 sm:text-xs">
             Site welfare, ready to connect
           </p>
-          <h1 className="text-3xl sm:text-5xl font-bold max-w-3xl leading-tight">
+          <h1 className="max-w-3xl text-xl font-bold leading-tight sm:text-5xl">
             Welfare Units &amp; Portable Toilet Blocks for Sale
           </h1>
-          <p className="mt-5 text-blue-100 max-w-2xl text-lg leading-relaxed">
+          <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-blue-100 sm:mt-5 sm:text-lg">
             Insulated, pre-plumbed welfare units for construction sites, events and farms — a real
             flushing toilet and wash basin, not a chemical portaloo, delivered ready to connect.
           </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+          <div className="mt-2.5 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
             <Link
               href="/ContactUs?interest=welfare-unit"
-              className="inline-flex items-center justify-center bg-amber-400 text-blue-950 px-6 py-3 rounded-md font-bold hover:bg-amber-300 transition-colors"
+              className="inline-flex items-center justify-center rounded-md bg-amber-400 px-4 py-2.5 text-sm font-bold text-blue-950 transition-colors hover:bg-amber-300 sm:px-6 sm:py-3"
             >
               Get a Welfare Unit Quote
               <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
             <a
               href="#range"
-              className="inline-flex items-center justify-center bg-white/10 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/20 transition-colors border border-white/20"
+              className="inline-flex items-center justify-center rounded-md border border-white/20 bg-white/10 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-white/20 sm:px-6 sm:py-3"
             >
               View the Range
             </a>
           </div>
 
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10 border border-white/15 rounded-lg bg-white/5 backdrop-blur-sm">
+          <div className="mt-2.5 grid grid-cols-2 divide-x divide-white/10 rounded-lg border border-white/15 bg-white/5 backdrop-blur-sm sm:mt-10 sm:grid-cols-4">
             {[
               { k: "From", v: "£2,699.99" },
               { k: "Plumbing", v: "Pre-connected" },
               { k: "Access", v: "Standard & wheelchair" },
               { k: "Stock", v: "Fast dispatch" },
             ].map((s, i) => (
-              <div key={i} className="px-4 py-4 text-center">
-                <div className="text-[11px] uppercase tracking-wider text-blue-300">{s.k}</div>
-                <div className="text-base sm:text-lg font-bold text-white mt-1">{s.v}</div>
+              <div key={i} className="px-3 py-3 text-center sm:px-4 sm:py-4">
+                <div className="text-[10px] uppercase tracking-wider text-blue-300 sm:text-[11px]">{s.k}</div>
+                <div className="mt-1 text-sm font-bold text-white sm:text-base sm:text-lg">{s.v}</div>
               </div>
             ))}
           </div>
@@ -189,12 +189,12 @@ export default function WelfareCabinsContent() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* ---------------- RANGE (bigger cards, 2-up) ---------------- */}
-        <section id="range" className="py-12">
-          <div className="flex items-end justify-between mb-6">
-            <h2 className="text-2xl font-bold text-slate-900">Our welfare unit range</h2>
+        <section id="range" className="py-4 sm:py-12">
+          <div className="mb-3 flex items-end justify-between sm:mb-6">
+            <h2 className="text-lg font-bold text-slate-900 sm:text-2xl">Our welfare unit range</h2>
             
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 sm:gap-8">
             {units.map((unit) => (
               <div
                 key={unit.id}
@@ -202,7 +202,7 @@ export default function WelfareCabinsContent() {
               >
                 <Link
                   href={`/products/${unit.id}`}
-                  className="block h-80 lg:h-96 relative bg-white overflow-hidden"
+                  className="relative block h-64 overflow-hidden bg-white sm:h-80 lg:h-96"
                 >
                   <img
                     src={unit.image}
@@ -213,7 +213,7 @@ export default function WelfareCabinsContent() {
                     {unit.dimensions}
                   </span>
                 </Link>
-                <div className="p-6 flex-grow flex flex-col">
+                <div className="flex flex-grow flex-col p-4 sm:p-6">
                   <div className="flex items-start justify-between mb-2">
                     <span className="text-xs font-semibold text-amber-700 bg-amber-50 border border-amber-200 rounded px-2 py-0.5">
                       {unit.tag}

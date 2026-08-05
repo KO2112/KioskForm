@@ -7,16 +7,16 @@ import Image from 'next/image';
 
 const BlogContent = () => {
   return (
-    <div className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Cabinunits Blog</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    <div className="bg-gray-50 py-8 sm:py-10">
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+        <div className="mb-8 text-center sm:mb-10">
+          <h1 className="mb-3 text-3xl font-bold text-gray-900 sm:text-4xl">Cabinunits Blog</h1>
+          <p className="mx-auto max-w-3xl text-base text-gray-600 sm:text-xl">
             Industry insights, product updates, and expert advice on modular kiosks and portable cabin solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="mb-10 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 sm:gap-8 sm:mb-16">
 
           {/* NEW: Planning Permission Guide */}
           <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -140,7 +140,7 @@ const BlogContent = () => {
         </div>
         
         {/* New section about modular and portable kiosk updates */}
-        <div className="bg-white rounded-lg shadow-md p-8 mb-16">
+        <div className="mb-8 rounded-lg bg-white p-6 shadow-md sm:mb-16 sm:p-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4">Stay Updated on Modular & Portable Solutions</h2>
           <div className="prose max-w-none text-gray-700">
             <p className="mb-4">

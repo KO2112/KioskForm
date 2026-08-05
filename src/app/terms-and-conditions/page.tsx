@@ -228,7 +228,7 @@ const sections: TermsSection[] = [
 
 const TermsAndConditionsPage = () => {
   return (
-    <div className="min-h-screen bg-white pt-16">
+    <div className="min-h-screen bg-white pt-4 sm:pt-4">
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-8 border-b border-gray-200 pb-8">

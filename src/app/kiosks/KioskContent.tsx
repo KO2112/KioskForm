@@ -95,14 +95,11 @@ const KiosksPage = () => {
   ]
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
-      {" "}
-      {/* Added pt-16 to account for fixed navbar height */}
-      {/* Header Section - Now properly spaced below navbar */}
+    <div className="bg-gray-50 min-h-screen pt-4 sm:pt-4">
       <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-col sm:flex-row items-start sm:items-center justify-between">
           <div className="mb-3 sm:mb-0">
-            <h1 className="text-2xl font-bold text-gray-900">Premium Modular Kiosks</h1>
+            <h1 className="text-2xl font-bold text-gray-900">Portable | Modular Cabins and Kiosks</h1>
             <p className="text-sm text-gray-600">EU manufactured portable buildings for commercial applications</p>
           </div>
           <Link

@@ -188,18 +188,18 @@ const Navbar = () => {
               {/* Invisible bridge so the mouse can travel down without closing */}
               <span aria-hidden="true" className={`absolute -inset-x-8 top-full h-10 ${megaOpen ? 'block' : 'hidden'}`} />
 
-              {/* ---------- Full-width mega panel ---------- */}
+              {/* ---------- Compact mega panel ---------- */}
               <div
                 onMouseEnter={openMega}
-                className={`fixed inset-x-0 top-[100px] z-40 border-b border-slate-200 bg-[#F7F8FA] shadow-[0_24px_40px_-20px_rgba(10,27,61,0.30)] motion-safe:transition-all motion-safe:duration-250 motion-safe:ease-out ${
+                className={`fixed left-1/2 top-[100px] z-40 w-[min(92vw,980px)] -translate-x-1/2 rounded-b-2xl border-b border-slate-200 bg-[#F7F8FA] shadow-[0_24px_40px_-20px_rgba(10,27,61,0.30)] motion-safe:transition-all motion-safe:duration-250 motion-safe:ease-out ${
                   megaOpen
                     ? 'visible translate-y-0 opacity-100'
                     : 'pointer-events-none invisible -translate-y-2 opacity-0'
                 }`}
               >
-                <div className="mx-auto grid max-w-[1440px] grid-cols-[360px_minmax(0,1fr)_minmax(0,1fr)_320px] gap-x-12 px-4 py-9 sm:px-6 lg:px-8">
+                <div className="mx-auto grid max-w-[980px] grid-cols-[220px_minmax(0,1fr)_minmax(0,1fr)_200px] gap-x-8 px-4 py-6 sm:px-6 lg:px-8">
                   {/* --- Picture, left --- */}
-                  <div className="h-[300px] w-full overflow-hidden border border-slate-200 bg-white">
+                  <div className="h-[240px] w-full overflow-hidden rounded-lg border border-slate-200 bg-white">
                     {USES_IMAGE ? (
                       /* eslint-disable-next-line @next/next/no-img-element */
                       <img src={USES_IMAGE} alt="" className="h-full w-full object-cover" />

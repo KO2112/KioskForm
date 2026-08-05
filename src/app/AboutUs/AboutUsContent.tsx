@@ -5,7 +5,7 @@ import { ChevronRight, Award, Users, MapPin, Truck, Phone, Box } from 'lucide-re
 
 const AboutUsPage = () => {
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
+    <div className="min-h-screen bg-gray-50 pt-4 sm:pt-4">
       {/* Hero Section with Background */}
       <div className="relative bg-blue-700 text-white">
         <div
@@ -16,9 +16,9 @@ const AboutUsPage = () => {
             backgroundPosition: 'center'
           }}
         ></div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 relative z-10">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">About Cabin Units</h1>
-          <p className="text-blue-100 max-w-xl text-lg">
+        <div className="relative z-10 mx-auto max-w-6xl px-3 py-6 sm:px-6 sm:py-10 lg:px-8 lg:py-12">
+          <h1 className="mb-2 text-2xl font-bold sm:text-3xl md:text-4xl">About Cabin Units</h1>
+          <p className="max-w-xl text-sm text-blue-100 sm:text-lg">
             We supply brand new, EU-manufactured portable cabins, kiosks and
             welfare units from our warehouse in Leicester — insulated,
             pre-wired and delivered ready to work, anywhere in the UK.
@@ -27,7 +27,7 @@ const AboutUsPage = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="mx-auto max-w-6xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">
         {/* Company Overview */}
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who we are</h2>
