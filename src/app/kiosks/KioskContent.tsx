@@ -98,8 +98,8 @@ const KiosksPage = () => {
 
   return (
     <div className="bg-gray-50 min-h-screen pt-4 sm:pt-4">
-      {/* ---------- Slim header: everything below it is product ---------- */}
-      <div className="bg-white border-b border-gray-200">
+      {/* ---------- Slim header: no background bar, text sits on the page ---------- */}
+      <div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-baseline gap-x-3">
           <h1 className="text-lg font-bold tracking-tight text-[#0A1B3D]">
             Portable | Modular Cabins and Kiosks
@@ -148,7 +148,7 @@ const KiosksPage = () => {
               <div className="p-5 flex-grow">
                 <p className="text-[15px] leading-relaxed text-slate-700">{kiosk.description}</p>
 
-                <p className="mt-5 mb-1 pb-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[#F97316] border-b border-slate-200">
+                <p className="mt-5 mb-1 pb-2 text-sm font-bold uppercase tracking-[0.14em] text-[#F97316] border-b border-slate-200">
                   Key features
                 </p>
                 <ul className="mb-5">
@@ -159,7 +159,7 @@ const KiosksPage = () => {
                   ))}
                 </ul>
 
-                <p className="mb-2.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#F97316]">Applications</p>
+                <p className="mb-2.5 text-sm font-bold uppercase tracking-[0.14em] text-[#F97316]">Applications</p>
                 <div className="flex flex-wrap gap-1.5">
                   {kiosk.applications.slice(0, 5).map((app, i) => (
                     <span key={i} className="border border-slate-200 bg-slate-50 text-slate-600 text-xs font-medium px-2.5 py-1">
@@ -178,9 +178,9 @@ const KiosksPage = () => {
               <div className="p-5 border-t border-slate-200">
                 <Link
                   href={`/products/${kiosk.id}`}
-                  className="flex justify-center items-center bg-[#0A1B3D] text-white px-4 py-3 hover:bg-[#0B4FD1] transition-colors w-full text-sm font-bold tracking-tight"
+                  className="flex justify-center items-center bg-[#F97316] text-white px-4 py-3 hover:bg-[#EA6306] transition-colors w-full text-sm font-bold tracking-tight"
                 >
-                  View this kiosk
+                  View this Cabin
                 </Link>
               </div>
             </div>

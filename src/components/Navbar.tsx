@@ -109,10 +109,23 @@ const Navbar = () => {
       active ? 'text-[#0B4FD1]' : 'text-slate-700 hover:text-[#0B4FD1]'
     }`;
 
-  const underline = (active: boolean) =>
-    `absolute inset-x-3.5 -bottom-0.5 h-[3px] bg-[#F97316] origin-left motion-safe:transition-transform motion-safe:duration-200 ${
-      active ? 'scale-x-100' : 'scale-x-0'
-    }`;
+  /* Corner brackets — two small L-shaped marks in opposite corners (top-left /
+     bottom-right), viewfinder-style, standing in for the underline. */
+  const cornerBase =
+    'pointer-events-none absolute h-2.5 w-2.5 border-[#F97316] motion-safe:transition-opacity motion-safe:duration-200';
+  const cornerVisibility = (active: boolean) => (active ? 'opacity-100' : 'opacity-0');
+  const CornerBrackets = ({ active }: { active: boolean }) => (
+    <>
+      <span
+        aria-hidden="true"
+        className={`${cornerBase} left-0.5 top-0.5 border-l-2 border-t-2 ${cornerVisibility(active)}`}
+      />
+      <span
+        aria-hidden="true"
+        className={`${cornerBase} bottom-0.5 right-0.5 border-b-2 border-r-2 ${cornerVisibility(active)}`}
+      />
+    </>
+  );
 
   /* Notched corner, cut from the same geometry as the logo mark */
   const notch = { clipPath: 'polygon(0 0, 100% 0, 100% 62%, 88% 100%, 0 100%)' } as const;
@@ -163,7 +176,7 @@ const Navbar = () => {
             {mainLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass(isActive(l.href))}>
                 {l.label}
-                <span className={underline(isActive(l.href))} />
+                <CornerBrackets active={isActive(l.href)} />
               </Link>
             ))}
 
@@ -182,7 +195,7 @@ const Navbar = () => {
                     megaOpen ? 'rotate-180' : ''
                   }`}
                 />
-                <span className={underline(usesActive)} />
+                <CornerBrackets active={usesActive} />
               </button>
 
               {/* Invisible bridge so the mouse can travel down without closing */}
@@ -228,7 +241,7 @@ const Navbar = () => {
             {endLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass(isActive(l.href))}>
                 {l.label}
-                <span className={underline(isActive(l.href))} />
+                <CornerBrackets active={isActive(l.href)} />
               </Link>
             ))}
           </div>
