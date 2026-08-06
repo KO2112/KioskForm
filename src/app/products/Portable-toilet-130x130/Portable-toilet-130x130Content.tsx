@@ -123,22 +123,20 @@ const PortableToilet130x130Content = () => {
   ]
 
   return (
-    <div className="bg-gray-50 min-h-screen pt-16">
+    <div className="min-h-screen bg-gray-50 pt-2 sm:pt-2">
       {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-          <nav className="flex text-sm">
-            <Link href="/" className="text-gray-500 hover:text-gray-700">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <Link href="/kiosks" className="text-gray-500 hover:text-gray-700">
-              kiosks
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <span className="text-gray-900 font-medium">Portable Toilet Unit 130x130cm</span>
-          </nav>
-        </div>
+      <div className="mx-auto max-w-6xl px-3 py-1 sm:px-6 sm:py-1.5 lg:px-8">
+        <nav className="flex flex-wrap items-center text-sm leading-none">
+          <Link href="/" className="text-gray-500 hover:text-gray-700">
+            Home
+          </Link>
+          <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />
+          <Link href="/kiosks" className="text-gray-500 hover:text-gray-700">
+            kiosks
+          </Link>
+          <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />
+          <span className="font-medium text-gray-900">Portable Toilet Unit 130x130cm</span>
+        </nav>
       </div>
 
       {/* Product Main Section */}

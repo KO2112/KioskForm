@@ -110,21 +110,19 @@ const PortableKiosk110x130Content = () => {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50 pt-4 sm:pt-4">
-      <div className="border-b border-gray-200 bg-white">
-        <div className="mx-auto max-w-6xl px-3 py-2 sm:px-6 sm:py-3 lg:px-8">
-          <nav className="flex text-sm">
-            <Link href="/" className="text-gray-500 hover:text-gray-700">
-              Home
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <Link href="/kiosks" className="text-gray-500 hover:text-gray-700">
-              kiosks
-            </Link>
-            <ChevronRight className="w-4 h-4 mx-2 text-gray-400" />
-            <span className="text-gray-900 font-medium">Portable Kiosk 110x130cm</span>
-          </nav>
-        </div>
+    <div className="min-h-screen bg-gray-50 pt-1.5 sm:pt-1.5">
+      <div className="mx-auto max-w-6xl px-3 py-1 sm:px-6 sm:py-1.5 lg:px-8">
+        <nav className="flex flex-wrap items-center text-sm leading-none">
+          <Link href="/" className="text-gray-500 hover:text-gray-700">
+            Home
+          </Link>
+          <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />
+          <Link href="/kiosks" className="text-gray-500 hover:text-gray-700">
+            kiosks
+          </Link>
+          <ChevronRight className="mx-2 h-4 w-4 text-gray-400" />
+          <span className="font-medium text-gray-900">Portable Kiosk 110x130cm</span>
+        </nav>
       </div>
 
       <div className="mx-auto max-w-6xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">

@@ -1,4 +1,8 @@
+"use client"
+
 import Image from "next/image"
+import { useState } from "react"
+import { X } from "lucide-react"
 
 const images = [
   {
@@ -32,6 +36,8 @@ const images = [
 ]
 
 export default function OurWorkSection() {
+  const [selectedImage, setSelectedImage] = useState<(typeof images)[number] | null>(null)
+
   return (
     <section id="our-work" className="py-16 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,11 +48,14 @@ export default function OurWorkSection() {
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {images.map((image, index) => (
-            <div
+            <button
               key={image.src}
-              className={`overflow-hidden rounded-3xl bg-white shadow-sm ring-1 ring-slate-200 ${
+              type="button"
+              onClick={() => setSelectedImage(image)}
+              className={`cursor-pointer overflow-hidden rounded-3xl bg-white text-left shadow-sm ring-1 ring-slate-200 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:ring-slate-300 ${
                 index === 0 ? "sm:col-span-2 sm:row-span-2 lg:col-span-2" : ""
               }`}
+              aria-label={`View larger image: ${image.alt}`}
             >
               <div className="relative aspect-[4/3]">
                 <Image
@@ -59,10 +68,41 @@ export default function OurWorkSection() {
                   loading="lazy"
                 />
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative w-full max-w-5xl rounded-2xl bg-white p-2 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute right-3 top-3 z-10 rounded-full bg-black/70 p-2 text-white transition hover:bg-black"
+              aria-label="Close image"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <div className="relative aspect-[4/3] sm:aspect-[16/10]">
+              <Image
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                fill
+                sizes="90vw"
+                quality={90}
+                className="rounded-xl object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   )
 }

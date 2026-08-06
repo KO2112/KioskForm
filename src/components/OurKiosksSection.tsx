@@ -9,7 +9,7 @@ const OurProductsSection = () => {
   const featured = [
     {
       id: "Portable-Kiosk-110x130",
-      title: "Portable Kiosk 110×130",
+      title: "Portable Kiosk Cabin 110×130",
       dimensions: "1.10 × 1.30 × 2.56 m",
       footprint: 1.43,
       description:
@@ -21,7 +21,7 @@ const OurProductsSection = () => {
     },
     {
       id: "Portable-Kiosk-110x150",
-      title: "Portable Kiosk 110×150",
+      title: "Portable Kiosk Cabin 110×150",
       dimensions: "1.10 × 1.50 × 2.56 m",
       footprint: 1.65,
       description:
@@ -33,7 +33,7 @@ const OurProductsSection = () => {
     },
     {
       id: "Portable-Kiosk-150x210",
-      title: "Portable Kiosk 150×210",
+      title: "Portable Kiosk Cabin 150×210",
       dimensions: "1.50 × 2.10 × 2.56 m",
       footprint: 3.15,
       description:
