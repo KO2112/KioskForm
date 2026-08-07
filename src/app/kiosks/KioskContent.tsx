@@ -94,6 +94,35 @@ const KiosksPage = () => {
         "Information points",
       ],
     },
+    {
+      id: "Portable-Kiosk-150x150",
+      title: "Portable Kiosk Cabin Booth Security Ticket Hut Modular Cabin 150x150 cm",
+      subtitle: "Security Hut | Ticket Booth | Modular Cabin",
+      price: "£2,399",
+      dimensions: "150×150 cm",
+      description:
+        "Brand new, durable and fully insulated modular cabin with full electrical installation and immediate dispatch availability.",
+      image: "/PortableCabin150x150.png",
+      features: [
+        "Strong galvanised steel frame structure",
+        "Steel double-skin sandwich panels with 40 mm polyurethane core insulation",
+        "Inner and outer walls are 20 mm steel sheets finished in RAL 9002",
+        "Internal LED lighting, internal double plug socket, internal fuse box and 32A external site socket",
+        "Durable PVC flooring and lockable outward-opening PVC door",
+        "Two 100×100 cm inward-opening windows",
+        "Internal reception desk and utility shelf",
+        "Suitable for forklift transport or crane lifting and fully assembled",
+      ],
+      applications: [
+        "Security huts",
+        "Ticket kiosks",
+        "Gatehouses",
+        "Welfare units",
+        "Car park attendant booths",
+        "Catering units",
+        "Information points",
+      ],
+    },
   ]
 
   return (
