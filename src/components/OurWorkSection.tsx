@@ -39,10 +39,9 @@ export default function OurWorkSection() {
   const [selectedImage, setSelectedImage] = useState<(typeof images)[number] | null>(null)
 
   return (
-    <section id="our-work" className="py-16 bg-slate-50">
+    <section id="our-work" className="py-8 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
-          <p className="text-xs font-semibold tracking-[0.35em] uppercase text-blue-700 mb-3">Our work</p>
           <p className="text-3xl sm:text-4xl font-bold text-slate-900">kiosk cabin projects completed for UK customers</p>
         </div>
 

@@ -5,6 +5,7 @@ import OurWorkSection from '@/components/OurWorkSection';
 import AboutUsSection from '@/components/AboutUs';
 import SEOEnhancedSection from '@/components/SEOEnhanced';
 import HomeFaqSchema from '@/components/Homefaqschema';
+import ClientLogos from '@/components/ClientLogos';
 
 import Script from 'next/script';
 
@@ -188,6 +189,7 @@ export default function Home() {
       <main>
         <BannerSlider />
         <OurKiosksSection/>
+        <ClientLogos />
         <OurWorkSection />
         <AboutUsSection/>
         <SEOEnhancedSection/>
