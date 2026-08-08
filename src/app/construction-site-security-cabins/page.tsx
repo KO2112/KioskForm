@@ -4,19 +4,19 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://cabinunits.co.uk"),
-  title: "Construction Site Security Cabins | Site Gatehouses & Security Cabins",
+  title: "Construction Site Security Cabins | Secure Site Accommodation",
   description:
-    "Need a construction site security cabin in the UK? Explore insulated gatehouses and site cabins with power, secure access and fast dispatch for builders and contractors.",
+    "Need a construction site security cabin in the UK? Explore insulated security cabins and site huts with power, secure access and fast dispatch for builders and contractors.",
   keywords: [
     "construction site security cabin",
     "site security hut",
-    "construction site gatehouse",
     "site office cabin",
     "portable security cabin UK",
-    "site gatehouse cabin",
     "temporary security cabin",
-    "construction gatehouse cabin",
     "security hut for construction site",
+    "secure site accommodation",
+    "site welfare cabin",
+    "anti-vandal security cabin",
   ],
   alternates: {
     canonical: "https://cabinunits.co.uk/construction-site-security-cabins",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: "https://cabinunits.co.uk/construction-site-security-cabins",
     siteName: "CabinUnits",
-    title: "Construction Site Security Cabins | Site Gatehouses & Security Cabins",
+    title: "Construction Site Security Cabins | Secure Site Accommodation",
     description:
-      "Insulated security cabins and gatehouses for UK construction sites. Fully wired, forklift-ready and dispatched fast.",
+      "Insulated security cabins and site huts for UK construction sites. Fully wired, forklift-ready and dispatched fast.",
     images: [
       {
         url: "/kiosk-130x130-1.png",
@@ -54,9 +54,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Construction Site Security Cabins | Site Gatehouses & Security Cabins",
+    title: "Construction Site Security Cabins | Secure Site Accommodation",
     description:
-      "Insulated security cabins and gatehouses for UK construction sites. Fully wired, forklift-ready and dispatched fast.",
+      "Insulated security cabins and site huts for UK construction sites. Fully wired, forklift-ready and dispatched fast.",
     images: ["/kiosk-130x130-1.png"],
   },
 }
@@ -75,7 +75,7 @@ export default function Page() {
                 "@type": "WebPage",
                 "@id": "https://cabinunits.co.uk/construction-site-security-cabins/",
                 url: "https://cabinunits.co.uk/construction-site-security-cabins/",
-                name: "Construction Site Security Cabins | Site Gatehouses & Security Cabins",
+                name: "Construction Site Security Cabins | Secure Site Accommodation",
                 isPartOf: {
                   "@id": "https://cabinunits.co.uk/#website",
                 },
@@ -96,7 +96,7 @@ export default function Page() {
                 serviceType: "Construction site security cabins",
                 name: "Construction site security cabins",
                 description:
-                  "Secure, insulated cabins for gatehouses, sign-in points, site offices and welfare facilities on UK construction sites.",
+                  "Insulated security cabins and site huts for UK construction sites. Fully wired, forklift-ready and dispatched fast.",
                 provider: {
                   "@id": "https://cabinunits.co.uk/#organization",
                 },

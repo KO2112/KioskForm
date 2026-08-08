@@ -16,14 +16,14 @@ import {
 const cabins = [
   {
     id: "Portable-Kiosk-110x130",
-    title: "110x130cm Compact Gatehouse",
+    title: "110x130cm Compact Security Cabin",
     tag: "Best for tight site entrances",
     price: "£1,799",
     priceNote: "ex VAT & shipping",
     dimensions: "110 × 130 cm",
     image: "/110x130Kiosk.jpg",
     description:
-      "A compact gatehouse cabin with a built-in heater, ideal where entrance space is limited but you still need a manned checkpoint.",
+      "A compact security cabin with a built-in heater, ideal where entrance space is limited but you still need a manned checkpoint.",
     features: [
       "Portable heater fitted as standard",
       "40mm polyurethane insulated panels",
@@ -50,14 +50,14 @@ const cabins = [
   },
   {
     id: "Portable-Kiosk-150x210",
-    title: "150x210cm Security Hut & Gatehouse",
+    title: "150x210cm Security Hut & Site Cabin",
     tag: "Best for main site entrances",
     price: "£1,999",
     priceNote: "ex VAT & shipping",
     dimensions: "150 × 210 cm",
     image: "/150x210%20Kiosk.jpg",
     description:
-      "Our largest gatehouse cabin — enough room to work comfortably while monitoring a main site entrance or vehicle checkpoint.",
+      "Our largest security cabin — enough room to work comfortably while monitoring a main site entrance or vehicle checkpoint.",
     features: [
       "Steel double-skin sandwich panels, 40mm insulation",
       "Internal fuse box and external 32A site socket",
@@ -129,11 +129,11 @@ export default function ConstructionSiteContent() {
             Built for construction sites
           </p>
           <h1 className="max-w-3xl text-xl font-bold leading-tight sm:text-5xl">
-            Construction Site Security Cabins &amp; Gatehouses
+            Construction Site Security Cabins &amp; Site Huts
           </h1>
           <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-blue-100 sm:mt-5 sm:text-lg">
-            Insulated, fully wired cabins for site entrances, gatehouses and sign-in points — built
-            for live construction conditions and ready to connect on arrival.
+            Insulated, fully wired cabins for site entrances, checkpoints and sign-in points —
+            built for live construction conditions and ready to connect on arrival.
           </p>
           <div className="mt-2.5 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-3">
             <Link
@@ -247,8 +247,16 @@ export default function ConstructionSiteContent() {
               wired and ready to connect as soon as they arrive on site.
             </p>
             <p className="text-slate-700 leading-7">
-              From temporary gatehouses and sign-in points to full site office setups, our cabins
+              From temporary checkpoints and sign-in points to full site office setups, our cabins
               help contractors keep access controlled without slowing down day-to-day operations.
+              If you need a dedicated manned entry point, see our{" "}
+              <Link
+                href="/security-gatehouse"
+                className="font-medium text-blue-700 underline underline-offset-2 hover:text-blue-500"
+              >
+                security gatehouses
+              </Link>
+              .
             </p>
           </div>
           <div className="border-l-4 border-amber-400 bg-white rounded-r-lg shadow-sm p-6">
@@ -256,7 +264,7 @@ export default function ConstructionSiteContent() {
             <ul className="space-y-3 text-sm text-slate-700">
               <li className="flex items-start gap-2">
                 <CheckCircle className="h-4 w-4 text-blue-700 mt-0.5 flex-shrink-0" />
-                Main entrance gatehouses
+                Main entrance checkpoints
               </li>
               <li className="flex items-start gap-2">
                 <CheckCircle className="h-4 w-4 text-blue-700 mt-0.5 flex-shrink-0" />
@@ -311,10 +319,10 @@ export default function ConstructionSiteContent() {
             <h2 className="text-2xl font-bold text-slate-900 mb-3">What is a construction site security cabin?</h2>
             <p className="text-slate-700 leading-7 mb-3">
               A construction site security cabin is a robust, weatherproof building used for
-              gatehouses, site offices and access control points. It gives your team a secure
-              place to manage entry, visitors and site operations from day one. These cabins are
-              built for real working conditions, with strong materials and practical features
-              that support daily site activity.
+              site offices, access control points and manned checkpoints. It gives your team a
+              secure place to manage entry, visitors and site operations from day one. These
+              cabins are built for real working conditions, with strong materials and practical
+              features that support daily site activity.
             </p>
             <p className="text-slate-700 leading-7">
               They are often placed at the main entrance or a key access point so staff can
@@ -403,8 +411,8 @@ export default function ConstructionSiteContent() {
               <div className="mb-5 md:mb-0">
                 <h2 className="text-2xl font-bold mb-2">Fitting out a site?</h2>
                 <p className="text-blue-100 max-w-xl">
-                  Tell us your entrance, welfare or gatehouse requirements and we'll recommend the
-                  right setup.
+                  Tell us your entrance, welfare or access control requirements and we'll
+                  recommend the right setup.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
@@ -432,8 +440,8 @@ export default function ConstructionSiteContent() {
           <p className="text-slate-600 text-sm leading-7">
             Our construction site security cabins are supplied brand new, fully insulated and
             wired ready to connect, with secure access and power fitted as standard. Used across
-            the UK as gatehouses, sign-in points and site offices, and available alongside our
-            portable toilet blocks for full welfare compliance on site.
+            the UK as security checkpoints, sign-in points and site offices, and available
+            alongside our portable toilet blocks for full welfare compliance on site.
           </p>
         </div>
       </div>
