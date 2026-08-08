@@ -10,11 +10,18 @@ const logos = [
     src: '/Sandbachcommercial.png',
     alt: 'Sandbach Commercial Dismantlers',
   },
+  { src: '/Londonbridgerooftop.png', alt: 'London Bridge Rooftop' },
+  { src: '/Ribblecars.png', alt: 'Ribble Cars' },
+  { src: '/RK9.png', alt: 'RK9' },
+  { src: '/taylor-lindsey-logo.png', alt: 'Taylor Lindsey' },
+  { src: '/Totalhireandsales.png', alt: 'Total Hire & Sales' },
+  { src: '/VWsporthorses.png', alt: 'VW Sporthorses' },
+  { src: '/xeeniegroup.png', alt: 'Xeenie Engineering Group' },
 ];
 
 export default function ClientLogos() {
   return (
-    <section className="py-8 bg-slate-50 border-y border-slate-200">
+    <section className="py-14 bg-slate-50 border-y border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-center font-mono text-base sm:text-lg font-bold uppercase tracking-[0.2em] text-[#F97316] mb-8">
           Trusted by businesses across the UK

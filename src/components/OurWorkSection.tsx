@@ -6,7 +6,7 @@ import { X } from "lucide-react"
 
 const images = [
   {
-    src: "/ourworksection1.png",
+    src: "/CabinOnSite.png",
     alt: "Finished portable kiosk cabin exterior on site",
   },
   {
@@ -22,7 +22,7 @@ const images = [
     alt: "Portable kiosk cabin wall paneling and window installation",
   },
   {
-    src: "/ourkioskcabinwork5.jpeg",
+    src: "/CabinsOnTheWay.jpeg",
     alt: "Portable kiosk cabin exterior finish and design detail",
   },
   {
